@@ -117,6 +117,7 @@
 
 ###  https://w3id.org/peo#organization
 :organization rdf:type owl:Class ;
+              :peo:description "A researcher teams or company that develops a language model" ;
               :peo:title "Organization" .
 
 
