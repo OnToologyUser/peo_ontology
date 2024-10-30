@@ -1,0 +1,754 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:peo="https://w3id.org/peo#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:peo1="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/peo#">
+        <owl:versionIRI rdf:resource="https://w3id.org/peo#"/>
+        <peo1:creator>Simone Gramegna</peo1:creator>
+        <peo1:description>The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks.</peo1:description>
+        <peo1:title>PEO ontology: an ontology for prompt engineering and large language models.</peo1:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:creator -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:creator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:reference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:reference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:title -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:website -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:website"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/peo#develops -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#develops">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/peo#evolves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#evolves -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#evolves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#has_capability -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_capability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#requires_capability -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#requires_capability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/peo#has_release_year -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_release_year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#dataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#decoder_only -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#decoder_only">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model">
+        <peo1:description>A model designed to predict the next word in a sequence or assign probabilities to sequences of words in natural language.</peo1:description>
+        <peo1:reference>https://en.wikipedia.org/wiki/Language_model#:~:text=Language%20models%20are%20useful%20for,%2C%20route%20optimization%2C%20handwriting%20recognition%2C</peo1:reference>
+        <peo1:title>Language model</peo1:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model"/>
+        <peo1:description>A language model consisting of a neural network with many parameters (typically billions of weights or more) trained on large quantities of unlabeled text using self-supervised learning or semi-supervised learning.</peo1:description>
+        <peo1:reference>https://en.wikipedia.org/wiki/Large_language_model</peo1:reference>
+        <peo1:title>Large language model</peo1:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization">
+        <peo1:description>A researcher teams or company that develops a language model</peo1:description>
+        <peo1:title>Organization</peo1:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#task"/>
+    
+
+
+    <!-- https://w3id.org/peo#Alibaba -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Alibaba">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#AllenAI -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#AllenAI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Apple -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Apple">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#BLOOM -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#BLOOM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Baichuan -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Baichuan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#BigCode -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#BigCode">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Chinchilla -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Chinchilla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Codex -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Codex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Cohere -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Cohere">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#DataBricks -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#DataBricks">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#DeepMind -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#DeepMind">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#DeepSeek -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#DeepSeek">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#FLAN -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#FLAN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Gemini -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Gemini">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Google -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Google">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#HELM -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#HELM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#HuggingFace -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#HuggingFace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Megratron -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Megratron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Meta -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Meta">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Microsoft -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Microsoft">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Mistral_AI -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Mistral_AI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Nvidia -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Nvidia">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#OPT -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#OPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#OpenBMB -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#OpenBMB">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#OpenELM -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#OpenELM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Princeton -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Princeton">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#RWKV_Foundation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#RWKV_Foundation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Stability_AI -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Stability_AI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Stanford -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Stanford">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Zhipu_AI -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Zhipu_AI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#capability -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#capability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#code_generation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#code_generation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#company -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/peo#researcher_team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#image_generation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#image_generation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#researcher_team -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#researcher_team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#text_generation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#text_generation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#transformer -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#transformer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#university -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#university">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#video_generation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#video_generation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#xAI -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#xAI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#01-ai -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#01-ai">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/peo#GPT-1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</peo:has_release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#GPT-2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-1"/>
+        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</peo:has_release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#GPT-3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-2"/>
+        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2020</peo:has_release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#GPT-3.5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3.5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-3"/>
+        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</peo:has_release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#GPT-4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</peo:has_release_year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#general_code_generation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_code_generation">
+        <rdf:type rdf:resource="https://w3id.org/peo#code_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#general_image_generation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_image_generation">
+        <rdf:type rdf:resource="https://w3id.org/peo#image_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#general_text_generation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_text_generation">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#general_video_generation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_video_generation">
+        <rdf:type rdf:resource="https://w3id.org/peo#video_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Chinchilla"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Codex"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#FLAN"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Gemini"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#HELM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Megratron"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OPT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OpenELM"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#Alibaba"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#AllenAI"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Apple"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Cohere"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DataBricks"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Google"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Meta"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Microsoft"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Mistral_AI"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Nvidia"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Zhipu_AI"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#xAI"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#01-ai"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#BLOOM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BigCode"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OpenBMB"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_Foundation"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
