@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#"
-     xml:base="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59"
+<rdf:RDF xmlns="https://w3id.org/peo#"
+     xml:base="https://w3id.org/peo"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:peo="https://w3id.org/peo#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:peo1="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:"
+     xmlns:peo1="https://w3id.org/peo#peo:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/peo#">
         <owl:versionIRI rdf:resource="https://w3id.org/peo#"/>
-        <peo1:creator>Simone Gramegna</peo1:creator>
-        <peo1:description>The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks.</peo1:description>
-        <peo1:title>PEO ontology: an ontology for prompt engineering and large language models.</peo1:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <peo:language>english</peo:language>
+        <creator>Simone Gramegna</creator>
+        <description>The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks.</description>
+        <language>english</language>
+        <title>PEO ontology: an ontology for prompt engineering and large language models.</title>
     </owl:Ontology>
     
 
@@ -30,33 +30,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:creator -->
+    <!-- https://w3id.org/peo#creator -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:creator"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/peo#creator"/>
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:description -->
+    <!-- https://w3id.org/peo#description -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:description"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:reference -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:reference"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:title -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:title"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:website -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#peo:website"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/peo#description"/>
     
 
 
@@ -72,6 +54,24 @@
     
 
 
+    <!-- https://w3id.org/peo#reference -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/peo#reference"/>
+    
+
+
+    <!-- https://w3id.org/peo#title -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/peo#title"/>
+    
+
+
+    <!-- https://w3id.org/peo#website -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/peo#website"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -80,6 +80,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://w3id.org/peo#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#belongs_to"/>
     
 
 
@@ -133,7 +139,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_release_year">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -150,155 +156,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT -->
+    <!-- https://w3id.org/peo#Aalto_University -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>(Bidirectional Encoder Representations from Transformers) An LLM by Google designed for NLP tasks, known for understanding context in both directions within text.</peo1:description>
-        <peo1:title>BERT</peo1:title>
-        <peo1:website>https://huggingface.co/bert-base-uncased</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>An AI assistant developed by Anthropic, aimed at being a safer and more controllable language model for dialogue and other NLP applications.</peo1:description>
-        <peo1:title>Claude</peo1:title>
-        <peo1:website>https://www.anthropic.com/claude</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>(Generative Pre-trained Transformer) A series of transformer models by OpenAI, with GPT-4 as the latest, excelling in NLP and conversational tasks.</peo1:description>
-        <peo1:title>GPT</peo1:title>
-        <peo1:website>https://chatgpt.com/</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>(Large Language Model Meta AI) A series of open-source models by Meta, designed to be efficient for research and commercial use.</peo1:description>
-        <peo1:title>LLaMA</peo1:title>
-        <peo1:website>https://huggingface.co/docs/transformers/main/model_doc/llama</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>A language model focused on being efficient and high-performing, aiming to improve NLP capabilities with fewer resources.</peo1:description>
-        <peo1:title>Mistral</peo1:title>
-        <peo1:website>https://chat.mistral.ai/chat</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-2 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-2">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>A recently developed AI model by a specific organization or team, likely aimed at enhancing certain NLP or conversational AI capabilities (additional details may be required as it&apos;s a newer name).</peo1:description>
-        <peo1:title>Phi-1</peo1:title>
-        <peo1:website>n.a.</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>(Text-To-Text Transfer Transformer) A Google model where every NLP task is cast as a text-to-text problem, known for its adaptability across diverse tasks.</peo1:description>
-        <peo1:title>T5</peo1:title>
-        <peo1:website>https://huggingface.co/t5-base</peo1:website>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#dataset"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#dataset -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#dataset">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#decoder_only -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#decoder_only">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model">
-        <peo1:description>A model designed to predict the next word in a sequence or assign probabilities to sequences of words in natural language.</peo1:description>
-        <peo1:reference>https://en.wikipedia.org/wiki/Language_model#:~:text=Language%20models%20are%20useful%20for,%2C%20route%20optimization%2C%20handwriting%20recognition%2C</peo1:reference>
-        <peo1:title>Language model</peo1:title>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model"/>
+    <owl:Class rdf:about="https://w3id.org/peo#Aalto_University">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A language model consisting of a neural network with many parameters (typically billions of weights or more) trained on large quantities of unlabeled text using self-supervised learning or semi-supervised learning.</peo1:description>
-        <peo1:reference>https://en.wikipedia.org/wiki/Large_language_model</peo1:reference>
-        <peo1:title>Large language model</peo1:title>
+        <title>Aalto University</title>
+        <website>https://www.aalto.fi/</website>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization">
-        <peo1:description>A ìn organization of people that develops a large language model</peo1:description>
-        <peo1:title>Organization</peo1:title>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#task -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#task"/>
     
 
 
@@ -312,9 +182,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Qwen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A Chinese multinational technology company using AI and LLMs for e-commerce, cloud computing, and digital innovation.</peo1:description>
-        <peo1:title>Alibaba</peo1:title>
-        <peo1:website>https://www.alibabagroup.com/</peo1:website>
+        <description>A Chinese multinational technology company using AI and LLMs for e-commerce, cloud computing, and digital innovation.</description>
+        <title>Alibaba</title>
+        <website>https://www.alibabagroup.com/</website>
     </owl:Class>
     
 
@@ -329,9 +199,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#OLMo"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A research institute focused on advancing AI and natural language processing, known for models like AllenNLP.</peo1:description>
-        <peo1:title>AllenAI</peo1:title>
-        <peo1:website>https://allenai.org/</peo1:website>
+        <description>A research institute focused on advancing AI and natural language processing, known for models like AllenNLP.</description>
+        <title>AllenAI</title>
+        <website>https://allenai.org/</website>
     </owl:Class>
     
 
@@ -343,12 +213,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Claude"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Startup that develops AI solutions</peo1:description>
-        <peo1:title>Anthropic</peo1:title>
-        <peo1:website>https://www.anthropic.com/</peo1:website>
+        <description>Startup that develops AI solutions</description>
+        <title>Anthropic</title>
+        <website>https://www.anthropic.com/</website>
     </owl:Class>
     
 
@@ -363,9 +233,37 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#OpenELM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A technology giant that incorporates AI into its products, exploring LLMs to enhance user experiences across devices.</peo1:description>
-        <peo1:title>Apple</peo1:title>
-        <peo1:website>https://www.apple.com/it/?afid=p238%7CsqcuiGJjQ-dc_mtid_187079nc38483_pcrid_712923642400_pgrid_13999328567_pntwk_g_pchan__pexid__ptid_kwd-10778630_&amp;cid=aos-it-kwgo-brand--slid--bran-product-</peo1:website>
+        <description>A technology giant that incorporates AI into its products, exploring LLMs to enhance user experiences across devices.</description>
+        <title>Apple</title>
+        <website>https://www.apple.com/it/?afid=p238%7CsqcuiGJjQ-dc_mtid_187079nc38483_pcrid_712923642400_pgrid_13999328567_pntwk_g_pchan__pexid__ptid_kwd-10778630_&amp;cid=aos-it-kwgo-brand--slid--bran-product-</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Australian_National_University -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Australian_National_University">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <title>Australian National University</title>
+        <website>https://www.anu.edu.au/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#BERT -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#BERT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>(Bidirectional Encoder Representations from Transformers) An LLM by Google designed for NLP tasks, known for understanding context in both directions within text.</description>
+        <paper>https://aclanthology.org/N19-1423.pdf</paper>
+        <title>BERT</title>
+        <website>https://huggingface.co/bert-base-uncased</website>
     </owl:Class>
     
 
@@ -373,7 +271,17 @@
     <!-- https://w3id.org/peo#BLIP-2 -->
 
     <owl:Class rdf:about="https://w3id.org/peo#BLIP-2">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Multimodal model that integrates a frozen image encoder with a large language model via a Querying Transformer, enabling tasks like image captioning and visual question answering.</description>
+        <paper>https://arxiv.org/abs/2301.12597</paper>
+        <title>BLIP-2</title>
+        <website>https://huggingface.co/docs/transformers/main/model_doc/blip-2</website>
     </owl:Class>
     
 
@@ -381,10 +289,11 @@
     <!-- https://w3id.org/peo#BLOOM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#BLOOM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Large open-access language model designed to support multiple languages and dialects, aiming to make natural language processing more inclusive and accessible across diverse linguistic communities.</peo1:description>
-        <peo1:title>BLOOM</peo1:title>
-        <peo1:website>https://huggingface.co/bigscience/bloom</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Large open-access language model designed to support multiple languages and dialects, aiming to make natural language processing more inclusive and accessible across diverse linguistic communities.</description>
+        <paper>https://arxiv.org/abs/2211.05100</paper>
+        <title>BLOOM</title>
+        <website>https://huggingface.co/bigscience/bloom</website>
     </owl:Class>
     
 
@@ -399,9 +308,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Chinese company that develops LLMs trained on chinese language</peo1:description>
-        <peo1:title>Baichuan</peo1:title>
-        <peo1:website>https://github.com/baichuan-inc/Baichuan-7B</peo1:website>
+        <description>Chinese company that develops LLMs trained on chinese language</description>
+        <title>Baichuan</title>
+        <website>https://github.com/baichuan-inc/Baichuan-7B</website>
     </owl:Class>
     
 
@@ -409,10 +318,11 @@
     <!-- https://w3id.org/peo#Baichuan_LLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Baichuan_LLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Open large scale language models developed by Baichuan chinese company</peo1:description>
-        <peo1:title>Baichuan LLM</peo1:title>
-        <peo1:website>https://huggingface.co/baichuan-inc</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Open large scale language models developed by Baichuan chinese company</description>
+        <paper>https://arxiv.org/abs/2309.10305</paper>
+        <title>Baichuan LLM</title>
+        <website>https://huggingface.co/baichuan-inc</website>
     </owl:Class>
     
 
@@ -427,9 +337,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#StarCoder"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>An open-source initiative that develops large language models specifically trained for code generation and understanding.</peo1:description>
-        <peo1:title>BigCode</peo1:title>
-        <peo1:website>https://huggingface.co/bigcode</peo1:website>
+        <description>An open-source initiative that develops large language models specifically trained for code generation and understanding.</description>
+        <title>BigCode</title>
+        <website>https://huggingface.co/bigcode</website>
     </owl:Class>
     
 
@@ -444,9 +354,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#BLOOM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Open scientific collaboration run by Hugging Face and ServiceNow Research, focused on open and responsible development of LLMs for code</peo1:description>
-        <peo1:title>BigScience</peo1:title>
-        <peo1:website>https://github.com/bigcode-project</peo1:website>
+        <description>Open scientific collaboration run by Hugging Face and ServiceNow Research, focused on open and responsible development of LLMs for code</description>
+        <title>BigScience</title>
+        <website>https://github.com/bigcode-project</website>
     </owl:Class>
     
 
@@ -454,10 +364,27 @@
     <!-- https://w3id.org/peo#CPM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#CPM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Series of large language models focused on Chinese language understanding and generation, created to advance NLP research and applications specifically tailored to Chinese language contexts.</peo1:description>
-        <peo1:title>CPM Chinese Pre-trained Language Model</peo1:title>
-        <peo1:website>https://huggingface.co/docs/transformers/model_doc/cpm</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Series of large language models focused on Chinese language understanding and generation, created to advance NLP research and applications specifically tailored to Chinese language contexts.</description>
+        <paper>https://arxiv.org/abs/2012.00413</paper>
+        <title>CPM Chinese Pre-trained Language Model</title>
+        <website>https://huggingface.co/docs/transformers/model_doc/cpm</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Carnegie_Mellon_University -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Carnegie_Mellon_University">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <title>Carnegie Mellon University</title>
+        <website>https://www.cmu.edu/</website>
     </owl:Class>
     
 
@@ -465,10 +392,23 @@
     <!-- https://w3id.org/peo#Chinchilla -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Chinchilla">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>An LLM developed by DeepMind, designed to explore efficient scaling of model size relative to data, achieving high performance with fewer parameters.</peo1:description>
-        <peo1:title>Chinchilla</peo1:title>
-        <peo1:website>n.a.</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>An LLM developed by DeepMind, designed to explore efficient scaling of model size relative to data, achieving high performance with fewer parameters.</description>
+        <paper>https://arxiv.org/abs/2203.15556</paper>
+        <title>Chinchilla</title>
+        <website>n.a.</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Claude -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Claude">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>An AI assistant developed by Anthropic, aimed at being a safer and more controllable language model for dialogue and other NLP applications.</description>
+        <paper>n.a.</paper>
+        <title>Claude</title>
+        <website>https://www.anthropic.com/claude</website>
     </owl:Class>
     
 
@@ -476,16 +416,17 @@
     <!-- https://w3id.org/peo#Codex -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Codex">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Developed by OpenAI, this model is specialized for code generation, powering GitHub Copilot and other coding assistants.</peo1:description>
-        <peo1:title>Codex</peo1:title>
-        <peo1:website>https://openai.com/research/codex</peo1:website>
+        <description>Developed by OpenAI, this model is specialized for code generation, powering GitHub Copilot and other coding assistants.</description>
+        <paper>n.a.</paper>
+        <title>Codex</title>
+        <website>https://openai.com/research/codex</website>
     </owl:Class>
     
 
@@ -493,16 +434,17 @@
     <!-- https://w3id.org/peo#CogVLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#CogVLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Vision-language model developed to understand and generate both visual and textual information, bridging the gap between image recognition and natural language processing for more nuanced multimodal tasks.</peo1:description>
-        <peo1:title>CogVLM</peo1:title>
-        <peo1:website>https://github.com/THUDM/CogVLM?tab=readme-ov-file#examples</peo1:website>
+        <description>Vision-language model developed to understand and generate both visual and textual information, bridging the gap between image recognition and natural language processing for more nuanced multimodal tasks.</description>
+        <paper>https://arxiv.org/abs/2312.08914</paper>
+        <title>CogVLM</title>
+        <website>https://github.com/THUDM/CogVLM?tab=readme-ov-file#examples</website>
     </owl:Class>
     
 
@@ -517,9 +459,10 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Command_R"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A company dedicated to building large language models for natural language processing, serving businesses with LLM-powered solutions.</peo1:description>
-        <peo1:title>Cohere</peo1:title>
-        <peo1:website>https://cohere.ai/</peo1:website>
+        <description>A company dedicated to building large language models for natural language processing, serving businesses with LLM-powered solutions.</description>
+        <paper>n.a</paper>
+        <title>Cohere</title>
+        <website>https://cohere.ai/</website>
     </owl:Class>
     
 
@@ -527,7 +470,7 @@
     <!-- https://w3id.org/peo#Command_R -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Command_R">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
     </owl:Class>
     
 
@@ -535,10 +478,11 @@
     <!-- https://w3id.org/peo#DBRX -->
 
     <owl:Class rdf:about="https://w3id.org/peo#DBRX">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Large language model optimized for use in data analytics and big data processing contexts, often integrated into Databricks&apos; platforms to enhance machine learning workflows, natural language querying, and enterprise-level AI applications.</peo1:description>
-        <peo1:title>DBRX</peo1:title>
-        <peo1:website>https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Large language model optimized for use in data analytics and big data processing contexts, often integrated into Databricks&apos; platforms to enhance machine learning workflows, natural language querying, and enterprise-level AI applications.</description>
+        <paper>n.a.</paper>
+        <title>DBRX</title>
+        <website>https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm</website>
     </owl:Class>
     
 
@@ -559,9 +503,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#MPT-7B"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A data and AI company that enables enterprises to manage and deploy large language models and big data analytics.</peo1:description>
-        <peo1:title>DataBricks</peo1:title>
-        <peo1:website>https://databricks.com/</peo1:website>
+        <description>A data and AI company that enables enterprises to manage and deploy large language models and big data analytics.</description>
+        <title>DataBricks</title>
+        <website>https://databricks.com/</website>
     </owl:Class>
     
 
@@ -576,9 +520,15 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Chinchilla"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A subsidiary of Alphabet focused on cutting-edge AI research, developing advanced LLMs and models like AlphaFold and Gopher.</peo1:description>
-        <peo1:title>DeepMind</peo1:title>
-        <peo1:website>https://deepmind.com/</peo1:website>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Gemma"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>A subsidiary of Alphabet focused on cutting-edge AI research, developing advanced LLMs and models like AlphaFold and Gopher.</description>
+        <title>DeepMind</title>
+        <website>https://deepmind.com/</website>
     </owl:Class>
     
 
@@ -593,9 +543,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Chiense LLM company</peo1:description>
-        <peo1:title>DeepSeek</peo1:title>
-        <peo1:website>https://www.deepseek.com/</peo1:website>
+        <description>Chiense LLM company</description>
+        <title>DeepSeek</title>
+        <website>https://www.deepseek.com/</website>
     </owl:Class>
     
 
@@ -603,10 +553,11 @@
     <!-- https://w3id.org/peo#DeepSeek_LLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#DeepSeek_LLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Large language model developed for specialized data retrieval and search applications, designed to enhance information extraction and understanding, likely optimized for complex, domain-specific queries.</peo1:description>
-        <peo1:title>DeepSeek LLM</peo1:title>
-        <peo1:website>https://huggingface.co/collections/deepseek-ai/deepseek-v2-669a1c8b8f2dbc203fbd7746</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Large language model developed for specialized data retrieval and search applications, designed to enhance information extraction and understanding, likely optimized for complex, domain-specific queries.</description>
+        <paper>https://arxiv.org/abs/2401.02954</paper>
+        <title>DeepSeek LLM</title>
+        <website>https://huggingface.co/collections/deepseek-ai/deepseek-v2-669a1c8b8f2dbc203fbd7746</website>
     </owl:Class>
     
 
@@ -614,10 +565,11 @@
     <!-- https://w3id.org/peo#FLAN -->
 
     <owl:Class rdf:about="https://w3id.org/peo#FLAN">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>(Fine-tuned Language Net) A Google model that applies instruction fine-tuning to improve task performance and generalization across diverse tasks.</peo1:description>
-        <peo1:title>FLAN</peo1:title>
-        <peo1:website>https://huggingface.co/google/flan-t5-base</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>(Fine-tuned Language Net) A Google model that applies instruction fine-tuning to improve task performance and generalization across diverse tasks.</description>
+        <paper>https://arxiv.org/pdf/2210.11416</paper>
+        <title>FLAN</title>
+        <website>https://huggingface.co/google/flan-t5-base</website>
     </owl:Class>
     
 
@@ -625,10 +577,11 @@
     <!-- https://w3id.org/peo#GLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#GLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Open bilingual (English &amp; Chinese) bidirectional dense model with 130 billion parameters, pre-trained using the algorithm of General Language Model (GLM).</peo1:description>
-        <peo1:title>GLM (General Language Model)</peo1:title>
-        <peo1:website>https://github.com/THUDM/GLM-130B</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Open bilingual (English &amp; Chinese) bidirectional dense model with 130 billion parameters, pre-trained using the algorithm of General Language Model (GLM).</description>
+        <paper>https://arxiv.org/abs/2210.02414</paper>
+        <title>GLM (General Language Model)</title>
+        <website>https://github.com/THUDM/GLM-130B</website>
     </owl:Class>
     
 
@@ -636,7 +589,29 @@
     <!-- https://w3id.org/peo#GLaMM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#GLaMM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Multimodal model that combines language and vision, enabling pixel-level grounding, object segmentation, and interactive visual conversations</description>
+        <paper>https://arxiv.org/abs/2311.03356</paper>
+        <title>GLaMM</title>
+        <website>https://github.com/mbzuai-oryx/groundingLMM</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#GPT -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#GPT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>(Generative Pre-trained Transformer) A series of transformer models by OpenAI, with GPT-4 as the latest, excelling in NLP and conversational tasks.</description>
+        <paper>n.a.</paper>
+        <title>GPT</title>
+        <website>https://chatgpt.com/</website>
     </owl:Class>
     
 
@@ -644,7 +619,7 @@
     <!-- https://w3id.org/peo#Gemini -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Gemini">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
@@ -669,9 +644,22 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A series of LLMs by Google DeepMind, designed for conversational AI and multimodal applications</peo1:description>
-        <peo1:title>Gemini</peo1:title>
-        <peo1:website>https://gemini.google.com/app</peo1:website>
+        <description>A series of LLMs by Google DeepMind, designed for conversational AI and multimodal applications</description>
+        <paper>https://arxiv.org/abs/2312.11805</paper>
+        <title>Gemini</title>
+        <website>https://gemini.google.com/app</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Gemma -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Gemma">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Large Language Model designed for advanced natural language processing tasks, with a focus on accuracy and contextual text generation.</description>
+        <paper>https://arxiv.org/abs/2403.08295</paper>
+        <title>Gemma</title>
+        <website>https://blog.google/technology/developers/gemma-open-models/</website>
     </owl:Class>
     
 
@@ -683,13 +671,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#BERT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -710,9 +692,32 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#PaLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A leader in AI and LLM research, developing models like BERT, LaMDA, and Gemini for search, assistant services, and more.</peo1:description>
-        <peo1:title>Google</peo1:title>
-        <peo1:website>https://www.google.com/</peo1:website>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#T5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>A leader in AI and LLM research, developing models like BERT, LaMDA, and Gemini for search, assistant services, and more.</description>
+        <title>Google</title>
+        <website>https://www.google.com/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Google_Research -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Google_Research">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Research division of Google focused on advancing artificial intelligence, machine learning, natural language processing, computer vision, robotics, and other areas of technology to drive innovation across its products and benefit the broader scientific community.</description>
+        <title>Google Research</title>
+        <website>https://research.google/</website>
     </owl:Class>
     
 
@@ -720,10 +725,47 @@
     <!-- https://w3id.org/peo#Grok -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Grok">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:title>Grok</peo1:title>
-        <peo1:website>Large language model developed by xAI, designed to integrate contextual knowledge and responsive capabilities for interactions on messaging platforms like X (formerly Twitter).</peo1:website>
-        <peo1:website>https://x.ai/blog/grok-2</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <paper>n.a.</paper>
+        <title>Grok</title>
+        <website>Large language model developed by xAI, designed to integrate contextual knowledge and responsive capabilities for interactions on messaging platforms like X (formerly Twitter).</website>
+        <website>https://x.ai/blog/grok-2</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#HuggingFace -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#HuggingFace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#LLaMA -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#LLaMA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>(Large Language Model Meta AI) A series of open-source models by Meta, designed to be efficient for research and commercial use.</description>
+        <paper>https://arxiv.org/abs/2302.13971</paper>
+        <title>LLaMA</title>
+        <website>https://huggingface.co/docs/transformers/main/model_doc/llama</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Linköping_University -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Linköping_University">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <title>Linköping University</title>
+        <website>https://www.liu.se/</website>
     </owl:Class>
     
 
@@ -731,10 +773,11 @@
     <!-- https://w3id.org/peo#MPT-7B -->
 
     <owl:Class rdf:about="https://w3id.org/peo#MPT-7B">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Decoder-style transformer with 6.7B parameters</peo1:description>
-        <peo1:title>MPT-7B</peo1:title>
-        <peo1:website>https://www.databricks.com/blog/mpt-7b</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Decoder-style transformer with 6.7B parameters</description>
+        <paper>n.a.</paper>
+        <title>MPT-7B</title>
+        <website>https://www.databricks.com/blog/mpt-7b</website>
     </owl:Class>
     
 
@@ -746,7 +789,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#LLaMA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -755,9 +798,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#OPT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A social media giant developing LLMs like LLaMA, with applications in social media moderation, content generation, and the metaverse.</peo1:description>
-        <peo1:title>Meta</peo1:title>
-        <peo1:website>https://about.meta.com</peo1:website>
+        <description>A social media giant developing LLMs like LLaMA, with applications in social media moderation, content generation, and the metaverse.</description>
+        <title>Meta</title>
+        <website>https://about.meta.com</website>
     </owl:Class>
     
 
@@ -769,12 +812,24 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-2"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Phi-2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A tech company leveraging LLMs like GPT-4 for various applications, from productivity tools to Azure AI services.</peo1:description>
-        <peo1:title>Microsoft</peo1:title>
-        <peo1:website>https://www.microsoft.com/</peo1:website>
+        <description>A tech company leveraging LLMs like GPT-4 for various applications, from productivity tools to Azure AI services.</description>
+        <title>Microsoft</title>
+        <website>https://www.microsoft.com/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Mistral -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Mistral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>A language model focused on being efficient and high-performing, aiming to improve NLP capabilities with fewer resources.</description>
+        <paper>https://arxiv.org/abs/2310.06825</paper>
+        <title>Mistral</title>
+        <website>https://chat.mistral.ai/chat</website>
     </owl:Class>
     
 
@@ -786,12 +841,28 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Mistral"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Likely an organization working on creating specialized language models with a focus on specific applications.</peo1:description>
-        <peo1:title>Mistral AI</peo1:title>
-        <peo1:website>https://mistral.ai/</peo1:website>
+        <description>Likely an organization working on creating specialized language models with a focus on specific applications.</description>
+        <title>Mistral AI</title>
+        <website>https://mistral.ai/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Mohamed_bin_Zayed_University_of_AI -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Mohamed_bin_Zayed_University_of_AI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <title>Mohamed bin Zayed University of Artificial Intelligence</title>
+        <website>https://mbzuai.ac.ae/</website>
     </owl:Class>
     
 
@@ -799,7 +870,7 @@
     <!-- https://w3id.org/peo#NVLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#NVLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
@@ -812,9 +883,10 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A large transformer model architecture developed by Nvidia, used for NLP tasks and training massive language models.</peo1:description>
-        <peo1:title>NVLM</peo1:title>
-        <peo1:website>https://research.nvidia.com/labs/adlr/NVLM-1/</peo1:website>
+        <description>A large transformer model architecture developed by Nvidia, used for NLP tasks and training massive language models.</description>
+        <paper>https://arxiv.org/abs/2409.11402</paper>
+        <title>NVLM</title>
+        <website>https://research.nvidia.com/labs/adlr/NVLM-1/</website>
     </owl:Class>
     
 
@@ -829,9 +901,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#NVLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A hardware and AI company enabling LLM training and deployment through its GPUs, software, and data center solutions.</peo1:description>
-        <peo1:title>Nvidia</peo1:title>
-        <peo1:website>https://www.nvidia.com/</peo1:website>
+        <description>A hardware and AI company enabling LLM training and deployment through its GPUs, software, and data center solutions.</description>
+        <title>Nvidia</title>
+        <website>https://www.nvidia.com/</website>
     </owl:Class>
     
 
@@ -839,10 +911,11 @@
     <!-- https://w3id.org/peo#OLMo -->
 
     <owl:Class rdf:about="https://w3id.org/peo#OLMo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Open-source language model that aimes to provide a transparent, publicly accessible alternative to proprietary LLMs for research and applications in natural language processing.</peo1:description>
-        <peo1:title>OLMo</peo1:title>
-        <peo1:website>https://allenai.org/olmo</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Open-source language model that aimes to provide a transparent, publicly accessible alternative to proprietary LLMs for research and applications in natural language processing.</description>
+        <paper>https://arxiv.org/abs/2402.00838</paper>
+        <title>OLMo</title>
+        <website>https://allenai.org/olmo</website>
     </owl:Class>
     
 
@@ -850,10 +923,11 @@
     <!-- https://w3id.org/peo#OPT -->
 
     <owl:Class rdf:about="https://w3id.org/peo#OPT">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>(Open Pretrained Transformer) A model developed by Meta, openly released to provide researchers with access to LLMs for a variety of applications.</peo1:description>
-        <peo1:title>OPT</peo1:title>
-        <peo1:website>https://huggingface.co/facebook/opt-1.3b</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>(Open Pretrained Transformer) A model developed by Meta, openly released to provide researchers with access to LLMs for a variety of applications.</description>
+        <paper>https://arxiv.org/abs/2205.01068</paper>
+        <title>OPT</title>
+        <website>https://huggingface.co/facebook/opt-1.3b</website>
     </owl:Class>
     
 
@@ -865,18 +939,24 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Codex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Codex"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GPT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Research and deployment company known for creating advanced language models like GPT-4, focused on developing safe and beneficial artificial general intelligence (AGI) and widely accessible AI technologies.</peo1:description>
-        <peo1:title>OpenAI</peo1:title>
-        <peo1:website>https://openai.com/</peo1:website>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Sora"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Research and deployment company known for creating advanced language models like GPT-4, focused on developing safe and beneficial artificial general intelligence (AGI) and widely accessible AI technologies.</description>
+        <title>OpenAI</title>
+        <website>https://openai.com/</website>
     </owl:Class>
     
 
@@ -891,9 +971,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CPM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A team focused on building and supporting open-source language models, particularly for multilingual understanding and natural language processing.</peo1:description>
-        <peo1:title>OpenBMB</peo1:title>
-        <peo1:website>https://www.openbmb.org/</peo1:website>
+        <description>A team focused on building and supporting open-source language models, particularly for multilingual understanding and natural language processing.</description>
+        <title>OpenBMB</title>
+        <website>https://www.openbmb.org/</website>
     </owl:Class>
     
 
@@ -901,10 +981,11 @@
     <!-- https://w3id.org/peo#OpenELM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#OpenELM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>An open-source initiative focused on evolutionary learning and modeling, particularly in the context of NLP tasks.</peo1:description>
-        <peo1:title>OpenELM</peo1:title>
-        <peo1:website>https://huggingface.co/apple/OpenELM</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>An open-source initiative focused on evolutionary learning and modeling, particularly in the context of NLP tasks.</description>
+        <paper>https://arxiv.org/abs/2404.14619</paper>
+        <title>OpenELM</title>
+        <website>https://huggingface.co/apple/OpenELM</website>
     </owl:Class>
     
 
@@ -912,16 +993,29 @@
     <!-- https://w3id.org/peo#PaLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#PaLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Large language model developed by Google, designed to perform a range of NLP tasks with high accuracy across languages, reasoning, and even code generation.</peo1:description>
-        <peo1:title>PaLM (Pathways Language Model)</peo1:title>
-        <peo1:website>https://ai.google/discover/palm2/</peo1:website>
+        <description>Large language model developed by Google, designed to perform a range of NLP tasks with high accuracy across languages, reasoning, and even code generation.</description>
+        <paper>https://arxiv.org/abs/2204.02311</paper>
+        <title>PaLM (Pathways Language Model)</title>
+        <website>https://ai.google/discover/palm2/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Phi-2 -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Phi-2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>A recently developed AI model by a specific organization or team, likely aimed at enhancing certain NLP or conversational AI capabilities (additional details may be required as it&apos;s a newer name).</description>
+        <paper>https://arxiv.org/abs/2306.11644</paper>
+        <title>Phi-1</title>
+        <website>n.a.</website>
     </owl:Class>
     
 
@@ -930,8 +1024,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Princeton">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
-        <peo1:title>Princeton University</peo1:title>
-        <peo1:website>https://www.princeton.edu/</peo1:website>
+        <title>Princeton University</title>
+        <website>https://www.princeton.edu/</website>
     </owl:Class>
     
 
@@ -939,10 +1033,11 @@
     <!-- https://w3id.org/peo#Qwen -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Qwen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Large language model developed by Alibaba, designed to handle complex natural language tasks in multiple languages, with a strong emphasis on applications in e-commerce, customer service, and conversational AI.</peo1:description>
-        <peo1:title>Qwen</peo1:title>
-        <peo1:website>https://huggingface.co/Qwen</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Large language model developed by Alibaba, designed to handle complex natural language tasks in multiple languages, with a strong emphasis on applications in e-commerce, customer service, and conversational AI.</description>
+        <paper>https://arxiv.org/abs/2309.16609</paper>
+        <title>Qwen</title>
+        <website>https://huggingface.co/Qwen</website>
     </owl:Class>
     
 
@@ -957,9 +1052,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#RWKV_LLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>An organization developing the RWKV model, a large language model that aims to combine recurrent neural network (RNN) and transformer capabilities for efficient</peo1:description>
-        <peo1:title>RWKV Foundation</peo1:title>
-        <peo1:website>https://www.rwkv.com/</peo1:website>
+        <description>An organization developing the RWKV model, a large language model that aims to combine recurrent neural network (RNN) and transformer capabilities for efficient</description>
+        <title>RWKV Foundation</title>
+        <website>https://www.rwkv.com/</website>
     </owl:Class>
     
 
@@ -967,10 +1062,42 @@
     <!-- https://w3id.org/peo#RWKV_LLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#RWKV_LLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Large language model that integrates transformer and RNN principles to efficiently manage long-context sequences, supporting improved language understanding and generation over extensive text inputs.</peo1:description>
-        <peo1:title>RWKV Large Language Model</peo1:title>
-        <peo1:website>https://github.com/BlinkDL/RWKV-LM</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Large language model that integrates transformer and RNN principles to efficiently manage long-context sequences, supporting improved language understanding and generation over extensive text inputs.</description>
+        <paper>https://arxiv.org/abs/2305.13048</paper>
+        <title>RWKV Large Language Model</title>
+        <website>https://github.com/BlinkDL/RWKV-LM</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Salesforce -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Salesforce">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#BLIP-2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Cloud-based software company specializing in customer relationship management (CRM) solutions and enterprise applications focused on sales, service, marketing, and analytics.</description>
+        <title>Salesforce</title>
+        <website>https://www.salesforce.com/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Sora -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Sora">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -985,9 +1112,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#StableLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>The company behind Stable Diffusion, focusing on open-source generative AI models, including image and language models.</peo1:description>
-        <peo1:title>Stability AI</peo1:title>
-        <peo1:website>https://stability.ai/</peo1:website>
+        <description>The company behind Stable Diffusion, focusing on open-source generative AI models, including image and language models.</description>
+        <title>Stability AI</title>
+        <website>https://stability.ai/</website>
     </owl:Class>
     
 
@@ -995,10 +1122,11 @@
     <!-- https://w3id.org/peo#StableLM -->
 
     <owl:Class rdf:about="https://w3id.org/peo#StableLM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Open source large language model designed to support a range of natural language processing tasks with a focus on accessibility and transparency in model deployment and fine-tuning.</peo1:description>
-        <peo1:title>StableLM</peo1:title>
-        <peo1:website>https://huggingface.co/stabilityai/stablelm-base-alpha-7b</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Open source large language model designed to support a range of natural language processing tasks with a focus on accessibility and transparency in model deployment and fine-tuning.</description>
+        <paper>https://arxiv.org/abs/2402.17834</paper>
+        <title>StableLM</title>
+        <website>https://huggingface.co/stabilityai/stablelm-base-alpha-7b</website>
     </owl:Class>
     
 
@@ -1007,8 +1135,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Stanford">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
-        <peo1:title>Stanford University</peo1:title>
-        <peo1:website>https://www.stanford.edu/</peo1:website>
+        <title>Stanford University</title>
+        <website>https://www.stanford.edu/</website>
     </owl:Class>
     
 
@@ -1016,16 +1144,45 @@
     <!-- https://w3id.org/peo#StarCoder -->
 
     <owl:Class rdf:about="https://w3id.org/peo#StarCoder">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>Large language model specialized for code generation and understanding designed to support multiple programming languages and assist developers in writing, debugging, and understanding code.</peo1:description>
-        <peo1:title>StarCoder</peo1:title>
-        <peo1:website>https://huggingface.co/bigcode/starcoder</peo1:website>
+        <description>Large language model specialized for code generation and understanding designed to support multiple programming languages and assist developers in writing, debugging, and understanding code.</description>
+        <paper>https://arxiv.org/abs/2305.06161</paper>
+        <title>StarCoder</title>
+        <website>https://huggingface.co/bigcode/starcoder</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#T5 -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#T5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>(Text-To-Text Transfer Transformer) A Google model where every NLP task is cast as a text-to-text problem, known for its adaptability across diverse tasks.</description>
+        <paper>https://jmlr.org/papers/volume21/20-074/20-074.pdf</paper>
+        <title>T5</title>
+        <website>https://huggingface.co/t5-base</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#University_of_California_Merced -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#University_of_California_Merced">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <title>University of California - Merced</title>
+        <website>https://www.ucmerced.edu/</website>
     </owl:Class>
     
 
@@ -1033,10 +1190,11 @@
     <!-- https://w3id.org/peo#Yi -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Yi">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#large_language_model"/>
-        <peo1:description>Yi is a multilingual language model by Zhipu AI, optimized for natural language understanding and generation, particularly in Chinese.</peo1:description>
-        <peo1:title>Yi</peo1:title>
-        <peo1:website>https://huggingface.co/collections/01-ai/yi-2023-11-663f3f19119ff712e176720f</peo1:website>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Yi is a multilingual language model by Zhipu AI, optimized for natural language understanding and generation, particularly in Chinese.</description>
+        <paper>https://arxiv.org/abs/2403.04652</paper>
+        <title>Yi</title>
+        <website>https://huggingface.co/collections/01-ai/yi-2023-11-663f3f19119ff712e176720f</website>
     </owl:Class>
     
 
@@ -1057,9 +1215,17 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>A Chinese AI company specializing in large-scale language models and generative AI applications</peo1:description>
-        <peo1:title>Zhipu AI</peo1:title>
-        <peo1:website>https://www.zhipu.ai/</peo1:website>
+        <description>A Chinese AI company specializing in large-scale language models and generative AI applications</description>
+        <title>Zhipu AI</title>
+        <website>https://www.zhipu.ai/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#architecture -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#architecture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model_feature"/>
     </owl:Class>
     
 
@@ -1075,7 +1241,7 @@
     <!-- https://w3id.org/peo#capability -->
 
     <owl:Class rdf:about="https://w3id.org/peo#capability">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#language_model_feature"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model_feature"/>
     </owl:Class>
     
 
@@ -1091,10 +1257,18 @@
     <!-- https://w3id.org/peo#company -->
 
     <owl:Class rdf:about="https://w3id.org/peo#company">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
         <owl:disjointWith rdf:resource="https://w3id.org/peo#researcher_team"/>
-        <peo1:description>Organization that develops an LLM for business purpose</peo1:description>
-        <peo1:title>Company</peo1:title>
+        <description>Organization that develops an LLM for business purpose</description>
+        <title>Company</title>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#decoder_only -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#decoder_only">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#architecture"/>
     </owl:Class>
     
 
@@ -1107,13 +1281,61 @@
     
 
 
+    <!-- https://w3id.org/peo#language_model -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#language_model">
+        <description>A model designed to predict the next word in a sequence or assign probabilities to sequences of words in natural language.</description>
+        <title>Language model</title>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#language_model_feature -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#language_model_feature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#large_language_model -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#large_language_model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>A language model consisting of a neural network with many parameters (typically billions of weights or more) trained on large quantities of unlabeled text using self-supervised learning or semi-supervised learning.</description>
+        <title>Large language model</title>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#organization -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#organization">
+        <description>A ìn organization of people that develops a large language model</description>
+        <title>Organization</title>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#researcher_team -->
 
     <owl:Class rdf:about="https://w3id.org/peo#researcher_team">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization"/>
-        <peo1:description>A team of researchers and developers who develop a LLM  for research purposes.</peo1:description>
-        <peo1:title>Researcher team</peo1:title>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
+        <description>A team of researchers and developers who develop a LLM  for research purposes.</description>
+        <title>Researcher team</title>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#task -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#task"/>
     
 
 
@@ -1128,7 +1350,7 @@
     <!-- https://w3id.org/peo#transformer -->
 
     <owl:Class rdf:about="https://w3id.org/peo#transformer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#architecture"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#architecture"/>
     </owl:Class>
     
 
@@ -1136,9 +1358,9 @@
     <!-- https://w3id.org/peo#university -->
 
     <owl:Class rdf:about="https://w3id.org/peo#university">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#organization"/>
-        <peo1:description>A higher education institution dedicated to advanced learning, research, and the development of specialized knowledge and skills</peo1:description>
-        <peo1:title>University</peo1:title>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
+        <description>A higher education institution dedicated to advanced learning, research, and the development of specialized knowledge and skills</description>
+        <title>University</title>
     </owl:Class>
     
 
@@ -1161,9 +1383,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Grok"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>An AI company founded by Elon Musk to advance the development of AI models and promote safe AI usage.</peo1:description>
-        <peo1:title>xAI</peo1:title>
-        <peo1:website>https://x.ai/</peo1:website>
+        <description>An AI company founded by Elon Musk to advance the development of AI models and promote safe AI usage.</description>
+        <title>xAI</title>
+        <website>https://x.ai/</website>
     </owl:Class>
     
 
@@ -1178,9 +1400,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Yi"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <peo1:description>An AI-focused company, likely involved in the development of advanced language models or related AI research.</peo1:description>
-        <peo1:title>&quot;01-ai&quot;</peo1:title>
-        <peo1:website>https://github.com/01-ai/Yi</peo1:website>
+        <description>An AI-focused company, likely involved in the development of advanced language models or related AI research.</description>
+        <title>&quot;01-ai&quot;</title>
+        <website>https://github.com/01-ai/Yi</website>
     </owl:Class>
     
 
@@ -1199,7 +1421,7 @@
     <!-- https://w3id.org/peo#BERT_Base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_Base">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
     </owl:NamedIndividual>
     
 
@@ -1207,7 +1429,7 @@
     <!-- https://w3id.org/peo#BERT_Large -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_Large">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
     </owl:NamedIndividual>
     
 
@@ -1239,7 +1461,7 @@
     <!-- https://w3id.org/peo#Claude_1.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_1.2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
     </owl:NamedIndividual>
     
 
@@ -1247,7 +1469,7 @@
     <!-- https://w3id.org/peo#Claude_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
     </owl:NamedIndividual>
     
 
@@ -1255,9 +1477,9 @@
     <!-- https://w3id.org/peo#Claude_3 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1265,8 +1487,8 @@
     <!-- https://w3id.org/peo#Code_LLAMA -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Code_LLAMA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1274,8 +1496,8 @@
     <!-- https://w3id.org/peo#Codestral -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Codestral">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1432,11 +1654,27 @@
     
 
 
+    <!-- https://w3id.org/peo#GLaMM_FT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLaMM_FT">
+        <rdf:type rdf:resource="https://w3id.org/peo#GLaMM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#GLaMM_ZS -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLaMM_ZS">
+        <rdf:type rdf:resource="https://w3id.org/peo#GLaMM"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#GPT-1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
-        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</peo:has_release_year>
+        <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -1444,9 +1682,9 @@
     <!-- https://w3id.org/peo#GPT-2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-1"/>
-        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</peo:has_release_year>
+        <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <evolves rdf:resource="https://w3id.org/peo#GPT-1"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -1454,9 +1692,9 @@
     <!-- https://w3id.org/peo#GPT-3 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-2"/>
-        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2020</peo:has_release_year>
+        <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <evolves rdf:resource="https://w3id.org/peo#GPT-2"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2020</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -1464,9 +1702,9 @@
     <!-- https://w3id.org/peo#GPT-3.5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3.5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-3"/>
-        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</peo:has_release_year>
+        <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <evolves rdf:resource="https://w3id.org/peo#GPT-3"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -1474,9 +1712,9 @@
     <!-- https://w3id.org/peo#GPT-4 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-4"/>
-        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</peo:has_release_year>
+        <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <evolves rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -1533,8 +1771,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2">
         <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
+        <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
+        <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
     </owl:NamedIndividual>
     
 
@@ -1543,8 +1781,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2_mini">
         <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
+        <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
+        <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
     </owl:NamedIndividual>
     
 
@@ -1552,7 +1790,7 @@
     <!-- https://w3id.org/peo#LLAMA_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
     </owl:NamedIndividual>
     
 
@@ -1560,8 +1798,8 @@
     <!-- https://w3id.org/peo#LLAMA_2-13B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-13B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
     </owl:NamedIndividual>
     
 
@@ -1569,8 +1807,8 @@
     <!-- https://w3id.org/peo#LLAMA_2-70B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-70B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
     </owl:NamedIndividual>
     
 
@@ -1578,8 +1816,8 @@
     <!-- https://w3id.org/peo#LLAMA_2-7B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-7B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
     </owl:NamedIndividual>
     
 
@@ -1587,12 +1825,12 @@
     <!-- https://w3id.org/peo#LLAMA_3 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_2-13B"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_2-70B"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_2-7B"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-13B"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-70B"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-7B"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1600,11 +1838,11 @@
     <!-- https://w3id.org/peo#LLAMA_3.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3.2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_3"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <evolves rdf:resource="https://w3id.org/peo#LLAMA_3"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1612,7 +1850,7 @@
     <!-- https://w3id.org/peo#LLAMA_Guard -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_Guard">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
     </owl:NamedIndividual>
     
 
@@ -1652,7 +1890,7 @@
     <!-- https://w3id.org/peo#Mistral_7B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_7B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
     </owl:NamedIndividual>
     
 
@@ -1660,7 +1898,7 @@
     <!-- https://w3id.org/peo#Mistral_Nemo -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_Nemo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
     </owl:NamedIndividual>
     
 
@@ -1693,7 +1931,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE_code">
         <rdf:type rdf:resource="https://w3id.org/peo#OLMo"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1766,9 +2004,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OmniLLM-12B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1880,7 +2118,7 @@
     <!-- https://w3id.org/peo#Phi_1.5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Phi_1.5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-2"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Phi-2"/>
     </owl:NamedIndividual>
     
 
@@ -1888,8 +2126,8 @@
     <!-- https://w3id.org/peo#Phi_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Phi_2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-2"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Phi_1.5"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Phi-2"/>
+        <evolves rdf:resource="https://w3id.org/peo#Phi_1.5"/>
     </owl:NamedIndividual>
     
 
@@ -1897,8 +2135,8 @@
     <!-- https://w3id.org/peo#Pixtral -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Pixtral">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1946,7 +2184,7 @@
     <!-- https://w3id.org/peo#Qwen2-VL-2B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-2B">
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1954,7 +2192,7 @@
     <!-- https://w3id.org/peo#Qwen2-VL-7B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-7B">
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1963,11 +2201,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Qwen1.5-110B"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Qwen1.5-32B"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Qwen1.5-4B"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Qwen2-72B"/>
-        <peo:evolves rdf:resource="https://w3id.org/peo#Qwen2-72B-Instruct"/>
+        <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-110B"/>
+        <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-32B"/>
+        <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-4B"/>
+        <evolves rdf:resource="https://w3id.org/peo#Qwen2-72B"/>
+        <evolves rdf:resource="https://w3id.org/peo#Qwen2-72B-Instruct"/>
     </owl:NamedIndividual>
     
 
@@ -1976,7 +2214,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5-Coder">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
     </owl:NamedIndividual>
     
 
@@ -1992,7 +2230,7 @@
     <!-- https://w3id.org/peo#RoBERTa -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#RoBERTa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
     </owl:NamedIndividual>
     
 
@@ -2001,6 +2239,14 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Sec-PaLM">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Sora -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Sora">
+        <rdf:type rdf:resource="https://w3id.org/peo#Sora"/>
     </owl:NamedIndividual>
     
 
@@ -2024,7 +2270,7 @@
     <!-- https://w3id.org/peo#T5_11B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_11B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
     </owl:NamedIndividual>
     
 
@@ -2032,7 +2278,7 @@
     <!-- https://w3id.org/peo#T5_3B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_3B">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
     </owl:NamedIndividual>
     
 
@@ -2040,7 +2286,7 @@
     <!-- https://w3id.org/peo#T5_base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_base">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
     </owl:NamedIndividual>
     
 
@@ -2048,7 +2294,7 @@
     <!-- https://w3id.org/peo#T5_large -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_large">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
     </owl:NamedIndividual>
     
 
@@ -2056,7 +2302,7 @@
     <!-- https://w3id.org/peo#T5_small -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_small">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
     </owl:NamedIndividual>
     
 
@@ -2065,7 +2311,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisCPM-10B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -2073,8 +2319,8 @@
     <!-- https://w3id.org/peo#VisualBERT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisualBERT">
-        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
     </owl:NamedIndividual>
     
 
@@ -2103,6 +2349,110 @@
     
 
 
+    <!-- https://w3id.org/peo#blip-image-captioning-base -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-image-captioning-base">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-image-captioning-large -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-image-captioning-large">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-itm-base-coco -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-base-coco">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-itm-base-flickr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-base-flickr">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-itm-large-coco -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-large-coco">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-itm-large-flickr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-large-flickr">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-vqa-base -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-vqa-base">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#blip-vqa-capfilt-large -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-vqa-capfilt-large">
+        <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemma-1.1-2b-it -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-2b-it">
+        <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemma-1.1-7b-it -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-7b-it">
+        <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemma-2b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-2b">
+        <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemma-7b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-7b">
+        <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemma-7b-it -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-7b-it">
+        <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#general_audio_generation -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_audio_generation">
@@ -2123,7 +2473,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_image_generation">
         <rdf:type rdf:resource="https://w3id.org/peo#image_generation"/>
-        <peo:has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
     </owl:NamedIndividual>
     
 
@@ -2192,6 +2542,14 @@
     
 
 
+    <!-- https://w3id.org/peo#gemma-2b-it: -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-2b-it:">
+        <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2201,9 +2559,15 @@
      -->
 
     <rdf:Description rdf:about="https://w3id.org/peo#Command_R">
-        <peo1:description>Large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.</peo1:description>
-        <peo1:title>Command R</peo1:title>
-        <peo1:website>https://huggingface.co/CohereForAI/c4ai-command-r-v01</peo1:website>
+        <description>Large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.</description>
+        <title>Command R</title>
+        <website>https://huggingface.co/CohereForAI/c4ai-command-r-v01</website>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#Sora">
+        <description>Text-to-video AI model. Sora can create videos of up to a minute of realistic and imaginative scenes given text instructions.</description>
+        <paper>n.a.</paper>
+        <title>Sora</title>
+        <website>https://openai.com/index/sora/</website>
     </rdf:Description>
     
 
@@ -2219,39 +2583,14 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#BERT"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Claude"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#GPT"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#LLaMA"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Mistral"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#Phi-2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2024/9/untitled-ontology-59#T5"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BLIP-2"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BLOOM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CPM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Chinchilla"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Codex"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CogVLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Command_R"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DBRX"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#FLAN"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GLaMM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Gemini"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Grok"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#MPT-7B"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#NVLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OLMo"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OPT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OpenELM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#PaLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Qwen"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#StableLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#StarCoder"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Yi"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Aalto_University"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Australian_National_University"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Carnegie_Mellon_University"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Linköping_University"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Mohamed_bin_Zayed_University_of_AI"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Princeton"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Stanford"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#University_of_California_Merced"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -2272,6 +2611,54 @@
             <rdf:Description rdf:about="https://w3id.org/peo#Zhipu_AI"/>
             <rdf:Description rdf:about="https://w3id.org/peo#xAI"/>
             <rdf:Description rdf:about="https://w3id.org/peo#01-ai"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#BERT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BLIP-2"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BLOOM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan_LLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#CPM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Chinchilla"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Claude"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Codex"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#CogVLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Command_R"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DBRX"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek_LLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#FLAN"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#GLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#GLaMM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#GPT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Gemini"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Grok"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#LLaMA"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#MPT-7B"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Mistral"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#NVLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OLMo"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OPT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OpenELM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#PaLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Phi-2"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Qwen"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_LLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#StableLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#StarCoder"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#T5"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Yi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#belongs_to"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#develops"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#evolves"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#has_capability"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#requires_capability"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
