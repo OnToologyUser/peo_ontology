@@ -2448,6 +2448,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -2492,6 +2493,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#MPT-7B"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -2500,6 +2502,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B_Base">
         <rdf:type rdf:resource="https://w3id.org/peo#MPT-7B"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -2772,6 +2775,7 @@
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
+        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -2970,6 +2974,7 @@
     <!-- https://w3id.org/peo#Qwen2-VL-2B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-2B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2979,6 +2984,7 @@
     <!-- https://w3id.org/peo#Qwen2-VL-7B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-7B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
