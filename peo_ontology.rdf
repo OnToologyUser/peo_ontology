@@ -192,7 +192,7 @@
     <!-- https://w3id.org/peo#AllenAI -->
 
     <owl:Class rdf:about="https://w3id.org/peo#AllenAI">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -202,6 +202,17 @@
         <description>A research institute focused on advancing AI and natural language processing, known for models like AllenNLP.</description>
         <title>AllenAI</title>
         <website>https://allenai.org/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Alpaca -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Alpaca">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Fine-tuned language model for instruction-following tasks based on Meta&apos;s LLaMA model.</description>
+        <title>Alpaca</title>
+        <website>https://crfm.stanford.edu/2023/03/13/alpaca.html</website>
     </owl:Class>
     
 
@@ -330,7 +341,7 @@
     <!-- https://w3id.org/peo#BigCode -->
 
     <owl:Class rdf:about="https://w3id.org/peo#BigCode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -347,7 +358,7 @@
     <!-- https://w3id.org/peo#BigScience -->
 
     <owl:Class rdf:about="https://w3id.org/peo#BigScience">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -369,6 +380,17 @@
         <paper>https://arxiv.org/abs/2012.00413</paper>
         <title>CPM Chinese Pre-trained Language Model</title>
         <website>https://huggingface.co/docs/transformers/model_doc/cpm</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#CTRL -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#CTRL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Conditional transformer model that enables controlled text generation through control codes.</description>
+        <title>CTRL</title>
+        <website>https://github.com/salesforce/ctrl</website>
     </owl:Class>
     
 
@@ -475,6 +497,23 @@
     
 
 
+    <!-- https://w3id.org/peo#DALL-E -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#DALL-E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>DALL-E generates detailed images from textual descriptions, with the latest model offering enhanced prompt fidelity.</description>
+        <title>DALL-E</title>
+        <website>https://openai.com/dall-e-3/</website>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#DBRX -->
 
     <owl:Class rdf:about="https://w3id.org/peo#DBRX">
@@ -570,6 +609,17 @@
         <paper>https://arxiv.org/pdf/2210.11416</paper>
         <title>FLAN</title>
         <website>https://huggingface.co/google/flan-t5-base</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Falcon -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Falcon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Falcon is a series of advanced language models aimed at text generation tasks.</description>
+        <title>Falcon</title>
+        <website>https://falconllm.tii.ae/</website>
     </owl:Class>
     
 
@@ -708,11 +758,17 @@
     <!-- https://w3id.org/peo#Google_Research -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Google_Research">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#XLNet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <description>Research division of Google focused on advancing artificial intelligence, machine learning, natural language processing, computer vision, robotics, and other areas of technology to drive innovation across its products and benefit the broader scientific community.</description>
@@ -750,6 +806,23 @@
         <paper>https://arxiv.org/abs/2302.13971</paper>
         <title>LLaMA</title>
         <website>https://huggingface.co/docs/transformers/main/model_doc/llama</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#LMSYS -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#LMSYS">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Vicuna"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with Stanford, UCSD, and CMU.</description>
+        <title>LMSYS org</title>
+        <website>https://lmsys.org/</website>
     </owl:Class>
     
 
@@ -815,9 +888,60 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Phi-2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#VALL-E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>A tech company leveraging LLMs like GPT-4 for various applications, from productivity tools to Azure AI services.</description>
         <title>Microsoft</title>
         <website>https://www.microsoft.com/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Midjourney">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Midjourney is an AI tool that generates images based on text prompts with artistic and realistic quality.</description>
+        <title>Midjourney</title>
+        <website>https://www.midjourney.com/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_Inc -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Midjourney_Inc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Midjourney"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Independent research lab focused on exploring new mediums of thought and expanding the imaginative powers of the human species.</description>
+        <title>Midjourney Inc</title>
+        <website>https://www.midjourney.com/home</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Minerva -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Minerva">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Family of large language models developed by Sapienza University, trained on extensive Italian and English corpora to support diverse applications like text generation and natural language understanding.</description>
+        <title>Minerva</title>
+        <website>https://nlp.uniroma1.it/minerva/</website>
     </owl:Class>
     
 
@@ -945,6 +1069,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#DALL-E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GPT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -964,7 +1094,7 @@
     <!-- https://w3id.org/peo#OpenBMB -->
 
     <owl:Class rdf:about="https://w3id.org/peo#OpenBMB">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -1045,7 +1175,7 @@
     <!-- https://w3id.org/peo#RWKV_Foundation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#RWKV_Foundation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -1081,9 +1211,31 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#BLIP-2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CTRL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Cloud-based software company specializing in customer relationship management (CRM) solutions and enterprise applications focused on sales, service, marketing, and analytics.</description>
         <title>Salesforce</title>
         <website>https://www.salesforce.com/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Sapienza_university -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Sapienza_university">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Minerva"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <title>Sapienza Università di Roma</title>
+        <website>https://www.uniroma1.it/it/pagina-strutturale/home</website>
     </owl:Class>
     
 
@@ -1135,6 +1287,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Stanford">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Alpaca"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <title>Stanford University</title>
         <website>https://www.stanford.edu/</website>
     </owl:Class>
@@ -1171,6 +1329,23 @@
     
 
 
+    <!-- https://w3id.org/peo#Technology_Innovation_Institute -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Technology_Innovation_Institute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Falcon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>Research center in Abu Dhabi focused on advancing transformative technologies across fields like AI, quantum computing, and cryptography.</description>
+        <title>Technology Innovation Institute</title>
+        <website>https://www.tii.ae/</website>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#University_of_California_Merced -->
 
     <owl:Class rdf:about="https://w3id.org/peo#University_of_California_Merced">
@@ -1183,6 +1358,45 @@
         </rdfs:subClassOf>
         <title>University of California - Merced</title>
         <website>https://www.ucmerced.edu/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#VALL-E -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#VALL-E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description>VALL-E is a text-to-speech model that synthesizes high-quality speech from text input.</description>
+        <title>VALL-E</title>
+        <website>https://www.microsoft.com/en-us/research/project/vall-e-x/vall-e-r/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#Vicuna -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#Vicuna">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Open-source conversational model that provides a high-quality chatbot experience.</description>
+        <title>Vicuna</title>
+        <website>https://vicuna.lmsys.org/</website>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#XLNet -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#XLNet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <description>Generalized autoregressive model that captures bidirectional context for NLP tasks.</description>
+        <title>XLNet</title>
+        <website>https://github.com/zihangdai/xlnet</website>
     </owl:Class>
     
 
@@ -1258,7 +1472,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#company">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/peo#researcher_team"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/peo#research_institution"/>
         <description>Organization that develops an LLM for business purpose</description>
         <title>Company</title>
     </owl:Class>
@@ -1304,7 +1518,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1323,11 +1537,11 @@
     
 
 
-    <!-- https://w3id.org/peo#researcher_team -->
+    <!-- https://w3id.org/peo#research_institution -->
 
-    <owl:Class rdf:about="https://w3id.org/peo#researcher_team">
+    <owl:Class rdf:about="https://w3id.org/peo#research_institution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
-        <description>A team of researchers and developers who develop a LLM  for research purposes.</description>
+        <description>Institution of researchers and developers who develop a LLM  for research purposes.</description>
         <title>Researcher team</title>
     </owl:Class>
     
@@ -1713,7 +1927,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-4">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
-        <evolves rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <evolves rdf:resource="https://w3id.org/peo#GPT-3.5"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2611,6 +2825,68 @@
             <rdf:Description rdf:about="https://w3id.org/peo#Zhipu_AI"/>
             <rdf:Description rdf:about="https://w3id.org/peo#xAI"/>
             <rdf:Description rdf:about="https://w3id.org/peo#01-ai"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#AllenAI"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BigCode"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BigScience"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Google_Research"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#LMSYS"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OpenBMB"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_Foundation"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Technology_Innovation_Institute"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#Alpaca"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BERT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BLIP-2"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#BLOOM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan_LLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#CPM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#CTRL"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Chinchilla"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Claude"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Codex"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#CogVLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Command_R"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DALL-E"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DBRX"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek_LLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#FLAN"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Falcon"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#GLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#GLaMM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#GPT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Gemini"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Gemma"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Grok"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#LLaMA"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#MPT-7B"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Midjourney"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Minerva"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Mistral"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#NVLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OLMo"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OPT"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#OpenELM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#PaLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Phi-2"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Qwen"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_LLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Sora"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#StableLM"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#StarCoder"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#T5"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#VALL-E"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Vicuna"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#XLNet"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#Yi"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
