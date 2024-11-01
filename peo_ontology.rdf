@@ -207,7 +207,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Aalto University</title>
+        <rdfs:label>Aalto University</rdfs:label>
         <website>https://www.aalto.fi/</website>
     </owl:Class>
     
@@ -223,8 +223,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Qwen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Alibaba</rdfs:label>
         <description>A Chinese multinational technology company using AI and LLMs for e-commerce, cloud computing, and digital innovation.</description>
-        <title>Alibaba</title>
         <website>https://www.alibabagroup.com/</website>
     </owl:Class>
     
@@ -240,8 +240,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#OLMo"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>AllenAI</rdfs:label>
         <description>A research institute focused on advancing AI and natural language processing, known for models like AllenNLP.</description>
-        <title>AllenAI</title>
         <website>https://allenai.org/</website>
     </owl:Class>
     
@@ -263,9 +263,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Alpaca</rdfs:label>
         <description>Fine-tuned language model for instruction-following tasks based on Meta&apos;s LLaMA model.</description>
         <paper>n.a.</paper>
-        <title>Alpaca</title>
         <website>https://crfm.stanford.edu/2023/03/13/alpaca.html</website>
     </owl:Class>
     
@@ -281,8 +281,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Claude"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Anthropic</rdfs:label>
         <description>Startup that develops AI solutions</description>
-        <title>Anthropic</title>
         <website>https://www.anthropic.com/</website>
     </owl:Class>
     
@@ -298,8 +298,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#OpenELM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Apple</rdfs:label>
         <description>A technology giant that incorporates AI into its products, exploring LLMs to enhance user experiences across devices.</description>
-        <title>Apple</title>
         <website>https://www.apple.com/it/?afid=p238%7CsqcuiGJjQ-dc_mtid_187079nc38483_pcrid_712923642400_pgrid_13999328567_pntwk_g_pchan__pexid__ptid_kwd-10778630_&amp;cid=aos-it-kwgo-brand--slid--bran-product-</website>
     </owl:Class>
     
@@ -315,7 +315,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Australian National University</title>
+        <rdfs:label>Australian National University</rdfs:label>
         <website>https://www.anu.edu.au/</website>
     </owl:Class>
     
@@ -331,9 +331,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BERT</rdfs:label>
         <description>(Bidirectional Encoder Representations from Transformers) An LLM by Google designed for NLP tasks, known for understanding context in both directions within text.</description>
         <paper>https://aclanthology.org/N19-1423.pdf</paper>
-        <title>BERT</title>
         <website>https://huggingface.co/bert-base-uncased</website>
     </owl:Class>
     
@@ -349,9 +349,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BLIP-2</rdfs:label>
         <description>Multimodal model that integrates a frozen image encoder with a large language model via a Querying Transformer, enabling tasks like image captioning and visual question answering.</description>
         <paper>https://arxiv.org/abs/2301.12597</paper>
-        <title>BLIP-2</title>
         <website>https://huggingface.co/docs/transformers/main/model_doc/blip-2</website>
     </owl:Class>
     
@@ -367,9 +367,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BLOOM</rdfs:label>
         <description>Large open-access language model designed to support multiple languages and dialects, aiming to make natural language processing more inclusive and accessible across diverse linguistic communities.</description>
         <paper>https://arxiv.org/abs/2211.05100</paper>
-        <title>BLOOM</title>
         <website>https://huggingface.co/bigscience/bloom</website>
     </owl:Class>
     
@@ -385,8 +385,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Baichuan</rdfs:label>
         <description>Chinese company that develops LLMs trained on chinese language</description>
-        <title>Baichuan</title>
         <website>https://github.com/baichuan-inc/Baichuan-7B</website>
     </owl:Class>
     
@@ -402,9 +402,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Baichuan LLM</rdfs:label>
         <description>Open large scale language models developed by Baichuan chinese company</description>
         <paper>https://arxiv.org/abs/2309.10305</paper>
-        <title>Baichuan LLM</title>
         <website>https://huggingface.co/baichuan-inc</website>
     </owl:Class>
     
@@ -426,8 +426,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#StarCoder"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BigCode</rdfs:label>
         <description>An open-source initiative that develops large language models specifically trained for code generation and understanding.</description>
-        <title>BigCode</title>
         <website>https://www.bigcode-project.org/</website>
     </owl:Class>
     
@@ -449,8 +449,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#BLOOM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BigScience</rdfs:label>
         <description>Open scientific collaboration run by Hugging Face and ServiceNow Research, focused on open and responsible development of LLMs for code</description>
-        <title>BigScience</title>
         <website>https://github.com/bigcode-project</website>
     </owl:Class>
     
@@ -466,9 +466,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>CPM</rdfs:label>
         <description>Series of large language models focused on Chinese language understanding and generation, created to advance NLP research and applications specifically tailored to Chinese language contexts.</description>
         <paper>https://arxiv.org/abs/2012.00413</paper>
-        <title>CPM Chinese Pre-trained Language Model</title>
         <website>https://huggingface.co/docs/transformers/model_doc/cpm</website>
     </owl:Class>
     
@@ -478,9 +478,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#CTRL">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>CTRL</rdfs:label>
         <description>Conditional transformer model that enables controlled text generation through control codes.</description>
         <paper>https://arxiv.org/abs/1909.05858</paper>
-        <title>CTRL</title>
         <website>https://github.com/salesforce/ctrl</website>
     </owl:Class>
     
@@ -496,7 +496,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Carnegie Mellon University</title>
+        <rdfs:label>Carnegie Mellon University</rdfs:label>
         <website>https://www.cmu.edu/</website>
     </owl:Class>
     
@@ -512,9 +512,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Chinchilla</rdfs:label>
         <description>An LLM developed by DeepMind, designed to explore efficient scaling of model size relative to data, achieving high performance with fewer parameters.</description>
         <paper>https://arxiv.org/abs/2203.15556</paper>
-        <title>Chinchilla</title>
         <website>n.a.</website>
     </owl:Class>
     
@@ -530,9 +530,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Claude</rdfs:label>
         <description>An AI assistant developed by Anthropic, aimed at being a safer and more controllable language model for dialogue and other NLP applications.</description>
         <paper>n.a.</paper>
-        <title>Claude</title>
         <website>https://www.anthropic.com/claude</website>
     </owl:Class>
     
@@ -548,9 +548,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Codex</rdfs:label>
         <description>Developed by OpenAI, this model is specialized for code generation, powering GitHub Copilot and other coding assistants.</description>
         <paper>n.a.</paper>
-        <title>Codex</title>
         <website>https://openai.com/research/codex</website>
     </owl:Class>
     
@@ -566,9 +566,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>CogVLM</rdfs:label>
         <description>Vision-language model developed to understand and generate both visual and textual information, bridging the gap between image recognition and natural language processing for more nuanced multimodal tasks.</description>
         <paper>https://arxiv.org/abs/2312.08914</paper>
-        <title>CogVLM</title>
         <website>https://github.com/THUDM/CogVLM?tab=readme-ov-file#examples</website>
     </owl:Class>
     
@@ -584,9 +584,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Command_R"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Cohere</rdfs:label>
         <description>A company dedicated to building large language models for natural language processing, serving businesses with LLM-powered solutions.</description>
         <paper>n.a</paper>
-        <title>Cohere</title>
         <website>https://cohere.ai/</website>
     </owl:Class>
     
@@ -624,9 +624,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#DBRX">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>DBRX</rdfs:label>
         <description>Large language model optimized for use in data analytics and big data processing contexts, often integrated into Databricks&apos; platforms to enhance machine learning workflows, natural language querying, and enterprise-level AI applications.</description>
         <paper>n.a.</paper>
-        <title>DBRX</title>
         <website>https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm</website>
     </owl:Class>
     
@@ -648,8 +648,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#MPT-7B"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>DataBricks</rdfs:label>
         <description>A data and AI company that enables enterprises to manage and deploy large language models and big data analytics.</description>
-        <title>DataBricks</title>
         <website>https://databricks.com/</website>
     </owl:Class>
     
@@ -677,8 +677,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Gemma"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>DeepMind</rdfs:label>
         <description>A subsidiary of Alphabet focused on cutting-edge AI research, developing advanced LLMs and models like AlphaFold and Gopher.</description>
-        <title>DeepMind</title>
         <website>https://deepmind.com/</website>
     </owl:Class>
     
@@ -694,8 +694,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>DeepSeek</rdfs:label>
         <description>Chiense LLM company</description>
-        <title>DeepSeek</title>
         <website>https://www.deepseek.com/</website>
     </owl:Class>
     
@@ -705,9 +705,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#DeepSeek_LLM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>DeepSeek LLM</rdfs:label>
         <description>Large language model developed for specialized data retrieval and search applications, designed to enhance information extraction and understanding, likely optimized for complex, domain-specific queries.</description>
         <paper>https://arxiv.org/abs/2401.02954</paper>
-        <title>DeepSeek LLM</title>
         <website>https://huggingface.co/collections/deepseek-ai/deepseek-v2-669a1c8b8f2dbc203fbd7746</website>
     </owl:Class>
     
@@ -723,9 +723,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>FLAN</rdfs:label>
         <description>(Fine-tuned Language Net) A Google model that applies instruction fine-tuning to improve task performance and generalization across diverse tasks.</description>
         <paper>https://arxiv.org/pdf/2210.11416</paper>
-        <title>FLAN</title>
         <website>https://huggingface.co/google/flan-t5-base</website>
     </owl:Class>
     
@@ -741,9 +741,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Falcon</rdfs:label>
         <description>Falcon is a series of advanced language models aimed at text generation tasks.</description>
         <paper>https://arxiv.org/abs/2311.16867</paper>
-        <title>Falcon</title>
         <website>https://falconllm.tii.ae/</website>
     </owl:Class>
     
@@ -759,9 +759,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>GLM</rdfs:label>
         <description>Open bilingual (English &amp; Chinese) bidirectional dense model with 130 billion parameters, pre-trained using the algorithm of General Language Model (GLM).</description>
         <paper>https://arxiv.org/abs/2210.02414</paper>
-        <title>GLM (General Language Model)</title>
         <website>https://github.com/THUDM/GLM-130B</website>
     </owl:Class>
     
@@ -777,9 +777,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>GLaMM</rdfs:label>
         <description>Multimodal model that combines language and vision, enabling pixel-level grounding, object segmentation, and interactive visual conversations</description>
         <paper>https://arxiv.org/abs/2311.03356</paper>
-        <title>GLaMM</title>
         <website>https://github.com/mbzuai-oryx/groundingLMM</website>
     </owl:Class>
     
@@ -795,9 +795,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>GPT</rdfs:label>
         <description>(Generative Pre-trained Transformer) A series of transformer models by OpenAI, with GPT-4 as the latest, excelling in NLP and conversational tasks.</description>
         <paper>n.a.</paper>
-        <title>GPT</title>
         <website>https://chatgpt.com/</website>
     </owl:Class>
     
@@ -837,9 +837,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Gemini</rdfs:label>
         <description>A series of LLMs by Google DeepMind, designed for conversational AI and multimodal applications</description>
         <paper>https://arxiv.org/abs/2312.11805</paper>
-        <title>Gemini</title>
         <website>https://gemini.google.com/app</website>
     </owl:Class>
     
@@ -849,9 +849,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Gemma">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>Gemma</rdfs:label>
         <description>Large Language Model designed for advanced natural language processing tasks, with a focus on accuracy and contextual text generation.</description>
         <paper>https://arxiv.org/abs/2403.08295</paper>
-        <title>Gemma</title>
         <website>https://blog.google/technology/developers/gemma-open-models/</website>
     </owl:Class>
     
@@ -891,8 +891,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#T5"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Google</rdfs:label>
         <description>A leader in AI and LLM research, developing models like BERT, LaMDA, and Gemini for search, assistant services, and more.</description>
-        <title>Google</title>
         <website>https://www.google.com/</website>
     </owl:Class>
     
@@ -920,8 +920,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#XLNet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Google Research</rdfs:label>
         <description>Research division of Google focused on advancing artificial intelligence, machine learning, natural language processing, computer vision, robotics, and other areas of technology to drive innovation across its products and benefit the broader scientific community.</description>
-        <title>Google Research</title>
         <website>https://research.google/</website>
     </owl:Class>
     
@@ -937,8 +937,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Grok</rdfs:label>
         <paper>n.a.</paper>
-        <title>Grok</title>
         <website>Large language model developed by xAI, designed to integrate contextual knowledge and responsive capabilities for interactions on messaging platforms like X (formerly Twitter).</website>
         <website>https://x.ai/blog/grok-2</website>
     </owl:Class>
@@ -949,6 +949,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#HuggingFace">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+        <rdfs:label>HuggingFace</rdfs:label>
+        <description>AI company known for its open-source platform and tools for natural language processing, supporting model sharing, training, and deployment.</description>
+        <website>https://huggingface.co/</website>
     </owl:Class>
     
 
@@ -963,9 +966,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>LLaMA</rdfs:label>
         <description>(Large Language Model Meta AI) A series of open-source models by Meta, designed to be efficient for research and commercial use.</description>
         <paper>https://arxiv.org/abs/2302.13971</paper>
-        <title>LLaMA</title>
         <website>https://huggingface.co/docs/transformers/main/model_doc/llama</website>
     </owl:Class>
     
@@ -981,8 +984,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Vicuna"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>LMSYS org</rdfs:label>
         <description>Large Model Systems Organization (LMSYS Org) is an open research organization founded by students and faculty from UC Berkeley in collaboration with Stanford, UCSD, and CMU.</description>
-        <title>LMSYS org</title>
         <website>https://lmsys.org/</website>
     </owl:Class>
     
@@ -998,7 +1001,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Linköping University</title>
+        <rdfs:label>Linköping University</rdfs:label>
         <website>https://www.liu.se/</website>
     </owl:Class>
     
@@ -1014,9 +1017,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>MPT-7B</rdfs:label>
         <description>Decoder-style transformer with 6.7B parameters</description>
         <paper>n.a.</paper>
-        <title>MPT-7B</title>
         <website>https://www.databricks.com/blog/mpt-7b</website>
     </owl:Class>
     
@@ -1038,8 +1041,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#OPT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Meta</rdfs:label>
         <description>A social media giant developing LLMs like LLaMA, with applications in social media moderation, content generation, and the metaverse.</description>
-        <title>Meta</title>
         <website>https://about.meta.com</website>
     </owl:Class>
     
@@ -1061,8 +1064,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#VALL-E"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Microsoft</rdfs:label>
         <description>A tech company leveraging LLMs like GPT-4 for various applications, from productivity tools to Azure AI services.</description>
-        <title>Microsoft</title>
         <website>https://www.microsoft.com/</website>
     </owl:Class>
     
@@ -1078,8 +1081,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Midjourney</rdfs:label>
         <description>Midjourney is an AI tool that generates images based on text prompts with artistic and realistic quality.</description>
-        <title>Midjourney</title>
         <website>https://www.midjourney.com/</website>
     </owl:Class>
     
@@ -1095,8 +1098,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Midjourney"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Midjourney Inc</rdfs:label>
         <description>Independent research lab focused on exploring new mediums of thought and expanding the imaginative powers of the human species.</description>
-        <title>Midjourney Inc</title>
         <website>https://www.midjourney.com/home</website>
     </owl:Class>
     
@@ -1112,9 +1115,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Minerva</rdfs:label>
         <description>Family of large language models developed by Sapienza University, trained on extensive Italian and English corpora to support diverse applications like text generation and natural language understanding.</description>
         <paper>n.a.</paper>
-        <title>Minerva</title>
         <website>https://nlp.uniroma1.it/minerva/</website>
     </owl:Class>
     
@@ -1130,9 +1133,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Mistral</rdfs:label>
         <description>A language model focused on being efficient and high-performing, aiming to improve NLP capabilities with fewer resources.</description>
         <paper>https://arxiv.org/abs/2310.06825</paper>
-        <title>Mistral</title>
         <website>https://chat.mistral.ai/chat</website>
     </owl:Class>
     
@@ -1148,8 +1151,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Mistral"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Mistral AI</rdfs:label>
         <description>Likely an organization working on creating specialized language models with a focus on specific applications.</description>
-        <title>Mistral AI</title>
         <website>https://mistral.ai/</website>
     </owl:Class>
     
@@ -1165,7 +1168,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Mohamed bin Zayed University of Artificial Intelligence</title>
+        <rdfs:label>Mohamed bin Zayed University of Artificial Intelligence</rdfs:label>
         <website>https://mbzuai.ac.ae/</website>
     </owl:Class>
     
@@ -1187,9 +1190,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>NVLM</rdfs:label>
         <description>A large transformer model architecture developed by Nvidia, used for NLP tasks and training massive language models.</description>
         <paper>https://arxiv.org/abs/2409.11402</paper>
-        <title>NVLM</title>
         <website>https://research.nvidia.com/labs/adlr/NVLM-1/</website>
     </owl:Class>
     
@@ -1205,8 +1208,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#NVLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Nvidia</rdfs:label>
         <description>A hardware and AI company enabling LLM training and deployment through its GPUs, software, and data center solutions.</description>
-        <title>Nvidia</title>
         <website>https://www.nvidia.com/</website>
     </owl:Class>
     
@@ -1222,9 +1225,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>OLMo</rdfs:label>
         <description>Open-source language model that aimes to provide a transparent, publicly accessible alternative to proprietary LLMs for research and applications in natural language processing.</description>
         <paper>https://arxiv.org/abs/2402.00838</paper>
-        <title>OLMo</title>
         <website>https://allenai.org/olmo</website>
     </owl:Class>
     
@@ -1240,9 +1243,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>OPT</rdfs:label>
         <description>(Open Pretrained Transformer) A model developed by Meta, openly released to provide researchers with access to LLMs for a variety of applications.</description>
         <paper>https://arxiv.org/abs/2205.01068</paper>
-        <title>OPT</title>
         <website>https://huggingface.co/facebook/opt-1.3b</website>
     </owl:Class>
     
@@ -1276,8 +1279,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Sora"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>OpenAI</rdfs:label>
         <description>Research and deployment company known for creating advanced language models like GPT-4, focused on developing safe and beneficial artificial general intelligence (AGI) and widely accessible AI technologies.</description>
-        <title>OpenAI</title>
         <website>https://openai.com/</website>
     </owl:Class>
     
@@ -1293,8 +1296,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CPM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>OpenBMB</rdfs:label>
         <description>A team focused on building and supporting open-source language models, particularly for multilingual understanding and natural language processing.</description>
-        <title>OpenBMB</title>
         <website>https://www.openbmb.org/</website>
     </owl:Class>
     
@@ -1310,9 +1313,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>OpenELM</rdfs:label>
         <description>An open-source initiative focused on evolutionary learning and modeling, particularly in the context of NLP tasks.</description>
         <paper>https://arxiv.org/abs/2404.14619</paper>
-        <title>OpenELM</title>
         <website>https://huggingface.co/apple/OpenELM</website>
     </owl:Class>
     
@@ -1334,9 +1337,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>PaLM</rdfs:label>
         <description>Large language model developed by Google, designed to perform a range of NLP tasks with high accuracy across languages, reasoning, and even code generation.</description>
         <paper>https://arxiv.org/abs/2204.02311</paper>
-        <title>PaLM (Pathways Language Model)</title>
         <website>https://ai.google/discover/palm2/</website>
     </owl:Class>
     
@@ -1352,9 +1355,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Phi-1</rdfs:label>
         <description>A recently developed AI model by a specific organization or team, likely aimed at enhancing certain NLP or conversational AI capabilities (additional details may be required as it&apos;s a newer name).</description>
         <paper>https://arxiv.org/abs/2306.11644</paper>
-        <title>Phi-1</title>
         <website>n.a.</website>
     </owl:Class>
     
@@ -1364,7 +1367,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Princeton">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#university"/>
-        <title>Princeton University</title>
+        <rdfs:label>Princeton University</rdfs:label>
         <website>https://www.princeton.edu/</website>
     </owl:Class>
     
@@ -1380,9 +1383,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Qwen</rdfs:label>
         <description>Large language model developed by Alibaba, designed to handle complex natural language tasks in multiple languages, with a strong emphasis on applications in e-commerce, customer service, and conversational AI.</description>
         <paper>https://arxiv.org/abs/2309.16609</paper>
-        <title>Qwen</title>
         <website>https://huggingface.co/Qwen</website>
     </owl:Class>
     
@@ -1398,8 +1401,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#RWKV_LLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>RWKV Foundation</rdfs:label>
         <description>An organization developing the RWKV model, a large language model that aims to combine recurrent neural network (RNN) and transformer capabilities for efficient</description>
-        <title>RWKV Foundation</title>
         <website>https://www.rwkv.com/</website>
     </owl:Class>
     
@@ -1415,9 +1418,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>RWKV Large Language Model</rdfs:label>
         <description>Large language model that integrates transformer and RNN principles to efficiently manage long-context sequences, supporting improved language understanding and generation over extensive text inputs.</description>
         <paper>https://arxiv.org/abs/2305.13048</paper>
-        <title>RWKV Large Language Model</title>
         <website>https://github.com/BlinkDL/RWKV-LM</website>
     </owl:Class>
     
@@ -1439,8 +1442,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CTRL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Salesforce</rdfs:label>
         <description>Cloud-based software company specializing in customer relationship management (CRM) solutions and enterprise applications focused on sales, service, marketing, and analytics.</description>
-        <title>Salesforce</title>
         <website>https://www.salesforce.com/</website>
     </owl:Class>
     
@@ -1456,7 +1459,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Minerva"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Sapienza Università di Roma</title>
+        <rdfs:label>Sapienza Università di Roma</rdfs:label>
         <website>https://www.uniroma1.it/it/pagina-strutturale/home</website>
     </owl:Class>
     
@@ -1486,8 +1489,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#StableLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Stability AI</rdfs:label>
         <description>The company behind Stable Diffusion, focusing on open-source generative AI models, including image and language models.</description>
-        <title>Stability AI</title>
         <website>https://stability.ai/</website>
     </owl:Class>
     
@@ -1503,9 +1506,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>StableLM</rdfs:label>
         <description>Open source large language model designed to support a range of natural language processing tasks with a focus on accessibility and transparency in model deployment and fine-tuning.</description>
         <paper>https://arxiv.org/abs/2402.17834</paper>
-        <title>StableLM</title>
         <website>https://huggingface.co/stabilityai/stablelm-base-alpha-7b</website>
     </owl:Class>
     
@@ -1521,7 +1524,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Alpaca"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>Stanford University</title>
+        <rdfs:label>Stanford University</rdfs:label>
         <website>https://www.stanford.edu/</website>
     </owl:Class>
     
@@ -1537,9 +1540,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>StarCoder</rdfs:label>
         <description>Large language model specialized for code generation and understanding designed to support multiple programming languages and assist developers in writing, debugging, and understanding code.</description>
         <paper>https://arxiv.org/abs/2305.06161</paper>
-        <title>StarCoder</title>
         <website>https://huggingface.co/bigcode/starcoder</website>
     </owl:Class>
     
@@ -1555,9 +1558,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>T5</rdfs:label>
         <description>(Text-To-Text Transfer Transformer) A Google model where every NLP task is cast as a text-to-text problem, known for its adaptability across diverse tasks.</description>
         <paper>https://jmlr.org/papers/volume21/20-074/20-074.pdf</paper>
-        <title>T5</title>
         <website>https://huggingface.co/t5-base</website>
     </owl:Class>
     
@@ -1573,8 +1576,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Falcon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Technology Innovation Institute</rdfs:label>
         <description>Research center in Abu Dhabi focused on advancing transformative technologies across fields like AI, quantum computing, and cryptography.</description>
-        <title>Technology Innovation Institute</title>
         <website>https://www.tii.ae/</website>
     </owl:Class>
     
@@ -1590,7 +1593,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <title>University of California - Merced</title>
+        <rdfs:label>University of California - Merced</rdfs:label>
         <website>https://www.ucmerced.edu/</website>
     </owl:Class>
     
@@ -1606,8 +1609,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>VALL-E</rdfs:label>
         <description>VALL-E is a text-to-speech model that synthesizes high-quality speech from text input.</description>
-        <title>VALL-E</title>
         <website>https://www.microsoft.com/en-us/research/project/vall-e-x/vall-e-r/</website>
     </owl:Class>
     
@@ -1623,9 +1626,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Vicuna</rdfs:label>
         <description>Open-source conversational model that provides a high-quality chatbot experience.</description>
         <paper>n.a.</paper>
-        <title>Vicuna</title>
         <website>https://vicuna.lmsys.org/</website>
     </owl:Class>
     
@@ -1641,8 +1644,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>XLNet</rdfs:label>
         <description>Generalized autoregressive model that captures bidirectional context for NLP tasks.</description>
-        <title>XLNet</title>
         <website>https://github.com/zihangdai/xlnet</website>
     </owl:Class>
     
@@ -1652,9 +1655,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Yi">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>Yi</rdfs:label>
         <description>Yi is a multilingual language model by Zhipu AI, optimized for natural language understanding and generation, particularly in Chinese.</description>
         <paper>https://arxiv.org/abs/2403.04652</paper>
-        <title>Yi</title>
         <website>https://huggingface.co/collections/01-ai/yi-2023-11-663f3f19119ff712e176720f</website>
     </owl:Class>
     
@@ -1676,8 +1679,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Zhipu AI</rdfs:label>
         <description>A Chinese AI company specializing in large-scale language models and generative AI applications</description>
-        <title>Zhipu AI</title>
         <website>https://www.zhipu.ai/</website>
     </owl:Class>
     
@@ -1687,6 +1690,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#architecture">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model_feature"/>
+        <rdfs:label>Architecture</rdfs:label>
+        <description>Structural design of a model</description>
     </owl:Class>
     
 
@@ -1695,6 +1700,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#audio_generation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Audio generation</rdfs:label>
+        <description>Capability of a model to process and generate audio</description>
     </owl:Class>
     
 
@@ -1703,6 +1710,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#capability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model_feature"/>
+        <rdfs:label>Capability</rdfs:label>
+        <description>Various functions an AI model can perform, such as text, audio, code, image, or video generation.</description>
     </owl:Class>
     
 
@@ -1711,6 +1720,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#code_generation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Code generation</rdfs:label>
+        <description>Capability to process and generate source code in a programming language.</description>
     </owl:Class>
     
 
@@ -1720,8 +1731,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#company">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
         <owl:disjointWith rdf:resource="https://w3id.org/peo#research_institution"/>
+        <rdfs:label>Company</rdfs:label>
         <description>Organization that develops an LLM for business purpose</description>
-        <title>Company</title>
     </owl:Class>
     
 
@@ -1739,6 +1750,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#image_generation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Image generation</rdfs:label>
+        <description>Capability to process and generate images</description>
     </owl:Class>
     
 
@@ -1746,8 +1759,8 @@
     <!-- https://w3id.org/peo#language_model -->
 
     <owl:Class rdf:about="https://w3id.org/peo#language_model">
+        <rdfs:label>Language Model</rdfs:label>
         <description>A model designed to predict the next word in a sequence or assign probabilities to sequences of words in natural language.</description>
-        <title>Language model</title>
     </owl:Class>
     
 
@@ -1764,8 +1777,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#large_language_model">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model"/>
+        <rdfs:label>Large Language Model</rdfs:label>
         <description>A language model consisting of a neural network with many parameters (typically billions of weights or more) trained on large quantities of unlabeled text using self-supervised learning or semi-supervised learning.</description>
-        <title>Large language model</title>
     </owl:Class>
     
 
@@ -1773,8 +1786,8 @@
     <!-- https://w3id.org/peo#organization -->
 
     <owl:Class rdf:about="https://w3id.org/peo#organization">
+        <rdfs:label>Organization</rdfs:label>
         <description>A ìn organization of people that develops a large language model</description>
-        <title>Organization</title>
     </owl:Class>
     
 
@@ -1783,8 +1796,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#research_institution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
+        <rdfs:label>Research institution</rdfs:label>
         <description>Institution of researchers and developers who develop a LLM  for research purposes.</description>
-        <title>Researcher team</title>
     </owl:Class>
     
 
@@ -1799,6 +1812,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#text_generation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Text generation</rdfs:label>
+        <description>Capability to process and generate text.</description>
     </owl:Class>
     
 
@@ -1807,6 +1822,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#transformer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#architecture"/>
+        <rdfs:label>Transformer</rdfs:label>
     </owl:Class>
     
 
@@ -1815,8 +1831,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#university">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
+        <rdfs:label>University</rdfs:label>
         <description>A higher education institution dedicated to advanced learning, research, and the development of specialized knowledge and skills</description>
-        <title>University</title>
     </owl:Class>
     
 
@@ -1825,6 +1841,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#video_generation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Video generation</rdfs:label>
+        <description>Capability to process and generate video.</description>
     </owl:Class>
     
 
@@ -1839,8 +1857,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Grok"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>xAI</rdfs:label>
         <description>An AI company founded by Elon Musk to advance the development of AI models and promote safe AI usage.</description>
-        <title>xAI</title>
         <website>https://x.ai/</website>
     </owl:Class>
     
@@ -1856,8 +1874,8 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Yi"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>01-ai</rdfs:label>
         <description>An AI-focused company, likely involved in the development of advanced language models or related AI research.</description>
-        <title>&quot;01-ai&quot;</title>
         <website>https://github.com/01-ai/Yi</website>
     </owl:Class>
     
@@ -3257,20 +3275,20 @@
      -->
 
     <rdf:Description rdf:about="https://w3id.org/peo#Command_R">
+        <rdfs:label>Command R</rdfs:label>
         <description>Large language model with open weights optimized for a variety of use cases including reasoning, summarization, and question answering. Command-R has the capability for multilingual generation evaluated in 10 languages and highly performant RAG capabilities.</description>
-        <title>Command R</title>
         <website>https://huggingface.co/CohereForAI/c4ai-command-r-v01</website>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/peo#DALL-E">
+        <rdfs:label>DALL-E</rdfs:label>
         <description>DALL-E generates detailed images from textual descriptions, with the latest model offering enhanced prompt fidelity.</description>
         <paper>n.a.</paper>
-        <title>DALL-E</title>
         <website>https://openai.com/dall-e-3/</website>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/peo#Sora">
+        <rdfs:label>Sora</rdfs:label>
         <description>Text-to-video AI model. Sora can create videos of up to a minute of realistic and imaginative scenes given text instructions.</description>
         <paper>n.a.</paper>
-        <title>Sora</title>
         <website>https://openai.com/index/sora/</website>
     </rdf:Description>
     
