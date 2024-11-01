@@ -83,9 +83,35 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#task"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#capability"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/peo#based_on -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#based_on">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>based_on</rdfs:label>
+        <description>Relationships between to two large language models in which a large language model uses another large language model as base.</description>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/peo#belongs_to -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/peo#belongs_to"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#belongs_to">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#organization"/>
+        <rdfs:label>belongs_to</rdfs:label>
+        <description>Relationships between two organizations, in which an organization belongs to an another organization</description>
+    </owl:ObjectProperty>
     
 
 
@@ -93,7 +119,12 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#develops">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#architecture"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
         <owl:propertyDisjointWith rdf:resource="https://w3id.org/peo#evolves"/>
+        <rdfs:label>develops</rdfs:label>
+        <description>Relationship between an organization and a large language model or an architecture where the organization develops that technology</description>
     </owl:ObjectProperty>
     
 
@@ -103,6 +134,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#evolves">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>evolves</rdfs:label>
+        <description>Relationships between two model in which a model evolves, it is the next version of the other model.</description>
     </owl:ObjectProperty>
     
 
@@ -111,6 +146,10 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_capability">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>has_capability</rdfs:label>
+        <description>Relationship between a large language model and a capability where the model has that capability.</description>
     </owl:ObjectProperty>
     
 
@@ -119,6 +158,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#requires_capability">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>requires_capability</rdfs:label>
+        <description>Relationship between a task to solve and a capaiblity, the task in order to be solved requires a specific capability.</description>
     </owl:ObjectProperty>
     
 
@@ -210,7 +251,20 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Alpaca">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#based_on"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#LLaMA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Fine-tuned language model for instruction-following tasks based on Meta&apos;s LLaMA model.</description>
+        <paper>n.a.</paper>
         <title>Alpaca</title>
         <website>https://crfm.stanford.edu/2023/03/13/alpaca.html</website>
     </owl:Class>
@@ -271,6 +325,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#BERT">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>(Bidirectional Encoder Representations from Transformers) An LLM by Google designed for NLP tasks, known for understanding context in both directions within text.</description>
         <paper>https://aclanthology.org/N19-1423.pdf</paper>
         <title>BERT</title>
@@ -301,6 +361,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#BLOOM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Large open-access language model designed to support multiple languages and dialects, aiming to make natural language processing more inclusive and accessible across diverse linguistic communities.</description>
         <paper>https://arxiv.org/abs/2211.05100</paper>
         <title>BLOOM</title>
@@ -330,6 +396,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Baichuan_LLM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Open large scale language models developed by Baichuan chinese company</description>
         <paper>https://arxiv.org/abs/2309.10305</paper>
         <title>Baichuan LLM</title>
@@ -344,13 +416,19 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#HuggingFace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#StarCoder"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <description>An open-source initiative that develops large language models specifically trained for code generation and understanding.</description>
         <title>BigCode</title>
-        <website>https://huggingface.co/bigcode</website>
+        <website>https://www.bigcode-project.org/</website>
     </owl:Class>
     
 
@@ -359,6 +437,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#BigScience">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#HuggingFace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -376,6 +460,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#CPM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Series of large language models focused on Chinese language understanding and generation, created to advance NLP research and applications specifically tailored to Chinese language contexts.</description>
         <paper>https://arxiv.org/abs/2012.00413</paper>
         <title>CPM Chinese Pre-trained Language Model</title>
@@ -389,6 +479,7 @@
     <owl:Class rdf:about="https://w3id.org/peo#CTRL">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <description>Conditional transformer model that enables controlled text generation through control codes.</description>
+        <paper>https://arxiv.org/abs/1909.05858</paper>
         <title>CTRL</title>
         <website>https://github.com/salesforce/ctrl</website>
     </owl:Class>
@@ -415,6 +506,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Chinchilla">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>An LLM developed by DeepMind, designed to explore efficient scaling of model size relative to data, achieving high performance with fewer parameters.</description>
         <paper>https://arxiv.org/abs/2203.15556</paper>
         <title>Chinchilla</title>
@@ -427,6 +524,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Claude">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>An AI assistant developed by Anthropic, aimed at being a safer and more controllable language model for dialogue and other NLP applications.</description>
         <paper>n.a.</paper>
         <title>Claude</title>
@@ -493,6 +596,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Command_R">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -507,9 +616,6 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <description>DALL-E generates detailed images from textual descriptions, with the latest model offering enhanced prompt fidelity.</description>
-        <title>DALL-E</title>
-        <website>https://openai.com/dall-e-3/</website>
     </owl:Class>
     
 
@@ -553,6 +659,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#DeepMind">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Google"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -605,6 +717,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#FLAN">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>(Fine-tuned Language Net) A Google model that applies instruction fine-tuning to improve task performance and generalization across diverse tasks.</description>
         <paper>https://arxiv.org/pdf/2210.11416</paper>
         <title>FLAN</title>
@@ -617,7 +735,14 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Falcon">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Falcon is a series of advanced language models aimed at text generation tasks.</description>
+        <paper>https://arxiv.org/abs/2311.16867</paper>
         <title>Falcon</title>
         <website>https://falconllm.tii.ae/</website>
     </owl:Class>
@@ -628,6 +753,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#GLM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Open bilingual (English &amp; Chinese) bidirectional dense model with 130 billion parameters, pre-trained using the algorithm of General Language Model (GLM).</description>
         <paper>https://arxiv.org/abs/2210.02414</paper>
         <title>GLM (General Language Model)</title>
@@ -658,6 +789,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#GPT">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>(Generative Pre-trained Transformer) A series of transformer models by OpenAI, with GPT-4 as the latest, excelling in NLP and conversational tasks.</description>
         <paper>n.a.</paper>
         <title>GPT</title>
@@ -686,6 +823,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -761,6 +904,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Google"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLaMM"/>
             </owl:Restriction>
@@ -782,6 +931,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Grok">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <paper>n.a.</paper>
         <title>Grok</title>
         <website>Large language model developed by xAI, designed to integrate contextual knowledge and responsive capabilities for interactions on messaging platforms like X (formerly Twitter).</website>
@@ -802,6 +957,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#LLaMA">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>(Large Language Model Meta AI) A series of open-source models by Meta, designed to be efficient for research and commercial use.</description>
         <paper>https://arxiv.org/abs/2302.13971</paper>
         <title>LLaMA</title>
@@ -847,6 +1008,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#MPT-7B">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Decoder-style transformer with 6.7B parameters</description>
         <paper>n.a.</paper>
         <title>MPT-7B</title>
@@ -939,7 +1106,14 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Minerva">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Family of large language models developed by Sapienza University, trained on extensive Italian and English corpora to support diverse applications like text generation and natural language understanding.</description>
+        <paper>n.a.</paper>
         <title>Minerva</title>
         <website>https://nlp.uniroma1.it/minerva/</website>
     </owl:Class>
@@ -950,6 +1124,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Mistral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>A language model focused on being efficient and high-performing, aiming to improve NLP capabilities with fewer resources.</description>
         <paper>https://arxiv.org/abs/2310.06825</paper>
         <title>Mistral</title>
@@ -1036,6 +1216,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#OLMo">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Open-source language model that aimes to provide a transparent, publicly accessible alternative to proprietary LLMs for research and applications in natural language processing.</description>
         <paper>https://arxiv.org/abs/2402.00838</paper>
         <title>OLMo</title>
@@ -1048,6 +1234,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#OPT">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>(Open Pretrained Transformer) A model developed by Meta, openly released to provide researchers with access to LLMs for a variety of applications.</description>
         <paper>https://arxiv.org/abs/2205.01068</paper>
         <title>OPT</title>
@@ -1112,6 +1304,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#OpenELM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>An open-source initiative focused on evolutionary learning and modeling, particularly in the context of NLP tasks.</description>
         <paper>https://arxiv.org/abs/2404.14619</paper>
         <title>OpenELM</title>
@@ -1130,6 +1328,12 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Large language model developed by Google, designed to perform a range of NLP tasks with high accuracy across languages, reasoning, and even code generation.</description>
         <paper>https://arxiv.org/abs/2204.02311</paper>
         <title>PaLM (Pathways Language Model)</title>
@@ -1142,6 +1346,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Phi-2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>A recently developed AI model by a specific organization or team, likely aimed at enhancing certain NLP or conversational AI capabilities (additional details may be required as it&apos;s a newer name).</description>
         <paper>https://arxiv.org/abs/2306.11644</paper>
         <title>Phi-1</title>
@@ -1164,6 +1374,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Qwen">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Large language model developed by Alibaba, designed to handle complex natural language tasks in multiple languages, with a strong emphasis on applications in e-commerce, customer service, and conversational AI.</description>
         <paper>https://arxiv.org/abs/2309.16609</paper>
         <title>Qwen</title>
@@ -1193,6 +1409,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#RWKV_LLM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Large language model that integrates transformer and RNN principles to efficiently manage long-context sequences, supporting improved language understanding and generation over extensive text inputs.</description>
         <paper>https://arxiv.org/abs/2305.13048</paper>
         <title>RWKV Large Language Model</title>
@@ -1275,6 +1497,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#StableLM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Open source large language model designed to support a range of natural language processing tasks with a focus on accessibility and transparency in model deployment and fine-tuning.</description>
         <paper>https://arxiv.org/abs/2402.17834</paper>
         <title>StableLM</title>
@@ -1321,6 +1549,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#T5">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>(Text-To-Text Transfer Transformer) A Google model where every NLP task is cast as a text-to-text problem, known for its adaptability across diverse tasks.</description>
         <paper>https://jmlr.org/papers/volume21/20-074/20-074.pdf</paper>
         <title>T5</title>
@@ -1383,7 +1617,14 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Vicuna">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Open-source conversational model that provides a high-quality chatbot experience.</description>
+        <paper>n.a.</paper>
         <title>Vicuna</title>
         <website>https://vicuna.lmsys.org/</website>
     </owl:Class>
@@ -1394,6 +1635,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#XLNet">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <description>Generalized autoregressive model that captures bidirectional context for NLP tasks.</description>
         <title>XLNet</title>
         <website>https://github.com/zihangdai/xlnet</website>
@@ -1483,6 +1730,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#decoder_only">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#architecture"/>
+        <rdfs:label>Decoder only</rdfs:label>
     </owl:Class>
     
 
@@ -1516,12 +1764,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#large_language_model">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <description>A language model consisting of a neural network with many parameters (typically billions of weights or more) trained on large quantities of unlabeled text using self-supervised learning or semi-supervised learning.</description>
         <title>Large language model</title>
     </owl:Class>
@@ -1632,6 +1874,14 @@
     
 
 
+    <!-- https://w3id.org/peo#Alpaca_7B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Alpaca_7B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Alpaca"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#BERT_Base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_Base">
@@ -1668,6 +1918,22 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan2-7">
         <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#CTRLModel -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#CTRLModel">
+        <rdf:type rdf:resource="https://w3id.org/peo#CTRL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Chinchilla_70B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Chinchilla_70B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Chinchilla"/>
     </owl:NamedIndividual>
     
 
@@ -1748,6 +2014,32 @@
     
 
 
+    <!-- https://w3id.org/peo#DALL-E -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DALL-E">
+        <rdf:type rdf:resource="https://w3id.org/peo#DALL-E"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#DALL-E_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DALL-E_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#DALL-E"/>
+        <evolves rdf:resource="https://w3id.org/peo#DALL-E"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#DALL-E_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DALL-E_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#DALL-E"/>
+        <evolves rdf:resource="https://w3id.org/peo#DALL-E_2"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#DBRX_base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_base">
@@ -1784,6 +2076,47 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#FLAN_T5_xxl">
         <rdf:type rdf:resource="https://w3id.org/peo#FLAN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Falcon_180B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_180B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Falcon_2_11B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_2_11B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Falcon_40B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_40B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Falcon_7B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_7B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Falcon_Mamba_7B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_Mamba_7B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
     </owl:NamedIndividual>
     
 
@@ -2089,6 +2422,109 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Med-PaLM_2">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V1">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V2">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V3">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V4">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V5">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V5.1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V5.1">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V5.2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V5.2">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V6">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V5.2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Midjourney_V6.2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V6.2">
+        <rdf:type rdf:resource="https://w3id.org/peo#Midjourney"/>
+        <evolves rdf:resource="https://w3id.org/peo#Midjourney_V6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Minerva-1B-base-v.10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-1B-base-v.10">
+        <rdf:type rdf:resource="https://w3id.org/peo#Minerva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Minerva-350M-base-v.10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-350M-base-v.10">
+        <rdf:type rdf:resource="https://w3id.org/peo#Minerva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Minerva-3B-base-v1.0 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-3B-base-v1.0">
+        <rdf:type rdf:resource="https://w3id.org/peo#Minerva"/>
     </owl:NamedIndividual>
     
 
@@ -2521,6 +2957,46 @@
     
 
 
+    <!-- https://w3id.org/peo#Vicuna-13B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-13B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Vicuna-13B-16k -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-13B-16k">
+        <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Vicuna-33B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-33B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Vicuna-7B -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-7B">
+        <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#Vicuna-7B-16k -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-7B-16k">
+        <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#VisCPM-10B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisCPM-10B">
@@ -2535,6 +3011,14 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisualBERT">
         <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#XLNetModel -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#XLNetModel">
+        <rdf:type rdf:resource="https://w3id.org/peo#XLNet"/>
     </owl:NamedIndividual>
     
 
@@ -2777,6 +3261,12 @@
         <title>Command R</title>
         <website>https://huggingface.co/CohereForAI/c4ai-command-r-v01</website>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#DALL-E">
+        <description>DALL-E generates detailed images from textual descriptions, with the latest model offering enhanced prompt fidelity.</description>
+        <paper>n.a.</paper>
+        <title>DALL-E</title>
+        <website>https://openai.com/dall-e-3/</website>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/peo#Sora">
         <description>Text-to-video AI model. Sora can create videos of up to a minute of realistic and imaginative scenes given text instructions.</description>
         <paper>n.a.</paper>
@@ -2925,6 +3415,25 @@
             <rdf:Description rdf:about="https://w3id.org/peo#StarCoder"/>
             <rdf:Description rdf:about="https://w3id.org/peo#T5"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Yi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#language_model"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#organization"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#task"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#based_on"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#belongs_to"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#develops"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#evolves"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#has_capability"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#requires_capability"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
