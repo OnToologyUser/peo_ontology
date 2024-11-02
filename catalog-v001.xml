@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://w3id.org/aio/releases/2024-08-14/aio-base.owl" uri="file:/C:/Users/Lenovo/Desktop/ontologie/ontologie_esempio/2_artificial-intelligence-ontology/aio-base.owl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/aio/releases/2024-08-14/aio-full.owl" uri="file:/C:/Users/Lenovo/Desktop/ontologie/ontologie_esempio/2_artificial-intelligence-ontology/aio-full.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1730446853028" name="https://w3id.org/peo" uri="peo_ontology.rdf"/>
-    </group>
-</catalog>
