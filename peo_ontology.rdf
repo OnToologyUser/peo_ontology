@@ -193,13 +193,15 @@
     
 
 
-    <!-- https://w3id.org/peo#has_parameters -->
+    <!-- https://w3id.org/peo#has_number_parameters -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_parameters">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_number_parameters">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:label>has_number_parameters</rdfs:label>
+        <description>Number of parameters of a large language model.</description>
     </owl:DatatypeProperty>
     
 
@@ -897,16 +899,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Base_model"/>
         <rdfs:label>Encoder</rdfs:label>
         <reference>https://medium.com/@mansoorsyed05/encoders-and-decoders-in-generative-ai-3a717d50fced</reference>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#Encoder-Decoder -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Encoder-Decoder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Base_model"/>
-        <rdfs:label>Encoder-Decoder</rdfs:label>
-        <reference>https://medium.com/analytics-vidhya/encoders-decoders-sequence-to-sequence-architecture-5644efbb3392</reference>
     </owl:Class>
     
 
@@ -2398,6 +2390,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Alpaca_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Alpaca"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2407,6 +2400,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_Base">
         <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</has_release_year>
     </owl:NamedIndividual>
     
@@ -2416,6 +2410,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_Large">
         <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">340000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</has_release_year>
     </owl:NamedIndividual>
     
@@ -2425,6 +2420,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan-13B">
         <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2434,6 +2430,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan-7">
         <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2443,6 +2440,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan2-7">
         <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2452,6 +2450,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#CTRLModel">
         <rdf:type rdf:resource="https://w3id.org/peo#CTRL"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1630000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -2461,6 +2460,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Chinchilla_70B">
         <rdf:type rdf:resource="https://w3id.org/peo#Chinchilla"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -2470,6 +2470,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_1.2">
         <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2479,6 +2480,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_2">
         <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2488,6 +2490,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_3">
         <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
@@ -2499,6 +2502,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Code_LLAMA">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2509,6 +2513,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Codestral">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -2519,6 +2524,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Codex_Cushman">
         <rdf:type rdf:resource="https://w3id.org/peo#Codex"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
@@ -2528,6 +2534,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Codex_DaVinci">
         <rdf:type rdf:resource="https://w3id.org/peo#Codex"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
@@ -2537,6 +2544,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#CogVLM2-19B">
         <rdf:type rdf:resource="https://w3id.org/peo#CogVLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2546,6 +2554,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Command_R">
         <rdf:type rdf:resource="https://w3id.org/peo#Command_R"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2555,6 +2564,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DALL-E">
         <rdf:type rdf:resource="https://w3id.org/peo#DALL-E"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -2564,6 +2574,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DALL-E_2">
         <rdf:type rdf:resource="https://w3id.org/peo#DALL-E"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#DALL-E"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
@@ -2574,6 +2585,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DALL-E_3">
         <rdf:type rdf:resource="https://w3id.org/peo#DALL-E"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#DALL-E_2"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2584,6 +2596,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_base">
         <rdf:type rdf:resource="https://w3id.org/peo#DBRX"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2593,6 +2606,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#DBRX"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2602,6 +2616,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DeepSeek_LLM_67B_Base">
         <rdf:type rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2611,6 +2626,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DeepSeek_LLM_7B_Base">
         <rdf:type rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2620,6 +2636,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#FLAN_T5_xxl">
         <rdf:type rdf:resource="https://w3id.org/peo#FLAN"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11135332352</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -2629,6 +2646,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_180B">
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2638,6 +2656,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_2_11B">
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2648,6 +2667,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_40B">
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2657,6 +2677,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2666,6 +2687,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_Mamba_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2675,6 +2697,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-10B">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -2684,6 +2707,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-10B-Chinese">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -2693,6 +2717,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-2B">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2702,6 +2727,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-410M">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2711,6 +2737,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-515M">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">515000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2720,6 +2747,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Base">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
@@ -2729,6 +2757,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Large">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
@@ -2738,6 +2767,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Large-Chinese">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
@@ -2747,6 +2777,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-RoBERTa">
         <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
@@ -2756,6 +2787,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLaMM_FT">
         <rdf:type rdf:resource="https://w3id.org/peo#GLaMM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1200000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2765,6 +2797,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLaMM_ZS">
         <rdf:type rdf:resource="https://w3id.org/peo#GLaMM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1200000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2774,6 +2807,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-1">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">117000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</has_release_year>
     </owl:NamedIndividual>
     
@@ -2783,6 +2817,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-2">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">124000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#GPT-1"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
@@ -2793,6 +2828,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">175000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#GPT-2"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2020</has_release_year>
     </owl:NamedIndividual>
@@ -2803,6 +2839,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3.5">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">175000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#GPT-3"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
@@ -2813,6 +2850,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-4">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#GPT-3.5"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2823,6 +2861,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Flash">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemini"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2832,6 +2871,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Nano">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemini"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2841,6 +2881,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Pro">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemini"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2850,6 +2891,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Ultra">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemini"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2859,6 +2901,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_1">
         <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2868,6 +2911,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_1.5">
         <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2877,6 +2921,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2">
         <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
@@ -2888,6 +2933,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2_mini">
         <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
@@ -2899,6 +2945,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_1">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2908,6 +2955,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-13B">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2918,6 +2966,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-70B">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2928,6 +2977,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_1"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2938,6 +2988,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-13B"/>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-70B"/>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-7B"/>
@@ -2952,6 +3003,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3.2">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_3"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
@@ -2965,6 +3017,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_Guard">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -2974,6 +3027,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#MPT-7B"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2983,6 +3037,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B_Base">
         <rdf:type rdf:resource="https://w3id.org/peo#MPT-7B"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -2992,6 +3047,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Med-PaLM_2">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">340000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3090,6 +3146,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-1B-base-v.10">
         <rdf:type rdf:resource="https://w3id.org/peo#Minerva"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3099,6 +3156,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-350M-base-v.10">
         <rdf:type rdf:resource="https://w3id.org/peo#Minerva"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3108,6 +3166,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-3B-base-v1.0">
         <rdf:type rdf:resource="https://w3id.org/peo#Minerva"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3117,6 +3176,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MiniCPM-2B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3126,6 +3186,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3135,6 +3196,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_Nemo">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3144,6 +3206,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#NVLM-1.0-D_72B">
         <rdf:type rdf:resource="https://w3id.org/peo#NVLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3153,6 +3216,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE-1B-7B-0924">
         <rdf:type rdf:resource="https://w3id.org/peo#OLMo"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3162,6 +3226,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE-1B-7B-0927-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#OLMo"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3171,6 +3236,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE_code">
         <rdf:type rdf:resource="https://w3id.org/peo#OLMo"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3181,6 +3247,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-1.3B">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1300000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3190,6 +3257,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-125M">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3199,6 +3267,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-13B">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3208,6 +3277,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-2.7B">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2700000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3217,6 +3287,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-30B">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3226,6 +3297,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-350M">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3235,6 +3307,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-6.7B">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3244,6 +3317,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-66B">
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3253,6 +3327,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OmniLLM-12B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
@@ -3265,6 +3340,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-1_1B">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1100000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3274,6 +3350,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-1_1B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1100000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3283,6 +3360,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-270M">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3292,6 +3370,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-270M-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">270000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3301,6 +3380,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-3B">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3310,6 +3390,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-3B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3319,6 +3400,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-450M">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3328,6 +3410,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-450M-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#OpenELM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3337,6 +3420,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_1">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3346,6 +3430,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Bison">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3355,6 +3440,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Gecko">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3364,6 +3450,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Otter">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3373,6 +3460,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Unicorn">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3382,6 +3470,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Phi_1.5">
         <rdf:type rdf:resource="https://w3id.org/peo#Phi-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3391,6 +3480,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Phi_2">
         <rdf:type rdf:resource="https://w3id.org/peo#Phi-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2700000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#Phi_1.5"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3401,6 +3491,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Pixtral">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3411,6 +3502,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-110B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3420,6 +3512,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-32B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3429,6 +3522,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-4B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3438,6 +3532,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-72B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3447,6 +3542,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-72B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3456,6 +3552,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-2B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3466,6 +3563,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3476,6 +3574,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-110B"/>
         <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-32B"/>
         <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-4B"/>
@@ -3490,6 +3589,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5-Coder">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3500,6 +3600,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#RWKV-v5">
         <rdf:type rdf:resource="https://w3id.org/peo#RWKV_LLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3509,6 +3610,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#RoBERTa">
         <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3518,6 +3620,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Sec-PaLM">
         <rdf:type rdf:resource="https://w3id.org/peo#PaLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3527,6 +3630,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Sora">
         <rdf:type rdf:resource="https://w3id.org/peo#Sora"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">175000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3536,6 +3640,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#StarCoderBase">
         <rdf:type rdf:resource="https://w3id.org/peo#StarCoder"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3545,6 +3650,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#StarPii">
         <rdf:type rdf:resource="https://w3id.org/peo#StarCoder"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3554,6 +3660,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_11B">
         <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3563,6 +3670,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_3B">
         <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3572,6 +3680,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_base">
         <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">220000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3581,6 +3690,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_large">
         <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">770000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3590,6 +3700,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_small">
         <rdf:type rdf:resource="https://w3id.org/peo#T5"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3599,6 +3710,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-13B">
         <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3608,6 +3720,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-13B-16k">
         <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3617,6 +3730,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-33B">
         <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3626,6 +3740,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3635,6 +3750,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-7B-16k">
         <rdf:type rdf:resource="https://w3id.org/peo#Vicuna"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3644,6 +3760,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisCPM-10B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3654,6 +3771,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisualBERT">
         <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
@@ -3664,6 +3782,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#XLNetModel">
         <rdf:type rdf:resource="https://w3id.org/peo#XLNet"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
     
@@ -3673,6 +3792,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi-34B">
         <rdf:type rdf:resource="https://w3id.org/peo#Yi"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3682,6 +3802,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi-VL-6B">
         <rdf:type rdf:resource="https://w3id.org/peo#Yi"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3691,6 +3812,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi1.5-6">
         <rdf:type rdf:resource="https://w3id.org/peo#Yi"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3700,6 +3822,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-image-captioning-base">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3709,6 +3832,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-image-captioning-large">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3718,6 +3842,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-base-coco">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3727,6 +3852,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-base-flickr">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3736,6 +3862,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-large-coco">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3745,6 +3872,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-large-flickr">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3754,6 +3882,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-vqa-base">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3763,6 +3892,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-vqa-capfilt-large">
         <rdf:type rdf:resource="https://w3id.org/peo#BLIP-2"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3772,6 +3902,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-2b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3781,6 +3912,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-7b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3790,6 +3922,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-2b">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3799,6 +3932,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-2b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3808,6 +3942,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-7b">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3817,6 +3952,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-7b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemma"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3866,6 +4002,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#stablelm-2-12b-chat">
         <rdf:type rdf:resource="https://w3id.org/peo#StableLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3875,6 +4012,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#stablelm-2-1_6b-chat">
         <rdf:type rdf:resource="https://w3id.org/peo#StableLM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1600000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3884,6 +4022,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BLOOMZ&amp;mT0">
         <rdf:type rdf:resource="https://w3id.org/peo#BLOOM"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">560000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
     
@@ -3893,6 +4032,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Command_R+">
         <rdf:type rdf:resource="https://w3id.org/peo#Command_R"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3902,6 +4042,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B-StoryWriter-65k+">
         <rdf:type rdf:resource="https://w3id.org/peo#MPT-7B"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
@@ -3911,6 +4052,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#StarCoder+">
         <rdf:type rdf:resource="https://w3id.org/peo#StarCoder"/>
+        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
     
