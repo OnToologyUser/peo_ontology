@@ -293,7 +293,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -348,6 +348,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Audio_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Audio task</rdfs:label>
         <description>Task involving audio processing</description>
     </owl:Class>
@@ -377,7 +383,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -401,7 +407,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -425,7 +431,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -466,7 +472,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -555,7 +561,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -613,7 +619,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -637,7 +643,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -658,6 +664,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Code_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Code task</rdfs:label>
         <description>Task involving code processing</description>
     </owl:Class>
@@ -677,7 +689,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -701,7 +713,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -743,7 +755,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -763,7 +775,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -940,7 +952,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -964,7 +976,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -988,7 +1000,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1012,7 +1024,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1054,7 +1066,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1078,31 +1090,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1224,7 +1236,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1266,6 +1278,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Image_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Image task</rdfs:label>
         <language>Task involving image processing</language>
     </owl:Class>
@@ -1279,7 +1297,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1346,7 +1364,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1416,7 +1434,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1456,7 +1474,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1480,7 +1498,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1537,13 +1555,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1584,7 +1602,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1608,7 +1626,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1684,7 +1702,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1708,13 +1726,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1738,7 +1756,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1801,7 +1819,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1842,7 +1860,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1931,7 +1949,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1968,7 +1986,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2008,7 +2026,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2032,7 +2050,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2070,6 +2088,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Text_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Text task</rdfs:label>
         <description>Task involving text processing</description>
     </owl:Class>
@@ -2109,7 +2133,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2142,7 +2166,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2163,6 +2187,12 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Video_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Video task</rdfs:label>
         <description>Task involving video processing</description>
     </owl:Class>
@@ -2176,7 +2206,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_generation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2233,11 +2263,31 @@
     
 
 
+    <!-- https://w3id.org/peo#audio_explanation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#audio_explanation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Audio_task"/>
+        <rdfs:label>Audio explanation</rdfs:label>
+        <description>Task of generating an explanation of an audio.</description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#audio_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#audio_generation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Audio_task"/>
         <rdfs:label>Audio generation</rdfs:label>
+        <description>Task of generating an audio given a text</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#audio_processing -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#audio_processing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Audio processing</rdfs:label>
         <description>Capability of a model to process and generate audio</description>
     </owl:Class>
     
@@ -2253,11 +2303,31 @@
     
 
 
+    <!-- https://w3id.org/peo#code_explanation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#code_explanation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Code_task"/>
+        <rdfs:label>Code explanation</rdfs:label>
+        <description>Task of explaining in naturale language a piece of code</description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#code_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#code_generation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Code_task"/>
         <rdfs:label>Code generation</rdfs:label>
+        <description>Task of generating code in a specific programming language.</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#code_processing -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#code_processing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Code processing</rdfs:label>
         <description>Capability to process and generate source code in a programming language.</description>
     </owl:Class>
     
@@ -2284,12 +2354,42 @@
     
 
 
+    <!-- https://w3id.org/peo#image_explanation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#image_explanation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Image_task"/>
+        <rdfs:label>Image explanation</rdfs:label>
+        <description>Generation of an explanation in natural language of an image</description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#image_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#image_generation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Image_task"/>
         <rdfs:label>Image generation</rdfs:label>
+        <description>Generation of an image given a text</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#image_processing -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#image_processing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Image processing</rdfs:label>
         <description>Capability to process and generate images</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#image_segmentation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#image_segmentation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Image_task"/>
+        <rdfs:label>Image segmentation</rdfs:label>
+        <description>Task of dividing an image into distinct regions or segments, each representing specific objects or features within the image</description>
     </owl:Class>
     
 
@@ -2323,11 +2423,31 @@
     
 
 
+    <!-- https://w3id.org/peo#mathematical_understanding -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#mathematical_understanding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
+        <rdfs:label>Mathematical understanding</rdfs:label>
+        <description>Task of solving mathematical problems</description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#organization -->
 
     <owl:Class rdf:about="https://w3id.org/peo#organization">
         <rdfs:label>Organization</rdfs:label>
         <description>A ìn organization of people that develops a large language model</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#question_answering -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#question_answering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
+        <rdfs:label>Question-answering</rdfs:label>
+        <description>Task of understanding questions and generating responses</description>
     </owl:Class>
     
 
@@ -2351,12 +2471,42 @@
     
 
 
+    <!-- https://w3id.org/peo#text_classification -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#text_classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
+        <rdfs:label>Text classification</rdfs:label>
+        <description>Task of classify a text</description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#text_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#text_generation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
         <rdfs:label>Text generation</rdfs:label>
+        <description>Task of generating text</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#text_processing -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#text_processing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Text processing</rdfs:label>
         <description>Capability to process and generate text.</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#text_summarization -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#text_summarization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
+        <rdfs:label>Text summarization</rdfs:label>
+        <description>Task of summarizing a text</description>
     </owl:Class>
     
 
@@ -2384,8 +2534,18 @@
     <!-- https://w3id.org/peo#video_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#video_generation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Video_task"/>
         <rdfs:label>Video generation</rdfs:label>
+        <description>Task of generating video given a text</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#video_processing -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#video_processing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
+        <rdfs:label>Video processing</rdfs:label>
         <description>Capability to process and generate video.</description>
     </owl:Class>
     
@@ -2540,8 +2700,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_3">
         <rdf:type rdf:resource="https://w3id.org/peo#Claude"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -2552,7 +2712,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Code_LLAMA">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -2563,7 +2723,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Codestral">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -2706,7 +2866,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_2_11B">
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3041,8 +3201,8 @@
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-13B"/>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-70B"/>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_2-7B"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3054,9 +3214,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3.2">
         <rdf:type rdf:resource="https://w3id.org/peo#LLaMA"/>
         <evolves rdf:resource="https://w3id.org/peo#LLAMA_3"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_video_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3286,7 +3446,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE_code">
         <rdf:type rdf:resource="https://w3id.org/peo#OLMo"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3377,9 +3537,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OmniLLM-12B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_video_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_video_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3541,7 +3701,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Pixtral">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3602,7 +3762,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-2B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3613,7 +3773,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3639,7 +3799,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5-Coder">
         <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3810,7 +3970,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisCPM-10B">
         <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3821,7 +3981,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisualBERT">
         <rdf:type rdf:resource="https://w3id.org/peo#BERT"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_generation"/>
+        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
@@ -4008,42 +4168,42 @@
     
 
 
-    <!-- https://w3id.org/peo#general_audio_generation -->
+    <!-- https://w3id.org/peo#general_audio_processing -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_audio_generation">
-        <rdf:type rdf:resource="https://w3id.org/peo#audio_generation"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_audio_processing">
+        <rdf:type rdf:resource="https://w3id.org/peo#audio_processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/peo#general_code_generation -->
+    <!-- https://w3id.org/peo#general_code_processing -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_code_generation">
-        <rdf:type rdf:resource="https://w3id.org/peo#code_generation"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_code_processing">
+        <rdf:type rdf:resource="https://w3id.org/peo#code_processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/peo#general_image_generation -->
+    <!-- https://w3id.org/peo#general_image_processing -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_image_generation">
-        <rdf:type rdf:resource="https://w3id.org/peo#image_generation"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_image_processing">
+        <rdf:type rdf:resource="https://w3id.org/peo#image_processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/peo#general_text_generation -->
+    <!-- https://w3id.org/peo#general_text_processing -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_text_generation">
-        <rdf:type rdf:resource="https://w3id.org/peo#text_generation"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_text_processing">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/peo#general_video_generation -->
+    <!-- https://w3id.org/peo#general_video_processing -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_video_generation">
-        <rdf:type rdf:resource="https://w3id.org/peo#video_generation"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#general_video_processing">
+        <rdf:type rdf:resource="https://w3id.org/peo#video_processing"/>
     </owl:NamedIndividual>
     
 
@@ -4312,6 +4472,16 @@
             <rdf:Description rdf:about="https://w3id.org/peo#language_model"/>
             <rdf:Description rdf:about="https://w3id.org/peo#organization"/>
             <rdf:Description rdf:about="https://w3id.org/peo#task"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#mathematical_understanding"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#question_answering"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#text_classification"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#text_generation"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#text_summarization"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
