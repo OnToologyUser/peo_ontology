@@ -2460,6 +2460,15 @@
     
 
 
+    <!-- https://w3id.org/peo#fix_deformed_generations -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#fix_deformed_generations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
+        <rdfs:label>Fix deformed generations</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#image_explanation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#image_explanation">
@@ -2486,6 +2495,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#capability"/>
         <rdfs:label>Image processing</rdfs:label>
         <description>Capability to process and generate images</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#image_prompting_technique -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#image_prompting_technique">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Image prompting technique</rdfs:label>
+        <description>Prompting techniques for images</description>
     </owl:Class>
     
 
@@ -2543,7 +2562,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#organization">
         <rdfs:label>Organization</rdfs:label>
-        <description>A ìn organization of people that develops a large language model</description>
+        <description>An organization of people that develops a large language model</description>
     </owl:Class>
     
 
@@ -2576,6 +2595,15 @@
     
 
 
+    <!-- https://w3id.org/peo#quality_boosters -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#quality_boosters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
+        <rdfs:label>Quality boosters</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#question_answering -->
 
     <owl:Class rdf:about="https://w3id.org/peo#question_answering">
@@ -2595,12 +2623,39 @@
     
 
 
+    <!-- https://w3id.org/peo#repetition -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#repetition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
+        <rdfs:label>Repetition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#research_institution -->
 
     <owl:Class rdf:about="https://w3id.org/peo#research_institution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
         <rdfs:label>Research institution</rdfs:label>
         <description>Institution of researchers and developers who develop a LLM  for research purposes.</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#shot_type -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#shot_type">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
+        <rdfs:label>Shot type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#style_modifiers -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#style_modifiers">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
+        <rdfs:label>Style modifiers</rdfs:label>
     </owl:Class>
     
 
@@ -4748,6 +4803,16 @@ Sentiment:</has_body>
             <rdf:Description rdf:about="https://w3id.org/peo#react_prompting"/>
             <rdf:Description rdf:about="https://w3id.org/peo#tree_of_thoughts_prompting"/>
             <rdf:Description rdf:about="https://w3id.org/peo#zero_shot_prompting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/peo#fix_deformed_generations"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#quality_boosters"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#repetition"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#shot_type"/>
+            <rdf:Description rdf:about="https://w3id.org/peo#style_modifiers"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
