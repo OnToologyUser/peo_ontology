@@ -2456,6 +2456,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#few_shot_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Few shot prompting</rdfs:label>
+        <description>Technique where an AI model is provided with a few example inputs and outputs in the prompt, helping it understand the task and generate more accurate responses by leveraging these samples as context.</description>
+        <reference>https://arxiv.org/abs/2005.14165</reference>
     </owl:Class>
     
 
@@ -2619,6 +2621,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#react_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>ReAct prompting</rdfs:label>
+        <description>Technique where an AI model is guided to reason and act iteratively, encouraging it to think step-by-step while interweaving reasoning and actions to handle complex tasks more effectively.</description>
+        <reference>https://arxiv.org/abs/2210.03629</reference>
     </owl:Class>
     
 
@@ -2724,6 +2728,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#tree_of_thoughts_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Tree of Thoughts prompting</rdfs:label>
+        <description>Technique that involves breaking down complex problems into a structured tree of decisions, allowing an AI model to explore multiple reasoning paths to reach an optimal solution.</description>
+        <reference>https://arxiv.org/abs/2305.10601</reference>
     </owl:Class>
     
 
@@ -2780,6 +2786,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#zero_shot_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Zero shot prompting</rdfs:label>
+        <description>Technique where an AI model generates responses or performs tasks without any specific examples, relying solely on the instructions given in the prompt.</description>
+        <reference>https://www.promptingguide.ai/techniques/zeroshot</reference>
     </owl:Class>
     
 
