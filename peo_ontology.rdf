@@ -10,11 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/peo#">
         <owl:versionIRI rdf:resource="https://w3id.org/peo#"/>
+        <rdfs:label>PEO ontology: an ontology for prompt engineering and large language models.</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <creator>Simone Gramegna</creator>
         <description>The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks.</description>
         <language>english</language>
-        <title>PEO ontology: an ontology for prompt engineering and large language models.</title>
     </owl:Ontology>
     
 
@@ -2360,6 +2360,17 @@
     
 
 
+    <!-- https://w3id.org/peo#active_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#active_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Active prompting</rdfs:label>
+        <description>Technique where specific, dynamic instructions are given to a model to guide it through a multi-step or interactive process, often requiring the model to actively engage, reflect, or respond iteratively to achieve a targeted outcome.</description>
+        <reference>https://arxiv.org/abs/2302.12246</reference>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#audio_explanation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#audio_explanation">
@@ -2390,12 +2401,34 @@
     
 
 
+    <!-- https://w3id.org/peo#automatic_chain_of_thought_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#automatic_chain_of_thought_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#chain_of_thought_prompting"/>
+        <rdfs:label>Automatic Chain of Thought prompting</rdfs:label>
+        <description>Technique where models autonomously generate step-by-step reasoning, enhancing structured problem-solving without explicit intermediate prompts.</description>
+        <reference>https://arxiv.org/abs/2210.03493</reference>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#capability -->
 
     <owl:Class rdf:about="https://w3id.org/peo#capability">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#language_model_feature"/>
         <rdfs:label>Capability</rdfs:label>
         <description>Various functions an AI model can perform, such as text, audio, code, image, or video generation.</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#chain_of_thought_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#chain_of_thought_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Chain of Thought prompting</rdfs:label>
+        <description>Prompting is a prompting technique that encourages a model to generate step-by-step reasoning or intermediate steps before arriving at a final answer.</description>
+        <reference>https://arxiv.org/abs/2201.11903</reference>
     </owl:Class>
     
 
@@ -2451,6 +2484,17 @@
     
 
 
+    <!-- https://w3id.org/peo#emotion_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#emotion_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Emotion prompting</rdfs:label>
+        <description>Technique that guides a model to generate responses with a specific emotional tone or to recognize and respond to the emotions within input text, enhancing empathetic or sentiment-aware interactions.</description>
+        <reference>https://arxiv.org/abs/2307.11760</reference>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#few_shot_prompting -->
 
     <owl:Class rdf:about="https://w3id.org/peo#few_shot_prompting">
@@ -2467,6 +2511,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#fix_deformed_generations">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
         <rdfs:label>Fix deformed generations</rdfs:label>
+        <description>Prevent deformities by using negative prompts (such as negatively weighted terms) to de-emphasize them.</description>
+        <reference>https://learnprompting.org/docs/image_prompting/fix_deformed_generations</reference>
     </owl:Class>
     
 
@@ -2573,7 +2619,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#prompt">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Prompt_engineering"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Prompt</rdfs:label>
     </owl:Class>
     
@@ -2593,6 +2638,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#prompting_technique">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Prompt_engineering"/>
         <rdfs:label>Prompting technique</rdfs:label>
+        <description>Specific method used to guide a language model’s responses by shaping the input prompt</description>
+        <reference>https://en.wikipedia.org/wiki/Prompt_engineering</reference>
     </owl:Class>
     
 
@@ -2602,6 +2649,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#quality_boosters">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
         <rdfs:label>Quality boosters</rdfs:label>
+        <description>Terms that enhance style-agnostic attributes, such as detail and resolution, in AI-generated images.</description>
+        <reference>https://arxiv.org/abs/2204.13988</reference>
     </owl:Class>
     
 
@@ -2612,6 +2661,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
         <rdfs:label>Question-answering</rdfs:label>
         <description>Task of understanding questions and generating responses</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#rag_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#rag_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Retrieval Augmented Generation - RAG prompting</rdfs:label>
+        <description>Technique that combines retrieval of relevant external information with generative responses, enabling a model to access and integrate factual or context-specific data dynamically to produce more informed and accurate outputs.</description>
+        <reference>https://arxiv.org/pdf/2005.11401</reference>
     </owl:Class>
     
 
@@ -2632,6 +2692,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#repetition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
         <rdfs:label>Repetition</rdfs:label>
+        <description>Repeating the same word in a image prompt in order to augment some aspects</description>
+        <reference>https://arxiv.org/abs/2204.13988</reference>
     </owl:Class>
     
 
@@ -2646,11 +2708,24 @@
     
 
 
+    <!-- https://w3id.org/peo#self_consistency_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#self_consistency_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Self consistency prompting</rdfs:label>
+        <description>Technique where multiple reasoning paths or answers are generated by a model, and the final response is selected based on the most frequently occurring or consistent result, enhancing reliability and accuracy in complex problem-solving tasks.</description>
+        <reference>https://arxiv.org/abs/2203.11171</reference>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#shot_type -->
 
     <owl:Class rdf:about="https://w3id.org/peo#shot_type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
         <rdfs:label>Shot type</rdfs:label>
+        <description>Technique that incorporates various camera effects</description>
+        <reference>https://learnprompting.org/docs/image_prompting/shot_type</reference>
     </owl:Class>
     
 
@@ -2660,6 +2735,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#style_modifiers">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#image_prompting_technique"/>
         <rdfs:label>Style modifiers</rdfs:label>
+        <description>Descriptors that consistently produce certain styles</description>
+        <reference>https://arxiv.org/abs/2204.13988</reference>
     </owl:Class>
     
 
@@ -2709,6 +2786,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Text_task"/>
         <rdfs:label>Text summarization</rdfs:label>
         <description>Task of summarizing a text</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#thread_of_thought_prompting -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#thread_of_thought_prompting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Thread of thought prompting</rdfs:label>
+        <description>Technique where a model maintains a cohesive line of reasoning across multiple prompts or turns, allowing it to build on previous responses and sustain continuity in complex, multi-step tasks or dialogues.</description>
+        <reference>https://arxiv.org/abs/2311.08734</reference>
     </owl:Class>
     
 
