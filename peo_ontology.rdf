@@ -122,7 +122,6 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#organization"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#Base_model"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <owl:propertyDisjointWith rdf:resource="https://w3id.org/peo#evolves"/>
         <rdfs:label>develops</rdfs:label>
         <description>Relationship between an organization and a large language model or an architecture where the organization develops that technology</description>
     </owl:ObjectProperty>
@@ -133,6 +132,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#evolves">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:label>evolves</rdfs:label>
@@ -2216,7 +2216,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#company">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/peo#research_institution"/>
         <rdfs:label>Company</rdfs:label>
         <description>Organization that develops an LLM for business purpose</description>
     </owl:Class>
@@ -2414,6 +2413,7 @@
     <owl:Class rdf:about="https://w3id.org/peo#plan_and_solve_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Plan-and-Solve prompting</rdfs:label>
+        <description>Technique that guides large language models to first devise a plan that breaks down a complex task into subtasks, then execute the plan step-by-step for improved reasoning accuracy.</description>
         <reference>https://arxiv.org/abs/2305.04091</reference>
     </owl:Class>
     
@@ -2540,7 +2540,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Role prompting</rdfs:label>
         <description>Technique that involves giving the model a specific role to play, such as a helpful assistant or a knowledgeable expert</description>
-        <reference>https://roadmap.sh/prompt-engineering/prompts/prompting-techniques/role-prompting</reference>
+        <reference>https://learnprompting.org/docs/basics/roles?srsltid=AfmBOorOhcs91R9q-XT0yNLiN8nzLnDBonoztR-HX-iB9M4jk3nvadQo#user-content-fnref-1</reference>
     </owl:Class>
     
 
@@ -2604,6 +2604,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#system_2_attention_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>System-2-Attention prompting</rdfs:label>
+        <description>Technique that enables large language models (LLMs) to focus only on relevant parts of the input context by regenerating it to exclude distracting or biased information, thereby improving the factual accuracy and objectivity of the model&apos;s responses.</description>
+        <reference>https://arxiv.org/abs/2311.11829</reference>
     </owl:Class>
     
 
@@ -4540,171 +4543,11 @@ Sentiment:</has_body>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#Aalto_University"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Australian_National_University"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Carnegie_Mellon_University"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Linköping_University"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Mohamed_bin_Zayed_University_of_AI"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Princeton"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Stanford"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#University_of_California_Merced"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#Audio_task"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Code_task"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Image_task"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Text_task"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Video_task"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/peo#Encoder_only"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Global_Image_Encoder"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Grounding_Image_Encoder"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Region_Encoder"/>
             <rdf:Description rdf:about="https://w3id.org/peo#ViT-Encoder"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#active_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#analogical_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_knowledge_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_note_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_table_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_thought_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_verification_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#code_prompting_technique"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#decomposed_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#emotion_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#few_shot_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#graph_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#image_prompting_technique"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#least_to_most_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#logical_chain_of_thought_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#plan_and_solve_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#rag_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#react_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#rephrase_respond_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#role_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#self_consistency_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#system_2_attention_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#take_step_back_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#thread_of_thought_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#tree_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#zero_shot_prompting"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#active_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_knowledge_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_note_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_table_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_thought_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_verification_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#code_prompting_technique"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#decomposed_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#emotion_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#few_shot_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#graph_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#image_prompting_technique"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#least_to_most_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#logical_chain_of_thought_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#program_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#rag_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#react_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#rephrase_respond_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#role_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#self_consistency_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#system_2_attention_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#take_step_back_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#thread_of_thought_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#tree_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#zero_shot_prompting"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#chain_of_code_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#program_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#scratchpad_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#structured_chain_of_thought_prompting"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#few_shot_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#react_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#tree_of_thoughts_prompting"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#zero_shot_prompting"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#fix_deformed_generations"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#quality_boosters"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#repetition"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#shot_type"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#style_modifiers"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#mathematical_understanding"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#question_answering"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#text_classification"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#text_generation"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#text_summarization"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#based_on"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#belongs_to"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#develops"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#evolves"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#has_capability"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#has_model_architecture"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#has_prompt_input"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#produced_by"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#produces_output"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#requires_capability"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#solved_by"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#solves_task"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#based_on"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#belongs_to"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#develops"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#evolves"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#has_capability"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#requires_capability"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#belongs_to"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#develops"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#evolves"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#has_capability"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#requires_capability"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
