@@ -329,23 +329,6 @@
     
 
 
-    <!-- https://w3id.org/peo#Alibaba -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Alibaba">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Qwen"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Alibaba</rdfs:label>
-        <description>A Chinese multinational technology company using AI and LLMs for e-commerce, cloud computing, and digital innovation.</description>
-        <website>https://www.alibabagroup.com/</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#AllenAI -->
 
     <owl:Class rdf:about="https://w3id.org/peo#AllenAI">
@@ -531,47 +514,6 @@
     
 
 
-    <!-- https://w3id.org/peo#Baichuan -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Baichuan">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Baichuan</rdfs:label>
-        <description>Chinese company that develops LLMs trained on chinese language</description>
-        <website>https://github.com/baichuan-inc/Baichuan-7B</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#Baichuan_LLM -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Baichuan_LLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Baichuan LLM</rdfs:label>
-        <description>Open large scale language models developed by Baichuan chinese company</description>
-        <paper>https://arxiv.org/abs/2309.10305</paper>
-        <website>https://huggingface.co/baichuan-inc</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#Base_model -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Base_model">
@@ -633,48 +575,6 @@
     <owl:Class rdf:about="https://w3id.org/peo#CLIP">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Base_model"/>
         <rdfs:label>CLIP</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#CPM -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#CPM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>CPM</rdfs:label>
-        <description>Series of large language models focused on Chinese language understanding and generation, created to advance NLP research and applications specifically tailored to Chinese language contexts.</description>
-        <paper>https://arxiv.org/abs/2012.00413</paper>
-        <website>https://huggingface.co/docs/transformers/model_doc/cpm</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#CTRL -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#CTRL">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>CTRL</rdfs:label>
-        <description>Conditional transformer model that enables controlled text generation through control codes.</description>
-        <paper>https://arxiv.org/abs/1909.05858</paper>
-        <website>https://github.com/salesforce/ctrl</website>
     </owl:Class>
     
 
@@ -883,34 +783,10 @@
     
 
 
-    <!-- https://w3id.org/peo#DBRX -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#DBRX">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>DBRX</rdfs:label>
-        <description>Large language model optimized for use in data analytics and big data processing contexts, often integrated into Databricks&apos; platforms to enhance machine learning workflows, natural language querying, and enterprise-level AI applications.</description>
-        <paper>n.a.</paper>
-        <website>https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#DataBricks -->
 
     <owl:Class rdf:about="https://w3id.org/peo#DataBricks">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#DBRX"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
@@ -959,41 +835,6 @@
         <rdfs:label>DeepMind</rdfs:label>
         <description>A subsidiary of Alphabet focused on cutting-edge AI research, developing advanced LLMs and models like AlphaFold and Gopher.</description>
         <website>https://deepmind.com/</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#DeepSeek -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#DeepSeek">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>DeepSeek</rdfs:label>
-        <description>Chiense LLM company</description>
-        <website>https://www.deepseek.com/</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#DeepSeek_LLM -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#DeepSeek_LLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>DeepSeek LLM</rdfs:label>
-        <description>Large language model developed for specialized data retrieval and search applications, designed to enhance information extraction and understanding, likely optimized for complex, domain-specific queries.</description>
-        <paper>https://arxiv.org/abs/2401.02954</paper>
-        <website>https://huggingface.co/collections/deepseek-ai/deepseek-v2-669a1c8b8f2dbc203fbd7746</website>
     </owl:Class>
     
 
@@ -1072,30 +913,6 @@
         <description>Falcon is a series of advanced language models aimed at text generation tasks.</description>
         <paper>https://arxiv.org/abs/2311.16867</paper>
         <website>https://falconllm.tii.ae/</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#GLM -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#GLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>GLM</rdfs:label>
-        <description>Open bilingual (English &amp; Chinese) bidirectional dense model with 130 billion parameters, pre-trained using the algorithm of General Language Model (GLM).</description>
-        <paper>https://arxiv.org/abs/2210.02414</paper>
-        <website>https://github.com/THUDM/GLM-130B</website>
     </owl:Class>
     
 
@@ -1308,30 +1125,6 @@
         <rdfs:label>Google Research</rdfs:label>
         <description>Research division of Google focused on advancing artificial intelligence, machine learning, natural language processing, computer vision, robotics, and other areas of technology to drive innovation across its products and benefit the broader scientific community.</description>
         <website>https://research.google/</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#Grok -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Grok">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Grok</rdfs:label>
-        <paper>n.a.</paper>
-        <website>Large language model developed by xAI, designed to integrate contextual knowledge and responsive capabilities for interactions on messaging platforms like X (formerly Twitter).</website>
-        <website>https://x.ai/blog/grok-2</website>
     </owl:Class>
     
 
@@ -1642,53 +1435,6 @@
     
 
 
-    <!-- https://w3id.org/peo#NVLM -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#NVLM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#decoder_only"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>NVLM</rdfs:label>
-        <description>A large transformer model architecture developed by Nvidia, used for NLP tasks and training massive language models.</description>
-        <paper>https://arxiv.org/abs/2409.11402</paper>
-        <website>https://research.nvidia.com/labs/adlr/NVLM-1/</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#Nvidia -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Nvidia">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#NVLM"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Nvidia</rdfs:label>
-        <description>A hardware and AI company enabling LLM training and deployment through its GPUs, software, and data center solutions.</description>
-        <website>https://www.nvidia.com/</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#OLMo -->
 
     <owl:Class rdf:about="https://w3id.org/peo#OLMo">
@@ -1768,23 +1514,6 @@
         <rdfs:label>OpenAI</rdfs:label>
         <description>Research and deployment company known for creating advanced language models like GPT-4, focused on developing safe and beneficial artificial general intelligence (AGI) and widely accessible AI technologies.</description>
         <website>https://openai.com/</website>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#OpenBMB -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#OpenBMB">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#research_institution"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CPM"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>OpenBMB</rdfs:label>
-        <description>A team focused on building and supporting open-source language models, particularly for multilingual understanding and natural language processing.</description>
-        <website>https://www.openbmb.org/</website>
     </owl:Class>
     
 
@@ -1907,30 +1636,6 @@
     
 
 
-    <!-- https://w3id.org/peo#Qwen -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Qwen">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Qwen</rdfs:label>
-        <description>Large language model developed by Alibaba, designed to handle complex natural language tasks in multiple languages, with a strong emphasis on applications in e-commerce, customer service, and conversational AI.</description>
-        <paper>https://arxiv.org/abs/2309.16609</paper>
-        <website>https://huggingface.co/Qwen</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#RWKV_Foundation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#RWKV_Foundation">
@@ -2006,12 +1711,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#BLIP-2"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CTRL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Salesforce</rdfs:label>
@@ -2317,24 +2016,6 @@
     
 
 
-    <!-- https://w3id.org/peo#Yi -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#Yi">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Yi</rdfs:label>
-        <description>Yi is a multilingual language model by Zhipu AI, optimized for natural language understanding and generation, particularly in Chinese.</description>
-        <paper>https://arxiv.org/abs/2403.04652</paper>
-        <website>https://huggingface.co/collections/01-ai/yi-2023-11-663f3f19119ff712e176720f</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#Zhipu_AI -->
 
     <owl:Class rdf:about="https://w3id.org/peo#Zhipu_AI">
@@ -2343,12 +2024,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#CogVLM"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#GLM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Zhipu AI</rdfs:label>
@@ -2373,6 +2048,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#analogical_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Analogical prompting</rdfs:label>
+        <description>Technique that guides large language models to self-generate relevant examples or knowledge based on analogies, aiding them in reasoning through new problems without labeled exemplars.</description>
+        <reference>https://arxiv.org/pdf/2310.01714</reference>
     </owl:Class>
     
 
@@ -2411,7 +2089,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#automatic_chain_of_thought_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#chain_of_thought_prompting"/>
-        <rdfs:label>Automatic Chain of Thought prompting</rdfs:label>
+        <rdfs:label>Automatic Chain-of-Thought prompting</rdfs:label>
         <description>Technique where models autonomously generate step-by-step reasoning, enhancing structured problem-solving without explicit intermediate prompts.</description>
         <reference>https://arxiv.org/abs/2210.03493</reference>
     </owl:Class>
@@ -2432,6 +2110,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#chain_of_code_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#code_prompting_technique"/>
+        <rdfs:label>Chain-of-Code prompting</rdfs:label>
+        <description>Technique that enhances reasoning in language models by combining code generation with a &quot;LMulator&quot; that simulates code execution for complex tasks, enabling models to solve both algorithmic and semantic problems.</description>
+        <reference>https://arxiv.org/abs/2312.04474</reference>
     </owl:Class>
     
 
@@ -2440,6 +2121,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#chain_of_knowledge_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Chain-of-Knowledge prompting</rdfs:label>
+        <description>Technique that enhances large language models by dynamically integrating factual information from heterogeneous knowledge sources, aiming to improve accuracy and reduce hallucinations in generated responses.</description>
+        <reference>https://arxiv.org/abs/2305.13269</reference>
     </owl:Class>
     
 
@@ -2448,6 +2132,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#chain_of_note_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Chain-of-Note prompting</rdfs:label>
+        <description>Technique that enhances retrieval-augmented language models by generating sequential reading notes for retrieved documents, enabling systematic evaluation of relevance and reliability to produce more accurate responses.</description>
+        <reference>https://arxiv.org/abs/2311.09210</reference>
     </owl:Class>
     
 
@@ -2456,6 +2143,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#chain_of_table_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Chain-of-Table prompting</rdfs:label>
+        <description>Technique that enables large language models to perform iterative, table-based reasoning by dynamically transforming tables through a sequence of structured operations to derive accurate answers.</description>
+        <reference>https://arxiv.org/html/2401.04398v1</reference>
     </owl:Class>
     
 
@@ -2464,7 +2154,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#chain_of_thought_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
-        <rdfs:label>Chain of Thought prompting</rdfs:label>
+        <rdfs:label>Chain-of-Thought prompting</rdfs:label>
         <description>Prompting is a prompting technique that encourages a model to generate step-by-step reasoning or intermediate steps before arriving at a final answer.</description>
         <reference>https://arxiv.org/abs/2201.11903</reference>
     </owl:Class>
@@ -2475,6 +2165,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#chain_of_verification_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Chain-of-Verification prompting</rdfs:label>
+        <description>Technique that reduces hallucinations in large language models by generating an initial response, planning and executing fact-checking questions, and producing a final verified answer.</description>
+        <reference>https://arxiv.org/abs/2309.11495</reference>
     </owl:Class>
     
 
@@ -2690,6 +2383,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#logical_chain_of_thought_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Logical Chain-of-Thought prompting</rdfs:label>
+        <description>Technique that enhances language models&apos; logical reasoning skills by using a structured dataset of chain-of-thought (CoT) instructions, allowing models to perform step-by-step reasoning based on logical premises and inference rule</description>
+        <reference>https://arxiv.org/abs/2305.12147</reference>
     </owl:Class>
     
 
@@ -2717,6 +2413,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#plan_and_solve_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>Plan-and-Solve prompting</rdfs:label>
+        <reference>https://arxiv.org/abs/2305.04091</reference>
     </owl:Class>
     
 
@@ -2884,6 +2582,9 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#structured_chain_of_thought_prompting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#code_prompting_technique"/>
+        <rdfs:label>Structured Chain-of-Thought prompting</rdfs:label>
+        <description>Technique for code generation that guides language models to use structured programming steps-sequence, branch, and loop-to improve accuracy and code quality.</description>
+        <reference>https://arxiv.org/abs/2305.06599</reference>
     </owl:Class>
     
 
@@ -3029,23 +2730,6 @@
     
 
 
-    <!-- https://w3id.org/peo#xAI -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#xAI">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Grok"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>xAI</rdfs:label>
-        <description>An AI company founded by Elon Musk to advance the development of AI models and promote safe AI usage.</description>
-        <website>https://x.ai/</website>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#zero_shot_prompting -->
 
     <owl:Class rdf:about="https://w3id.org/peo#zero_shot_prompting">
@@ -3053,23 +2737,6 @@
         <rdfs:label>Zero shot prompting</rdfs:label>
         <description>Technique where an AI model generates responses or performs tasks without any specific examples, relying solely on the instructions given in the prompt.</description>
         <reference>https://www.promptingguide.ai/techniques/zeroshot</reference>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#01-ai -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#01-ai">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#company"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#develops"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#Yi"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>01-ai</rdfs:label>
-        <description>An AI-focused company, likely involved in the development of advanced language models or related AI research.</description>
-        <website>https://github.com/01-ai/Yi</website>
     </owl:Class>
     
 
@@ -3118,7 +2785,6 @@
     <!-- https://w3id.org/peo#Baichuan-13B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan-13B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3128,7 +2794,6 @@
     <!-- https://w3id.org/peo#Baichuan-7 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan-7">
-        <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3138,7 +2803,6 @@
     <!-- https://w3id.org/peo#Baichuan2-7 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan2-7">
-        <rdf:type rdf:resource="https://w3id.org/peo#Baichuan_LLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3148,7 +2812,6 @@
     <!-- https://w3id.org/peo#CTRLModel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#CTRLModel">
-        <rdf:type rdf:resource="https://w3id.org/peo#CTRL"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1630000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
     </owl:NamedIndividual>
@@ -3294,7 +2957,6 @@
     <!-- https://w3id.org/peo#DBRX_base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_base">
-        <rdf:type rdf:resource="https://w3id.org/peo#DBRX"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3304,7 +2966,6 @@
     <!-- https://w3id.org/peo#DBRX_instruct -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_instruct">
-        <rdf:type rdf:resource="https://w3id.org/peo#DBRX"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3314,7 +2975,6 @@
     <!-- https://w3id.org/peo#DeepSeek_LLM_67B_Base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DeepSeek_LLM_67B_Base">
-        <rdf:type rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3324,7 +2984,6 @@
     <!-- https://w3id.org/peo#DeepSeek_LLM_7B_Base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#DeepSeek_LLM_7B_Base">
-        <rdf:type rdf:resource="https://w3id.org/peo#DeepSeek_LLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3395,7 +3054,6 @@
     <!-- https://w3id.org/peo#GLM-10B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-10B">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
@@ -3405,7 +3063,6 @@
     <!-- https://w3id.org/peo#GLM-10B-Chinese -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-10B-Chinese">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
     </owl:NamedIndividual>
@@ -3415,7 +3072,6 @@
     <!-- https://w3id.org/peo#GLM-2B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-2B">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3425,7 +3081,6 @@
     <!-- https://w3id.org/peo#GLM-410M -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-410M">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3435,7 +3090,6 @@
     <!-- https://w3id.org/peo#GLM-515M -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-515M">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">515000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3445,7 +3099,6 @@
     <!-- https://w3id.org/peo#GLM-Base -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Base">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
@@ -3455,7 +3108,6 @@
     <!-- https://w3id.org/peo#GLM-Large -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Large">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
@@ -3465,7 +3117,6 @@
     <!-- https://w3id.org/peo#GLM-Large-Chinese -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Large-Chinese">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
@@ -3475,7 +3126,6 @@
     <!-- https://w3id.org/peo#GLM-RoBERTa -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-RoBERTa">
-        <rdf:type rdf:resource="https://w3id.org/peo#GLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
@@ -3601,7 +3251,6 @@
     <!-- https://w3id.org/peo#Grok_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3611,7 +3260,6 @@
     <!-- https://w3id.org/peo#Grok_1.5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_1.5">
-        <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3621,7 +3269,6 @@
     <!-- https://w3id.org/peo#Grok_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2">
-        <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
@@ -3633,7 +3280,6 @@
     <!-- https://w3id.org/peo#Grok_2_mini -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2_mini">
-        <rdf:type rdf:resource="https://w3id.org/peo#Grok"/>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
         <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
@@ -3876,7 +3522,6 @@
     <!-- https://w3id.org/peo#MiniCPM-2B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MiniCPM-2B">
-        <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -3907,7 +3552,6 @@
     <!-- https://w3id.org/peo#NVLM-1.0-D_72B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#NVLM-1.0-D_72B">
-        <rdf:type rdf:resource="https://w3id.org/peo#NVLM"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -4028,7 +3672,6 @@
     <!-- https://w3id.org/peo#OmniLLM-12B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OmniLLM-12B">
-        <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_video_processing"/>
@@ -4203,7 +3846,6 @@
     <!-- https://w3id.org/peo#Qwen1.5-110B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-110B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -4213,7 +3855,6 @@
     <!-- https://w3id.org/peo#Qwen1.5-32B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-32B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -4223,7 +3864,6 @@
     <!-- https://w3id.org/peo#Qwen1.5-4B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-4B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -4233,7 +3873,6 @@
     <!-- https://w3id.org/peo#Qwen2-72B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-72B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -4243,7 +3882,6 @@
     <!-- https://w3id.org/peo#Qwen2-72B-Instruct -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-72B-Instruct">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -4253,7 +3891,6 @@
     <!-- https://w3id.org/peo#Qwen2-VL-2B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-2B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
@@ -4264,7 +3901,6 @@
     <!-- https://w3id.org/peo#Qwen2-VL-7B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-7B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
@@ -4275,7 +3911,6 @@
     <!-- https://w3id.org/peo#Qwen2.5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-110B"/>
         <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-32B"/>
         <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-4B"/>
@@ -4290,7 +3925,6 @@
     <!-- https://w3id.org/peo#Qwen2.5-Coder -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5-Coder">
-        <rdf:type rdf:resource="https://w3id.org/peo#Qwen"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
@@ -4461,7 +4095,6 @@
     <!-- https://w3id.org/peo#VisCPM-10B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisCPM-10B">
-        <rdf:type rdf:resource="https://w3id.org/peo#CPM"/>
         <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
@@ -4493,7 +4126,6 @@
     <!-- https://w3id.org/peo#Yi-34B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi-34B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Yi"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -4503,7 +4135,6 @@
     <!-- https://w3id.org/peo#Yi-VL-6B -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi-VL-6B">
-        <rdf:type rdf:resource="https://w3id.org/peo#Yi"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -4513,7 +4144,6 @@
     <!-- https://w3id.org/peo#Yi1.5-6 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi1.5-6">
-        <rdf:type rdf:resource="https://w3id.org/peo#Yi"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -4923,131 +4553,11 @@ Sentiment:</has_body>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#Alibaba"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#AllenAI"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Apple"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Cohere"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DataBricks"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Google"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Meta"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Microsoft"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Mistral_AI"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Nvidia"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Zhipu_AI"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#xAI"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#01-ai"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#AllenAI"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BigCode"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BigScience"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Google_Research"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#LMSYS"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OpenBMB"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_Foundation"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Technology_Innovation_Institute"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#Alpaca"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BERT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BLIP-2"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BLOOM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CPM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CTRL"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Chinchilla"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Claude"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Codex"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CogVLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Command_R"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DALL-E"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DBRX"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#FLAN"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Falcon"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GLaMM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GPT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Gemini"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Gemma"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Grok"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#LLaMA"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#MPT-7B"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Midjourney"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Minerva"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Mistral"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#NVLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OLMo"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OPT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OpenELM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#PaLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Phi-2"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Qwen"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Sora"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#StableLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#StarCoder"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#T5"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#VALL-E"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Vicuna"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#XLNet"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Yi"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/peo#Audio_task"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Code_task"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Image_task"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Text_task"/>
             <rdf:Description rdf:about="https://w3id.org/peo#Video_task"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/peo#BERT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BLIP-2"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#BLOOM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Baichuan_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CPM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Chinchilla"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Claude"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Codex"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#CogVLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Command_R"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DBRX"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#DeepSeek_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#FLAN"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GLaMM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#GPT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Gemini"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Grok"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#LLaMA"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#MPT-7B"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Mistral"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#NVLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OLMo"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OPT"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#OpenELM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#PaLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Phi-2"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Qwen"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#RWKV_LLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#StableLM"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#StarCoder"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#T5"/>
-            <rdf:Description rdf:about="https://w3id.org/peo#Yi"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
