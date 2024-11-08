@@ -161,6 +161,16 @@
     
 
 
+    <!-- https://w3id.org/peo#generated_using -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#generated_using">
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#is_used_in_prompt"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/peo#generates_response -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#generates_response">
@@ -187,7 +197,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_context">
         <owl:inverseOf rdf:resource="https://w3id.org/peo#has_prompt"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#chat"/>
         <rdfs:label>has_context</rdfs:label>
     </owl:ObjectProperty>
@@ -209,7 +219,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_prompt">
         <rdfs:domain rdf:resource="https://w3id.org/peo#chat"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:label>has_prompt</rdfs:label>
     </owl:ObjectProperty>
     
@@ -245,10 +255,19 @@
     
 
 
+    <!-- https://w3id.org/peo#is_used_in_prompt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#is_used_in_prompt">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/peo#processed_by -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#processed_by">
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:label>processed_by</rdfs:label>
     </owl:ObjectProperty>
@@ -261,8 +280,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/peo#prompt_follows_prompt"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
     </owl:ObjectProperty>
     
 
@@ -272,8 +291,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#prompt_follows_prompt">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
     </owl:ObjectProperty>
     
 
@@ -284,7 +303,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/peo#response_followedby_prompt"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
     </owl:ObjectProperty>
     
@@ -296,7 +315,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
     </owl:ObjectProperty>
     
 
@@ -356,7 +375,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_body">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has_instruction</rdfs:label>
     </owl:DatatypeProperty>
@@ -383,7 +402,10 @@
 
     <!-- https://w3id.org/peo#has_input_data -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_input_data"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_input_data">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -402,7 +424,10 @@
 
     <!-- https://w3id.org/peo#has_output_indicator -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_output_indicator"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_output_indicator">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -2548,6 +2573,15 @@
     
 
 
+    <!-- https://w3id.org/peo#prompt -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#prompt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Prompt_engineering"/>
+        <rdfs:label>Prompt</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#prompting_technique -->
 
     <owl:Class rdf:about="https://w3id.org/peo#prompting_technique">
@@ -2895,33 +2929,6 @@
     
 
 
-    <!-- https://w3id.org/peo#Baichuan-13B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan-13B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Baichuan-7 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan-7">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Baichuan2-7 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Baichuan2-7">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/peo#CTRLModel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#CTRLModel">
@@ -3067,42 +3074,6 @@
     
 
 
-    <!-- https://w3id.org/peo#DBRX_base -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_base">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#DBRX_instruct -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DBRX_instruct">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#DeepSeek_LLM_67B_Base -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DeepSeek_LLM_67B_Base">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#DeepSeek_LLM_7B_Base -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#DeepSeek_LLM_7B_Base">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/peo#FLAN_T5_xxl -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#FLAN_T5_xxl">
@@ -3160,87 +3131,6 @@
         <rdf:type rdf:resource="https://w3id.org/peo#Falcon"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-10B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-10B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-10B-Chinese -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-10B-Chinese">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-2B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-2B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-410M -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-410M">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-515M -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-515M">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">515000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-Base -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Base">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-Large -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Large">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-Large-Chinese -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-Large-Chinese">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1250000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#GLM-RoBERTa -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLM-RoBERTa">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -3354,46 +3244,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Ultra">
         <rdf:type rdf:resource="https://w3id.org/peo#Gemini"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Grok_1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_1">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Grok_1.5 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_1.5">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Grok_2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2">
-        <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
-        <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Grok_2_mini -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Grok_2_mini">
-        <evolves rdf:resource="https://w3id.org/peo#Grok_1"/>
-        <evolves rdf:resource="https://w3id.org/peo#Grok_1.5"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">314000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
@@ -3659,15 +3509,6 @@
     
 
 
-    <!-- https://w3id.org/peo#NVLM-1.0-D_72B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#NVLM-1.0-D_72B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/peo#OLMoE-1B-7B-0924 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE-1B-7B-0924">
@@ -3775,18 +3616,6 @@
         <rdf:type rdf:resource="https://w3id.org/peo#OPT"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#OmniLLM-12B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#OmniLLM-12B">
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
-        <has_capability rdf:resource="https://w3id.org/peo#general_video_processing"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -3953,95 +3782,6 @@
     
 
 
-    <!-- https://w3id.org/peo#Qwen1.5-110B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-110B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen1.5-32B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-32B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen1.5-4B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen1.5-4B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen2-72B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-72B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen2-72B-Instruct -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-72B-Instruct">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen2-VL-2B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-2B">
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen2-VL-7B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2-VL-7B">
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen2.5 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5">
-        <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-110B"/>
-        <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-32B"/>
-        <evolves rdf:resource="https://w3id.org/peo#Qwen1.5-4B"/>
-        <evolves rdf:resource="https://w3id.org/peo#Qwen2-72B"/>
-        <evolves rdf:resource="https://w3id.org/peo#Qwen2-72B-Instruct"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Qwen2.5-Coder -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Qwen2.5-Coder">
-        <has_capability rdf:resource="https://w3id.org/peo#general_code_processing"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/peo#RWKV-v5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#RWKV-v5">
@@ -4202,16 +3942,6 @@
     
 
 
-    <!-- https://w3id.org/peo#VisCPM-10B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisCPM-10B">
-        <has_capability rdf:resource="https://w3id.org/peo#general_image_processing"/>
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/peo#VisualBERT -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#VisualBERT">
@@ -4229,33 +3959,6 @@
         <rdf:type rdf:resource="https://w3id.org/peo#XLNet"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Yi-34B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi-34B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Yi-VL-6B -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi-VL-6B">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#Yi1.5-6 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#Yi1.5-6">
-        <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500000000</has_number_parameters>
-        <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
     
 
@@ -4461,21 +4164,6 @@
     
 
 
-    <!-- https://w3id.org/peo#poem_1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#poem_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#text_generation"/>
-        <has_description>Poem generation</has_description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#poem_output -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#poem_output"/>
-    
-
-
     <!-- https://w3id.org/peo#rs_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#rs_1">
@@ -4506,26 +4194,25 @@
     
 
 
-    <!-- https://w3id.org/peo#zs_1 -->
+    <!-- https://w3id.org/peo#zero_shot_prompting_1 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_1">
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zero_shot_prompting_1">
         <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
-        <has_context rdf:resource="https://w3id.org/peo#chat_1"/>
         <solves_task rdf:resource="https://w3id.org/peo#classification_1"/>
-        <has_body>Classify the text into neutral, negative or positive. 
-
-Text: I think the vacation is okay.
-Sentiment:</has_body>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/peo#zs_2 -->
+    <!-- https://w3id.org/peo#zs_1 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_2">
-        <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
-        <prompt_followedby_prompt rdf:resource="https://w3id.org/peo#zs_1"/>
-        <has_body>ok</has_body>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <generated_using rdf:resource="https://w3id.org/peo#zero_shot_prompting_1"/>
+        <has_context rdf:resource="https://w3id.org/peo#chat_1"/>
+        <has_body>Classify the text into neutral, negative or positive. 
+
+Text: I think the vacation is okay.
+Sentiment:</has_body>
     </owl:NamedIndividual>
     
 
@@ -4637,6 +4324,12 @@ Sentiment:</has_body>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/peo#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#y">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/peo#py">
@@ -4759,6 +4452,40 @@ Sentiment:</has_body>
                         <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#is_response_of"/>
                         <swrl:argument1 rdf:resource="https://w3id.org/peo#r"/>
                         <swrl:argument2 rdf:resource="https://w3id.org/peo#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#generated_using"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#x"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#is_used_in_prompt"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#y"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
