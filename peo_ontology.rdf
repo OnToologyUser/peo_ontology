@@ -7,7 +7,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:peo1="https://w3id.org/peo#peo:"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://w3id.org/peo#">
         <owl:versionIRI rdf:resource="https://w3id.org/peo#"/>
         <rdfs:label>PEO ontology: an ontology for prompt engineering and large language models.</rdfs:label>
@@ -27,6 +30,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -141,6 +150,27 @@
     
 
 
+    <!-- https://w3id.org/peo#generated_by -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#generated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#generates_response"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>generated_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#generates_response -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#generates_response">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:label>generates_response</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/peo#has_capability -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_capability">
@@ -164,52 +194,132 @@
     
 
 
-    <!-- https://w3id.org/peo#has_prompt_input -->
+    <!-- https://w3id.org/peo#has_prompt -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_prompt_input">
-        <owl:inverseOf rdf:resource="https://w3id.org/peo#has_prompt_output"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt_output"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_prompt">
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#is_prompt_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#chat"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:label>has_prompt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#has_response -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_response">
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#is_response_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#chat"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#is_prompt_of -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#is_prompt_of">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#chat"/>
+        <rdfs:label>is_prompt_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#is_response_of -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#is_response_of">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#chat"/>
+        <rdfs:label>is_response_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#is_used_in_chat -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#is_used_in_chat">
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#uses_model"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#chat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#processed_by -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#processed_by">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>processed_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#prompt_followedby_prompt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#prompt_followedby_prompt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#prompt_follows_prompt"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/peo#has_prompt_output -->
+    <!-- https://w3id.org/peo#prompt_followedby_response -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_prompt_output">
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#prompt_output"/>
-        <rdfs:label>has_prompt_output</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/peo#produced_by -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/peo#produced_by">
-        <owl:inverseOf rdf:resource="https://w3id.org/peo#produces_output"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt_output"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:label>produced_by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/peo#produces_output -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/peo#produces_output">
-        <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
-        <rdfs:range rdf:resource="https://w3id.org/peo#prompt_output"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/peo#requires_capability -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/peo#requires_capability">
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#prompt_followedby_response">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label>requires_capability</rdfs:label>
-        <description>Relationship between a task to solve and a capaiblity, the task in order to be solved requires a specific capability.</description>
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#response_follows_prompt"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#prompt_follows_prompt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#prompt_follows_prompt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#prompt_follows_response -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#prompt_follows_response">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/peo#response_followedby_prompt"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#response_followedby_prompt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#response_followedby_prompt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#response_follows_prompt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#response_follows_prompt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
     </owl:ObjectProperty>
     
 
@@ -230,6 +340,16 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#solves_task">
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/peo#uses_model -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/peo#uses_model">
+        <rdfs:domain rdf:resource="https://w3id.org/peo#chat"/>
+        <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
+        <rdfs:label>uses_model</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -279,16 +399,6 @@
     
 
 
-    <!-- https://w3id.org/peo#has_output_value -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_output_value">
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt_output"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>has_output_value</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/peo#has_release_year -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_release_year">
@@ -298,6 +408,17 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label>has_release_year</rdfs:label>
         <description>Release year of a model or a model architecture.</description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/peo#has_response_value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_response_value">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has_response_value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -414,12 +535,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Audio_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#audio_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Audio task</rdfs:label>
         <description>Task involving audio processing</description>
     </owl:Class>
@@ -647,12 +762,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Code_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#code_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Code task</rdfs:label>
         <description>Task involving code processing</description>
     </owl:Class>
@@ -1154,12 +1263,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Image_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#image_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Image task</rdfs:label>
         <language>Task involving image processing</language>
     </owl:Class>
@@ -1882,12 +1985,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Text_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Text task</rdfs:label>
         <description>Task involving text processing</description>
     </owl:Class>
@@ -1981,12 +2078,6 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#Video_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/peo#requires_capability"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#video_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Video task</rdfs:label>
         <description>Task involving video processing</description>
     </owl:Class>
@@ -2088,7 +2179,7 @@
     <!-- https://w3id.org/peo#automatic_chain_of_thought_prompting -->
 
     <owl:Class rdf:about="https://w3id.org/peo#automatic_chain_of_thought_prompting">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#chain_of_thought_prompting"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>Automatic Chain-of-Thought prompting</rdfs:label>
         <description>Technique where models autonomously generate step-by-step reasoning, enhancing structured problem-solving without explicit intermediate prompts.</description>
         <reference>https://arxiv.org/abs/2210.03493</reference>
@@ -2168,6 +2259,16 @@
         <rdfs:label>Chain-of-Verification prompting</rdfs:label>
         <description>Technique that reduces hallucinations in large language models by generating an initial response, planning and executing fact-checking questions, and producing a final verified answer.</description>
         <reference>https://arxiv.org/abs/2309.11495</reference>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#chat -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#chat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Prompt_engineering"/>
+        <rdfs:label>Chat</rdfs:label>
+        <description>Represents a structured session of interactive exchanges between a user and a large language model, consisting of prompts and responses</description>
     </owl:Class>
     
 
@@ -2430,24 +2531,6 @@
     
 
 
-    <!-- https://w3id.org/peo#prompt -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#prompt">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Prompt_engineering"/>
-        <rdfs:label>Prompt</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#prompt_output -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#prompt_output">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#prompt"/>
-        <rdfs:label>Prompt output</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/peo#prompting_technique -->
 
     <owl:Class rdf:about="https://w3id.org/peo#prompting_technique">
@@ -2530,6 +2613,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#organization"/>
         <rdfs:label>Research institution</rdfs:label>
         <description>Institution of researchers and developers who develop a LLM  for research purposes.</description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/peo#response -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#response">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Prompt_engineering"/>
+        <rdfs:label>Response</rdfs:label>
+        <description>Response given by a LLM</description>
     </owl:Class>
     
 
@@ -3203,8 +3296,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-4">
         <rdf:type rdf:resource="https://w3id.org/peo#GPT"/>
         <evolves rdf:resource="https://w3id.org/peo#GPT-3.5"/>
-        <produces_output rdf:resource="https://w3id.org/peo#poem_output"/>
-        <produces_output rdf:resource="https://w3id.org/peo#text_classification_output_gpt4"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</has_release_year>
     </owl:NamedIndividual>
@@ -3545,7 +3636,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_Nemo">
         <rdf:type rdf:resource="https://w3id.org/peo#Mistral"/>
-        <produces_output rdf:resource="https://w3id.org/peo#text_classification_1_output"/>
         <has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</has_number_parameters>
         <has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</has_release_year>
     </owl:NamedIndividual>
@@ -4233,6 +4323,24 @@
     
 
 
+    <!-- https://w3id.org/peo#chat_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#chat_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#classification_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#classification_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_classification"/>
+        <has_description>Classify the text into neutral, negative or positive.</has_description>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#gemma-1.1-2b-it -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-2b-it">
@@ -4337,7 +4445,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#poem_1">
         <rdf:type rdf:resource="https://w3id.org/peo#text_generation"/>
-        <solved_by rdf:resource="https://w3id.org/peo#zero_shot_2"/>
         <has_description>Poem generation</has_description>
     </owl:NamedIndividual>
     
@@ -4345,39 +4452,16 @@
 
     <!-- https://w3id.org/peo#poem_output -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#poem_output">
-        <rdf:type rdf:resource="https://w3id.org/peo#prompt_output"/>
-        <has_prompt_input rdf:resource="https://w3id.org/peo#zero_shot_2"/>
-        <produced_by rdf:resource="https://w3id.org/peo#GPT-4"/>
-        <has_output_value>Here&apos;s a poem inspired by Italian poetic style, with rhythmic flow, imagery, and romantic sentiment:
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#poem_output"/>
+    
 
----
 
-**L&apos;Ultima Luce**
+    <!-- https://w3id.org/peo#rs_1 -->
 
-Quando l’ultima luce si posa su Roma,  
-e il Tevere scorre d’argento e di pace,  
-sospira la sera, e il cielo si doma,  
-mentre le stelle si sveglian fugace.
-
-Cammino tra viali che odorano d’erba,  
-tra mura antiche, custodi di sogni,  
-sfiorando l’ombra che il vento riserba,  
-nell’eco lontano di passi e bisogni.
-
-Oh, dolce è l’aria che sfiora la pelle,  
-si posa leggera come un sussurro,  
-e canta l’amore, le notti, le stelle,  
-sul cuore si stende, come un azzurro.
-
-E mentre la luna dipinge i colli,  
-nel silenzio, che tutto abbraccia e doma,  
-io resto, perduto, tra sogni e cipressi,  
-innamorato di questa mia Roma.
-
---- 
-
-Let me know if you&apos;d like a poem on a particular theme or setting!</has_output_value>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#rs_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <response_followedby_prompt rdf:resource="https://w3id.org/peo#zs_1"/>
+        <has_response_value>Neutral</has_response_value>
     </owl:NamedIndividual>
     
 
@@ -4402,64 +4486,16 @@ Let me know if you&apos;d like a poem on a particular theme or setting!</has_out
     
 
 
-    <!-- https://w3id.org/peo#text_classification_1 -->
+    <!-- https://w3id.org/peo#zs_1 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#text_classification_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#text_classification"/>
-        <solved_by rdf:resource="https://w3id.org/peo#zero_shot_1"/>
-        <has_description>Classification of a given emotion</has_description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#text_classification_1_output -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#text_classification_1_output">
-        <rdf:type rdf:resource="https://w3id.org/peo#prompt_output"/>
-        <has_prompt_input rdf:resource="https://w3id.org/peo#zero_shot_1"/>
-        <produced_by rdf:resource="https://w3id.org/peo#Mistral_Nemo"/>
-        <has_output_value>Neutral
-
-Explanation: The text &quot;I think the vacation is okay&quot; expresses a neutral sentiment. The word &quot;okay&quot; is a neutral term that doesn&apos;t convey a strong positive or negative emotion. It simply indicates that the speaker finds the vacation acceptable but not particularly good or bad.</has_output_value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#text_classification_output_gpt4 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#text_classification_output_gpt4">
-        <rdf:type rdf:resource="https://w3id.org/peo#prompt_output"/>
-        <has_prompt_input rdf:resource="https://w3id.org/peo#zero_shot_1"/>
-        <produced_by rdf:resource="https://w3id.org/peo#GPT-4"/>
-        <has_output_value>The sentiment is neutral.</has_output_value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#zero_shot_1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zero_shot_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_1">
         <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
-        <has_prompt_output rdf:resource="https://w3id.org/peo#text_classification_1_output"/>
-        <has_prompt_output rdf:resource="https://w3id.org/peo#text_classification_output_gpt4"/>
-        <solves_task rdf:resource="https://w3id.org/peo#text_classification_1"/>
+        <is_prompt_of rdf:resource="https://w3id.org/peo#chat_1"/>
+        <solves_task rdf:resource="https://w3id.org/peo#classification_1"/>
         <has_body>Classify the text into neutral, negative or positive. 
 
 Text: I think the vacation is okay.
 Sentiment:</has_body>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#zero_shot_2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zero_shot_2">
-        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
-        <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
-        <has_prompt_output rdf:resource="https://w3id.org/peo#poem_output"/>
-        <solves_task rdf:resource="https://w3id.org/peo#poem_1"/>
-        <has_body>Generate a poem in italian style</has_body>
     </owl:NamedIndividual>
     
 
@@ -4549,6 +4585,217 @@ Sentiment:</has_body>
             <rdf:Description rdf:about="https://w3id.org/peo#Region_Encoder"/>
             <rdf:Description rdf:about="https://w3id.org/peo#ViT-Encoder"/>
         </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://w3id.org/peo#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#llm">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/peo#chat"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#has_prompt"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/peo#c"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/peo#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#uses_model"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/peo#c"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/peo#llm"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#processed_by"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#p"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#llm"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/peo#prompting_technique"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/peo#response"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/peo#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#is_prompt_of"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/peo#p"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/peo#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#is_response_of"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#r"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#response_followedby_prompt"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#r"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#prompt_follows_response"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#p"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#solves_task"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#p"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#solved_by"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#t"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
