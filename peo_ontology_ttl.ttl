@@ -6,6 +6,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix peo1: <https://w3id.org/peo#peo:> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @base <https://w3id.org/peo#> .
 
 <https://w3id.org/peo#> rdf:type owl:Ontology ;
@@ -19,6 +22,10 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
 
 ###  https://w3id.org/peo#creator
 peo:creator rdf:type owl:AnnotationProperty .
@@ -60,7 +67,6 @@ owl:topObjectProperty rdfs:domain peo:task ;
 ###  https://w3id.org/peo#based_on
 peo:based_on rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
-             rdf:type owl:FunctionalProperty ;
              rdfs:domain peo:large_language_model ;
              rdfs:range peo:large_language_model ;
              rdfs:label "based_on" ;
@@ -68,8 +74,7 @@ peo:based_on rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/peo#belongs_to
-peo:belongs_to rdf:type owl:ObjectProperty ,
-                        owl:FunctionalProperty ;
+peo:belongs_to rdf:type owl:ObjectProperty ;
                rdfs:domain peo:organization ;
                rdfs:range peo:organization ;
                rdfs:label "belongs_to" ;
@@ -79,11 +84,9 @@ peo:belongs_to rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/peo#develops
 peo:develops rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
-             rdf:type owl:TransitiveProperty ;
              rdfs:domain peo:organization ;
              rdfs:range peo:Base_model ,
                         peo:large_language_model ;
-             owl:propertyDisjointWith peo:evolves ;
              rdfs:label "develops" ;
              peo:description "Relationship between an organization and a large language model or an architecture where the organization develops that technology" .
 
@@ -98,97 +101,246 @@ peo:evolves rdf:type owl:ObjectProperty ;
             peo:description "Relationships between two model in which a model evolves, it is the next version of the other model." .
 
 
+###  https://w3id.org/peo#generates_response
+peo:generates_response rdf:type owl:ObjectProperty ;
+                       owl:inverseOf peo:response_generated_using ;
+                       rdfs:domain peo:large_language_model ;
+                       rdfs:range peo:response ;
+                       rdfs:label "generates_response" ;
+                       peo:description "Relation between a larga language model and a response, where the model generates the response." .
+
+
 ###  https://w3id.org/peo#has_capability
 peo:has_capability rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
-                   rdf:type owl:AsymmetricProperty ;
                    rdfs:domain peo:large_language_model ;
                    rdfs:range peo:capability ;
                    rdfs:label "has_capability" ;
                    peo:description "Relationship between a large language model and a capability where the model has that capability." .
 
 
+###  https://w3id.org/peo#has_context
+peo:has_context rdf:type owl:ObjectProperty ;
+                owl:inverseOf peo:has_prompt ;
+                rdfs:domain peo:prompt ;
+                rdfs:range peo:chat ;
+                rdfs:label "has_context" ;
+                peo:description "Relation between a prompt and a chat, where the chat is the context of the prompt." .
+
+
 ###  https://w3id.org/peo#has_model_architecture
-peo:has_model_architecture rdf:type owl:ObjectProperty ,
-                                    owl:FunctionalProperty ,
-                                    owl:AsymmetricProperty ;
+peo:has_model_architecture rdf:type owl:ObjectProperty ;
                            rdfs:domain peo:large_language_model ;
                            rdfs:range peo:Base_model ;
                            rdfs:label "has_model_architecture" ;
                            peo:description "Relationship between a large language model and a basic model, where the model is the component of  the large language model." .
 
 
-###  https://w3id.org/peo#has_prompt_input
-peo:has_prompt_input rdf:type owl:ObjectProperty ;
-                     owl:inverseOf peo:has_prompt_output ;
-                     rdfs:domain peo:prompt_output ;
-                     rdfs:range peo:prompting_technique .
+###  https://w3id.org/peo#has_prompt
+peo:has_prompt rdf:type owl:ObjectProperty ;
+               rdfs:domain peo:chat ;
+               rdfs:range peo:prompt ;
+               rdfs:label "has_prompt" ;
+               peo:description "Relation between chat and a prompt, where the chat has that prompt." .
 
 
-###  https://w3id.org/peo#has_prompt_output
-peo:has_prompt_output rdf:type owl:ObjectProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:domain peo:prompting_technique ;
-                      rdfs:range peo:prompt_output ;
-                      rdfs:label "has_prompt_output" .
+###  https://w3id.org/peo#has_response
+peo:has_response rdf:type owl:ObjectProperty ;
+                 owl:inverseOf peo:is_response_of ;
+                 rdfs:domain peo:chat ;
+                 rdfs:range peo:response ;
+                 rdfs:label "has_response" ;
+                 peo:description "Relation between a chat and a response, where the chat has that response." .
 
 
-###  https://w3id.org/peo#produced_by
-peo:produced_by rdf:type owl:ObjectProperty ;
-                owl:inverseOf peo:produces_output ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:domain peo:prompt_output ;
-                rdfs:range peo:large_language_model ;
-                rdfs:label "produced_by" .
+###  https://w3id.org/peo#is_response_of
+peo:is_response_of rdf:type owl:ObjectProperty ;
+                   rdfs:domain peo:response ;
+                   rdfs:range peo:chat ;
+                   rdfs:label "is_response_of" ;
+                   peo:description "Response belongs to a chat" .
 
 
-###  https://w3id.org/peo#produces_output
-peo:produces_output rdf:type owl:ObjectProperty ;
+###  https://w3id.org/peo#is_used_in_chat
+peo:is_used_in_chat rdf:type owl:ObjectProperty ;
+                    owl:inverseOf peo:uses_model ;
                     rdfs:domain peo:large_language_model ;
-                    rdfs:range peo:prompt_output .
+                    rdfs:range peo:chat ;
+                    rdfs:label "is_used_in_chat" ;
+                    peo:description "Relation between a large language model and a chat, where the model is used in that chat" .
 
 
-###  https://w3id.org/peo#requires_capability
-peo:requires_capability rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf owl:topObjectProperty ;
-                        rdf:type owl:AsymmetricProperty ;
-                        rdfs:label "requires_capability" ;
-                        peo:description "Relationship between a task to solve and a capaiblity, the task in order to be solved requires a specific capability." .
+###  https://w3id.org/peo#is_used_in_prompt
+peo:is_used_in_prompt rdf:type owl:ObjectProperty ;
+                      owl:inverseOf peo:prompt_generated_using ;
+                      rdfs:domain peo:prompting_technique ;
+                      rdfs:range peo:prompt ;
+                      rdfs:label "is_used_in_prompt" ;
+                      peo:description "Relation between a prompt and a prompting technique, where the prompt is generated using that prompting technique" .
+
+
+###  https://w3id.org/peo#processed_by
+peo:processed_by rdf:type owl:ObjectProperty ;
+                 owl:inverseOf peo:processes ;
+                 rdfs:domain peo:prompt ;
+                 rdfs:range peo:large_language_model ;
+                 rdfs:label "processed_by" ;
+                 peo:description "Relation between a prompt and a large language model, where the prompt is given as input to the large language model" .
+
+
+###  https://w3id.org/peo#processes
+peo:processes rdf:type owl:ObjectProperty ;
+              rdfs:domain peo:large_language_model ;
+              rdfs:range peo:prompt ;
+              rdfs:label "processes" ;
+              peo:description "Relation between a large language model and a prompt, where the large language model processes the prompt" .
+
+
+###  https://w3id.org/peo#prompt_followedby_prompt
+peo:prompt_followedby_prompt rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             owl:inverseOf peo:prompt_follows_prompt ;
+                             rdf:type owl:TransitiveProperty ;
+                             rdfs:domain peo:prompt ;
+                             rdfs:range peo:prompt ;
+                             rdfs:label "prompt_followedby_prompt" ;
+                             peo:description "The first prompt is after the second prompt" .
+
+
+###  https://w3id.org/peo#prompt_followedby_response
+peo:prompt_followedby_response rdf:type owl:ObjectProperty ;
+                               owl:inverseOf peo:response_follows_prompt ;
+                               rdf:type owl:TransitiveProperty ;
+                               rdfs:domain peo:prompt ;
+                               rdfs:range peo:response ;
+                               rdfs:label "prompt_followedby_response" ;
+                               peo:description "Prompt is after response" .
+
+
+###  https://w3id.org/peo#prompt_follows_prompt
+peo:prompt_follows_prompt rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdf:type owl:TransitiveProperty ;
+                          rdfs:domain peo:prompt ;
+                          rdfs:range peo:prompt ;
+                          rdfs:label "prompt_follows_prompt" ;
+                          peo:description "The second prompt is after the first prompt" .
+
+
+###  https://w3id.org/peo#prompt_follows_response
+peo:prompt_follows_response rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            owl:inverseOf peo:response_followedby_prompt ;
+                            rdf:type owl:TransitiveProperty ;
+                            rdfs:domain peo:prompt ;
+                            rdfs:range peo:response ;
+                            rdfs:label "prompt_follows_response" ;
+                            peo:description "Response is after prompt" .
+
+
+###  https://w3id.org/peo#prompt_generated_using
+peo:prompt_generated_using rdf:type owl:ObjectProperty ;
+                           rdfs:domain peo:prompt ;
+                           rdfs:range peo:prompting_technique ;
+                           rdfs:label "prompt_generated_using" ;
+                           peo:description "Prompt generated using a prompting technique" .
+
+
+###  https://w3id.org/peo#response_followedby_prompt
+peo:response_followedby_prompt rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdf:type owl:TransitiveProperty ;
+                               rdfs:domain peo:response ;
+                               rdfs:range peo:prompt ;
+                               rdfs:label "response_followedby_prompt" ;
+                               peo:description "Response is after a prompt" .
+
+
+###  https://w3id.org/peo#response_follows_prompt
+peo:response_follows_prompt rdf:type owl:ObjectProperty ,
+                                     owl:TransitiveProperty ;
+                            rdfs:domain peo:response ;
+                            rdfs:range peo:prompt ;
+                            rdfs:label "response_follows_prompt" ;
+                            peo:description "Prompt is after response" .
+
+
+###  https://w3id.org/peo#response_generated_using
+peo:response_generated_using rdf:type owl:ObjectProperty ;
+                             rdfs:domain peo:response ;
+                             rdfs:range peo:large_language_model ;
+                             rdfs:label "response_generated_using" ;
+                             peo:description "Response generated using a large language model" .
 
 
 ###  https://w3id.org/peo#solved_by
 peo:solved_by rdf:type owl:ObjectProperty ;
               owl:inverseOf peo:solves_task ;
-              rdf:type owl:FunctionalProperty ;
               rdfs:domain peo:task ;
               rdfs:range peo:prompting_technique ;
-              rdfs:label "solved_by" .
+              rdfs:label "solved_by" ;
+              peo:description "Task solved by a prompting technique" .
 
 
 ###  https://w3id.org/peo#solves_task
-peo:solves_task rdf:type owl:ObjectProperty ,
-                         owl:FunctionalProperty ;
+peo:solves_task rdf:type owl:ObjectProperty ;
                 rdfs:domain peo:prompting_technique ;
-                rdfs:range peo:task .
+                rdfs:range peo:task ;
+                rdfs:label "solves_task" ;
+                peo:description "Relation between a prompting technique and a task, where the technique solves that task." .
+
+
+###  https://w3id.org/peo#uses_model
+peo:uses_model rdf:type owl:ObjectProperty ;
+               rdfs:domain peo:chat ;
+               rdfs:range peo:large_language_model ;
+               rdfs:label "uses_model" ;
+               peo:description "Realtion between a chat and a large language model, where the chat is with the large language model" .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
+###  https://w3id.org/peo#end_time_chat
+peo:end_time_chat rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain peo:chat ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "end_time_chat" ;
+                  peo:description "End time of a chat" .
+
+
 ###  https://w3id.org/peo#has_body
 peo:has_body rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
-             rdfs:domain peo:prompting_technique ;
+             rdfs:domain peo:prompt ;
              rdfs:range xsd:string ;
-             rdfs:label "has_body" .
+             rdfs:label "has_instruction" ;
+             peo:description "Instruction of a prompt" .
+
+
+###  https://w3id.org/peo#has_chat_title
+peo:has_chat_title rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:label "has_chat_title" ;
+                   peo:description "Title of a chat" .
 
 
 ###  https://w3id.org/peo#has_description
 peo:has_description rdf:type owl:DatatypeProperty ;
                     rdfs:domain peo:task ;
                     rdfs:range xsd:string ;
-                    rdfs:label "has_description" .
+                    rdfs:label "has_description" ;
+                    peo:description "Description of a specific task" .
+
+
+###  https://w3id.org/peo#has_input_data
+peo:has_input_data rdf:type owl:DatatypeProperty ;
+                   rdfs:domain peo:prompt ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has_input_data" ;
+                   peo:description "Input data of a prompt" .
 
 
 ###  https://w3id.org/peo#has_number_parameters
@@ -201,12 +353,12 @@ peo:has_number_parameters rdf:type owl:DatatypeProperty ;
                           peo:description "Number of parameters of a large language model." .
 
 
-###  https://w3id.org/peo#has_output_value
-peo:has_output_value rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain peo:prompt_output ;
-                     rdfs:range xsd:string ;
-                     rdfs:label "has_output_value" .
+###  https://w3id.org/peo#has_output_indicator
+peo:has_output_indicator rdf:type owl:DatatypeProperty ;
+                         rdfs:domain peo:prompt ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "has_output_indicator" ;
+                         peo:description "Output format of a prompt" .
 
 
 ###  https://w3id.org/peo#has_release_year
@@ -217,6 +369,24 @@ peo:has_release_year rdf:type owl:DatatypeProperty ;
                      rdfs:range xsd:integer ;
                      rdfs:label "has_release_year" ;
                      peo:description "Release year of a model or a model architecture." .
+
+
+###  https://w3id.org/peo#has_response_value
+peo:has_response_value rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain peo:response ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "has_response_value" ;
+                       peo:description "Actual value of a response" .
+
+
+###  https://w3id.org/peo#start_time_chat
+peo:start_time_chat rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain peo:chat ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "start_time_chat" ;
+                    peo:description "Start time of a chat" .
 
 
 #################################################################
@@ -232,18 +402,6 @@ peo:Aalto_University rdf:type owl:Class ;
                                      ] ;
                      rdfs:label "Aalto University" ;
                      peo:website "https://www.aalto.fi/" .
-
-
-###  https://w3id.org/peo#Alibaba
-peo:Alibaba rdf:type owl:Class ;
-            rdfs:subClassOf peo:company ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty peo:develops ;
-                              owl:someValuesFrom peo:Qwen
-                            ] ;
-            rdfs:label "Alibaba" ;
-            peo:description "A Chinese multinational technology company using AI and LLMs for e-commerce, cloud computing, and digital innovation." ;
-            peo:website "https://www.alibabagroup.com/" .
 
 
 ###  https://w3id.org/peo#AllenAI
@@ -305,11 +463,7 @@ peo:Apple rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#Audio_task
 peo:Audio_task rdf:type owl:Class ;
-               rdfs:subClassOf peo:task ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty peo:requires_capability ;
-                                 owl:someValuesFrom peo:audio_processing
-                               ] ;
+               rdfs:subClassOf peo:task ;
                rdfs:label "Audio task" ;
                peo:description "Task involving audio processing" .
 
@@ -376,35 +530,6 @@ peo:BLOOM rdf:type owl:Class ;
           peo:website "https://huggingface.co/bigscience/bloom" .
 
 
-###  https://w3id.org/peo#Baichuan
-peo:Baichuan rdf:type owl:Class ;
-             rdfs:subClassOf peo:company ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty peo:develops ;
-                               owl:someValuesFrom peo:Baichuan_LLM
-                             ] ;
-             rdfs:label "Baichuan" ;
-             peo:description "Chinese company that develops LLMs trained on chinese language" ;
-             peo:website "https://github.com/baichuan-inc/Baichuan-7B" .
-
-
-###  https://w3id.org/peo#Baichuan_LLM
-peo:Baichuan_LLM rdf:type owl:Class ;
-                 rdfs:subClassOf peo:large_language_model ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty peo:has_capability ;
-                                   owl:someValuesFrom peo:text_processing
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty peo:has_model_architecture ;
-                                   owl:someValuesFrom peo:transformer
-                                 ] ;
-                 rdfs:label "Baichuan LLM" ;
-                 peo:description "Open large scale language models developed by Baichuan chinese company" ;
-                 peo:paper "https://arxiv.org/abs/2309.10305" ;
-                 peo:website "https://huggingface.co/baichuan-inc" .
-
-
 ###  https://w3id.org/peo#Base_model
 peo:Base_model rdf:type owl:Class ;
                rdfs:subClassOf peo:language_model_feature ;
@@ -448,36 +573,6 @@ peo:BigScience rdf:type owl:Class ;
 peo:CLIP rdf:type owl:Class ;
          rdfs:subClassOf peo:Base_model ;
          rdfs:label "CLIP" .
-
-
-###  https://w3id.org/peo#CPM
-peo:CPM rdf:type owl:Class ;
-        rdfs:subClassOf peo:large_language_model ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty peo:has_capability ;
-                          owl:someValuesFrom peo:text_processing
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty peo:has_model_architecture ;
-                          owl:someValuesFrom peo:transformer
-                        ] ;
-        rdfs:label "CPM" ;
-        peo:description "Series of large language models focused on Chinese language understanding and generation, created to advance NLP research and applications specifically tailored to Chinese language contexts." ;
-        peo:paper "https://arxiv.org/abs/2012.00413" ;
-        peo:website "https://huggingface.co/docs/transformers/model_doc/cpm" .
-
-
-###  https://w3id.org/peo#CTRL
-peo:CTRL rdf:type owl:Class ;
-         rdfs:subClassOf peo:large_language_model ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_model_architecture ;
-                           owl:someValuesFrom peo:transformer
-                         ] ;
-         rdfs:label "CTRL" ;
-         peo:description "Conditional transformer model that enables controlled text generation through control codes." ;
-         peo:paper "https://arxiv.org/abs/1909.05858" ;
-         peo:website "https://github.com/salesforce/ctrl" .
 
 
 ###  https://w3id.org/peo#Carnegie_Mellon_University
@@ -527,11 +622,7 @@ peo:Claude rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#Code_task
 peo:Code_task rdf:type owl:Class ;
-              rdfs:subClassOf peo:task ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty peo:requires_capability ;
-                                owl:someValuesFrom peo:code_processing
-                              ] ;
+              rdfs:subClassOf peo:task ;
               rdfs:label "Code task" ;
               peo:description "Task involving code processing" .
 
@@ -621,26 +712,9 @@ peo:DALL-E rdf:type owl:Class ;
                            ] .
 
 
-###  https://w3id.org/peo#DBRX
-peo:DBRX rdf:type owl:Class ;
-         rdfs:subClassOf peo:large_language_model ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_model_architecture ;
-                           owl:someValuesFrom peo:transformer
-                         ] ;
-         rdfs:label "DBRX" ;
-         peo:description "Large language model optimized for use in data analytics and big data processing contexts, often integrated into Databricks' platforms to enhance machine learning workflows, natural language querying, and enterprise-level AI applications." ;
-         peo:paper "n.a." ;
-         peo:website "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm" .
-
-
 ###  https://w3id.org/peo#DataBricks
 peo:DataBricks rdf:type owl:Class ;
                rdfs:subClassOf peo:company ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty peo:develops ;
-                                 owl:someValuesFrom peo:DBRX
-                               ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty peo:develops ;
                                  owl:someValuesFrom peo:MPT-7B
@@ -675,31 +749,6 @@ peo:DeepMind rdf:type owl:Class ;
              rdfs:label "DeepMind" ;
              peo:description "A subsidiary of Alphabet focused on cutting-edge AI research, developing advanced LLMs and models like AlphaFold and Gopher." ;
              peo:website "https://deepmind.com/" .
-
-
-###  https://w3id.org/peo#DeepSeek
-peo:DeepSeek rdf:type owl:Class ;
-             rdfs:subClassOf peo:company ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty peo:develops ;
-                               owl:someValuesFrom peo:DeepSeek_LLM
-                             ] ;
-             rdfs:label "DeepSeek" ;
-             peo:description "Chiense LLM company" ;
-             peo:website "https://www.deepseek.com/" .
-
-
-###  https://w3id.org/peo#DeepSeek_LLM
-peo:DeepSeek_LLM rdf:type owl:Class ;
-                 rdfs:subClassOf peo:large_language_model ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty peo:has_model_architecture ;
-                                   owl:someValuesFrom peo:transformer
-                                 ] ;
-                 rdfs:label "DeepSeek LLM" ;
-                 peo:description "Large language model developed for specialized data retrieval and search applications, designed to enhance information extraction and understanding, likely optimized for complex, domain-specific queries." ;
-                 peo:paper "https://arxiv.org/abs/2401.02954" ;
-                 peo:website "https://huggingface.co/collections/deepseek-ai/deepseek-v2-669a1c8b8f2dbc203fbd7746" .
 
 
 ###  https://w3id.org/peo#Diffusion
@@ -755,23 +804,6 @@ peo:Falcon rdf:type owl:Class ;
            peo:description "Falcon is a series of advanced language models aimed at text generation tasks." ;
            peo:paper "https://arxiv.org/abs/2311.16867" ;
            peo:website "https://falconllm.tii.ae/" .
-
-
-###  https://w3id.org/peo#GLM
-peo:GLM rdf:type owl:Class ;
-        rdfs:subClassOf peo:large_language_model ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty peo:has_capability ;
-                          owl:someValuesFrom peo:text_processing
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty peo:has_model_architecture ;
-                          owl:someValuesFrom peo:transformer
-                        ] ;
-        rdfs:label "GLM" ;
-        peo:description "Open bilingual (English & Chinese) bidirectional dense model with 130 billion parameters, pre-trained using the algorithm of General Language Model (GLM)." ;
-        peo:paper "https://arxiv.org/abs/2210.02414" ;
-        peo:website "https://github.com/THUDM/GLM-130B" .
 
 
 ###  https://w3id.org/peo#GLaMM
@@ -921,23 +953,6 @@ peo:Google_Research rdf:type owl:Class ;
                     peo:website "https://research.google/" .
 
 
-###  https://w3id.org/peo#Grok
-peo:Grok rdf:type owl:Class ;
-         rdfs:subClassOf peo:large_language_model ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_capability ;
-                           owl:someValuesFrom peo:text_processing
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_model_architecture ;
-                           owl:someValuesFrom peo:transformer
-                         ] ;
-         rdfs:label "Grok" ;
-         peo:paper "n.a." ;
-         peo:website "Large language model developed by xAI, designed to integrate contextual knowledge and responsive capabilities for interactions on messaging platforms like X (formerly Twitter)." ,
-                     "https://x.ai/blog/grok-2" .
-
-
 ###  https://w3id.org/peo#Grounding_Image_Encoder
 peo:Grounding_Image_Encoder rdf:type owl:Class ;
                             rdfs:subClassOf peo:Encoder ;
@@ -955,11 +970,7 @@ peo:HuggingFace rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#Image_task
 peo:Image_task rdf:type owl:Class ;
-               rdfs:subClassOf peo:task ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty peo:requires_capability ;
-                                 owl:someValuesFrom peo:image_processing
-                               ] ;
+               rdfs:subClassOf peo:task ;
                rdfs:label "Image task" ;
                peo:language "Task involving image processing" .
 
@@ -998,6 +1009,14 @@ peo:LaMDA-PT rdf:type owl:Class ;
              rdfs:subClassOf peo:transformer ;
              rdfs:label "LaMDA-PT" ;
              peo:description "https://arxiv.org/abs/2201.08239" .
+
+
+###  https://w3id.org/peo#Lighting
+peo:Lighting rdf:type owl:Class ;
+             rdfs:subClassOf peo:image_prompting_technique ;
+             rdfs:label "Lighting" ;
+             peo:description "Words that describe the lighting of the object to generate" ;
+             peo:reference "https://arxiv.org/abs/2211.15462" .
 
 
 ###  https://w3id.org/peo#Linköping_University
@@ -1145,39 +1164,6 @@ peo:Mohamed_bin_Zayed_University_of_AI rdf:type owl:Class ;
                                        peo:website "https://mbzuai.ac.ae/" .
 
 
-###  https://w3id.org/peo#NVLM
-peo:NVLM rdf:type owl:Class ;
-         rdfs:subClassOf peo:large_language_model ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_capability ;
-                           owl:someValuesFrom peo:code_processing
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_capability ;
-                           owl:someValuesFrom peo:image_processing
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_model_architecture ;
-                           owl:someValuesFrom peo:decoder_only
-                         ] ;
-         rdfs:label "NVLM" ;
-         peo:description "A large transformer model architecture developed by Nvidia, used for NLP tasks and training massive language models." ;
-         peo:paper "https://arxiv.org/abs/2409.11402" ;
-         peo:website "https://research.nvidia.com/labs/adlr/NVLM-1/" .
-
-
-###  https://w3id.org/peo#Nvidia
-peo:Nvidia rdf:type owl:Class ;
-           rdfs:subClassOf peo:company ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty peo:develops ;
-                             owl:someValuesFrom peo:NVLM
-                           ] ;
-           rdfs:label "Nvidia" ;
-           peo:description "A hardware and AI company enabling LLM training and deployment through its GPUs, software, and data center solutions." ;
-           peo:website "https://www.nvidia.com/" .
-
-
 ###  https://w3id.org/peo#OLMo
 peo:OLMo rdf:type owl:Class ;
          rdfs:subClassOf peo:large_language_model ,
@@ -1234,18 +1220,6 @@ peo:OpenAI rdf:type owl:Class ;
            rdfs:label "OpenAI" ;
            peo:description "Research and deployment company known for creating advanced language models like GPT-4, focused on developing safe and beneficial artificial general intelligence (AGI) and widely accessible AI technologies." ;
            peo:website "https://openai.com/" .
-
-
-###  https://w3id.org/peo#OpenBMB
-peo:OpenBMB rdf:type owl:Class ;
-            rdfs:subClassOf peo:research_institution ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty peo:develops ;
-                              owl:someValuesFrom peo:CPM
-                            ] ;
-            rdfs:label "OpenBMB" ;
-            peo:description "A team focused on building and supporting open-source language models, particularly for multilingual understanding and natural language processing." ;
-            peo:website "https://www.openbmb.org/" .
 
 
 ###  https://w3id.org/peo#OpenELM
@@ -1331,23 +1305,6 @@ peo:Q-Former rdf:type owl:Class ;
              peo:reference "https://www.researchgate.net/publication/367557839_BLIP-2_Bootstrapping_Language-Image_Pre-training_with_Frozen_Image_Encoders_and_Large_Language_Models" .
 
 
-###  https://w3id.org/peo#Qwen
-peo:Qwen rdf:type owl:Class ;
-         rdfs:subClassOf peo:large_language_model ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_capability ;
-                           owl:someValuesFrom peo:text_processing
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty peo:has_model_architecture ;
-                           owl:someValuesFrom peo:transformer
-                         ] ;
-         rdfs:label "Qwen" ;
-         peo:description "Large language model developed by Alibaba, designed to handle complex natural language tasks in multiple languages, with a strong emphasis on applications in e-commerce, customer service, and conversational AI." ;
-         peo:paper "https://arxiv.org/abs/2309.16609" ;
-         peo:website "https://huggingface.co/Qwen" .
-
-
 ###  https://w3id.org/peo#RWKV_Foundation
 peo:RWKV_Foundation rdf:type owl:Class ;
                     rdfs:subClassOf peo:research_institution ,
@@ -1401,10 +1358,6 @@ peo:Salesforce rdf:type owl:Class ;
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty peo:develops ;
                                  owl:someValuesFrom peo:BLIP-2
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty peo:develops ;
-                                 owl:someValuesFrom peo:CTRL
                                ] ;
                rdfs:label "Salesforce" ;
                peo:description "Cloud-based software company specializing in customer relationship management (CRM) solutions and enterprise applications focused on sales, service, marketing, and analytics." ;
@@ -1523,11 +1476,7 @@ peo:Technology_Innovation_Institute rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#Text_task
 peo:Text_task rdf:type owl:Class ;
-              rdfs:subClassOf peo:task ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty peo:requires_capability ;
-                                owl:someValuesFrom peo:text_processing
-                              ] ;
+              rdfs:subClassOf peo:task ;
               rdfs:label "Text task" ;
               peo:description "Task involving text processing" .
 
@@ -1592,11 +1541,7 @@ peo:Vicuna rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#Video_task
 peo:Video_task rdf:type owl:Class ;
-               rdfs:subClassOf peo:task ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty peo:requires_capability ;
-                                 owl:someValuesFrom peo:video_processing
-                               ] ;
+               rdfs:subClassOf peo:task ;
                rdfs:label "Video task" ;
                peo:description "Task involving video processing" .
 
@@ -1617,29 +1562,12 @@ peo:XLNet rdf:type owl:Class ;
           peo:website "https://github.com/zihangdai/xlnet" .
 
 
-###  https://w3id.org/peo#Yi
-peo:Yi rdf:type owl:Class ;
-       rdfs:subClassOf peo:large_language_model ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty peo:has_model_architecture ;
-                         owl:someValuesFrom peo:transformer
-                       ] ;
-       rdfs:label "Yi" ;
-       peo:description "Yi is a multilingual language model by Zhipu AI, optimized for natural language understanding and generation, particularly in Chinese." ;
-       peo:paper "https://arxiv.org/abs/2403.04652" ;
-       peo:website "https://huggingface.co/collections/01-ai/yi-2023-11-663f3f19119ff712e176720f" .
-
-
 ###  https://w3id.org/peo#Zhipu_AI
 peo:Zhipu_AI rdf:type owl:Class ;
              rdfs:subClassOf peo:company ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty peo:develops ;
                                owl:someValuesFrom peo:CogVLM
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty peo:develops ;
-                               owl:someValuesFrom peo:GLM
                              ] ;
              rdfs:label "Zhipu AI" ;
              peo:description "A Chinese AI company specializing in large-scale language models and generative AI applications" ;
@@ -1652,6 +1580,14 @@ peo:active_prompting rdf:type owl:Class ;
                      rdfs:label "Active prompting" ;
                      peo:description "Technique where specific, dynamic instructions are given to a model to guide it through a multi-step or interactive process, often requiring the model to actively engage, reflect, or respond iteratively to achieve a targeted outcome." ;
                      peo:reference "https://arxiv.org/abs/2302.12246" .
+
+
+###  https://w3id.org/peo#analogical_prompting
+peo:analogical_prompting rdf:type owl:Class ;
+                         rdfs:subClassOf peo:prompting_technique ;
+                         rdfs:label "Analogical prompting" ;
+                         peo:description "Technique that guides large language models to self-generate relevant examples or knowledge based on analogies, aiding them in reasoning through new problems without labeled exemplars." ;
+                         peo:reference "https://arxiv.org/pdf/2310.01714" .
 
 
 ###  https://w3id.org/peo#audio_explanation
@@ -1677,8 +1613,8 @@ peo:audio_processing rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#automatic_chain_of_thought_prompting
 peo:automatic_chain_of_thought_prompting rdf:type owl:Class ;
-                                         rdfs:subClassOf peo:chain_of_thought_prompting ;
-                                         rdfs:label "Automatic Chain of Thought prompting" ;
+                                         rdfs:subClassOf peo:prompting_technique ;
+                                         rdfs:label "Automatic Chain-of-Thought prompting" ;
                                          peo:description "Technique where models autonomously generate step-by-step reasoning, enhancing structured problem-solving without explicit intermediate prompts." ;
                                          peo:reference "https://arxiv.org/abs/2210.03493" .
 
@@ -1690,12 +1626,59 @@ peo:capability rdf:type owl:Class ;
                peo:description "Various functions an AI model can perform, such as text, audio, code, image, or video generation." .
 
 
+###  https://w3id.org/peo#chain_of_code_prompting
+peo:chain_of_code_prompting rdf:type owl:Class ;
+                            rdfs:subClassOf peo:code_prompting_technique ;
+                            rdfs:label "Chain-of-Code prompting" ;
+                            peo:description "Technique that enhances reasoning in language models by combining code generation with a \"LMulator\" that simulates code execution for complex tasks, enabling models to solve both algorithmic and semantic problems." ;
+                            peo:reference "https://arxiv.org/abs/2312.04474" .
+
+
+###  https://w3id.org/peo#chain_of_knowledge_prompting
+peo:chain_of_knowledge_prompting rdf:type owl:Class ;
+                                 rdfs:subClassOf peo:prompting_technique ;
+                                 rdfs:label "Chain-of-Knowledge prompting" ;
+                                 peo:description "Technique that enhances large language models by dynamically integrating factual information from heterogeneous knowledge sources, aiming to improve accuracy and reduce hallucinations in generated responses." ;
+                                 peo:reference "https://arxiv.org/abs/2305.13269" .
+
+
+###  https://w3id.org/peo#chain_of_note_prompting
+peo:chain_of_note_prompting rdf:type owl:Class ;
+                            rdfs:subClassOf peo:prompting_technique ;
+                            rdfs:label "Chain-of-Note prompting" ;
+                            peo:description "Technique that enhances retrieval-augmented language models by generating sequential reading notes for retrieved documents, enabling systematic evaluation of relevance and reliability to produce more accurate responses." ;
+                            peo:reference "https://arxiv.org/abs/2311.09210" .
+
+
+###  https://w3id.org/peo#chain_of_table_prompting
+peo:chain_of_table_prompting rdf:type owl:Class ;
+                             rdfs:subClassOf peo:prompting_technique ;
+                             rdfs:label "Chain-of-Table prompting" ;
+                             peo:description "Technique that enables large language models to perform iterative, table-based reasoning by dynamically transforming tables through a sequence of structured operations to derive accurate answers." ;
+                             peo:reference "https://arxiv.org/html/2401.04398v1" .
+
+
 ###  https://w3id.org/peo#chain_of_thought_prompting
 peo:chain_of_thought_prompting rdf:type owl:Class ;
                                rdfs:subClassOf peo:prompting_technique ;
-                               rdfs:label "Chain of Thought prompting" ;
+                               rdfs:label "Chain-of-Thought prompting" ;
                                peo:description "Prompting is a prompting technique that encourages a model to generate step-by-step reasoning or intermediate steps before arriving at a final answer." ;
                                peo:reference "https://arxiv.org/abs/2201.11903" .
+
+
+###  https://w3id.org/peo#chain_of_verification_prompting
+peo:chain_of_verification_prompting rdf:type owl:Class ;
+                                    rdfs:subClassOf peo:prompting_technique ;
+                                    rdfs:label "Chain-of-Verification prompting" ;
+                                    peo:description "Technique that reduces hallucinations in large language models by generating an initial response, planning and executing fact-checking questions, and producing a final verified answer." ;
+                                    peo:reference "https://arxiv.org/abs/2309.11495" .
+
+
+###  https://w3id.org/peo#chat
+peo:chat rdf:type owl:Class ;
+         rdfs:subClassOf peo:Prompt_engineering ;
+         rdfs:label "Chat" ;
+         peo:description "Represents a structured session of interactive exchanges between a user and a large language model, consisting of prompts and responses" .
 
 
 ###  https://w3id.org/peo#code_explanation
@@ -1719,10 +1702,16 @@ peo:code_processing rdf:type owl:Class ;
                     peo:description "Capability to process and generate source code in a programming language." .
 
 
+###  https://w3id.org/peo#code_prompting_technique
+peo:code_prompting_technique rdf:type owl:Class ;
+                             rdfs:subClassOf peo:prompting_technique ;
+                             rdfs:label "Code prompting technque" ;
+                             peo:description "Prompting techniques to generate code" .
+
+
 ###  https://w3id.org/peo#company
 peo:company rdf:type owl:Class ;
             rdfs:subClassOf peo:organization ;
-            owl:disjointWith peo:research_institution ;
             rdfs:label "Company" ;
             peo:description "Organization that develops an LLM for business purpose" .
 
@@ -1732,6 +1721,14 @@ peo:decoder_only rdf:type owl:Class ;
                  rdfs:subClassOf peo:Decoder ;
                  rdfs:label "Decoder only" ;
                  peo:reference "https://cameronrwolfe.substack.com/p/decoder-only-transformers-the-workhorse" .
+
+
+###  https://w3id.org/peo#decomposed_prompting
+peo:decomposed_prompting rdf:type owl:Class ;
+                         rdfs:subClassOf peo:prompting_technique ;
+                         rdfs:label "Decomposed prompting" ;
+                         peo:description "Modular technique that solves complex tasks by breaking them down into simpler sub-tasks, each handled by a specialized prompt or function." ;
+                         peo:reference "https://arxiv.org/abs/2210.02406" .
 
 
 ###  https://w3id.org/peo#emotion_prompting
@@ -1756,6 +1753,14 @@ peo:fix_deformed_generations rdf:type owl:Class ;
                              rdfs:label "Fix deformed generations" ;
                              peo:description "Prevent deformities by using negative prompts (such as negatively weighted terms) to de-emphasize them." ;
                              peo:reference "https://learnprompting.org/docs/image_prompting/fix_deformed_generations" .
+
+
+###  https://w3id.org/peo#graph_of_thoughts_prompting
+peo:graph_of_thoughts_prompting rdf:type owl:Class ;
+                                rdfs:subClassOf peo:prompting_technique ;
+                                rdfs:label "Graph of Thoughts prompting" ;
+                                peo:description "Techniques that structures prompt reasoning in a graph" ;
+                                peo:reference "https://arxiv.org/abs/2308.09687" .
 
 
 ###  https://w3id.org/peo#image_explanation
@@ -1783,7 +1788,8 @@ peo:image_processing rdf:type owl:Class ;
 peo:image_prompting_technique rdf:type owl:Class ;
                               rdfs:subClassOf peo:prompting_technique ;
                               rdfs:label "Image prompting technique" ;
-                              peo:description "Prompting techniques for images" .
+                              peo:description "Prompting techniques for images" ;
+                              peo:reference "https://arxiv.org/abs/2204.13988" .
 
 
 ###  https://w3id.org/peo#image_segmentation
@@ -1813,6 +1819,22 @@ peo:large_language_model rdf:type owl:Class ;
                          peo:description "A language model consisting of a neural network with many parameters (typically billions of weights or more) trained on large quantities of unlabeled text using self-supervised learning or semi-supervised learning." .
 
 
+###  https://w3id.org/peo#least_to_most_prompting
+peo:least_to_most_prompting rdf:type owl:Class ;
+                            rdfs:subClassOf peo:prompting_technique ;
+                            rdfs:label "Least-to-most prompting" ;
+                            peo:description "Technique that involves breaking down complex tasks into simpler subproblems, solving each sequentially to leverage previous answers for better generalization on challenging tasks." ;
+                            peo:reference "https://arxiv.org/abs/2205.10625" .
+
+
+###  https://w3id.org/peo#logical_chain_of_thought_prompting
+peo:logical_chain_of_thought_prompting rdf:type owl:Class ;
+                                       rdfs:subClassOf peo:prompting_technique ;
+                                       rdfs:label "Logical Chain-of-Thought prompting" ;
+                                       peo:description "Technique that enhances language models' logical reasoning skills by using a structured dataset of chain-of-thought (CoT) instructions, allowing models to perform step-by-step reasoning based on logical premises and inference rule" ;
+                                       peo:reference "https://arxiv.org/abs/2305.12147" .
+
+
 ###  https://w3id.org/peo#mathematical_understanding
 peo:mathematical_understanding rdf:type owl:Class ;
                                rdfs:subClassOf peo:Text_task ;
@@ -1826,16 +1848,26 @@ peo:organization rdf:type owl:Class ;
                  peo:description "An organization of people that develops a large language model" .
 
 
+###  https://w3id.org/peo#plan_and_solve_prompting
+peo:plan_and_solve_prompting rdf:type owl:Class ;
+                             rdfs:subClassOf peo:prompting_technique ;
+                             rdfs:label "Plan-and-Solve prompting" ;
+                             peo:description "Technique that guides large language models to first devise a plan that breaks down a complex task into subtasks, then execute the plan step-by-step for improved reasoning accuracy." ;
+                             peo:reference "https://arxiv.org/abs/2305.04091" .
+
+
+###  https://w3id.org/peo#program_of_thoughts_prompting
+peo:program_of_thoughts_prompting rdf:type owl:Class ;
+                                  rdfs:subClassOf peo:code_prompting_technique ;
+                                  rdfs:label "Program of Thoughts prompting" ;
+                                  peo:description "Technique where the model follows structured, programmatic steps or logical rules within the prompt to solve complex tasks, similar to a pseudo-code or algorithmic approach." ;
+                                  peo:reference "https://arxiv.org/abs/2211.12588" .
+
+
 ###  https://w3id.org/peo#prompt
 peo:prompt rdf:type owl:Class ;
            rdfs:subClassOf peo:Prompt_engineering ;
            rdfs:label "Prompt" .
-
-
-###  https://w3id.org/peo#prompt_output
-peo:prompt_output rdf:type owl:Class ;
-                  rdfs:subClassOf peo:prompt ;
-                  rdfs:label "Prompt output" .
 
 
 ###  https://w3id.org/peo#prompting_technique
@@ -1885,11 +1917,42 @@ peo:repetition rdf:type owl:Class ;
                peo:reference "https://arxiv.org/abs/2204.13988" .
 
 
+###  https://w3id.org/peo#rephrase_respond_prompting
+peo:rephrase_respond_prompting rdf:type owl:Class ;
+                               rdfs:subClassOf peo:prompting_technique ;
+                               rdfs:label "Rephrase and Respond prompting" ;
+                               peo:description "Technique that allows an LLM to rephrase a user's question for clarity before responding, improving accuracy and reducing ambiguities." ;
+                               peo:reference "https://arxiv.org/abs/2311.04205" .
+
+
 ###  https://w3id.org/peo#research_institution
 peo:research_institution rdf:type owl:Class ;
                          rdfs:subClassOf peo:organization ;
                          rdfs:label "Research institution" ;
                          peo:description "Institution of researchers and developers who develop a LLM  for research purposes." .
+
+
+###  https://w3id.org/peo#response
+peo:response rdf:type owl:Class ;
+             rdfs:subClassOf peo:Prompt_engineering ;
+             rdfs:label "Response" ;
+             peo:description "Response given by a LLM" .
+
+
+###  https://w3id.org/peo#role_prompting
+peo:role_prompting rdf:type owl:Class ;
+                   rdfs:subClassOf peo:prompting_technique ;
+                   rdfs:label "Role prompting" ;
+                   peo:description "Technique that involves giving the model a specific role to play, such as a helpful assistant or a knowledgeable expert" ;
+                   peo:reference "https://learnprompting.org/docs/basics/roles?srsltid=AfmBOorOhcs91R9q-XT0yNLiN8nzLnDBonoztR-HX-iB9M4jk3nvadQo#user-content-fnref-1" .
+
+
+###  https://w3id.org/peo#scratchpad_prompting
+peo:scratchpad_prompting rdf:type owl:Class ;
+                         rdfs:subClassOf peo:code_prompting_technique ;
+                         rdfs:label "Scratchpad prompting" ;
+                         peo:description "Technique where language models are guided to output intermediate computational steps—stored in a \"scratchpad\"—to solve complex, multi-step tasks, improving their accuracy and reasoning capabilities by breaking down problems step-by-step" ;
+                         peo:reference "https://arxiv.org/abs/2112.00114" .
 
 
 ###  https://w3id.org/peo#self_consistency_prompting
@@ -1908,12 +1971,36 @@ peo:shot_type rdf:type owl:Class ;
               peo:reference "https://learnprompting.org/docs/image_prompting/shot_type" .
 
 
+###  https://w3id.org/peo#structured_chain_of_thought_prompting
+peo:structured_chain_of_thought_prompting rdf:type owl:Class ;
+                                          rdfs:subClassOf peo:code_prompting_technique ;
+                                          rdfs:label "Structured Chain-of-Thought prompting" ;
+                                          peo:description "Technique for code generation that guides language models to use structured programming steps-sequence, branch, and loop-to improve accuracy and code quality." ;
+                                          peo:reference "https://arxiv.org/abs/2305.06599" .
+
+
 ###  https://w3id.org/peo#style_modifiers
 peo:style_modifiers rdf:type owl:Class ;
                     rdfs:subClassOf peo:image_prompting_technique ;
                     rdfs:label "Style modifiers" ;
                     peo:description "Descriptors that consistently produce certain styles" ;
                     peo:reference "https://arxiv.org/abs/2204.13988" .
+
+
+###  https://w3id.org/peo#system_2_attention_prompting
+peo:system_2_attention_prompting rdf:type owl:Class ;
+                                 rdfs:subClassOf peo:prompting_technique ;
+                                 rdfs:label "System-2-Attention prompting" ;
+                                 peo:description "Technique that enables large language models (LLMs) to focus only on relevant parts of the input context by regenerating it to exclude distracting or biased information, thereby improving the factual accuracy and objectivity of the model's responses." ;
+                                 peo:reference "https://arxiv.org/abs/2311.11829" .
+
+
+###  https://w3id.org/peo#take_step_back_prompting
+peo:take_step_back_prompting rdf:type owl:Class ;
+                             rdfs:subClassOf peo:prompting_technique ;
+                             rdfs:label "Take a step back prompting" ;
+                             peo:description "Technique that enhances reasoning in large language models by prompting them to abstract high-level concepts from specific details to guide problem-solving." ;
+                             peo:reference "https://arxiv.org/abs/2310.06117" .
 
 
 ###  https://w3id.org/peo#task
@@ -1994,36 +2081,12 @@ peo:video_processing rdf:type owl:Class ;
                      peo:description "Capability to process and generate video." .
 
 
-###  https://w3id.org/peo#xAI
-peo:xAI rdf:type owl:Class ;
-        rdfs:subClassOf peo:company ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty peo:develops ;
-                          owl:someValuesFrom peo:Grok
-                        ] ;
-        rdfs:label "xAI" ;
-        peo:description "An AI company founded by Elon Musk to advance the development of AI models and promote safe AI usage." ;
-        peo:website "https://x.ai/" .
-
-
 ###  https://w3id.org/peo#zero_shot_prompting
 peo:zero_shot_prompting rdf:type owl:Class ;
                         rdfs:subClassOf peo:prompting_technique ;
                         rdfs:label "Zero shot prompting" ;
                         peo:description "Technique where an AI model generates responses or performs tasks without any specific examples, relying solely on the instructions given in the prompt." ;
                         peo:reference "https://www.promptingguide.ai/techniques/zeroshot" .
-
-
-###  https://w3id.org/peo#01-ai
-<https://w3id.org/peo#01-ai> rdf:type owl:Class ;
-                             rdfs:subClassOf peo:company ,
-                                             [ rdf:type owl:Restriction ;
-                                               owl:onProperty peo:develops ;
-                                               owl:someValuesFrom peo:Yi
-                                             ] ;
-                             rdfs:label "01-ai" ;
-                             peo:description "An AI-focused company, likely involved in the development of advanced language models or related AI research." ;
-                             peo:website "https://github.com/01-ai/Yi" .
 
 
 #################################################################
@@ -2049,34 +2112,6 @@ peo:BERT_Large rdf:type owl:NamedIndividual ,
                         peo:BERT ;
                peo:has_number_parameters 340000000 ;
                peo:has_release_year 2018 .
-
-
-###  https://w3id.org/peo#Baichuan-13B
-peo:Baichuan-13B rdf:type owl:NamedIndividual ,
-                          peo:Baichuan_LLM ;
-                 peo:has_number_parameters 13000000000 ;
-                 peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Baichuan-7
-peo:Baichuan-7 rdf:type owl:NamedIndividual ,
-                        peo:Baichuan_LLM ;
-               peo:has_number_parameters 7000000000 ;
-               peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Baichuan2-7
-peo:Baichuan2-7 rdf:type owl:NamedIndividual ,
-                         peo:Baichuan_LLM ;
-                peo:has_number_parameters 7000000000 ;
-                peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#CTRLModel
-peo:CTRLModel rdf:type owl:NamedIndividual ,
-                       peo:CTRL ;
-              peo:has_number_parameters 1630000000 ;
-              peo:has_release_year 2019 .
 
 
 ###  https://w3id.org/peo#Chinchilla_70B
@@ -2176,34 +2211,6 @@ peo:DALL-E_3 rdf:type owl:NamedIndividual ,
              peo:has_release_year 2023 .
 
 
-###  https://w3id.org/peo#DBRX_base
-peo:DBRX_base rdf:type owl:NamedIndividual ,
-                       peo:DBRX ;
-              peo:has_number_parameters 132000000 ;
-              peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#DBRX_instruct
-peo:DBRX_instruct rdf:type owl:NamedIndividual ,
-                           peo:DBRX ;
-                  peo:has_number_parameters 132000000 ;
-                  peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#DeepSeek_LLM_67B_Base
-peo:DeepSeek_LLM_67B_Base rdf:type owl:NamedIndividual ,
-                                   peo:DeepSeek_LLM ;
-                          peo:has_number_parameters 67000000000 ;
-                          peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#DeepSeek_LLM_7B_Base
-peo:DeepSeek_LLM_7B_Base rdf:type owl:NamedIndividual ,
-                                  peo:DeepSeek_LLM ;
-                         peo:has_number_parameters 7000000000 ;
-                         peo:has_release_year 2024 .
-
-
 ###  https://w3id.org/peo#FLAN_T5_xxl
 peo:FLAN_T5_xxl rdf:type owl:NamedIndividual ,
                          peo:FLAN ;
@@ -2245,69 +2252,6 @@ peo:Falcon_Mamba_7B rdf:type owl:NamedIndividual ,
                              peo:Falcon ;
                     peo:has_number_parameters 7000000000 ;
                     peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#GLM-10B
-peo:GLM-10B rdf:type owl:NamedIndividual ,
-                     peo:GLM ;
-            peo:has_number_parameters 10000000000 ;
-            peo:has_release_year 2022 .
-
-
-###  https://w3id.org/peo#GLM-10B-Chinese
-peo:GLM-10B-Chinese rdf:type owl:NamedIndividual ,
-                             peo:GLM ;
-                    peo:has_number_parameters 10000000000 ;
-                    peo:has_release_year 2022 .
-
-
-###  https://w3id.org/peo#GLM-2B
-peo:GLM-2B rdf:type owl:NamedIndividual ,
-                    peo:GLM ;
-           peo:has_number_parameters 2000000000 ;
-           peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#GLM-410M
-peo:GLM-410M rdf:type owl:NamedIndividual ,
-                      peo:GLM ;
-             peo:has_number_parameters 410000000 ;
-             peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#GLM-515M
-peo:GLM-515M rdf:type owl:NamedIndividual ,
-                      peo:GLM ;
-             peo:has_number_parameters 515000000 ;
-             peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#GLM-Base
-peo:GLM-Base rdf:type owl:NamedIndividual ,
-                      peo:GLM ;
-             peo:has_number_parameters 110000000 ;
-             peo:has_release_year 2021 .
-
-
-###  https://w3id.org/peo#GLM-Large
-peo:GLM-Large rdf:type owl:NamedIndividual ,
-                       peo:GLM ;
-              peo:has_number_parameters 335000000 ;
-              peo:has_release_year 2021 .
-
-
-###  https://w3id.org/peo#GLM-Large-Chinese
-peo:GLM-Large-Chinese rdf:type owl:NamedIndividual ,
-                               peo:GLM ;
-                      peo:has_number_parameters 1250000000 ;
-                      peo:has_release_year 2021 .
-
-
-###  https://w3id.org/peo#GLM-RoBERTa
-peo:GLM-RoBERTa rdf:type owl:NamedIndividual ,
-                         peo:GLM ;
-                peo:has_number_parameters 335000000 ;
-                peo:has_release_year 2021 .
 
 
 ###  https://w3id.org/peo#GLaMM_FT
@@ -2359,8 +2303,6 @@ peo:GPT-3.5 rdf:type owl:NamedIndividual ,
 peo:GPT-4 rdf:type owl:NamedIndividual ,
                    peo:GPT ;
           peo:evolves peo:GPT-3.5 ;
-          peo:produces_output peo:poem_output ,
-                              peo:text_classification_output_gpt4 ;
           peo:has_number_parameters 1000000000000 ;
           peo:has_release_year 2023 .
 
@@ -2391,38 +2333,6 @@ peo:Gemini_Ultra rdf:type owl:NamedIndividual ,
                           peo:Gemini ;
                  peo:has_number_parameters 7000000000 ;
                  peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#Grok_1
-peo:Grok_1 rdf:type owl:NamedIndividual ,
-                    peo:Grok ;
-           peo:has_number_parameters 314000000000 ;
-           peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Grok_1.5
-peo:Grok_1.5 rdf:type owl:NamedIndividual ,
-                      peo:Grok ;
-             peo:has_number_parameters 314000000000 ;
-             peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Grok_2
-peo:Grok_2 rdf:type owl:NamedIndividual ,
-                    peo:Grok ;
-           peo:evolves peo:Grok_1 ,
-                       peo:Grok_1.5 ;
-           peo:has_number_parameters 314000000000 ;
-           peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#Grok_2_mini
-peo:Grok_2_mini rdf:type owl:NamedIndividual ,
-                         peo:Grok ;
-                peo:evolves peo:Grok_1 ,
-                            peo:Grok_1.5 ;
-                peo:has_number_parameters 314000000000 ;
-                peo:has_release_year 2024 .
 
 
 ###  https://w3id.org/peo#LLAMA_1
@@ -2590,13 +2500,6 @@ peo:Minerva-3B-base-v1.0 rdf:type owl:NamedIndividual ,
                          peo:has_release_year 2024 .
 
 
-###  https://w3id.org/peo#MiniCPM-2B
-peo:MiniCPM-2B rdf:type owl:NamedIndividual ,
-                        peo:CPM ;
-               peo:has_number_parameters 2000000000 ;
-               peo:has_release_year 2024 .
-
-
 ###  https://w3id.org/peo#Mistral_7B
 peo:Mistral_7B rdf:type owl:NamedIndividual ,
                         peo:Mistral ;
@@ -2607,16 +2510,8 @@ peo:Mistral_7B rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/peo#Mistral_Nemo
 peo:Mistral_Nemo rdf:type owl:NamedIndividual ,
                           peo:Mistral ;
-                 peo:produces_output peo:text_classification_1_output ;
                  peo:has_number_parameters 7000000000 ;
                  peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#NVLM-1.0-D_72B
-peo:NVLM-1.0-D_72B rdf:type owl:NamedIndividual ,
-                            peo:NVLM ;
-                   peo:has_number_parameters 72000000000 ;
-                   peo:has_release_year 2024 .
 
 
 ###  https://w3id.org/peo#OLMoE-1B-7B-0924
@@ -2695,16 +2590,6 @@ peo:OPT-66B rdf:type owl:NamedIndividual ,
                      peo:OPT ;
             peo:has_number_parameters 66000000000 ;
             peo:has_release_year 2022 .
-
-
-###  https://w3id.org/peo#OmniLLM-12B
-peo:OmniLLM-12B rdf:type owl:NamedIndividual ,
-                         peo:CPM ;
-                peo:has_capability peo:general_code_processing ,
-                                   peo:general_image_processing ,
-                                   peo:general_video_processing ;
-                peo:has_number_parameters 12000000000 ;
-                peo:has_release_year 2024 .
 
 
 ###  https://w3id.org/peo#OpenELM-1_1B
@@ -2821,77 +2706,6 @@ peo:Pixtral rdf:type owl:NamedIndividual ,
             peo:has_release_year 2024 .
 
 
-###  https://w3id.org/peo#Qwen1.5-110B
-peo:Qwen1.5-110B rdf:type owl:NamedIndividual ,
-                          peo:Qwen ;
-                 peo:has_number_parameters 110000000000 ;
-                 peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen1.5-32B
-peo:Qwen1.5-32B rdf:type owl:NamedIndividual ,
-                         peo:Qwen ;
-                peo:has_number_parameters 32000000000 ;
-                peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen1.5-4B
-peo:Qwen1.5-4B rdf:type owl:NamedIndividual ,
-                        peo:Qwen ;
-               peo:has_number_parameters 4000000000 ;
-               peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen2-72B
-peo:Qwen2-72B rdf:type owl:NamedIndividual ,
-                       peo:Qwen ;
-              peo:has_number_parameters 72000000000 ;
-              peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen2-72B-Instruct
-peo:Qwen2-72B-Instruct rdf:type owl:NamedIndividual ,
-                                peo:Qwen ;
-                       peo:has_number_parameters 72000000000 ;
-                       peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen2-VL-2B
-peo:Qwen2-VL-2B rdf:type owl:NamedIndividual ,
-                         peo:Qwen ;
-                peo:has_capability peo:general_image_processing ;
-                peo:has_number_parameters 2000000000 ;
-                peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen2-VL-7B
-peo:Qwen2-VL-7B rdf:type owl:NamedIndividual ,
-                         peo:Qwen ;
-                peo:has_capability peo:general_image_processing ;
-                peo:has_number_parameters 7000000000 ;
-                peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen2.5
-peo:Qwen2.5 rdf:type owl:NamedIndividual ,
-                     peo:Qwen ;
-            peo:evolves peo:Qwen1.5-110B ,
-                        peo:Qwen1.5-32B ,
-                        peo:Qwen1.5-4B ,
-                        peo:Qwen2-72B ,
-                        peo:Qwen2-72B-Instruct ;
-            peo:has_number_parameters 72000000000 ;
-            peo:has_release_year 2023 .
-
-
-###  https://w3id.org/peo#Qwen2.5-Coder
-peo:Qwen2.5-Coder rdf:type owl:NamedIndividual ,
-                           peo:Qwen ;
-                  peo:has_capability peo:general_code_processing ;
-                  peo:has_number_parameters 72000000000 ;
-                  peo:has_release_year 2023 .
-
-
 ###  https://w3id.org/peo#RWKV-v5
 peo:RWKV-v5 rdf:type owl:NamedIndividual ,
                      peo:RWKV_LLM ;
@@ -3004,14 +2818,6 @@ peo:Vicuna-7B-16k rdf:type owl:NamedIndividual ,
                   peo:has_release_year 2023 .
 
 
-###  https://w3id.org/peo#VisCPM-10B
-peo:VisCPM-10B rdf:type owl:NamedIndividual ,
-                        peo:CPM ;
-               peo:has_capability peo:general_image_processing ;
-               peo:has_number_parameters 10000000000 ;
-               peo:has_release_year 2024 .
-
-
 ###  https://w3id.org/peo#VisualBERT
 peo:VisualBERT rdf:type owl:NamedIndividual ,
                         peo:BERT ;
@@ -3025,27 +2831,6 @@ peo:XLNetModel rdf:type owl:NamedIndividual ,
                         peo:XLNet ;
                peo:has_number_parameters 110000000 ;
                peo:has_release_year 2019 .
-
-
-###  https://w3id.org/peo#Yi-34B
-peo:Yi-34B rdf:type owl:NamedIndividual ,
-                    peo:Yi ;
-           peo:has_number_parameters 34000000000 ;
-           peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#Yi-VL-6B
-peo:Yi-VL-6B rdf:type owl:NamedIndividual ,
-                      peo:Yi ;
-             peo:has_number_parameters 6000000000 ;
-             peo:has_release_year 2024 .
-
-
-###  https://w3id.org/peo#Yi1.5-6
-peo:Yi1.5-6 rdf:type owl:NamedIndividual ,
-                     peo:Yi ;
-            peo:has_number_parameters 1500000000 ;
-            peo:has_release_year 2024 .
 
 
 ###  https://w3id.org/peo#blip-image-captioning-base
@@ -3102,6 +2887,21 @@ peo:blip-vqa-capfilt-large rdf:type owl:NamedIndividual ,
                                     peo:BLIP-2 ;
                            peo:has_number_parameters 129000000 ;
                            peo:has_release_year 2022 .
+
+
+###  https://w3id.org/peo#chat_1
+peo:chat_1 rdf:type owl:NamedIndividual ,
+                    peo:chat ;
+           peo:uses_model peo:GPT-4 ;
+           peo:end_time_chat "08/11/2024 - 15:31" ;
+           peo:has_chat_title "\"chat 1\"" ;
+           peo:start_time_chat "08/11/2024 - 15:29" .
+
+
+###  https://w3id.org/peo#classification_1
+peo:classification_1 rdf:type owl:NamedIndividual ,
+                              peo:text_classification ;
+                     peo:has_description "Classify the text into neutral, negative or positive." .
 
 
 ###  https://w3id.org/peo#gemma-1.1-2b-it
@@ -3171,47 +2971,11 @@ peo:general_video_processing rdf:type owl:NamedIndividual ,
                                       peo:video_processing .
 
 
-###  https://w3id.org/peo#poem_1
-peo:poem_1 rdf:type owl:NamedIndividual ,
-                    peo:text_generation ;
-           peo:solved_by peo:zero_shot_2 ;
-           peo:has_description "Poem generation" .
-
-
-###  https://w3id.org/peo#poem_output
-peo:poem_output rdf:type owl:NamedIndividual ,
-                         peo:prompt_output ;
-                peo:has_prompt_input peo:zero_shot_2 ;
-                peo:produced_by peo:GPT-4 ;
-                peo:has_output_value """Here's a poem inspired by Italian poetic style, with rhythmic flow, imagery, and romantic sentiment:
-
----
-
-**L'Ultima Luce**
-
-Quando l’ultima luce si posa su Roma,  
-e il Tevere scorre d’argento e di pace,  
-sospira la sera, e il cielo si doma,  
-mentre le stelle si sveglian fugace.
-
-Cammino tra viali che odorano d’erba,  
-tra mura antiche, custodi di sogni,  
-sfiorando l’ombra che il vento riserba,  
-nell’eco lontano di passi e bisogni.
-
-Oh, dolce è l’aria che sfiora la pelle,  
-si posa leggera come un sussurro,  
-e canta l’amore, le notti, le stelle,  
-sul cuore si stende, come un azzurro.
-
-E mentre la luna dipinge i colli,  
-nel silenzio, che tutto abbraccia e doma,  
-io resto, perduto, tra sogni e cipressi,  
-innamorato di questa mia Roma.
-
---- 
-
-Let me know if you'd like a poem on a particular theme or setting!""" .
+###  https://w3id.org/peo#rs_1
+peo:rs_1 rdf:type owl:NamedIndividual ,
+                  peo:response ;
+         peo:response_followedby_prompt peo:zs_1 ;
+         peo:has_response_value "Neutral" .
 
 
 ###  https://w3id.org/peo#stablelm-2-12b-chat
@@ -3228,51 +2992,27 @@ peo:stablelm-2-1_6b-chat rdf:type owl:NamedIndividual ,
                          peo:has_release_year 2023 .
 
 
-###  https://w3id.org/peo#text_classification_1
-peo:text_classification_1 rdf:type owl:NamedIndividual ,
-                                   peo:text_classification ;
-                          peo:solved_by peo:zero_shot_1 ;
-                          peo:has_description "Classification of a given emotion" .
+###  https://w3id.org/peo#zero_shot_prompting_1
+peo:zero_shot_prompting_1 rdf:type owl:NamedIndividual ,
+                                   peo:zero_shot_prompting ;
+                          peo:solves_task peo:classification_1 .
 
 
-###  https://w3id.org/peo#text_classification_1_output
-peo:text_classification_1_output rdf:type owl:NamedIndividual ,
-                                          peo:prompt_output ;
-                                 peo:has_prompt_input peo:zero_shot_1 ;
-                                 peo:produced_by peo:Mistral_Nemo ;
-                                 peo:has_output_value """Neutral
-
-Explanation: The text \"I think the vacation is okay\" expresses a neutral sentiment. The word \"okay\" is a neutral term that doesn't convey a strong positive or negative emotion. It simply indicates that the speaker finds the vacation acceptable but not particularly good or bad.""" .
-
-
-###  https://w3id.org/peo#text_classification_output_gpt4
-peo:text_classification_output_gpt4 rdf:type owl:NamedIndividual ,
-                                             peo:prompt_output ;
-                                    peo:has_prompt_input peo:zero_shot_1 ;
-                                    peo:produced_by peo:GPT-4 ;
-                                    peo:has_output_value "The sentiment is **neutral**." .
-
-
-###  https://w3id.org/peo#zero_shot_1
-peo:zero_shot_1 rdf:type owl:NamedIndividual ,
-                         peo:prompt ,
-                         peo:zero_shot_prompting ;
-                peo:has_prompt_output peo:text_classification_1_output ,
-                                      peo:text_classification_output_gpt4 ;
-                peo:solves_task peo:text_classification_1 ;
-                peo:has_body """Classify the text into neutral, negative or positive. 
+###  https://w3id.org/peo#zs_1
+peo:zs_1 rdf:type owl:NamedIndividual ,
+                  peo:prompt ;
+         peo:has_context peo:chat_1 ;
+         peo:prompt_generated_using peo:zero_shot_prompting_1 ;
+         peo:has_body """Classify the text into neutral, negative or positive. 
 
 Text: I think the vacation is okay.
 Sentiment:""" .
 
 
-###  https://w3id.org/peo#zero_shot_2
-peo:zero_shot_2 rdf:type owl:NamedIndividual ,
-                         peo:prompt ,
-                         peo:zero_shot_prompting ;
-                peo:has_prompt_output peo:poem_output ;
-                peo:solves_task peo:poem_1 ;
-                peo:has_body "Generate a poem in italian style" .
+###  https://w3id.org/peo#zs_2
+peo:zs_2 rdf:type owl:NamedIndividual ,
+                  peo:prompt ;
+         peo:prompt_followedby_prompt peo:zs_1 .
 
 
 ###  https://w3id.org/peo#BLOOMZ&mT0
@@ -3329,149 +3069,6 @@ peo:Sora rdfs:label "Sora" ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:Aalto_University
-                peo:Australian_National_University
-                peo:Carnegie_Mellon_University
-                peo:Linköping_University
-                peo:Mohamed_bin_Zayed_University_of_AI
-                peo:Princeton
-                peo:Stanford
-                peo:University_of_California_Merced
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:Alibaba
-                peo:AllenAI
-                peo:Apple
-                peo:Baichuan
-                peo:Cohere
-                peo:DataBricks
-                peo:DeepSeek
-                peo:Google
-                peo:Meta
-                peo:Microsoft
-                peo:Mistral_AI
-                peo:Nvidia
-                peo:Zhipu_AI
-                peo:xAI
-                <https://w3id.org/peo#01-ai>
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:AllenAI
-                peo:BigCode
-                peo:BigScience
-                peo:Google_Research
-                peo:LMSYS
-                peo:OpenBMB
-                peo:RWKV_Foundation
-                peo:Technology_Innovation_Institute
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:Alpaca
-                peo:BERT
-                peo:BLIP-2
-                peo:BLOOM
-                peo:Baichuan_LLM
-                peo:CPM
-                peo:CTRL
-                peo:Chinchilla
-                peo:Claude
-                peo:Codex
-                peo:CogVLM
-                peo:Command_R
-                peo:DALL-E
-                peo:DBRX
-                peo:DeepSeek_LLM
-                peo:FLAN
-                peo:Falcon
-                peo:GLM
-                peo:GLaMM
-                peo:GPT
-                peo:Gemini
-                peo:Gemma
-                peo:Grok
-                peo:LLaMA
-                peo:MPT-7B
-                peo:Midjourney
-                peo:Minerva
-                peo:Mistral
-                peo:NVLM
-                peo:OLMo
-                peo:OPT
-                peo:OpenELM
-                peo:PaLM
-                peo:Phi-2
-                peo:Qwen
-                peo:RWKV_LLM
-                peo:Sora
-                peo:StableLM
-                peo:StarCoder
-                peo:T5
-                peo:VALL-E
-                peo:Vicuna
-                peo:XLNet
-                peo:Yi
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:Audio_task
-                peo:Code_task
-                peo:Image_task
-                peo:Text_task
-                peo:Video_task
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:BERT
-                peo:BLIP-2
-                peo:BLOOM
-                peo:Baichuan_LLM
-                peo:CPM
-                peo:Chinchilla
-                peo:Claude
-                peo:Codex
-                peo:CogVLM
-                peo:Command_R
-                peo:DBRX
-                peo:DeepSeek_LLM
-                peo:FLAN
-                peo:GLM
-                peo:GLaMM
-                peo:GPT
-                peo:Gemini
-                peo:Grok
-                peo:LLaMA
-                peo:MPT-7B
-                peo:Mistral
-                peo:NVLM
-                peo:OLMo
-                peo:OPT
-                peo:OpenELM
-                peo:PaLM
-                peo:Phi-2
-                peo:Qwen
-                peo:RWKV_LLM
-                peo:StableLM
-                peo:StarCoder
-                peo:T5
-                peo:Yi
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
   owl:members ( peo:Encoder_only
                 peo:Global_Image_Encoder
                 peo:Grounding_Image_Encoder
@@ -3481,88 +3078,165 @@ peo:Sora rdfs:label "Sora" ;
 ] .
 
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:Prompt_engineering
-                peo:language_model
-                peo:organization
-                peo:task
-              )
-] .
+#################################################################
+#    Rules
+#################################################################
 
+peo:r rdf:type swrl:Variable .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:few_shot_prompting
-                peo:react_prompting
-                peo:tree_of_thoughts_prompting
-                peo:zero_shot_prompting
-              )
-] .
+peo:p rdf:type swrl:Variable .
 
+peo:c rdf:type swrl:Variable .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:fix_deformed_generations
-                peo:quality_boosters
-                peo:repetition
-                peo:shot_type
-                peo:style_modifiers
-              )
-] .
+peo:m rdf:type swrl:Variable .
 
+peo:py rdf:type swrl:Variable .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:language_model
-                peo:organization
-                peo:task
-              )
-] .
+peo:px rdf:type swrl:Variable .
 
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:response_followedby_prompt ;
+                           swrl:argument1 peo:r ;
+                           swrl:argument2 peo:p
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate peo:has_context ;
+                                      swrl:argument1 peo:p ;
+                                      swrl:argument2 peo:c
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:is_response_of ;
+                           swrl:argument1 peo:r ;
+                           swrl:argument2 peo:c
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( peo:mathematical_understanding
-                peo:question_answering
-                peo:text_classification
-                peo:text_generation
-                peo:text_summarization
-              )
-] .
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:has_context ;
+                           swrl:argument1 peo:p ;
+                           swrl:argument2 peo:c
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate peo:uses_model ;
+                                      swrl:argument1 peo:c ;
+                                      swrl:argument2 peo:m
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:processed_by ;
+                           swrl:argument1 peo:p ;
+                           swrl:argument2 peo:m
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S5" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:prompt_followedby_prompt ;
+                           swrl:argument1 peo:py ;
+                           swrl:argument2 peo:px
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate peo:has_context ;
+                                      swrl:argument1 peo:px ;
+                                      swrl:argument2 peo:c
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:has_context ;
+                           swrl:argument1 peo:py ;
+                           swrl:argument2 peo:c
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
-[ rdf:type owl:AllDisjointProperties ;
-  owl:members ( peo:based_on
-                peo:belongs_to
-                peo:develops
-                peo:evolves
-                peo:has_capability
-                peo:has_model_architecture
-                peo:has_prompt_input
-                peo:produced_by
-                peo:produces_output
-                peo:requires_capability
-                peo:solved_by
-                peo:solves_task
-              )
-] .
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:response_followedby_prompt ;
+                           swrl:argument1 peo:r ;
+                           swrl:argument2 peo:p
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate peo:processed_by ;
+                                      swrl:argument1 peo:p ;
+                                      swrl:argument2 peo:m
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:response_generated_using ;
+                           swrl:argument1 peo:r ;
+                           swrl:argument2 peo:m
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
-
-[ rdf:type owl:AllDisjointProperties ;
-  owl:members ( peo:based_on
-                peo:belongs_to
-                peo:develops
-                peo:evolves
-                peo:has_capability
-                peo:requires_capability
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointProperties ;
-  owl:members ( peo:belongs_to
-                peo:develops
-                peo:evolves
-                peo:has_capability
-                peo:requires_capability
-              )
-] .
-
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S4" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:prompt_followedby_prompt ;
+                           swrl:argument1 peo:px ;
+                           swrl:argument2 peo:py
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate peo:prompt_follows_response ;
+                                      swrl:argument1 peo:py ;
+                                      swrl:argument2 peo:r
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:response_follows_prompt ;
+                           swrl:argument1 peo:r ;
+                           swrl:argument2 peo:px
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

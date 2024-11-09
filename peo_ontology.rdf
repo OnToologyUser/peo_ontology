@@ -226,6 +226,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#chat"/>
         <rdfs:label>is_response_of</rdfs:label>
+        <description>Response belongs to a chat</description>
     </owl:ObjectProperty>
     
 
@@ -285,6 +286,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:label>prompt_followedby_prompt</rdfs:label>
+        <description>The first prompt is after the second prompt</description>
     </owl:ObjectProperty>
     
 
@@ -296,6 +299,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:label>prompt_followedby_response</rdfs:label>
+        <description>Prompt is after response</description>
     </owl:ObjectProperty>
     
 
@@ -307,6 +312,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:label>prompt_follows_prompt</rdfs:label>
+        <description>The second prompt is after the first prompt</description>
     </owl:ObjectProperty>
     
 
@@ -319,6 +326,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#response"/>
+        <rdfs:label>prompt_follows_response</rdfs:label>
+        <description>Response is after prompt</description>
     </owl:ObjectProperty>
     
 
@@ -329,6 +338,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>prompt_generated_using</rdfs:label>
+        <description>Prompt generated using a prompting technique</description>
     </owl:ObjectProperty>
     
 
@@ -340,6 +350,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:label>response_followedby_prompt</rdfs:label>
+        <description>Response is after a prompt</description>
     </owl:ObjectProperty>
     
 
@@ -351,6 +363,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:label>response_follows_prompt</rdfs:label>
+        <description>Prompt is after response</description>
     </owl:ObjectProperty>
     
 
@@ -361,6 +374,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:label>response_generated_using</rdfs:label>
+        <description>Response generated using a large language model</description>
     </owl:ObjectProperty>
     
 
@@ -372,6 +386,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#task"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#prompting_technique"/>
         <rdfs:label>solved_by</rdfs:label>
+        <description>Task solved by a prompting technique</description>
     </owl:ObjectProperty>
     
 
@@ -415,6 +430,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#chat"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>end_time_chat</rdfs:label>
+        <description>End time of a chat</description>
     </owl:DatatypeProperty>
     
 
@@ -426,6 +443,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has_instruction</rdfs:label>
+        <description>Instruction of a prompt</description>
     </owl:DatatypeProperty>
     
 
@@ -434,6 +452,8 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_chat_title">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>has_chat_title</rdfs:label>
+        <description>Title of a chat</description>
     </owl:DatatypeProperty>
     
 
@@ -444,6 +464,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#task"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has_description</rdfs:label>
+        <description>Description of a specific task</description>
     </owl:DatatypeProperty>
     
 
@@ -453,6 +474,8 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_input_data">
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has_input_data</rdfs:label>
+        <description>Input data of a prompt</description>
     </owl:DatatypeProperty>
     
 
@@ -475,6 +498,8 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_output_indicator">
         <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has_output_indicator</rdfs:label>
+        <description>Output format of a prompt</description>
     </owl:DatatypeProperty>
     
 
@@ -499,6 +524,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/peo#response"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has_response_value</rdfs:label>
+        <description>Actual value of a response</description>
     </owl:DatatypeProperty>
     
 
@@ -509,6 +535,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#chat"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>start_time_chat</rdfs:label>
+        <description>Start time of a chat</description>
     </owl:DatatypeProperty>
     
 
