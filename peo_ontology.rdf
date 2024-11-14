@@ -2352,7 +2352,6 @@
     <owl:Class rdf:about="https://w3id.org/peo#video_generation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#Video_task"/>
         <rdfs:label>Video generation</rdfs:label>
-        <description>Task of generating video given a text</description>
     </owl:Class>
     
 
@@ -3481,6 +3480,22 @@
     
 
 
+    <!-- https://w3id.org/peo#audio_explanation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#audio_explanation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#audio_explanation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#audio_generation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#audio_generation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#audio_generation"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#bigcode -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#bigcode">
@@ -3600,6 +3615,22 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#classification_1">
         <rdf:type rdf:resource="https://w3id.org/peo#text_classification"/>
         <has_description>Classify the text into neutral, negative or positive.</has_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#code_explanation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#code_explanation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#code_explanation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#code_generation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#code_generation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#code_generation"/>
     </owl:NamedIndividual>
     
 
@@ -3741,6 +3772,14 @@
     
 
 
+    <!-- https://w3id.org/peo#generation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#generation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_generation"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#google -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#google">
@@ -3790,6 +3829,30 @@
     
 
 
+    <!-- https://w3id.org/peo#image_explanation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#image_explanation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#image_explanation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#image_generation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#image_generation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#image_generation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#image_segmentation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#image_segmentation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#image_segmentation"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#lmsys -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#lmsys">
@@ -3799,6 +3862,14 @@
         <develops rdf:resource="https://w3id.org/peo#Vicuna-33B"/>
         <develops rdf:resource="https://w3id.org/peo#Vicuna-7B"/>
         <develops rdf:resource="https://w3id.org/peo#Vicuna-7B-16k"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#math_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#math_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#mathematical_understanding"/>
     </owl:NamedIndividual>
     
 
@@ -3882,6 +3953,14 @@
         <develops rdf:resource="https://w3id.org/peo#GPT-3.5"/>
         <develops rdf:resource="https://w3id.org/peo#GPT-4"/>
         <develops rdf:resource="https://w3id.org/peo#Sora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#qa_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#qa_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#question_answering"/>
     </owl:NamedIndividual>
     
 
@@ -3970,6 +4049,14 @@
     
 
 
+    <!-- https://w3id.org/peo#summarization_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#summarization_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_summarization"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#technology_innovation_institute -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#technology_innovation_institute">
@@ -3979,6 +4066,14 @@
         <develops rdf:resource="https://w3id.org/peo#Falcon_40B"/>
         <develops rdf:resource="https://w3id.org/peo#Falcon_7B"/>
         <develops rdf:resource="https://w3id.org/peo#Falcon_Mamba_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#video_generation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#video_generation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#video_generation"/>
     </owl:NamedIndividual>
     
 
