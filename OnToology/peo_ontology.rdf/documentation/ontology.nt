@@ -363,6 +363,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/peo#audio_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#audio_processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#capability> .
 <https://w3id.org/peo#audio_processing> <http://www.w3.org/2000/01/rdf-schema#label> "Audio processing" .
+<https://w3id.org/peo#audio_processing> <https://w3id.org/peo#description> "Capability to process audio files." .
 # 
 # https://w3id.org/peo#audio_task
 <https://w3id.org/peo#audio_task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -513,6 +514,7 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#code_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#code_processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#capability> .
 <https://w3id.org/peo#code_processing> <http://www.w3.org/2000/01/rdf-schema#label> "Code processing" .
+<https://w3id.org/peo#code_processing> <https://w3id.org/peo#description> "Capability to process source code written in any programming language." .
 # 
 # https://w3id.org/peo#code_prompting
 <https://w3id.org/peo#code_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -559,6 +561,7 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#organization> .
 <https://w3id.org/peo#company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
+<https://w3id.org/peo#company> <https://w3id.org/peo#description> "Organization that develops an LLM for business purpose" .
 # 
 # https://w3id.org/peo#dall-e
 <https://w3id.org/peo#dall-e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -595,6 +598,8 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#decoder_only> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#decoder_only> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#decoder> .
 <https://w3id.org/peo#decoder_only> <http://www.w3.org/2000/01/rdf-schema#label> "Decoder only" .
+<https://w3id.org/peo#decoder_only> <https://w3id.org/peo#description> "Neural network architecture that generates outputs directly from an initial prompt or sequence without requiring a separate encoder. It processes input autoregressively, predicting the next token one step at a time, and is commonly used in large language models like GPT." .
+<https://w3id.org/peo#decoder_only> <https://w3id.org/peo#reference> "https://cameronrwolfe.substack.com/p/decoder-only-transformers-the-workhorse" .
 # 
 # https://w3id.org/peo#decomposed_prompting
 <https://w3id.org/peo#decomposed_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -604,6 +609,8 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#diffusion_model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#diffusion_model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#base_model> .
 <https://w3id.org/peo#diffusion_model> <http://www.w3.org/2000/01/rdf-schema#label> "Diffusion model" .
+<https://w3id.org/peo#diffusion_model> <https://w3id.org/peo#description> "Generative model that learns to create data (e.g., images, audio) by reversing a gradual noise-adding process applied to the data during training, generating realistic outputs by denoising starting from random noise." .
+<https://w3id.org/peo#diffusion_model> <https://w3id.org/peo#reference> "https://en.wikipedia.org/wiki/Diffusion_model" .
 # 
 # https://w3id.org/peo#emotion_prompting
 <https://w3id.org/peo#emotion_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -613,11 +620,15 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#encoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#encoder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#base_model> .
 <https://w3id.org/peo#encoder> <http://www.w3.org/2000/01/rdf-schema#label> "Encoder" .
+<https://w3id.org/peo#encoder> <https://w3id.org/peo#description> "Neural network component that processes input data (e.g., text, images, or audio) and transforms it into a dense, high-dimensional representation (latent space), capturing the most relevant features for subsequent tasks like classification, translation, or generation." .
+<https://w3id.org/peo#encoder> <https://w3id.org/peo#reference> "https://medium.com/@mansoorsyed05/encoders-and-decoders-in-generative-ai-3a717d50fced" .
 # 
 # https://w3id.org/peo#encoder_only
 <https://w3id.org/peo#encoder_only> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#encoder_only> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#encoder> .
 <https://w3id.org/peo#encoder_only> <http://www.w3.org/2000/01/rdf-schema#label> "Encoder only" .
+<https://w3id.org/peo#encoder_only> <https://w3id.org/peo#description> "Model that processes input data to generate a fixed-length representation or embeddings, commonly used in tasks like classification and information retrieval." .
+<https://w3id.org/peo#encoder_only> <https://w3id.org/peo#reference> "https://medium.com/@pickleprat/encoder-only-architecture-bert-4b27f9c76860" .
 # 
 # https://w3id.org/peo#falcon
 <https://w3id.org/peo#falcon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -739,6 +750,8 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#global_image_encoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#global_image_encoder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#encoder> .
 <https://w3id.org/peo#global_image_encoder> <http://www.w3.org/2000/01/rdf-schema#label> "Global Image Encoder" .
+<https://w3id.org/peo#global_image_encoder> <https://w3id.org/peo#description> "A model that encodes an entire image into a single global feature vector, capturing the overall content and structure for tasks like classification or retrieval." .
+<https://w3id.org/peo#global_image_encoder> <https://w3id.org/peo#reference> "https://arxiv.org/html/2409.04095v1" .
 # 
 # https://w3id.org/peo#gpt
 <https://w3id.org/peo#gpt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -764,6 +777,8 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#grounding_image_encoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#grounding_image_encoder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#encoder> .
 <https://w3id.org/peo#grounding_image_encoder> <http://www.w3.org/2000/01/rdf-schema#label> "Grounding Image Encoder" .
+<https://w3id.org/peo#grounding_image_encoder> <https://w3id.org/peo#description> "A model designed to encode images by linking specific visual elements to semantic concepts, useful for tasks like visual grounding or visual question answering." .
+<https://w3id.org/peo#grounding_image_encoder> <https://w3id.org/peo#reference> "https://arxiv.org/html/2409.08520v1" .
 # 
 # https://w3id.org/peo#image_explanation
 <https://w3id.org/peo#image_explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -777,6 +792,7 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#image_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#image_processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#capability> .
 <https://w3id.org/peo#image_processing> <http://www.w3.org/2000/01/rdf-schema#label> "Image processing" .
+<https://w3id.org/peo#image_processing> <https://w3id.org/peo#description> "Capability to process images, understanding the content of the image." .
 # 
 # https://w3id.org/peo#image_prompting
 <https://w3id.org/peo#image_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -811,6 +827,7 @@ _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/peo#base_model> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/peo#large_language_model_characteristic> <http://www.w3.org/2000/01/rdf-schema#label> "LLM chracteristic" .
+<https://w3id.org/peo#large_language_model_characteristic> <https://w3id.org/peo#description> "The class represents the defining traits of a large language model, combining its base model attributes and capabilities." .
 # 
 # https://w3id.org/peo#least_to_most_prompting
 <https://w3id.org/peo#least_to_most_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -959,6 +976,7 @@ _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/peo#organization
 <https://w3id.org/peo#organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+<https://w3id.org/peo#organization> <https://w3id.org/peo#description> "An organization of people that develops a large language model" .
 # 
 # https://w3id.org/peo#palm
 <https://w3id.org/peo#palm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1000,6 +1018,8 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#pixel_decoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#pixel_decoder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#decoder> .
 <https://w3id.org/peo#pixel_decoder> <http://www.w3.org/2000/01/rdf-schema#label> "Pixel decoder" .
+<https://w3id.org/peo#pixel_decoder> <https://w3id.org/peo#description> "Neural network module used in computer vision tasks to refine and upsample low-resolution feature maps into high-resolution outputs, typically representing pixel-level predictions such as segmentation masks or image reconstruction." .
+<https://w3id.org/peo#pixel_decoder> <https://w3id.org/peo#reference> "https://arxiv.org/abs/2212.11270" .
 # 
 # https://w3id.org/peo#plan_and_solve_prompting
 <https://w3id.org/peo#plan_and_solve_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1027,6 +1047,8 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#q_former> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#q_former> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#base_model> .
 <https://w3id.org/peo#q_former> <http://www.w3.org/2000/01/rdf-schema#label> "Q-Former" .
+<https://w3id.org/peo#q_former> <https://w3id.org/peo#description> "A transformer-based model that uses query embeddings to encode specific features or focus areas in cross-modal or task-specific applications." .
+<https://w3id.org/peo#q_former> <https://w3id.org/peo#reference> "https://abdulkaderhelwan.medium.com/q-former-1d83163975da" .
 # 
 # https://w3id.org/peo#quality_boosters
 <https://w3id.org/peo#quality_boosters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1048,11 +1070,15 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#recurrent_neural_network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#recurrent_neural_network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#base_model> .
 <https://w3id.org/peo#recurrent_neural_network> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrent Neural Network" .
+<https://w3id.org/peo#recurrent_neural_network> <https://w3id.org/peo#description> "A sequential model that processes input data one step at a time while maintaining a memory of past inputs via hidden states, suitable for time-series and sequential tasks." .
+<https://w3id.org/peo#recurrent_neural_network> <https://w3id.org/peo#reference> "https://en.wikipedia.org/wiki/Recurrent_neural_network" .
 # 
 # https://w3id.org/peo#region_encoder
 <https://w3id.org/peo#region_encoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#region_encoder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#encoder> .
 <https://w3id.org/peo#region_encoder> <http://www.w3.org/2000/01/rdf-schema#label> "Region Encoder" .
+<https://w3id.org/peo#region_encoder> <https://w3id.org/peo#description> "A model that focuses on extracting feature representations from specific regions within an image, often used in object detection or region-based vision tasks." .
+<https://w3id.org/peo#region_encoder> <https://w3id.org/peo#reference> "https://arxiv.org/html/2306.05411v2" .
 # 
 # https://w3id.org/peo#repetition
 <https://w3id.org/peo#repetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1066,6 +1092,7 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#research_institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#research_institution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#organization> .
 <https://w3id.org/peo#research_institution> <http://www.w3.org/2000/01/rdf-schema#label> "Research institution" .
+<https://w3id.org/peo#research_institution> <https://w3id.org/peo#description> "Institution of researchers and developers who develop a LLM  for research purposes." .
 # 
 # https://w3id.org/peo#response
 <https://w3id.org/peo#response> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1204,6 +1231,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#text_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#text_processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#capability> .
 <https://w3id.org/peo#text_processing> <http://www.w3.org/2000/01/rdf-schema#label> "Text processing" .
+<https://w3id.org/peo#text_processing> <https://w3id.org/peo#description> "Capability to process text and documents with text inside." .
 # 
 # https://w3id.org/peo#text_summarization
 <https://w3id.org/peo#text_summarization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1222,6 +1250,8 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#transformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#transformer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#base_model> .
 <https://w3id.org/peo#transformer> <http://www.w3.org/2000/01/rdf-schema#label> "Transformer" .
+<https://w3id.org/peo#transformer> <https://w3id.org/peo#description> "A neural network architecture that uses self-attention mechanisms to process sequential data in parallel, effectively capturing long-range dependencies" .
+<https://w3id.org/peo#transformer> <https://w3id.org/peo#reference> "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" .
 # 
 # https://w3id.org/peo#transformer_xl
 <https://w3id.org/peo#transformer_xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1235,6 +1265,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#university> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#university> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#organization> .
 <https://w3id.org/peo#university> <http://www.w3.org/2000/01/rdf-schema#label> "University" .
+<https://w3id.org/peo#university> <https://w3id.org/peo#description> "A higher education institution dedicated to advanced learning, research, and the development of specialized knowledge and skills" .
 # 
 # https://w3id.org/peo#vall-e
 <https://w3id.org/peo#vall-e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1276,6 +1307,7 @@ _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#video_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#video_processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#capability> .
 <https://w3id.org/peo#video_processing> <http://www.w3.org/2000/01/rdf-schema#label> "Video processing" .
+<https://w3id.org/peo#video_processing> <https://w3id.org/peo#description> "Capability to process video files." .
 # 
 # https://w3id.org/peo#video_task
 <https://w3id.org/peo#video_task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1286,6 +1318,8 @@ _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#vit_encoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#vit_encoder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#encoder> .
 <https://w3id.org/peo#vit_encoder> <http://www.w3.org/2000/01/rdf-schema#label> "ViT Encoder" .
+<https://w3id.org/peo#vit_encoder> <https://w3id.org/peo#description> "A Vision Transformer encoder that splits an image into patches, treats them as tokens, and processes them using self-attention mechanisms to learn spatial and semantic relationships." .
+<https://w3id.org/peo#vit_encoder> <https://w3id.org/peo#reference> "https://en.wikipedia.org/wiki/Vision_transformer" .
 # 
 # https://w3id.org/peo#xlnet
 <https://w3id.org/peo#xlnet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1763,6 +1797,26 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/peo#gemma-7b-it
 <https://w3id.org/peo#gemma-7b-it> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemma-7b-it> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#gemma> .
+# 
+# https://w3id.org/peo#general_audio_processing
+<https://w3id.org/peo#general_audio_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/peo#general_audio_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#audio_processing> .
+# 
+# https://w3id.org/peo#general_code_processing
+<https://w3id.org/peo#general_code_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/peo#general_code_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#code_processing> .
+# 
+# https://w3id.org/peo#general_image_processing
+<https://w3id.org/peo#general_image_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/peo#general_image_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#image_processing> .
+# 
+# https://w3id.org/peo#general_text_processing
+<https://w3id.org/peo#general_text_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/peo#general_text_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#text_processing> .
+# 
+# https://w3id.org/peo#general_video_processing
+<https://w3id.org/peo#general_video_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/peo#general_video_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#video_processing> .
 # 
 # https://w3id.org/peo#stablelm-2-1-6b
 <https://w3id.org/peo#stablelm-2-1-6b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
