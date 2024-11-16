@@ -1,0 +1,566 @@
+{
+  "@context" : {
+    "decoder_only" : {
+      "@id" : "https://w3id.org/peo#decoder_only"
+    },
+    "CogVLM" : {
+      "@id" : "https://w3id.org/peo#CogVLM"
+    },
+    "chain_of_verification_prompting" : {
+      "@id" : "https://w3id.org/peo#chain_of_verification_prompting"
+    },
+    "has_description" : {
+      "@id" : "https://w3id.org/peo#has_description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "thread_of_thought_prompting" : {
+      "@id" : "https://w3id.org/peo#thread_of_thought_prompting"
+    },
+    "Falcon" : {
+      "@id" : "https://w3id.org/peo#Falcon"
+    },
+    "chain_of_thought_prompting" : {
+      "@id" : "https://w3id.org/peo#chain_of_thought_prompting"
+    },
+    "BLIP-2" : {
+      "@id" : "https://w3id.org/peo#BLIP-2"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "has_response" : {
+      "@id" : "https://w3id.org/peo#has_response",
+      "@type" : "@id"
+    },
+    "OLMo" : {
+      "@id" : "https://w3id.org/peo#OLMo"
+    },
+    "Pixel_dec" : {
+      "@id" : "https://w3id.org/peo#Pixel_dec"
+    },
+    "analogical_prompting" : {
+      "@id" : "https://w3id.org/peo#analogical_prompting"
+    },
+    "university" : {
+      "@id" : "https://w3id.org/peo#university"
+    },
+    "Lighting" : {
+      "@id" : "https://w3id.org/peo#Lighting"
+    },
+    "processes" : {
+      "@id" : "https://w3id.org/peo#processes",
+      "@type" : "@id"
+    },
+    "Transforem" : {
+      "@id" : "https://w3id.org/peo#Transforem"
+    },
+    "Text_task" : {
+      "@id" : "https://w3id.org/peo#Text_task"
+    },
+    "is_used_in_chat" : {
+      "@id" : "https://w3id.org/peo#is_used_in_chat",
+      "@type" : "@id"
+    },
+    "Video_task" : {
+      "@id" : "https://w3id.org/peo#Video_task"
+    },
+    "MPT-7B" : {
+      "@id" : "https://w3id.org/peo#MPT-7B"
+    },
+    "XLNet" : {
+      "@id" : "https://w3id.org/peo#XLNet"
+    },
+    "Base_model" : {
+      "@id" : "https://w3id.org/peo#Base_model"
+    },
+    "Sora" : {
+      "@id" : "https://w3id.org/peo#Sora"
+    },
+    "code_explanation" : {
+      "@id" : "https://w3id.org/peo#code_explanation"
+    },
+    "paper" : {
+      "@id" : "https://w3id.org/peo#paper"
+    },
+    "Phi-2" : {
+      "@id" : "https://w3id.org/peo#Phi-2"
+    },
+    "Midjourney" : {
+      "@id" : "https://w3id.org/peo#Midjourney"
+    },
+    "video_processing" : {
+      "@id" : "https://w3id.org/peo#video_processing"
+    },
+    "DALL-E" : {
+      "@id" : "https://w3id.org/peo#DALL-E"
+    },
+    "emotion_prompting" : {
+      "@id" : "https://w3id.org/peo#emotion_prompting"
+    },
+    "response_followedby_prompt" : {
+      "@id" : "https://w3id.org/peo#response_followedby_prompt",
+      "@type" : "@id"
+    },
+    "developed_by" : {
+      "@id" : "https://w3id.org/peo#developed_by",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "structured_chain_of_thought_prompting" : {
+      "@id" : "https://w3id.org/peo#structured_chain_of_thought_prompting"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Codex" : {
+      "@id" : "https://w3id.org/peo#Codex"
+    },
+    "company" : {
+      "@id" : "https://w3id.org/peo#company"
+    },
+    "Chinchilla" : {
+      "@id" : "https://w3id.org/peo#Chinchilla"
+    },
+    "FLAN" : {
+      "@id" : "https://w3id.org/peo#FLAN"
+    },
+    "few_shot_prompting" : {
+      "@id" : "https://w3id.org/peo#few_shot_prompting"
+    },
+    "role_prompting" : {
+      "@id" : "https://w3id.org/peo#role_prompting"
+    },
+    "has_output_indicator" : {
+      "@id" : "https://w3id.org/peo#has_output_indicator",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Code_task" : {
+      "@id" : "https://w3id.org/peo#Code_task"
+    },
+    "graph_of_thoughts_prompting" : {
+      "@id" : "https://w3id.org/peo#graph_of_thoughts_prompting"
+    },
+    "has_input_data" : {
+      "@id" : "https://w3id.org/peo#has_input_data",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Command_R" : {
+      "@id" : "https://w3id.org/peo#Command_R"
+    },
+    "video_generation" : {
+      "@id" : "https://w3id.org/peo#video_generation"
+    },
+    "image_prompting_technique" : {
+      "@id" : "https://w3id.org/peo#image_prompting_technique"
+    },
+    "Mistral" : {
+      "@id" : "https://w3id.org/peo#Mistral"
+    },
+    "has_response_value" : {
+      "@id" : "https://w3id.org/peo#has_response_value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Image_task" : {
+      "@id" : "https://w3id.org/peo#Image_task"
+    },
+    "start_time_chat" : {
+      "@id" : "https://w3id.org/peo#start_time_chat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "chat" : {
+      "@id" : "https://w3id.org/peo#chat"
+    },
+    "GPT" : {
+      "@id" : "https://w3id.org/peo#GPT"
+    },
+    "prompt_generated_using" : {
+      "@id" : "https://w3id.org/peo#prompt_generated_using",
+      "@type" : "@id"
+    },
+    "plan_and_solve_prompting" : {
+      "@id" : "https://w3id.org/peo#plan_and_solve_prompting"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Diffusion" : {
+      "@id" : "https://w3id.org/peo#Diffusion"
+    },
+    "code_processing" : {
+      "@id" : "https://w3id.org/peo#code_processing"
+    },
+    "audio_processing" : {
+      "@id" : "https://w3id.org/peo#audio_processing"
+    },
+    "Q-Former" : {
+      "@id" : "https://w3id.org/peo#Q-Former"
+    },
+    "VALL-E" : {
+      "@id" : "https://w3id.org/peo#VALL-E"
+    },
+    "website" : {
+      "@id" : "https://w3id.org/peo#website"
+    },
+    "image_processing" : {
+      "@id" : "https://w3id.org/peo#image_processing"
+    },
+    "capability" : {
+      "@id" : "https://w3id.org/peo#capability"
+    },
+    "solves_task" : {
+      "@id" : "https://w3id.org/peo#solves_task",
+      "@type" : "@id"
+    },
+    "Alpaca" : {
+      "@id" : "https://w3id.org/peo#Alpaca"
+    },
+    "react_prompting" : {
+      "@id" : "https://w3id.org/peo#react_prompting"
+    },
+    "tree_of_thoughts_prompting" : {
+      "@id" : "https://w3id.org/peo#tree_of_thoughts_prompting"
+    },
+    "LaMDA-PT" : {
+      "@id" : "https://w3id.org/peo#LaMDA-PT"
+    },
+    "research_institution" : {
+      "@id" : "https://w3id.org/peo#research_institution"
+    },
+    "develops" : {
+      "@id" : "https://w3id.org/peo#develops",
+      "@type" : "@id"
+    },
+    "has_context" : {
+      "@id" : "https://w3id.org/peo#has_context",
+      "@type" : "@id"
+    },
+    "has_release_year" : {
+      "@id" : "https://w3id.org/peo#has_release_year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "code_prompting_technique" : {
+      "@id" : "https://w3id.org/peo#code_prompting_technique"
+    },
+    "large_language_model" : {
+      "@id" : "https://w3id.org/peo#large_language_model"
+    },
+    "solved_by" : {
+      "@id" : "https://w3id.org/peo#solved_by",
+      "@type" : "@id"
+    },
+    "BERT" : {
+      "@id" : "https://w3id.org/peo#BERT"
+    },
+    "automatic_chain_of_thought_prompting" : {
+      "@id" : "https://w3id.org/peo#automatic_chain_of_thought_prompting"
+    },
+    "GLaMM" : {
+      "@id" : "https://w3id.org/peo#GLaMM"
+    },
+    "creator" : {
+      "@id" : "https://w3id.org/peo#creator"
+    },
+    "decomposed_prompting" : {
+      "@id" : "https://w3id.org/peo#decomposed_prompting"
+    },
+    "based_on" : {
+      "@id" : "https://w3id.org/peo#based_on",
+      "@type" : "@id"
+    },
+    "response_generated_using" : {
+      "@id" : "https://w3id.org/peo#response_generated_using",
+      "@type" : "@id"
+    },
+    "has_body" : {
+      "@id" : "https://w3id.org/peo#has_body",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "RWKV_LLM" : {
+      "@id" : "https://w3id.org/peo#RWKV_LLM"
+    },
+    "StarCoder" : {
+      "@id" : "https://w3id.org/peo#StarCoder"
+    },
+    "shot_type" : {
+      "@id" : "https://w3id.org/peo#shot_type"
+    },
+    "has_prompt" : {
+      "@id" : "https://w3id.org/peo#has_prompt",
+      "@type" : "@id"
+    },
+    "PaLM" : {
+      "@id" : "https://w3id.org/peo#PaLM"
+    },
+    "language_model_feature" : {
+      "@id" : "https://w3id.org/peo#language_model_feature"
+    },
+    "StableLM" : {
+      "@id" : "https://w3id.org/peo#StableLM"
+    },
+    "text_generation" : {
+      "@id" : "https://w3id.org/peo#text_generation"
+    },
+    "Encoder" : {
+      "@id" : "https://w3id.org/peo#Encoder"
+    },
+    "has_model_architecture" : {
+      "@id" : "https://w3id.org/peo#has_model_architecture",
+      "@type" : "@id"
+    },
+    "prompt_followedby_prompt" : {
+      "@id" : "https://w3id.org/peo#prompt_followedby_prompt",
+      "@type" : "@id"
+    },
+    "scratchpad_prompting" : {
+      "@id" : "https://w3id.org/peo#scratchpad_prompting"
+    },
+    "Grounding_Image_Encoder" : {
+      "@id" : "https://w3id.org/peo#Grounding_Image_Encoder"
+    },
+    "question_answering" : {
+      "@id" : "https://w3id.org/peo#question_answering"
+    },
+    "transformer" : {
+      "@id" : "https://w3id.org/peo#transformer"
+    },
+    "Gemini" : {
+      "@id" : "https://w3id.org/peo#Gemini"
+    },
+    "Encoder_only" : {
+      "@id" : "https://w3id.org/peo#Encoder_only"
+    },
+    "has_capability" : {
+      "@id" : "https://w3id.org/peo#has_capability",
+      "@type" : "@id"
+    },
+    "Minerva" : {
+      "@id" : "https://w3id.org/peo#Minerva"
+    },
+    "BLOOM" : {
+      "@id" : "https://w3id.org/peo#BLOOM"
+    },
+    "image_segmentation" : {
+      "@id" : "https://w3id.org/peo#image_segmentation"
+    },
+    "image_generation" : {
+      "@id" : "https://w3id.org/peo#image_generation"
+    },
+    "processed_by" : {
+      "@id" : "https://w3id.org/peo#processed_by",
+      "@type" : "@id"
+    },
+    "prompt" : {
+      "@id" : "https://w3id.org/peo#prompt"
+    },
+    "mathematical_understanding" : {
+      "@id" : "https://w3id.org/peo#mathematical_understanding"
+    },
+    "Claude" : {
+      "@id" : "https://w3id.org/peo#Claude"
+    },
+    "Global_Image_Encoder" : {
+      "@id" : "https://w3id.org/peo#Global_Image_Encoder"
+    },
+    "uses_model" : {
+      "@id" : "https://w3id.org/peo#uses_model",
+      "@type" : "@id"
+    },
+    "prompt_follows_response" : {
+      "@id" : "https://w3id.org/peo#prompt_follows_response",
+      "@type" : "@id"
+    },
+    "audio_explanation" : {
+      "@id" : "https://w3id.org/peo#audio_explanation"
+    },
+    "Audio_task" : {
+      "@id" : "https://w3id.org/peo#Audio_task"
+    },
+    "image_explanation" : {
+      "@id" : "https://w3id.org/peo#image_explanation"
+    },
+    "style_modifiers" : {
+      "@id" : "https://w3id.org/peo#style_modifiers"
+    },
+    "task" : {
+      "@id" : "https://w3id.org/peo#task"
+    },
+    "least_to_most_prompting" : {
+      "@id" : "https://w3id.org/peo#least_to_most_prompting"
+    },
+    "LLaMA" : {
+      "@id" : "https://w3id.org/peo#LLaMA"
+    },
+    "OpenELM" : {
+      "@id" : "https://w3id.org/peo#OpenELM"
+    },
+    "Vicuna" : {
+      "@id" : "https://w3id.org/peo#Vicuna"
+    },
+    "reference" : {
+      "@id" : "https://w3id.org/peo#reference"
+    },
+    "text_classification" : {
+      "@id" : "https://w3id.org/peo#text_classification"
+    },
+    "title" : {
+      "@id" : "https://w3id.org/peo#title"
+    },
+    "rephrase_respond_prompting" : {
+      "@id" : "https://w3id.org/peo#rephrase_respond_prompting"
+    },
+    "code_generation" : {
+      "@id" : "https://w3id.org/peo#code_generation"
+    },
+    "chain_of_note_prompting" : {
+      "@id" : "https://w3id.org/peo#chain_of_note_prompting"
+    },
+    "text_processing" : {
+      "@id" : "https://w3id.org/peo#text_processing"
+    },
+    "zero_shot_prompting" : {
+      "@id" : "https://w3id.org/peo#zero_shot_prompting"
+    },
+    "audio_generation" : {
+      "@id" : "https://w3id.org/peo#audio_generation"
+    },
+    "rag_prompting" : {
+      "@id" : "https://w3id.org/peo#rag_prompting"
+    },
+    "Gemma" : {
+      "@id" : "https://w3id.org/peo#Gemma"
+    },
+    "chain_of_knowledge_prompting" : {
+      "@id" : "https://w3id.org/peo#chain_of_knowledge_prompting"
+    },
+    "prompting_technique" : {
+      "@id" : "https://w3id.org/peo#prompting_technique"
+    },
+    "language_model" : {
+      "@id" : "https://w3id.org/peo#language_model"
+    },
+    "OPT" : {
+      "@id" : "https://w3id.org/peo#OPT"
+    },
+    "response" : {
+      "@id" : "https://w3id.org/peo#response"
+    },
+    "has_number_parameters" : {
+      "@id" : "https://w3id.org/peo#has_number_parameters",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "T5" : {
+      "@id" : "https://w3id.org/peo#T5"
+    },
+    "prompt_follows_prompt" : {
+      "@id" : "https://w3id.org/peo#prompt_follows_prompt",
+      "@type" : "@id"
+    },
+    "Prompt_engineering" : {
+      "@id" : "https://w3id.org/peo#Prompt_engineering"
+    },
+    "Decoder" : {
+      "@id" : "https://w3id.org/peo#Decoder"
+    },
+    "evolves" : {
+      "@id" : "https://w3id.org/peo#evolves",
+      "@type" : "@id"
+    },
+    "has_chat_title" : {
+      "@id" : "https://w3id.org/peo#has_chat_title"
+    },
+    "program_of_thoughts_prompting" : {
+      "@id" : "https://w3id.org/peo#program_of_thoughts_prompting"
+    },
+    "chain_of_code_prompting" : {
+      "@id" : "https://w3id.org/peo#chain_of_code_prompting"
+    },
+    "repetition" : {
+      "@id" : "https://w3id.org/peo#repetition"
+    },
+    "ViT-Encoder" : {
+      "@id" : "https://w3id.org/peo#ViT-Encoder"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "active_prompting" : {
+      "@id" : "https://w3id.org/peo#active_prompting"
+    },
+    "take_step_back_prompting" : {
+      "@id" : "https://w3id.org/peo#take_step_back_prompting"
+    },
+    "logical_chain_of_thought_prompting" : {
+      "@id" : "https://w3id.org/peo#logical_chain_of_thought_prompting"
+    },
+    "language" : {
+      "@id" : "https://w3id.org/peo#language"
+    },
+    "CLIP" : {
+      "@id" : "https://w3id.org/peo#CLIP"
+    },
+    "Recurrent_Neural_Network" : {
+      "@id" : "https://w3id.org/peo#Recurrent_Neural_Network"
+    },
+    "is_used_in_prompt" : {
+      "@id" : "https://w3id.org/peo#is_used_in_prompt",
+      "@type" : "@id"
+    },
+    "text_summarization" : {
+      "@id" : "https://w3id.org/peo#text_summarization"
+    },
+    "chain_of_table_prompting" : {
+      "@id" : "https://w3id.org/peo#chain_of_table_prompting"
+    },
+    "fix_deformed_generations" : {
+      "@id" : "https://w3id.org/peo#fix_deformed_generations"
+    },
+    "is_response_of" : {
+      "@id" : "https://w3id.org/peo#is_response_of",
+      "@type" : "@id"
+    },
+    "organization" : {
+      "@id" : "https://w3id.org/peo#organization"
+    },
+    "prompt_followedby_response" : {
+      "@id" : "https://w3id.org/peo#prompt_followedby_response",
+      "@type" : "@id"
+    },
+    "quality_boosters" : {
+      "@id" : "https://w3id.org/peo#quality_boosters"
+    },
+    "belongs_to" : {
+      "@id" : "https://w3id.org/peo#belongs_to",
+      "@type" : "@id"
+    },
+    "end_time_chat" : {
+      "@id" : "https://w3id.org/peo#end_time_chat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "https://w3id.org/peo#description"
+    },
+    "response_follows_prompt" : {
+      "@id" : "https://w3id.org/peo#response_follows_prompt",
+      "@type" : "@id"
+    },
+    "Region_Encoder" : {
+      "@id" : "https://w3id.org/peo#Region_Encoder"
+    },
+    "generates_response" : {
+      "@id" : "https://w3id.org/peo#generates_response",
+      "@type" : "@id"
+    },
+    "self_consistency_prompting" : {
+      "@id" : "https://w3id.org/peo#self_consistency_prompting"
+    },
+    "system_2_attention_prompting" : {
+      "@id" : "https://w3id.org/peo#system_2_attention_prompting"
+    }
+  }
+}
