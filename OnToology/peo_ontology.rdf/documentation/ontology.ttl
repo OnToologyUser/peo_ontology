@@ -406,7 +406,8 @@
 ###  https://w3id.org/peo#audio_processing
 :audio_processing rdf:type owl:Class ;
                   rdfs:subClassOf :capability ;
-                  rdfs:label "Audio processing" .
+                  rdfs:label "Audio processing" ;
+                  :description "Capability to process audio files." .
 
 
 ###  https://w3id.org/peo#audio_task
@@ -576,7 +577,8 @@
 ###  https://w3id.org/peo#code_processing
 :code_processing rdf:type owl:Class ;
                  rdfs:subClassOf :capability ;
-                 rdfs:label "Code processing" .
+                 rdfs:label "Code processing" ;
+                 :description "Capability to process source code written in any programming language." .
 
 
 ###  https://w3id.org/peo#code_prompting
@@ -627,7 +629,8 @@
 ###  https://w3id.org/peo#company
 :company rdf:type owl:Class ;
          rdfs:subClassOf :organization ;
-         rdfs:label "Company" .
+         rdfs:label "Company" ;
+         :description "Organization that develops an LLM for business purpose" .
 
 
 ###  https://w3id.org/peo#dall-e
@@ -666,7 +669,9 @@
 ###  https://w3id.org/peo#decoder_only
 :decoder_only rdf:type owl:Class ;
               rdfs:subClassOf :decoder ;
-              rdfs:label "Decoder only" .
+              rdfs:label "Decoder only" ;
+              :description "Neural network architecture that generates outputs directly from an initial prompt or sequence without requiring a separate encoder. It processes input autoregressively, predicting the next token one step at a time, and is commonly used in large language models like GPT." ;
+              :reference "https://cameronrwolfe.substack.com/p/decoder-only-transformers-the-workhorse" .
 
 
 ###  https://w3id.org/peo#decomposed_prompting
@@ -677,7 +682,9 @@
 ###  https://w3id.org/peo#diffusion_model
 :diffusion_model rdf:type owl:Class ;
                  rdfs:subClassOf :base_model ;
-                 rdfs:label "Diffusion model" .
+                 rdfs:label "Diffusion model" ;
+                 :description "Generative model that learns to create data (e.g., images, audio) by reversing a gradual noise-adding process applied to the data during training, generating realistic outputs by denoising starting from random noise." ;
+                 :reference "https://en.wikipedia.org/wiki/Diffusion_model" .
 
 
 ###  https://w3id.org/peo#emotion_prompting
@@ -688,13 +695,17 @@
 ###  https://w3id.org/peo#encoder
 :encoder rdf:type owl:Class ;
          rdfs:subClassOf :base_model ;
-         rdfs:label "Encoder" .
+         rdfs:label "Encoder" ;
+         :description "Neural network component that processes input data (e.g., text, images, or audio) and transforms it into a dense, high-dimensional representation (latent space), capturing the most relevant features for subsequent tasks like classification, translation, or generation." ;
+         :reference "https://medium.com/@mansoorsyed05/encoders-and-decoders-in-generative-ai-3a717d50fced" .
 
 
 ###  https://w3id.org/peo#encoder_only
 :encoder_only rdf:type owl:Class ;
               rdfs:subClassOf :encoder ;
-              rdfs:label "Encoder only" .
+              rdfs:label "Encoder only" ;
+              :description "Model that processes input data to generate a fixed-length representation or embeddings, commonly used in tasks like classification and information retrieval." ;
+              :reference "https://medium.com/@pickleprat/encoder-only-architecture-bert-4b27f9c76860" .
 
 
 ###  https://w3id.org/peo#falcon
@@ -823,7 +834,9 @@
 ###  https://w3id.org/peo#global_image_encoder
 :global_image_encoder rdf:type owl:Class ;
                       rdfs:subClassOf :encoder ;
-                      rdfs:label "Global Image Encoder" .
+                      rdfs:label "Global Image Encoder" ;
+                      :description "A model that encodes an entire image into a single global feature vector, capturing the overall content and structure for tasks like classification or retrieval." ;
+                      :reference "https://arxiv.org/html/2409.04095v1" .
 
 
 ###  https://w3id.org/peo#gpt
@@ -851,7 +864,9 @@
 ###  https://w3id.org/peo#grounding_image_encoder
 :grounding_image_encoder rdf:type owl:Class ;
                          rdfs:subClassOf :encoder ;
-                         rdfs:label "Grounding Image Encoder" .
+                         rdfs:label "Grounding Image Encoder" ;
+                         :description "A model designed to encode images by linking specific visual elements to semantic concepts, useful for tasks like visual grounding or visual question answering." ;
+                         :reference "https://arxiv.org/html/2409.08520v1" .
 
 
 ###  https://w3id.org/peo#image_explanation
@@ -867,7 +882,8 @@
 ###  https://w3id.org/peo#image_processing
 :image_processing rdf:type owl:Class ;
                   rdfs:subClassOf :capability ;
-                  rdfs:label "Image processing" .
+                  rdfs:label "Image processing" ;
+                  :description "Capability to process images, understanding the content of the image." .
 
 
 ###  https://w3id.org/peo#image_prompting
@@ -903,7 +919,8 @@
                                                                               ) ;
                                                            rdf:type owl:Class
                                                          ] ;
-                                     rdfs:label "LLM chracteristic" .
+                                     rdfs:label "LLM chracteristic" ;
+                                     :description "The class represents the defining traits of a large language model, combining its base model attributes and capabilities." .
 
 
 ###  https://w3id.org/peo#least_to_most_prompting
@@ -1064,7 +1081,8 @@
 
 ###  https://w3id.org/peo#organization
 :organization rdf:type owl:Class ;
-              rdfs:label "Organization" .
+              rdfs:label "Organization" ;
+              :description "An organization of people that develops a large language model" .
 
 
 ###  https://w3id.org/peo#palm
@@ -1108,7 +1126,9 @@
 ###  https://w3id.org/peo#pixel_decoder
 :pixel_decoder rdf:type owl:Class ;
                rdfs:subClassOf :decoder ;
-               rdfs:label "Pixel decoder" .
+               rdfs:label "Pixel decoder" ;
+               :description "Neural network module used in computer vision tasks to refine and upsample low-resolution feature maps into high-resolution outputs, typically representing pixel-level predictions such as segmentation masks or image reconstruction." ;
+               :reference "https://arxiv.org/abs/2212.11270" .
 
 
 ###  https://w3id.org/peo#plan_and_solve_prompting
@@ -1141,7 +1161,9 @@
 ###  https://w3id.org/peo#q_former
 :q_former rdf:type owl:Class ;
           rdfs:subClassOf :base_model ;
-          rdfs:label "Q-Former" .
+          rdfs:label "Q-Former" ;
+          :description "A transformer-based model that uses query embeddings to encode specific features or focus areas in cross-modal or task-specific applications." ;
+          :reference "https://abdulkaderhelwan.medium.com/q-former-1d83163975da" .
 
 
 ###  https://w3id.org/peo#quality_boosters
@@ -1167,13 +1189,17 @@
 ###  https://w3id.org/peo#recurrent_neural_network
 :recurrent_neural_network rdf:type owl:Class ;
                           rdfs:subClassOf :base_model ;
-                          rdfs:label "Recurrent Neural Network" .
+                          rdfs:label "Recurrent Neural Network" ;
+                          :description "A sequential model that processes input data one step at a time while maintaining a memory of past inputs via hidden states, suitable for time-series and sequential tasks." ;
+                          :reference "https://en.wikipedia.org/wiki/Recurrent_neural_network" .
 
 
 ###  https://w3id.org/peo#region_encoder
 :region_encoder rdf:type owl:Class ;
                 rdfs:subClassOf :encoder ;
-                rdfs:label "Region Encoder" .
+                rdfs:label "Region Encoder" ;
+                :description "A model that focuses on extracting feature representations from specific regions within an image, often used in object detection or region-based vision tasks." ;
+                :reference "https://arxiv.org/html/2306.05411v2" .
 
 
 ###  https://w3id.org/peo#repetition
@@ -1189,7 +1215,8 @@
 ###  https://w3id.org/peo#research_institution
 :research_institution rdf:type owl:Class ;
                       rdfs:subClassOf :organization ;
-                      rdfs:label "Research institution" .
+                      rdfs:label "Research institution" ;
+                      :description "Institution of researchers and developers who develop a LLM  for research purposes." .
 
 
 ###  https://w3id.org/peo#response
@@ -1345,7 +1372,8 @@
 ###  https://w3id.org/peo#text_processing
 :text_processing rdf:type owl:Class ;
                  rdfs:subClassOf :capability ;
-                 rdfs:label "Text processing" .
+                 rdfs:label "Text processing" ;
+                 :description "Capability to process text and documents with text inside." .
 
 
 ###  https://w3id.org/peo#text_summarization
@@ -1367,7 +1395,9 @@
 ###  https://w3id.org/peo#transformer
 :transformer rdf:type owl:Class ;
              rdfs:subClassOf :base_model ;
-             rdfs:label "Transformer" .
+             rdfs:label "Transformer" ;
+             :description "A neural network architecture that uses self-attention mechanisms to process sequential data in parallel, effectively capturing long-range dependencies" ;
+             :reference "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" .
 
 
 ###  https://w3id.org/peo#transformer_xl
@@ -1383,7 +1413,8 @@
 ###  https://w3id.org/peo#university
 :university rdf:type owl:Class ;
             rdfs:subClassOf :organization ;
-            rdfs:label "University" .
+            rdfs:label "University" ;
+            :description "A higher education institution dedicated to advanced learning, research, and the development of specialized knowledge and skills" .
 
 
 ###  https://w3id.org/peo#vall-e
@@ -1428,7 +1459,8 @@
 ###  https://w3id.org/peo#video_processing
 :video_processing rdf:type owl:Class ;
                   rdfs:subClassOf :capability ;
-                  rdfs:label "Video processing" .
+                  rdfs:label "Video processing" ;
+                  :description "Capability to process video files." .
 
 
 ###  https://w3id.org/peo#video_task
@@ -1440,7 +1472,9 @@
 ###  https://w3id.org/peo#vit_encoder
 :vit_encoder rdf:type owl:Class ;
              rdfs:subClassOf :encoder ;
-             rdfs:label "ViT Encoder" .
+             rdfs:label "ViT Encoder" ;
+             :description "A Vision Transformer encoder that splits an image into patches, treats them as tokens, and processes them using self-attention mechanisms to learn spatial and semantic relationships." ;
+             :reference "https://en.wikipedia.org/wiki/Vision_transformer" .
 
 
 ###  https://w3id.org/peo#xlnet
@@ -2027,6 +2061,31 @@
 ###  https://w3id.org/peo#gemma-7b-it
 :gemma-7b-it rdf:type owl:NamedIndividual ,
                       :gemma .
+
+
+###  https://w3id.org/peo#general_audio_processing
+:general_audio_processing rdf:type owl:NamedIndividual ,
+                                   :audio_processing .
+
+
+###  https://w3id.org/peo#general_code_processing
+:general_code_processing rdf:type owl:NamedIndividual ,
+                                  :code_processing .
+
+
+###  https://w3id.org/peo#general_image_processing
+:general_image_processing rdf:type owl:NamedIndividual ,
+                                   :image_processing .
+
+
+###  https://w3id.org/peo#general_text_processing
+:general_text_processing rdf:type owl:NamedIndividual ,
+                                  :text_processing .
+
+
+###  https://w3id.org/peo#general_video_processing
+:general_video_processing rdf:type owl:NamedIndividual ,
+                                   :video_processing .
 
 
 ###  https://w3id.org/peo#stablelm-2-1-6b
