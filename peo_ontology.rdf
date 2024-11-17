@@ -257,7 +257,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/peo#has_variant">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:range rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:label>has_variant</rdfs:label>
@@ -2524,6 +2524,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_1.2">
         <rdf:type rdf:resource="https://w3id.org/peo#claude"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Claude_2"/>
     </owl:NamedIndividual>
     
 
@@ -2532,6 +2533,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Claude_2">
         <rdf:type rdf:resource="https://w3id.org/peo#claude"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Claude_3"/>
     </owl:NamedIndividual>
     
 
@@ -2612,6 +2614,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_180B">
         <rdf:type rdf:resource="https://w3id.org/peo#falcon"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Falcon_2_11B"/>
     </owl:NamedIndividual>
     
 
@@ -2628,6 +2631,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_40B">
         <rdf:type rdf:resource="https://w3id.org/peo#falcon"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Falcon_180B"/>
     </owl:NamedIndividual>
     
 
@@ -2636,6 +2640,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#falcon"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Falcon_40B"/>
     </owl:NamedIndividual>
     
 
@@ -2644,6 +2649,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Falcon_Mamba_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#falcon"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Falcon_7B"/>
     </owl:NamedIndividual>
     
 
@@ -2652,6 +2658,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GLaMM_FT">
         <rdf:type rdf:resource="https://w3id.org/peo#glamm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#GLaMM_ZS"/>
     </owl:NamedIndividual>
     
 
@@ -2820,6 +2827,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V1">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V2"/>
     </owl:NamedIndividual>
     
 
@@ -2828,6 +2836,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V2">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V3"/>
     </owl:NamedIndividual>
     
 
@@ -2836,6 +2845,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V3">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V4"/>
     </owl:NamedIndividual>
     
 
@@ -2844,6 +2854,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V4">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V5"/>
     </owl:NamedIndividual>
     
 
@@ -2852,6 +2863,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V5">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V5.1"/>
     </owl:NamedIndividual>
     
 
@@ -2860,6 +2872,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V5.1">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V5.2"/>
     </owl:NamedIndividual>
     
 
@@ -2868,6 +2881,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V5.2">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V6"/>
     </owl:NamedIndividual>
     
 
@@ -2876,6 +2890,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Midjourney_V6">
         <rdf:type rdf:resource="https://w3id.org/peo#midjourney"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Midjourney_V6.2"/>
     </owl:NamedIndividual>
     
 
@@ -2901,6 +2916,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Minerva-350M">
         <rdf:type rdf:resource="https://w3id.org/peo#minerva"/>
         <peo:has_variant rdf:resource="https://w3id.org/peo#Minerva-1B"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Minerva-3B"/>
     </owl:NamedIndividual>
     
 
@@ -2949,6 +2965,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OLMoE_code">
         <rdf:type rdf:resource="https://w3id.org/peo#olmo"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OLMo-1B-7B-0927-Instruct"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OLMoE-1B-7B-0924"/>
     </owl:NamedIndividual>
     
 
@@ -3253,6 +3271,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Vicuna-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#vicuna"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Vicuna-13B"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Vicuna-13B-16k"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Vicuna-33B"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Vicuna-7B-16k"/>
     </owl:NamedIndividual>
     
 
@@ -3277,6 +3299,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#allenAI">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#OLMoE_code"/>
         <peo:official_website>https://allenai.org/</peo:official_website>
         <peo:registered_name>Allen Institute for Artificial Intelligence</peo:registered_name>
     </owl:NamedIndividual>
@@ -3295,6 +3318,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#anthropic">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Claude_1.2"/>
         <peo:official_website>https://www.anthropic.com/</peo:official_website>
         <peo:registered_name>Anthropic PBC</peo:registered_name>
     </owl:NamedIndividual>
@@ -3315,6 +3339,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#bigcode">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#StarCoder+"/>
         <peo:official_website>https://bigcode-project.org/</peo:official_website>
         <peo:registered_name>BigCode Project</peo:registered_name>
     </owl:NamedIndividual>
@@ -3325,6 +3350,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#bigscience">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#BLOOMZ&amp;mT0"/>
         <peo:official_website>https://bigscience.huggingface.co/</peo:official_website>
         <peo:registered_name>BigScience Workshop</peo:registered_name>
     </owl:NamedIndividual>
@@ -3527,6 +3553,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#google_research">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#GLaMM_FT"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#xlnet_llm"/>
+        <peo:is_organization_of rdf:resource="https://w3id.org/peo#google"/>
         <peo:official_website>https://research.google/</peo:official_website>
         <peo:registered_name>Google LLC</peo:registered_name>
     </owl:NamedIndividual>
@@ -3537,6 +3566,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#lmsys">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Vicuna-7B"/>
         <peo:official_website>https://lmsys.org/</peo:official_website>
         <peo:registered_name>Large Model Systems Organization</peo:registered_name>
     </owl:NamedIndividual>
@@ -3567,6 +3597,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#midjourney_company">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Midjourney_V1"/>
         <peo:official_website>https://www.midjourney.com/</peo:official_website>
         <peo:registered_name>Midjourney, Inc.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3597,6 +3628,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#rwkv">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#RWKV-v5"/>
         <peo:official_website>https://github.com/BlinkDL/RWKV-LM</peo:official_website>
         <peo:registered_name>RWKV Language Model</peo:registered_name>
     </owl:NamedIndividual>
@@ -3654,6 +3686,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#stanford">
         <rdf:type rdf:resource="https://w3id.org/peo#university"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#alpaca_7B"/>
         <peo:official_website>https://www.stanford.edu/</peo:official_website>
         <peo:registered_name>Stanford University</peo:registered_name>
     </owl:NamedIndividual>
@@ -3664,6 +3697,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#technology_innovation_institute">
         <rdf:type rdf:resource="https://w3id.org/peo#research_institution"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Falcon_Mamba_7B"/>
         <peo:official_website>https://www.tii.ae/</peo:official_website>
         <peo:registered_name>Technology Innovation Institute</peo:registered_name>
     </owl:NamedIndividual>
@@ -3724,6 +3758,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#StarCoder+">
         <rdf:type rdf:resource="https://w3id.org/peo#starcoder"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#StarCoderBase"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#StarPii"/>
     </owl:NamedIndividual>
     
 
@@ -3785,6 +3821,15 @@
     <rdf:Description rdf:about="https://w3id.org/peo#/y">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#/o1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#/o2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#/llm">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment></rdfs:comment>
@@ -3808,7 +3853,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#has_variant"/>
-                                <swrl:argument1 rdf:resource="https://w3id.org/peo#/c"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/peo#/x"/>
                                 <swrl:argument2 rdf:resource="https://w3id.org/peo#/y"/>
                             </rdf:Description>
                         </rdf:first>
@@ -3825,6 +3870,87 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#develops"/>
                         <swrl:argument1 rdf:resource="https://w3id.org/peo#/c"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#/y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#is_organization_of"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#/o1"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#/o2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#develops"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/peo#/o1"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/peo#/llm"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#develops"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#/o2"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#/llm"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#evolves"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#/x"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#/y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#has_variant"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#/x"/>
                         <swrl:argument2 rdf:resource="https://w3id.org/peo#/y"/>
                     </rdf:Description>
                 </rdf:first>
