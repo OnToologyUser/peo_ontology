@@ -1,0 +1,156 @@
+CQ1 - What is prompt engineering?
+
+SELECT DISTINCT ?property ?value
+WHERE {
+    <https://w3id.org/peo#prompt_engineering> ?property ?value .
+}
+
+CQ2 - What is a prompt?
+SELECT DISTINCT ?property ?value
+WHERE {
+    <https://w3id.org/peo#prompt> ?property ?value .
+}
+
+
+CQ3 - What are prompting techniques?
+
+SELECT DISTINCT ?subclass ?label
+WHERE {
+    ?subclass rdfs:subClassOf <https://w3id.org/peo#prompting_technique> .
+    OPTIONAL { ?subclass rdfs:label ?label . }
+}
+
+CQ4 - What are image prompting techniques?
+
+SELECT DISTINCT ?subclass ?label
+WHERE {
+    ?subclass rdfs:subClassOf <https://w3id.org/peo#image_prompting> .
+    OPTIONAL { ?subclass rdfs:label ?label . }
+}
+
+CQ5 - What are code prompting techniques?
+
+SELECT DISTINCT ?subclass ?label
+WHERE {
+    ?subclass rdfs:subClassOf <https://w3id.org/peo#code_prompting> .
+    OPTIONAL { ?subclass rdfs:label ?label . }
+}
+
+CQ6 - Which task does a prompt solve?
+
+SELECT DISTINCT ?prompt ?task ?taskLabel
+WHERE {
+    ?prompt <https://w3id.org/peo#solves> ?task .
+    OPTIONAL { ?task rdfs:label ?taskLabel . }
+}
+
+CQ7 - Which prompts are generated using a prompting technique?
+
+SELECT DISTINCT ?prompt ?technique ?techniqueLabel
+WHERE {
+    ?prompt <https://w3id.org/peo#prompt_generated_using> ?technique .
+    OPTIONAL { ?technique rdfs:label ?techniqueLabel . }
+}
+
+CQ8 - What are responses of each prompt?
+
+SELECT DISTINCT ?prompt ?response
+WHERE {
+    ?response <https://w3id.org/peo#response_followedby_prompt> ?prompt .
+}
+
+CQ9 - What are possible tasks?
+
+SELECT DISTINCT ?task ?label
+WHERE {
+    ?task rdf:type owl:Class .
+    ?task rdfs:subClassOf* <https://w3id.org/peo#task> .
+    OPTIONAL { ?task rdfs:label ?label . }
+}
+
+CQ10 - Which tasks are related to the text?
+
+SELECT DISTINCT ?task ?label
+WHERE {
+    ?task rdf:type owl:Class .
+    ?task rdfs:subClassOf* <https://w3id.org/peo#text_task> .
+    OPTIONAL { ?task rdfs:label ?label . }
+}
+
+CQ11 - What chats does each large language model have?
+
+SELECT DISTINCT ?llm ?chat
+WHERE {
+    ?chat <https://w3id.org/peo#uses_model> ?llm .
+    OPTIONAL { ?llm rdfs:label ?llmLabel . }
+    OPTIONAL { ?chat rdfs:label ?chatLabel . }
+}
+
+CQ12 - What is a large language model?
+
+SELECT DISTINCT ?property ?value
+WHERE {
+    <https://w3id.org/peo#large_language_model> ?property ?value .
+}
+
+CQ13 - What types of large language models are available?
+
+SELECT DISTINCT ?type ?label
+WHERE {
+    ?type rdfs:subClassOf <https://w3id.org/peo#large_language_model> .
+    OPTIONAL { ?type rdfs:label ?label . }
+}
+
+CQ14 - What are the available versions of each large language model?
+
+SELECT DISTINCT ?llmType ?llmTypeLabel ?version ?versionLabel
+WHERE {
+    ?version rdf:type ?llmType .
+    ?llmType rdfs:subClassOf <https://w3id.org/peo#large_language_model> .
+    OPTIONAL { ?llmType rdfs:label ?llmTypeLabel . }
+    OPTIONAL { ?version rdfs:label ?versionLabel . }
+}
+
+CQ15 - What are large language models architectures?
+
+SELECT DISTINCT ?type ?label
+WHERE {
+    ?type rdfs:subClassOf <https://w3id.org/peo#base_model> .
+    OPTIONAL { ?type rdfs:label ?label . }
+}
+
+CQ16 - What are large language models capabilites?
+
+SELECT DISTINCT ?type ?label
+WHERE {
+    ?type rdfs:subClassOf <https://w3id.org/peo#capability> .
+    OPTIONAL { ?type rdfs:label ?label . }
+}
+
+CQ17 - What companies develop large language models?
+
+SELECT DISTINCT ?company ?label
+WHERE {
+    ?company rdf:type <https://w3id.org/peo#company> .
+    OPTIONAL { ?company rdfs:label ?label . }
+}
+
+CQ18 - What is the first version of each large language model developed by each company?
+
+SELECT ?llm  ?llmType ?company 
+WHERE {
+    # Retrieve companies
+    ?company rdf:type <https://w3id.org/peo#company> .
+    
+    # Link companies to LLM instances through the develops relation
+    ?company <https://w3id.org/peo#develops> ?llm .
+    
+    # Ensure the LLM is an instance of a subclass of LargeLanguageModel
+    ?llm rdf:type ?llmType .
+    ?llmType rdfs:subClassOf <https://w3id.org/peo#large_language_model> .
+    
+    # Optionally retrieve labels for companies, LLMs, and LLM types
+    OPTIONAL { ?company rdfs:label ?companyLabel . }
+    OPTIONAL { ?llm rdfs:label ?llmLabel . }
+    OPTIONAL { ?llmType rdfs:label ?llmTypeLabel . }
+}
