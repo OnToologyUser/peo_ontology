@@ -2500,6 +2500,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_base">
         <rdf:type rdf:resource="https://w3id.org/peo#bert"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#BERT_large"/>
     </owl:NamedIndividual>
     
 
@@ -2508,6 +2509,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#BERT_large">
         <rdf:type rdf:resource="https://w3id.org/peo#bert"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#RoBERTa"/>
     </owl:NamedIndividual>
     
 
@@ -2574,6 +2576,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Command_R">
         <rdf:type rdf:resource="https://w3id.org/peo#command_r"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Command_R+"/>
     </owl:NamedIndividual>
     
 
@@ -2675,6 +2678,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-1">
         <rdf:type rdf:resource="https://w3id.org/peo#gpt"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-2"/>
     </owl:NamedIndividual>
     
 
@@ -2683,6 +2687,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-2">
         <rdf:type rdf:resource="https://w3id.org/peo#gpt"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-3"/>
     </owl:NamedIndividual>
     
 
@@ -2691,6 +2696,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3">
         <rdf:type rdf:resource="https://w3id.org/peo#gpt"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
@@ -2699,6 +2705,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#GPT-3.5">
         <rdf:type rdf:resource="https://w3id.org/peo#gpt"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#GPT-4"/>
     </owl:NamedIndividual>
     
 
@@ -2715,6 +2722,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Flash">
         <rdf:type rdf:resource="https://w3id.org/peo#gemini"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Gemini_Nano"/>
     </owl:NamedIndividual>
     
 
@@ -2723,6 +2731,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Nano">
         <rdf:type rdf:resource="https://w3id.org/peo#gemini"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Gemini_Pro"/>
     </owl:NamedIndividual>
     
 
@@ -2731,6 +2740,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Gemini_Pro">
         <rdf:type rdf:resource="https://w3id.org/peo#gemini"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Gemini_Ultra"/>
     </owl:NamedIndividual>
     
 
@@ -2747,6 +2757,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_1">
         <rdf:type rdf:resource="https://w3id.org/peo#llama"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_2-13B"/>
     </owl:NamedIndividual>
     
 
@@ -2755,6 +2766,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-13B">
         <rdf:type rdf:resource="https://w3id.org/peo#llama"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#LLAMA_2-70B"/>
     </owl:NamedIndividual>
     
 
@@ -2763,6 +2775,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-70B">
         <rdf:type rdf:resource="https://w3id.org/peo#llama"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#LLAMA_2-7B"/>
     </owl:NamedIndividual>
     
 
@@ -2771,6 +2784,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_2-7B">
         <rdf:type rdf:resource="https://w3id.org/peo#llama"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_3"/>
     </owl:NamedIndividual>
     
 
@@ -2779,6 +2793,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3">
         <rdf:type rdf:resource="https://w3id.org/peo#llama"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#LLAMA_3.2"/>
     </owl:NamedIndividual>
     
 
@@ -2787,6 +2802,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#LLAMA_3.2">
         <rdf:type rdf:resource="https://w3id.org/peo#llama"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#LLAMA_Guard"/>
     </owl:NamedIndividual>
     
 
@@ -2811,6 +2827,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B_base">
         <rdf:type rdf:resource="https://w3id.org/peo#mpt-7b"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#MPT-7B-StoryWriter-65k+"/>
     </owl:NamedIndividual>
     
 
@@ -2933,6 +2950,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#mistral"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#Pixtral"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Mistral_Nemo"/>
     </owl:NamedIndividual>
     
 
@@ -2941,6 +2960,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#Mistral_Nemo">
         <rdf:type rdf:resource="https://w3id.org/peo#mistral"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Codestral"/>
     </owl:NamedIndividual>
     
 
@@ -2975,6 +2995,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-1.3B">
         <rdf:type rdf:resource="https://w3id.org/peo#opt"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OPT-125M"/>
     </owl:NamedIndividual>
     
 
@@ -2983,6 +3004,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-125M">
         <rdf:type rdf:resource="https://w3id.org/peo#opt"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OPT-2.7B"/>
     </owl:NamedIndividual>
     
 
@@ -2991,6 +3013,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-2.7B">
         <rdf:type rdf:resource="https://w3id.org/peo#opt"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OPT-30B"/>
     </owl:NamedIndividual>
     
 
@@ -2999,6 +3022,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-30B">
         <rdf:type rdf:resource="https://w3id.org/peo#opt"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OPT-350M"/>
     </owl:NamedIndividual>
     
 
@@ -3007,6 +3031,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-350M">
         <rdf:type rdf:resource="https://w3id.org/peo#opt"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OPT-6.7B"/>
     </owl:NamedIndividual>
     
 
@@ -3015,6 +3040,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OPT-6.7B">
         <rdf:type rdf:resource="https://w3id.org/peo#opt"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OPT-66B"/>
     </owl:NamedIndividual>
     
 
@@ -3031,6 +3057,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-1_1B">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-1_1B-Instruct"/>
     </owl:NamedIndividual>
     
 
@@ -3039,6 +3066,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-1_1B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-270M"/>
     </owl:NamedIndividual>
     
 
@@ -3047,6 +3075,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-270M">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-270M-Instruct"/>
     </owl:NamedIndividual>
     
 
@@ -3055,6 +3084,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-270M-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-3B"/>
     </owl:NamedIndividual>
     
 
@@ -3063,6 +3093,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-3B">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-3B-Instruct"/>
     </owl:NamedIndividual>
     
 
@@ -3071,6 +3102,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-3B-Instruct">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-450M"/>
     </owl:NamedIndividual>
     
 
@@ -3079,6 +3111,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#OpenELM-450M">
         <rdf:type rdf:resource="https://w3id.org/peo#openelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#OpenELM-450M-Instruct"/>
     </owl:NamedIndividual>
     
 
@@ -3095,6 +3128,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_1">
         <rdf:type rdf:resource="https://w3id.org/peo#palm"/>
+        <peo:evolves rdf:resource="https://w3id.org/peo#PaLM_2_Bison"/>
     </owl:NamedIndividual>
     
 
@@ -3103,6 +3137,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Bison">
         <rdf:type rdf:resource="https://w3id.org/peo#palm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Med-PaLM_2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#PaLM_2_Gecko"/>
     </owl:NamedIndividual>
     
 
@@ -3111,6 +3147,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Gecko">
         <rdf:type rdf:resource="https://w3id.org/peo#palm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#PaLM_2_Otter"/>
     </owl:NamedIndividual>
     
 
@@ -3119,6 +3156,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Otter">
         <rdf:type rdf:resource="https://w3id.org/peo#palm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#PaLM_2_Unicorn"/>
     </owl:NamedIndividual>
     
 
@@ -3127,6 +3165,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#PaLM_2_Unicorn">
         <rdf:type rdf:resource="https://w3id.org/peo#palm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#Sec-PaLM"/>
     </owl:NamedIndividual>
     
 
@@ -3167,6 +3206,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#RoBERTa">
         <rdf:type rdf:resource="https://w3id.org/peo#bert"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#VisualBERT"/>
     </owl:NamedIndividual>
     
 
@@ -3215,6 +3255,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_3B">
         <rdf:type rdf:resource="https://w3id.org/peo#t5"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#T5_11B"/>
     </owl:NamedIndividual>
     
 
@@ -3223,6 +3264,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_base">
         <rdf:type rdf:resource="https://w3id.org/peo#t5"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#T5_small"/>
     </owl:NamedIndividual>
     
 
@@ -3231,6 +3273,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_large">
         <rdf:type rdf:resource="https://w3id.org/peo#t5"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#T5_3B"/>
     </owl:NamedIndividual>
     
 
@@ -3239,6 +3282,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#T5_small">
         <rdf:type rdf:resource="https://w3id.org/peo#t5"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#T5_large"/>
     </owl:NamedIndividual>
     
 
@@ -3310,6 +3354,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#alpaca_7B">
         <rdf:type rdf:resource="https://w3id.org/peo#alpaca"/>
+        <peo:has_number_parameters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000000</peo:has_number_parameters>
+        <peo:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2023</peo:has_release_year>
     </owl:NamedIndividual>
     
 
@@ -3329,6 +3375,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#apple">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#OpenELM-1_1B"/>
         <peo:official_website>https://www.apple.com/</peo:official_website>
         <peo:registered_name>Apple Inc.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3361,6 +3408,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-image-captioning-base">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-image-captioning-large"/>
     </owl:NamedIndividual>
     
 
@@ -3369,6 +3417,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-image-captioning-large">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-itm-base-coco"/>
     </owl:NamedIndividual>
     
 
@@ -3377,6 +3426,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-base-coco">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-itm-base-flickr"/>
     </owl:NamedIndividual>
     
 
@@ -3385,6 +3435,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-base-flickr">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-itm-large-coco"/>
     </owl:NamedIndividual>
     
 
@@ -3393,6 +3444,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-large-coco">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-itm-large-flickr"/>
     </owl:NamedIndividual>
     
 
@@ -3401,6 +3453,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-itm-large-flickr">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-vqa-base"/>
     </owl:NamedIndividual>
     
 
@@ -3409,6 +3462,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#blip-vqa-base">
         <rdf:type rdf:resource="https://w3id.org/peo#blip-2"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#blip-vqa-capfilt-large"/>
     </owl:NamedIndividual>
     
 
@@ -3425,6 +3479,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#cohere">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Command_R"/>
         <peo:official_website>https://cohere.com/</peo:official_website>
         <peo:registered_name>Cohere Inc.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3435,6 +3490,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#databricks">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#MPT-7B_base"/>
         <peo:official_website>https://databricks.com/</peo:official_website>
         <peo:registered_name>Databricks, Inc.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3445,6 +3501,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#deepmind">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Chinchilla_70B"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#gemma-1.1-2b-it"/>
+        <peo:is_organization_of rdf:resource="https://w3id.org/peo#google"/>
         <peo:official_website>https://www.deepmind.com/</peo:official_website>
         <peo:registered_name>DeepMind Technologies Limited</peo:registered_name>
     </owl:NamedIndividual>
@@ -3455,6 +3514,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-2b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#gemma"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#gemma-1.1-7b-it"/>
     </owl:NamedIndividual>
     
 
@@ -3463,6 +3523,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-1.1-7b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#gemma"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#gemma-2b"/>
     </owl:NamedIndividual>
     
 
@@ -3471,6 +3532,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-2b">
         <rdf:type rdf:resource="https://w3id.org/peo#gemma"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#gemma-2b-it"/>
     </owl:NamedIndividual>
     
 
@@ -3479,6 +3541,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-2b-it">
         <rdf:type rdf:resource="https://w3id.org/peo#gemma"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#gemma-7b"/>
     </owl:NamedIndividual>
     
 
@@ -3487,6 +3550,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemma-7b">
         <rdf:type rdf:resource="https://w3id.org/peo#gemma"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#gemma-7b-it"/>
     </owl:NamedIndividual>
     
 
@@ -3543,6 +3607,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#google">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#BERT_base"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#FLAN_T5_xxl"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#PaLM_1"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#T5_base"/>
         <peo:official_website>https://www.google.com/</peo:official_website>
         <peo:registered_name>Google LLC</peo:registered_name>
     </owl:NamedIndividual>
@@ -3577,6 +3646,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#meta">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#LLAMA_1"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#OPT-1.3B"/>
         <peo:official_website>meta.com</peo:official_website>
         <peo:registered_name>Meta Platforms, Inc.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3587,6 +3658,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#microsoft">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Phi_1.5"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Phi_2"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#vall_e_llm"/>
         <peo:official_website>https://www.microsoft.com/</peo:official_website>
         <peo:registered_name>Microsoft Corporation</peo:registered_name>
     </owl:NamedIndividual>
@@ -3608,6 +3682,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral_ai">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Mistral_7B"/>
         <peo:official_website>https://mistral.ai/</peo:official_website>
         <peo:registered_name>Mistral AI</peo:registered_name>
     </owl:NamedIndividual>
@@ -3618,6 +3693,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#openai">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#GPT-1"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#Sora_LLM"/>
         <peo:official_website>https://www.openai.com/</peo:official_website>
         <peo:registered_name>OpenAI, L.P.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3639,6 +3716,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#salesforce">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#blip-image-captioning-base"/>
         <peo:official_website>https://www.salesforce.com/</peo:official_website>
         <peo:registered_name>Salesforce, Inc.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3660,6 +3738,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#stability_ai">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#stablelm-2-1-6b"/>
         <peo:official_website>https://stability.ai/</peo:official_website>
         <peo:registered_name>Stability AI Ltd.</peo:registered_name>
     </owl:NamedIndividual>
@@ -3670,6 +3749,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#stablelm-2-1-6b">
         <rdf:type rdf:resource="https://w3id.org/peo#stablelm"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#stablelm-2-12b"/>
     </owl:NamedIndividual>
     
 
@@ -3724,6 +3804,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#zhipu_ai">
         <rdf:type rdf:resource="https://w3id.org/peo#company"/>
+        <peo:develops rdf:resource="https://w3id.org/peo#CogVLM2-19B"/>
         <peo:official_website>https://www.zhipu.ai/</peo:official_website>
         <peo:registered_name>Zhipu AI</peo:registered_name>
     </owl:NamedIndividual>
@@ -3750,6 +3831,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#MPT-7B-StoryWriter-65k+">
         <rdf:type rdf:resource="https://w3id.org/peo#mpt-7b"/>
+        <peo:has_variant rdf:resource="https://w3id.org/peo#MPT-7B-Instruct"/>
     </owl:NamedIndividual>
     
 
