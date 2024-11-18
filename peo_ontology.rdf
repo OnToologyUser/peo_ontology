@@ -761,7 +761,7 @@
     <owl:Class rdf:about="https://w3id.org/peo#audio_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
         <rdfs:label>Audio task</rdfs:label>
-        <peo:description>Task involving audio files</peo:description>
+        <peo:description>Task involving audio files.</peo:description>
     </owl:Class>
     
 
@@ -781,6 +781,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#base_model">
         <rdfs:label>Base model</rdfs:label>
+        <peo:description>Base model used as base architecture by each large language model.</peo:description>
     </owl:Class>
     
 
@@ -861,6 +862,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#capability">
         <rdfs:label>Capability</rdfs:label>
+        <peo:description>Possibile capability of large language models.</peo:description>
     </owl:Class>
     
 
@@ -1540,6 +1542,8 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#large_language_model">
         <rdfs:label>Large Language Model</rdfs:label>
+        <peo:description>Type of computational model designed for natural language processing tasks such as language generation.</peo:description>
+        <peo:reference>https://en.wikipedia.org/wiki/Large_language_model</peo:reference>
     </owl:Class>
     
 
@@ -2306,6 +2310,7 @@
     <owl:Class rdf:about="https://w3id.org/peo#text_task">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#task"/>
         <rdfs:label>Text task</rdfs:label>
+        <peo:description>Task involving text.</peo:description>
     </owl:Class>
     
 
@@ -3693,6 +3698,12 @@
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-3.5"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#chat_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#chat_2"/>
     
 
 
