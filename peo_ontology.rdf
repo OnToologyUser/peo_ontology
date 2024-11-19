@@ -1195,6 +1195,16 @@
     
 
 
+    <!-- https://w3id.org/peo#emotion_classification -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#emotion_classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#text_task"/>
+        <rdfs:label>Emotion classification</rdfs:label>
+        <peo:description>Classification of text content.</peo:description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#emotion_prompting -->
 
     <owl:Class rdf:about="https://w3id.org/peo#emotion_prompting">
@@ -2261,16 +2271,6 @@
     <owl:Class rdf:about="https://w3id.org/peo#task">
         <rdfs:label>Task</rdfs:label>
         <peo:description>Task that has to be exxecuted by a large language model.</peo:description>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/peo#text_classification -->
-
-    <owl:Class rdf:about="https://w3id.org/peo#text_classification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#text_task"/>
-        <rdfs:label>Text classification</rdfs:label>
-        <peo:description>Classification of text content.</peo:description>
     </owl:Class>
     
 
@@ -3719,9 +3719,7 @@
 
     <!-- https://w3id.org/peo#classification_1 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#classification_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#text_classification"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#classification_1"/>
     
 
 
