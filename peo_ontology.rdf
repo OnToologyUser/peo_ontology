@@ -2275,6 +2275,16 @@
     
 
 
+    <!-- https://w3id.org/peo#text_explanation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#text_explanation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#text_task"/>
+        <rdfs:label>Text explanation</rdfs:label>
+        <peo:description>Explanation of the content of a text</peo:description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#text_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#text_generation">
