@@ -2422,6 +2422,16 @@
     
 
 
+    <!-- https://w3id.org/peo#video_explanation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#video_explanation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#video_task"/>
+        <rdfs:label>Video explanation</rdfs:label>
+        <peo:description>Explanation of the content of a video.</peo:description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#video_generation -->
 
     <owl:Class rdf:about="https://w3id.org/peo#video_generation">
