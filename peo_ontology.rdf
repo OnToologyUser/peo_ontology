@@ -2323,6 +2323,16 @@
     
 
 
+    <!-- https://w3id.org/peo#text_translation -->
+
+    <owl:Class rdf:about="https://w3id.org/peo#text_translation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#text_task"/>
+        <rdfs:label>Text translation</rdfs:label>
+        <peo:description>Translation of a text from a language to another.</peo:description>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/peo#thread_of_thought_prompting -->
 
     <owl:Class rdf:about="https://w3id.org/peo#thread_of_thought_prompting">
