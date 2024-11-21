@@ -302,6 +302,9 @@
     "scratchpad_prompting" : {
       "@id" : "https://w3id.org/peo#scratchpad_prompting"
     },
+    "video_explanation" : {
+      "@id" : "https://w3id.org/peo#video_explanation"
+    },
     "question_answering" : {
       "@id" : "https://w3id.org/peo#question_answering"
     },
@@ -532,6 +535,9 @@
     },
     "rwkv_llm" : {
       "@id" : "https://w3id.org/peo#rwkv_llm"
+    },
+    "text_translation" : {
+      "@id" : "https://w3id.org/peo#text_translation"
     },
     "is_capability" : {
       "@id" : "https://w3id.org/peo#is_capability",
