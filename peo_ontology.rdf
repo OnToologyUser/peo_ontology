@@ -3599,6 +3599,36 @@
     
 
 
+    <!-- https://w3id.org/peo#an_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_4"/>
+        <peo:has_instruction>Problem: Summarize the definition and essence of permaculture using principles that mirror natural ecosystems and combine traditional ecological knowledge with modern science. Instruction: Recall three relevant and distinct problems or topics related to summarizing processes that focus on mimicking complex systems.Provide detailed exemplars for each recalled instance, including how the principles were extracted and utilized effectively. Use the recalled insights to structure and write the final summary.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_4"/>
+        <peo:has_instruction>Problem: Summarize the definition and essence of permaculture using principles that mirror natural ecosystems and combine traditional ecological knowledge with modern science. Instruction: Recall three relevant and distinct problems or topics related to summarizing processes that focus on mimicking complex systems.Provide detailed exemplars for each recalled instance, including how the principles were extracted and utilized effectively. Use the recalled insights to structure and write the final summary.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_4"/>
+        <peo:has_instruction>Problem: Summarize the definition and essence of permaculture using principles that mirror natural ecosystems and combine traditional ecological knowledge with modern science. Instruction: Recall three relevant and distinct problems or topics related to summarizing processes that focus on mimicking complex systems.Provide detailed exemplars for each recalled instance, including how the principles were extracted and utilized effectively. Use the recalled insights to structure and write the final summary.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#an_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_2">
@@ -3610,11 +3640,109 @@
     
 
 
+    <!-- https://w3id.org/peo#an_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gemini_chat_5"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_1"/>
+        <peo:has_instruction>Classify the text into neutral, negative or positive. # Instruction: # Text: I think the vacation is okay. # Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_2"/>
+        <peo:has_instruction>What is the area of the square with the four vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2)? # Instruction: ## Recall relevant exemplars: ## Solve the initial problem:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_2"/>
+        <peo:has_instruction>What is the area of the square with the four vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2)? # Instruction: ## Recall relevant exemplars: ## Solve the initial problem:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_2"/>
+        <peo:has_instruction>What is the area of the square with the four vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2)? # Instruction: ## Recall relevant exemplars: ## Solve the initial problem:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_3"/>
+        <peo:has_instruction># Problem: Sometimes, I&apos;ve believed as many as six impossible things before breakfast. # Relevant Problems: 1. Translating a complex sentence from English to Italian. - Question: How to translate the sentence &quot;To be or not to be, that is the question&quot; into Italian? - Answer: The sentence &quot;To be or not to be, that is the question&quot; translates into Italian as &quot;Essere o non essere, questo è il problema.&quot; 2. Translating a sentence with idiomatic expressions. - Question: How to translate &quot;Break a leg!&quot; into Italian? - Answer: The idiomatic expression &quot;Break a leg!&quot; translates into Italian as &quot;In bocca al lupo!&quot; 3. Translating a sentence with abstract concepts. - Question: How to translate &quot;The only limit is your imagination&quot; into Italian? - Answer: The sentence &quot;The only limit is your imagination&quot; translates into Italian as &quot;L&apos;unico limite è la tua immaginazione.&quot; # Translation of the initial problem: The sentence &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast&quot; translates into Italian as:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_3"/>
+        <peo:has_instruction># Problem: Sometimes, I&apos;ve believed as many as six impossible things before breakfast. # Relevant Problems: 1. Translating a complex sentence from English to Italian. - Question: How to translate the sentence &quot;To be or not to be, that is the question&quot; into Italian? - Answer: The sentence &quot;To be or not to be, that is the question&quot; translates into Italian as &quot;Essere o non essere, questo è il problema.&quot; 2. Translating a sentence with idiomatic expressions. - Question: How to translate &quot;Break a leg!&quot; into Italian? - Answer: The idiomatic expression &quot;Break a leg!&quot; translates into Italian as &quot;In bocca al lupo!&quot; 3. Translating a sentence with abstract concepts. - Question: How to translate &quot;The only limit is your imagination&quot; into Italian? - Answer: The sentence &quot;The only limit is your imagination&quot; translates into Italian as &quot;L&apos;unico limite è la tua immaginazione.&quot; # Translation of the initial problem: The sentence &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast&quot; translates into Italian as:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_9">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_3"/>
+        <peo:has_instruction># Problem: Sometimes, I&apos;ve believed as many as six impossible things before breakfast. # Relevant Problems: 1. Translating a complex sentence from English to Italian. - Question: How to translate the sentence &quot;To be or not to be, that is the question&quot; into Italian? - Answer: The sentence &quot;To be or not to be, that is the question&quot; translates into Italian as &quot;Essere o non essere, questo è il problema.&quot; 2. Translating a sentence with idiomatic expressions. - Question: How to translate &quot;Break a leg!&quot; into Italian? - Answer: The idiomatic expression &quot;Break a leg!&quot; translates into Italian as &quot;In bocca al lupo!&quot; 3. Translating a sentence with abstract concepts. - Question: How to translate &quot;The only limit is your imagination&quot; into Italian? - Answer: The sentence &quot;The only limit is your imagination&quot; translates into Italian as &quot;L&apos;unico limite è la tua immaginazione.&quot; # Translation of the initial problem: The sentence &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast&quot; translates into Italian as:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#an_prompting_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_prompting_1">
         <rdf:type rdf:resource="https://w3id.org/peo#analogical_prompting"/>
         <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_prompting_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_prompting_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#analogical_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#math_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_prompting_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_prompting_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#analogical_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#translation_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_prompting_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_prompting_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#analogical_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#summarization_1"/>
     </owl:NamedIndividual>
     
 
@@ -3796,6 +3924,36 @@
     
 
 
+    <!-- https://w3id.org/peo#em_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_4"/>
+        <peo:has_instruction>Summarize the essence of permaculture, focusing on its innovative design process inspired by natural ecosystems. Highlight how it combines traditional ecological knowledge with modern science and technology to address climate change. This understanding is vital to my research and the future of sustainable living. Please ensure the summary is concise yet comprehensive.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_4"/>
+        <peo:has_instruction>Summarize the essence of permaculture, focusing on its innovative design process inspired by natural ecosystems. Highlight how it combines traditional ecological knowledge with modern science and technology to address climate change. This understanding is vital to my research and the future of sustainable living. Please ensure the summary is concise yet comprehensive.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_4"/>
+        <peo:has_instruction>Summarize the essence of permaculture, focusing on its innovative design process inspired by natural ecosystems. Highlight how it combines traditional ecological knowledge with modern science and technology to address climate change. This understanding is vital to my research and the future of sustainable living. Please ensure the summary is concise yet comprehensive.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#em_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_2">
@@ -3807,11 +3965,108 @@
     
 
 
+    <!-- https://w3id.org/peo#em_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_1"/>
+        <peo:has_instruction>Classify the following text into neutral, negative, or positive based on its sentiment. This task is very important to my career. Please provide a well-thought and accurate classification. Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_2"/>
+        <peo:has_instruction>Please calculate the area of a square given the coordinates of its vertices. This task is important for building my understanding of geometry and improving my analytical skills, so I truly value a thorough and accurate solution. Vertices: (-2, 2), (2, -2), (-2, -6), (-6, -2).</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_2"/>
+        <peo:has_instruction>Please calculate the area of a square given the coordinates of its vertices. This task is important for building my understanding of geometry and improving my analytical skills, so I truly value a thorough and accurate solution. Vertices: (-2, 2), (2, -2), (-2, -6), (-6, -2).</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_2"/>
+        <peo:has_instruction>Please calculate the area of a square given the coordinates of its vertices. This task is important for building my understanding of geometry and improving my analytical skills, so I truly value a thorough and accurate solution. Vertices: (-2, 2), (2, -2), (-2, -6), (-6, -2).</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_3"/>
+        <peo:has_instruction>Translate the following text to Italian. It&apos;s very important for me to understand this translation accurately as it could affect my professional progress: &apos;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&apos;</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_3"/>
+        <peo:has_instruction>Translate the following text to Italian. It&apos;s very important for me to understand this translation accurately as it could affect my professional progress: &apos;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&apos;</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_9">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_3"/>
+        <peo:has_instruction>Translate the following text to Italian. It&apos;s very important for me to understand this translation accurately as it could affect my professional progress: &apos;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&apos;</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#em_prompting_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_prompting_1">
         <rdf:type rdf:resource="https://w3id.org/peo#emotion_prompting"/>
         <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_prompting_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_prompting_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#emotion_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#math_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_prompting_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_prompting_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#emotion_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#translation_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_prompting_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_prompting_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#emotion_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#summarization_1"/>
     </owl:NamedIndividual>
     
 
@@ -3836,6 +4091,36 @@
     
 
 
+    <!-- https://w3id.org/peo#fs_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_4"/>
+        <peo:has_instruction>You are an expert at creating concise summaries. Below are some examples of summaries based on texts. Example 1: Text: The Earth orbits the Sun in an elliptical pattern, taking approximately 365.25 days to complete one orbit. This forms the basis of the Gregorian calendar year. Summary: The Earth completes an orbit around the Sun in roughly 365 days, defining the calendar year. Example 2: Text: Sustainable agriculture incorporates practices that maintain productivity and minimize environmental impact, such as crop rotation and organic farming. Summary: Sustainable agriculture uses eco-friendly practices like crop rotation and organic methods to maintain productivity. Task: Text: Permaculture is a design process mimicking the diversity, functionality, and resilience of natural ecosystems. The principles and practices are drawn from traditional ecological knowledge of indigenous cultures combined with modern scientific understanding and technological innovations. Permaculture design provides a framework helping individuals and communities develop innovative, creative, and effective strategies for meeting basic needs while preparing for and mitigating the projected impacts of climate change. Summary:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_4"/>
+        <peo:has_instruction>You are an expert at creating concise summaries. Below are some examples of summaries based on texts. Example 1: Text: The Earth orbits the Sun in an elliptical pattern, taking approximately 365.25 days to complete one orbit. This forms the basis of the Gregorian calendar year. Summary: The Earth completes an orbit around the Sun in roughly 365 days, defining the calendar year. Example 2: Text: Sustainable agriculture incorporates practices that maintain productivity and minimize environmental impact, such as crop rotation and organic farming. Summary: Sustainable agriculture uses eco-friendly practices like crop rotation and organic methods to maintain productivity. Task: Text: Permaculture is a design process mimicking the diversity, functionality, and resilience of natural ecosystems. The principles and practices are drawn from traditional ecological knowledge of indigenous cultures combined with modern scientific understanding and technological innovations. Permaculture design provides a framework helping individuals and communities develop innovative, creative, and effective strategies for meeting basic needs while preparing for and mitigating the projected impacts of climate change. Summary:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_4"/>
+        <peo:has_instruction>You are an expert at creating concise summaries. Below are some examples of summaries based on texts. Example 1: Text: The Earth orbits the Sun in an elliptical pattern, taking approximately 365.25 days to complete one orbit. This forms the basis of the Gregorian calendar year. Summary: The Earth completes an orbit around the Sun in roughly 365 days, defining the calendar year. Example 2: Text: Sustainable agriculture incorporates practices that maintain productivity and minimize environmental impact, such as crop rotation and organic farming. Summary: Sustainable agriculture uses eco-friendly practices like crop rotation and organic methods to maintain productivity. Task: Text: Permaculture is a design process mimicking the diversity, functionality, and resilience of natural ecosystems. The principles and practices are drawn from traditional ecological knowledge of indigenous cultures combined with modern scientific understanding and technological innovations. Permaculture design provides a framework helping individuals and communities develop innovative, creative, and effective strategies for meeting basic needs while preparing for and mitigating the projected impacts of climate change. Summary:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#fs_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_2">
@@ -3843,6 +4128,76 @@
         <peo:has_context rdf:resource="https://w3id.org/peo#mistral7b_chat_2"/>
         <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_1"/>
         <peo:has_instruction>Classify the following text into neutral, negative, or positive based on its sentiment. Here are some examples: 1. Text: &quot;The food was absolutely wonderful!&quot; Sentiment: Positive 2. Text: &quot;I did not enjoy the movie at all.&quot; Sentiment: Negative 3. Text: &quot;It was an average experience.&quot; Sentiment: Neutral Now, classify this text: Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_1"/>
+        <peo:has_instruction>Classify the following text into neutral, negative, or positive based on its sentiment. Here are some examples: 1. Text: &quot;The food was absolutely wonderful!&quot; Sentiment: Positive 2. Text: &quot;I did not enjoy the movie at all.&quot; Sentiment: Negative 3. Text: &quot;It was an average experience.&quot; Sentiment: Neutral Now, classify this text: Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_2"/>
+        <peo:has_instruction>Instruction: Determine the area of a square given the coordinates of its four vertices. Example 1: Vertices: (0, 0), (4, 0), (4, 4), (0, 4) Step 1: Identify the side length. Distance between (0, 0) and (4, 0) is √((4 - 0)² + (0 - 0)²) = 4. Step 2: Calculate the area. Area = side length² = 4² = 16. Answer: 16. Example 2: Vertices: (-1, 1), (-1, 3), (1, 3), (1, 1) Step 1: Identify the side length. Distance between (-1, 1) and (-1, 3) is √((3 - 1)² + (1 - 1)²) = 2. Step 2: Calculate the area. Area = side length² = 2² = 4. Answer: 4.Query: Vertices: (-2, 2), (2, -2), (-2, -6), (-6, -2) Step 1: Identify the side length by calculating the distance between consecutive vertices. Step 2: Calculate the area of the square. Answer:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_2"/>
+        <peo:has_instruction>Instruction: Determine the area of a square given the coordinates of its four vertices. Example 1: Vertices: (0, 0), (4, 0), (4, 4), (0, 4) Step 1: Identify the side length. Distance between (0, 0) and (4, 0) is √((4 - 0)² + (0 - 0)²) = 4. Step 2: Calculate the area. Area = side length² = 4² = 16. Answer: 16. Example 2: Vertices: (-1, 1), (-1, 3), (1, 3), (1, 1) Step 1: Identify the side length. Distance between (-1, 1) and (-1, 3) is √((3 - 1)² + (1 - 1)²) = 2. Step 2: Calculate the area. Area = side length² = 2² = 4. Answer: 4.Query: Vertices: (-2, 2), (2, -2), (-2, -6), (-6, -2) Step 1: Identify the side length by calculating the distance between consecutive vertices. Step 2: Calculate the area of the square. Answer:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_2"/>
+        <peo:has_instruction>Instruction: Determine the area of a square given the coordinates of its four vertices. Example 1: Vertices: (0, 0), (4, 0), (4, 4), (0, 4) Step 1: Identify the side length. Distance between (0, 0) and (4, 0) is √((4 - 0)² + (0 - 0)²) = 4. Step 2: Calculate the area. Area = side length² = 4² = 16. Answer: 16. Example 2: Vertices: (-1, 1), (-1, 3), (1, 3), (1, 1) Step 1: Identify the side length. Distance between (-1, 1) and (-1, 3) is √((3 - 1)² + (1 - 1)²) = 2. Step 2: Calculate the area. Area = side length² = 2² = 4. Answer: 4.Query: Vertices: (-2, 2), (2, -2), (-2, -6), (-6, -2) Step 1: Identify the side length by calculating the distance between consecutive vertices. Step 2: Calculate the area of the square. Answer:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_3"/>
+        <peo:has_instruction>Translate the following English sentences into Italian: 1. English: &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&quot; Italian: &quot;A volte, ho creduto a ben sei cose impossibili prima di colazione.&quot; 2. English: &quot;I think, therefore I am.&quot; Italian: &quot;Penso, quindi sono.&quot; 3. English: &quot;All the world&apos;s a stage, and all the men and women merely players.&quot; Italian: &quot;Tutto il mondo è un palcoscenico e tutti gli uomini e le donne sono solo attori.&quot; Now translate this sentence: English: &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&quot; Italian:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_3"/>
+        <peo:has_instruction>Translate the following English sentences into Italian: 1. English: &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&quot; Italian: &quot;A volte, ho creduto a ben sei cose impossibili prima di colazione.&quot; 2. English: &quot;I think, therefore I am.&quot; Italian: &quot;Penso, quindi sono.&quot; 3. English: &quot;All the world&apos;s a stage, and all the men and women merely players.&quot; Italian: &quot;Tutto il mondo è un palcoscenico e tutti gli uomini e le donne sono solo attori.&quot; Now translate this sentence: English: &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&quot; Italian:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_9">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_3"/>
+        <peo:has_instruction>Translate the following English sentences into Italian: 1. English: &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&quot; Italian: &quot;A volte, ho creduto a ben sei cose impossibili prima di colazione.&quot; 2. English: &quot;I think, therefore I am.&quot; Italian: &quot;Penso, quindi sono.&quot; 3. English: &quot;All the world&apos;s a stage, and all the men and women merely players.&quot; Italian: &quot;Tutto il mondo è un palcoscenico e tutti gli uomini e le donne sono solo attori.&quot; Now translate this sentence: English: &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&quot; Italian:</peo:has_instruction>
     </owl:NamedIndividual>
     
 
@@ -3856,6 +4211,33 @@
     
 
 
+    <!-- https://w3id.org/peo#fs_prompting_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_prompting_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#few_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#math_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_prompting_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_prompting_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#few_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#translation_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_prompting_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_prompting_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#few_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#summarization_1"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#gemini_chat_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_1">
@@ -3865,9 +4247,99 @@
     
 
 
+    <!-- https://w3id.org/peo#gemini_chat_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_13 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_13">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_14 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_14">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_15 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_15">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_16 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_16">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_17 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_17">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_18 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_18">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_19 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_19">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#gemini_chat_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_20 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_20">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
     </owl:NamedIndividual>
@@ -3897,6 +4369,52 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_5">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_chat_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_9">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gemini_rs1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_rs1">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#zs_3"/>
+        <peo:has_response_value>Neutral</peo:has_response_value>
     </owl:NamedIndividual>
     
 
@@ -4043,9 +4561,108 @@
     
 
 
+    <!-- https://w3id.org/peo#gpt4_chat_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_13 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_13">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_14 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_14">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_15 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_15">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_16 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_16">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_17 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_17">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_18 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_18">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_19 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_19">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#gpt4_chat_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_20 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_20">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
     </owl:NamedIndividual>
@@ -4073,6 +4690,42 @@
     <!-- https://w3id.org/peo#gpt4_chat_5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_9">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
     </owl:NamedIndividual>
@@ -4129,6 +4782,16 @@
     
 
 
+    <!-- https://w3id.org/peo#gpt4_rs6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_rs6">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#zs_4"/>
+        <peo:has_response_value>The area of the square with vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2) is: 32</peo:has_response_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#lmsys -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#lmsys">
@@ -4136,6 +4799,15 @@
         <peo:develops rdf:resource="https://w3id.org/peo#Vicuna-7B"/>
         <peo:official_website>https://lmsys.org/</peo:official_website>
         <peo:registered_name>Large Model Systems Organization</peo:registered_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#math_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#math_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#mathematical_understanding"/>
+        <peo:has_description>Computing the area of a square.</peo:has_description>
     </owl:NamedIndividual>
     
 
@@ -4185,9 +4857,99 @@
     
 
 
+    <!-- https://w3id.org/peo#mistral7b_chat_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_13 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_13">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_14 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_14">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_15 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_15">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_17 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_17">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_18 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_18">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_19 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_19">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#mistral7b_chat_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_20 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_20">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
     </owl:NamedIndividual>
@@ -4215,6 +4977,42 @@
     <!-- https://w3id.org/peo#mistral7b_chat_5 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#mistral7b_chat_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_9">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
     </owl:NamedIndividual>
@@ -4306,6 +5104,36 @@
     
 
 
+    <!-- https://w3id.org/peo#ro_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_4"/>
+        <peo:has_instruction>From now on, you are an environmental scientist who specializes in explaining complex ecological concepts in an accessible and engaging manner. Your task is to provide a concise summary of permaculture principles and their importance in addressing climate challenges.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_4"/>
+        <peo:has_instruction>From now on, you are an environmental scientist who specializes in explaining complex ecological concepts in an accessible and engaging manner. Your task is to provide a concise summary of permaculture principles and their importance in addressing climate challenges.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_4"/>
+        <peo:has_instruction>From now on, you are an environmental scientist who specializes in explaining complex ecological concepts in an accessible and engaging manner. Your task is to provide a concise summary of permaculture principles and their importance in addressing climate challenges.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#ro_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_2">
@@ -4317,11 +5145,108 @@
     
 
 
+    <!-- https://w3id.org/peo#ro_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_1"/>
+        <peo:has_instruction>From now on, you are an experienced sentiment analyst with deep expertise in understanding human emotions through textual analysis. Your task is to classify the sentiment of texts as neutral, negative, or positive with utmost accuracy and professionalism. Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_2"/>
+        <peo:has_instruction>From now on, you are a brilliant geometry teacher. You always explain geometry problems thoroughly and ensure your students understand every step of the process. I have a question for you: I have four vertices of a square: (-2, 2), (2, -2), (-2, -6), and (-6, -2). Can you help me calculate the area of the square step by step? Please provide a detailed explanation of how to verify the shape, calculate the side length, and determine the area.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_2"/>
+        <peo:has_instruction>From now on, you are a brilliant geometry teacher. You always explain geometry problems thoroughly and ensure your students understand every step of the process. I have a question for you: I have four vertices of a square: (-2, 2), (2, -2), (-2, -6), and (-6, -2). Can you help me calculate the area of the square step by step? Please provide a detailed explanation of how to verify the shape, calculate the side length, and determine the area.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_2"/>
+        <peo:has_instruction>From now on, you are a brilliant geometry teacher. You always explain geometry problems thoroughly and ensure your students understand every step of the process. I have a question for you: I have four vertices of a square: (-2, 2), (2, -2), (-2, -6), and (-6, -2). Can you help me calculate the area of the square step by step? Please provide a detailed explanation of how to verify the shape, calculate the side length, and determine the area.</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_3"/>
+        <peo:has_instruction>From now on, you are an excellent literary translation teacher who accurately explains the meaning and tone of complex sentences. Translate the following sentence from English to Italian, preserving its meaning and tone: &apos;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&apos;</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_3"/>
+        <peo:has_instruction>From now on, you are an excellent literary translation teacher who accurately explains the meaning and tone of complex sentences. Translate the following sentence from English to Italian, preserving its meaning and tone: &apos;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&apos;</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_9">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_3"/>
+        <peo:has_instruction>From now on, you are an excellent literary translation teacher who accurately explains the meaning and tone of complex sentences. Translate the following sentence from English to Italian, preserving its meaning and tone: &apos;Sometimes, I&apos;ve believed as many as six impossible things before breakfast.&apos;</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#ro_prompting_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_prompting_1">
         <rdf:type rdf:resource="https://w3id.org/peo#role_prompting"/>
         <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_prompting_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_prompting_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#role_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#math_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_prompting_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_prompting_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#role_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#translation_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#ro_prompting_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_prompting_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#role_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#summarization_1"/>
     </owl:NamedIndividual>
     
 
@@ -4402,6 +5327,15 @@
     
 
 
+    <!-- https://w3id.org/peo#summarization_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#summarization_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_summarization"/>
+        <peo:has_description>Summarization of a text about permaculture.</peo:has_description>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#technology_innovation_institute -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#technology_innovation_institute">
@@ -4409,6 +5343,15 @@
         <peo:develops rdf:resource="https://w3id.org/peo#Falcon_Mamba_7B"/>
         <peo:official_website>https://www.tii.ae/</peo:official_website>
         <peo:registered_name>Technology Innovation Institute</peo:registered_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#translation_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#translation_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#text_translation"/>
+        <peo:has_description>Translation of  the text &quot;Sometimes, I&apos;ve believed as many as six impossible things before breakfast &quot; from english to italian.</peo:has_description>
     </owl:NamedIndividual>
     
 
@@ -4454,6 +5397,36 @@
     
 
 
+    <!-- https://w3id.org/peo#zs_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_10">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_4"/>
+        <peo:has_instruction>Permaculture is a design process mimicking the diversity, functionality and resilience of natural ecosystems. The principles and practices are drawn from traditional ecological knowledge of indigenous cultures combined with modern scientific understanding and technological innovations. Permaculture design provides a framework helping individuals and communities develop innovative, creative and effective strategies for meeting basic needs while preparing for and mitigating the projected impacts of climate change. Write a summary of the above text. Summary:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_4"/>
+        <peo:has_instruction>Permaculture is a design process mimicking the diversity, functionality and resilience of natural ecosystems. The principles and practices are drawn from traditional ecological knowledge of indigenous cultures combined with modern scientific understanding and technological innovations. Permaculture design provides a framework helping individuals and communities develop innovative, creative and effective strategies for meeting basic needs while preparing for and mitigating the projected impacts of climate change. Write a summary of the above text. Summary:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_12">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_4"/>
+        <peo:has_instruction>Permaculture is a design process mimicking the diversity, functionality and resilience of natural ecosystems. The principles and practices are drawn from traditional ecological knowledge of indigenous cultures combined with modern scientific understanding and technological innovations. Permaculture design provides a framework helping individuals and communities develop innovative, creative and effective strategies for meeting basic needs while preparing for and mitigating the projected impacts of climate change. Write a summary of the above text. Summary:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#zs_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_2">
@@ -4465,11 +5438,110 @@
     
 
 
+    <!-- https://w3id.org/peo#zs_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gemini_chat_1"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_1"/>
+        <peo:has_instruction>Classify the text into neutral, negative or positive. Text: I think the vacation is okay. Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gpt4_chat_6"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_2"/>
+        <peo:has_instruction>What is the area of the square with the four vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2)?</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_2"/>
+        <peo:has_instruction>What is the area of the square with the four vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2)?</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_6">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_2"/>
+        <peo:has_instruction>What is the area of the square with the four vertices at (-2, 2), (2, -2), (-2, -6), and (-6, -2)?</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_7">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_3"/>
+        <peo:has_instruction>Translate the English text to Italian. Text: Sometimes, I&apos;ve believed as many as six impossible things before breakfast. Translation:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_8">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_3"/>
+        <peo:has_instruction>Translate the English text to Italian. Text: Sometimes, I&apos;ve believed as many as six impossible things before breakfast. Translation:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_9">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_3"/>
+        <peo:has_instruction>Translate the English text to Italian. Text: Sometimes, I&apos;ve believed as many as six impossible things before breakfast. Translation:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#zs_prompting_1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_prompting_1">
         <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
         <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_prompting_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_prompting_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#math_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_prompting_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_prompting_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#translation_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#zs_prompting_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_prompting_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#summarization_1"/>
     </owl:NamedIndividual>
     
 
