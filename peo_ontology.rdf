@@ -563,7 +563,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/peo#has_instruction">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt"/>
+        <rdfs:domain rdf:resource="https://w3id.org/peo#prompt_engineering"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has_instruction</rdfs:label>
         <peo:description>Instruction of a prompt.</peo:description>
@@ -3589,6 +3589,26 @@
     
 
 
+    <!-- https://w3id.org/peo#an_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gpt4_chat_5"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#an_prompting_1"/>
+        <peo:has_instruction>Classify the text into neutral, negative or positive. # Instruction: # Text: I think the vacation is okay. # Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#an_prompting_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#an_prompting_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#analogical_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#anthropic -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#anthropic">
@@ -3720,27 +3740,6 @@
     
 
 
-    <!-- https://w3id.org/peo#chat_1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#chat_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
-        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-3.5"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#chat_2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#chat_2"/>
-    
-
-
-    <!-- https://w3id.org/peo#classification_1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#classification_1"/>
-    
-
-
     <!-- https://w3id.org/peo#cohere -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#cohere">
@@ -3772,6 +3771,55 @@
         <peo:is_organization_of rdf:resource="https://w3id.org/peo#google"/>
         <peo:official_website>https://www.deepmind.com/</peo:official_website>
         <peo:registered_name>DeepMind Technologies Limited</peo:registered_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gpt4_chat_3"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#em_prompting_1"/>
+        <peo:has_instruction>Classify the following text into neutral, negative, or positive based on its sentiment. This task is very important to my career. Please provide a well-thought and accurate classification. Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#em_prompting_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#em_prompting_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#emotion_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#emotion_classification_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#emotion_classification_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#emotion_classification"/>
+        <peo:has_description>Classification of the emotion of the text &quot;I think the vacation is okay.&quot;</peo:has_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gpt4_chat_2"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#fs_prompting_1"/>
+        <peo:has_instruction>Classify the following text into neutral, negative, or positive based on its sentiment. Here are some examples: 1. Text: &quot;The food was absolutely wonderful!&quot; Sentiment: Positive 2. Text: &quot;I did not enjoy the movie at all.&quot; Sentiment: Negative 3. Text: &quot;It was an average experience.&quot; Sentiment: Neutral Now, classify this text: Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#fs_prompting_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#fs_prompting_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#few_shot_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
     </owl:NamedIndividual>
     
 
@@ -3909,6 +3957,101 @@
     
 
 
+    <!-- https://w3id.org/peo#gpt4_chat_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_2">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_3">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_4">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_chat_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_5">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
+        <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_rs1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_rs1">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#zs_1"/>
+        <peo:has_response_value>Sentiment: Neutral</peo:has_response_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_rs2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_rs2">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#fs_1"/>
+        <peo:has_response_value>Sentiment: Neutral</peo:has_response_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_rs3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_rs3">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#em_1"/>
+        <peo:has_response_value>The sentiment of the text &quot;I think the vacation is okay&quot; is neutral. The word &quot;okay&quot; suggests a lack of strong positive or negative feelings, indicating a neutral sentiment.</peo:has_response_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_rs4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_rs4">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#ro_1"/>
+        <peo:has_response_value>The sentiment of the text &quot;I think the vacation is okay.&quot; is neutral. The word &quot;okay&quot; suggests a lack of strong positive or negative feelings, indicating a neutral stance.</peo:has_response_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/peo#gpt4_rs5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_rs5">
+        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
+        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#an_1"/>
+        <peo:has_response_value>The sentiment of the text &quot;I think the vacation is okay&quot; is neutral.</peo:has_response_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/peo#lmsys -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#lmsys">
@@ -3980,20 +4123,22 @@
     
 
 
-    <!-- https://w3id.org/peo#rs_1 -->
+    <!-- https://w3id.org/peo#ro_1 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#rs_1">
-        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
-        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#zs_1"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gpt4_chat_4"/>
+        <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#ro_prompting_1"/>
+        <peo:has_instruction>From now on, you are an experienced sentiment analyst with deep expertise in understanding human emotions through textual analysis. Your task is to classify the sentiment of texts as neutral, negative, or positive with utmost accuracy and professionalism. Text: &quot;I think the vacation is okay.&quot; Sentiment:</peo:has_instruction>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/peo#rs_2 -->
+    <!-- https://w3id.org/peo#ro_prompting_1 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#rs_2">
-        <rdf:type rdf:resource="https://w3id.org/peo#response"/>
-        <peo:response_followedby_prompt rdf:resource="https://w3id.org/peo#zs_2"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/peo#ro_prompting_1">
+        <rdf:type rdf:resource="https://w3id.org/peo#role_prompting"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
     </owl:NamedIndividual>
     
 
@@ -4119,17 +4264,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_1">
         <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
-        <peo:has_context rdf:resource="https://w3id.org/peo#chat_1"/>
+        <peo:has_context rdf:resource="https://w3id.org/peo#gpt4_chat_1"/>
         <peo:prompt_generated_using rdf:resource="https://w3id.org/peo#zs_prompting_1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/peo#zs_2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_2">
-        <rdf:type rdf:resource="https://w3id.org/peo#prompt"/>
-        <peo:prompt_followedby_prompt rdf:resource="https://w3id.org/peo#zs_1"/>
+        <peo:has_instruction>Classify the text into neutral, negative or positive. Text: I think the vacation is okay. Sentiment:</peo:has_instruction>
     </owl:NamedIndividual>
     
 
@@ -4138,7 +4275,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#zs_prompting_1">
         <rdf:type rdf:resource="https://w3id.org/peo#zero_shot_prompting"/>
-        <peo:solves rdf:resource="https://w3id.org/peo#classification_1"/>
+        <peo:solves rdf:resource="https://w3id.org/peo#emotion_classification_1"/>
     </owl:NamedIndividual>
     
 
@@ -4265,6 +4402,12 @@
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/peo#/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/peo#/i">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -4671,6 +4814,53 @@
                         <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#prompt_followedby_response"/>
                         <swrl:argument1 rdf:resource="https://w3id.org/peo#/x"/>
                         <swrl:argument2 rdf:resource="https://w3id.org/peo#/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#prompt_generated_using"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#/x"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#has_instruction"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/peo#/t"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/peo#/i"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/peo#has_instruction"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/peo#/x"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/peo#/i"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
