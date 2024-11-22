@@ -4288,6 +4288,7 @@
     <!-- https://w3id.org/peo#gemini_chat_11 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_11">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
     </owl:NamedIndividual>
     
@@ -5281,6 +5282,7 @@
     <!-- https://w3id.org/peo#mistral7b_chat_16 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_16">
+        <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
     </owl:NamedIndividual>
     
