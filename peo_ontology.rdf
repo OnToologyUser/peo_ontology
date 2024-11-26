@@ -1541,6 +1541,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#lamda_pt">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#transformer"/>
+        <rdfs:label>LAMDA PT</rdfs:label>
     </owl:Class>
     
 
@@ -2358,6 +2359,7 @@
 
     <owl:Class rdf:about="https://w3id.org/peo#transformer_xl">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#transformer"/>
+        <rdfs:label>Transformer XL</rdfs:label>
     </owl:Class>
     
 

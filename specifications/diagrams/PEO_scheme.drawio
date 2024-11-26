@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
   <diagram name="Pagina-1" id="gJOVoxN8NighratZ7cTV">
-    <mxGraphModel dx="1290" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="15000" pageHeight="15000" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="15000" pageHeight="15000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1025,14 +1025,28 @@
         <mxCell id="hwLzqWf1g3DzpG2_K2xB-178" value="has_organization" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=#FFFF00;fontColor=#000000;" parent="hwLzqWf1g3DzpG2_K2xB-177" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="p41bzTivv1EovG35hLk0-1" value="subclass" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="1">
+        <mxCell id="p41bzTivv1EovG35hLk0-1" value="subclass" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="6920.001155633163" y="1890.0024622532655" as="geometry" />
         </mxCell>
-        <mxCell id="p41bzTivv1EovG35hLk0-2" value="subclass" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="1">
+        <mxCell id="p41bzTivv1EovG35hLk0-2" value="subclass" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="7000.001155633163" y="1775.0024622532655" as="geometry" />
         </mxCell>
-        <mxCell id="p41bzTivv1EovG35hLk0-3" value="subclass" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="1">
+        <mxCell id="p41bzTivv1EovG35hLk0-3" value="subclass" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
           <mxGeometry x="7540.001155633163" y="1775.0024622532655" as="geometry" />
+        </mxCell>
+        <mxCell id="HwFh1IHfejkTV69BvAV3-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.8;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.9;entryDx=0;entryDy=0;" edge="1" parent="1" source="hwLzqWf1g3DzpG2_K2xB-90" target="hwLzqWf1g3DzpG2_K2xB-103">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="9490" y="2360" as="sourcePoint" />
+            <mxPoint x="9710" y="2320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="9400" y="2320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HwFh1IHfejkTV69BvAV3-2" value="has_response" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=#FFFF00;fontColor=#000000;" connectable="0" vertex="1" parent="HwFh1IHfejkTV69BvAV3-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="1" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
