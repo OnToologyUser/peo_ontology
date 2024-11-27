@@ -11,7 +11,7 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://w3id.org/peo#">
-        <rdfs:label>PEO ontology: an ontology for prompt engineering and large languge models.</rdfs:label>
+        <rdfs:label>PEO ontology: an ontology for prompt engineering and large language models.</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <peo:creator>Simone Gramegna</peo:creator>
         <peo:description>The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks.</peo:description>
@@ -1365,6 +1365,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#large_language_model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/peo#has_capability"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/peo#text_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/peo#has_model_architecture"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/peo#transformer"/>
             </owl:Restriction>
@@ -1935,7 +1941,7 @@
     <!-- https://w3id.org/peo#q_former -->
 
     <owl:Class rdf:about="https://w3id.org/peo#q_former">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#base_model"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/peo#transformer"/>
         <rdfs:label>Q-Former</rdfs:label>
         <peo:description>A transformer-based model that uses query embeddings to encode specific features or focus areas in cross-modal or task-specific applications.</peo:description>
         <peo:reference>https://abdulkaderhelwan.medium.com/q-former-1d83163975da</peo:reference>
