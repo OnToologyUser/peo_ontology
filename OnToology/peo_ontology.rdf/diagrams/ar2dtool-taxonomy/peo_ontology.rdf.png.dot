@@ -102,7 +102,7 @@ node [shape = rectangle, color="black"]; "peo:few_shot_prompting" "peo:chain_of_
 	"peo:thread_of_thought_prompting" -> "peo:prompting_technique" [ label = "rdfs:subClassOf" ];
 	"peo:style_modifiers" -> "peo:image_prompting" [ label = "rdfs:subClassOf" ];
 	"peo:encoder_only" -> "peo:encoder" [ label = "rdfs:subClassOf" ];
-	"peo:q_former" -> "peo:base_model" [ label = "rdfs:subClassOf" ];
+	"peo:q_former" -> "peo:transformer" [ label = "rdfs:subClassOf" ];
 	"peo:vicuna" -> "peo:large_language_model" [ label = "rdfs:subClassOf" ];
 	"peo:transformer_xl" -> "peo:transformer" [ label = "rdfs:subClassOf" ];
 	"peo:vit_encoder" -> "peo:encoder" [ label = "rdfs:subClassOf" ];
