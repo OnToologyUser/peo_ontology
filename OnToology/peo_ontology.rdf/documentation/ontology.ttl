@@ -7,7 +7,7 @@
 @base <https://w3id.org/peo#> .
 
 <https://w3id.org/peo#> rdf:type owl:Ontology ;
-                         rdfs:label "PEO ontology: an ontology for prompt engineering and large languge models." ;
+                         rdfs:label "PEO ontology: an ontology for prompt engineering and large language models." ;
                          owl:versionInfo 1.0 ;
                          :creator "Simone Gramegna" ;
                          :description "The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks." ;
@@ -184,7 +184,7 @@
              rdfs:domain :large_language_model ;
              rdfs:range :large_language_model ;
              rdfs:label "has_variant" ;
-             :description "Relationship between two large language models (x and y), where x has y as another version." .
+             :description "Relation between two large language models (x and y), where x has y as another version." .
 
 
 ###  https://w3id.org/peo#is_capability
@@ -978,6 +978,10 @@
 :gemma rdf:type owl:Class ;
        rdfs:subClassOf :large_language_model ,
                        [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_capability ;
+                         owl:someValuesFrom :text_processing
+                       ] ,
+                       [ rdf:type owl:Restriction ;
                          owl:onProperty :has_model_architecture ;
                          owl:someValuesFrom :transformer
                        ] ;
@@ -1380,7 +1384,7 @@
 
 ###  https://w3id.org/peo#q_former
 :q_former rdf:type owl:Class ;
-          rdfs:subClassOf :base_model ;
+          rdfs:subClassOf :transformer ;
           rdfs:label "Q-Former" ;
           :description "A transformer-based model that uses query embeddings to encode specific features or focus areas in cross-modal or task-specific applications." ;
           :reference "https://abdulkaderhelwan.medium.com/q-former-1d83163975da" .
@@ -4600,6 +4604,35 @@
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_variant ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/peo#/x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/peo#/y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S10" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :evolves ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/peo#/x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/peo#/y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_capability ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/peo#/x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/peo#/c>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_capability ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/peo#/y> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/peo#/c>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
