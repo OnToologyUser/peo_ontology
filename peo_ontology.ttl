@@ -11,7 +11,7 @@
 @base <https://w3id.org/peo#/> .
 
 <https://w3id.org/peo#> rdf:type owl:Ontology ;
-                         rdfs:label "PEO ontology: an ontology for prompt engineering and large languge models." ;
+                         rdfs:label "PEO ontology: an ontology for prompt engineering and large language models." ;
                          owl:versionInfo 1.0 ;
                          peo:creator "Simone Gramegna" ;
                          peo:description "The PEO ontology is a modern ontology that covers state-of-art prompt engineering techniques and large language models. The ontology is designed to support students, researchers and developers who want to know more about prompt engineering, applying prompting techniques in solving tasks." ;
@@ -188,7 +188,7 @@ peo:has_variant rdf:type owl:ObjectProperty ;
                 rdfs:domain peo:large_language_model ;
                 rdfs:range peo:large_language_model ;
                 rdfs:label "has_variant" ;
-                peo:description "Relationship between two large language models (x and y), where x has y as another version." .
+                peo:description "Relation between two large language models (x and y), where x has y as another version." .
 
 
 ###  https://w3id.org/peo#is_capability
@@ -982,6 +982,10 @@ peo:gemini rdf:type owl:Class ;
 peo:gemma rdf:type owl:Class ;
           rdfs:subClassOf peo:large_language_model ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty peo:has_capability ;
+                            owl:someValuesFrom peo:text_processing
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty peo:has_model_architecture ;
                             owl:someValuesFrom peo:transformer
                           ] ;
@@ -1106,7 +1110,8 @@ peo:image_task rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#lamda_pt
 peo:lamda_pt rdf:type owl:Class ;
-             rdfs:subClassOf peo:transformer .
+             rdfs:subClassOf peo:transformer ;
+             rdfs:label "LAMDA PT" .
 
 
 ###  https://w3id.org/peo#large_language_model
@@ -1383,7 +1388,7 @@ peo:prompting_technique rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#q_former
 peo:q_former rdf:type owl:Class ;
-             rdfs:subClassOf peo:base_model ;
+             rdfs:subClassOf peo:transformer ;
              rdfs:label "Q-Former" ;
              peo:description "A transformer-based model that uses query embeddings to encode specific features or focus areas in cross-modal or task-specific applications." ;
              peo:reference "https://abdulkaderhelwan.medium.com/q-former-1d83163975da" .
@@ -1685,7 +1690,8 @@ peo:transformer rdf:type owl:Class ;
 
 ###  https://w3id.org/peo#transformer_xl
 peo:transformer_xl rdf:type owl:Class ;
-                   rdfs:subClassOf peo:transformer .
+                   rdfs:subClassOf peo:transformer ;
+                   rdfs:label "Transformer XL" .
 
 
 ###  https://w3id.org/peo#tree_of_thoughts_prompting
@@ -3065,7 +3071,8 @@ peo:gemini_chat_10 rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/peo#gemini_chat_11
-peo:gemini_chat_11 rdf:type owl:NamedIndividual ;
+peo:gemini_chat_11 rdf:type owl:NamedIndividual ,
+                            peo:chat ;
                    peo:uses_model peo:Gemini_Flash .
 
 
@@ -3749,7 +3756,8 @@ peo:mistral7b_chat_15 rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/peo#mistral7b_chat_16
-peo:mistral7b_chat_16 rdf:type owl:NamedIndividual ;
+peo:mistral7b_chat_16 rdf:type owl:NamedIndividual ,
+                               peo:chat ;
                       peo:uses_model peo:Mistral_7B .
 
 
@@ -4513,6 +4521,35 @@ peo:zs_prompting_4 rdf:type owl:NamedIndividual ,
                            swrl:propertyPredicate peo:has_variant ;
                            swrl:argument1 :x ;
                            swrl:argument2 :y
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S10" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:evolves ;
+                           swrl:argument1 :x ;
+                           swrl:argument2 :y
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate peo:has_capability ;
+                                      swrl:argument1 :x ;
+                                      swrl:argument2 :c
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate peo:has_capability ;
+                           swrl:argument1 :y ;
+                           swrl:argument2 :c
                          ] ;
                rdf:rest rdf:nil
              ]
