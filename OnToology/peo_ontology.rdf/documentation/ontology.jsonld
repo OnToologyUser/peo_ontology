@@ -17,7 +17,7 @@
     "@id" : "https://w3id.org/peo#large_language_model"
   } ]
 }, {
-  "@id" : "_:genid100",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -31,18 +31,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid104"
+      "@id" : "_:genid105"
     }, {
-      "@id" : "_:genid102"
+      "@id" : "_:genid103"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid106"
+      "@id" : "_:genid107"
     } ]
   } ]
 }, {
-  "@id" : "_:genid102",
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/x"
@@ -54,7 +54,7 @@
     "@id" : "https://w3id.org/peo#has_variant"
   } ]
 }, {
-  "@id" : "_:genid104",
+  "@id" : "_:genid105",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/c"
@@ -66,7 +66,7 @@
     "@id" : "https://w3id.org/peo#develops"
   } ]
 }, {
-  "@id" : "_:genid106",
+  "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/c"
@@ -78,7 +78,7 @@
     "@id" : "https://w3id.org/peo#develops"
   } ]
 }, {
-  "@id" : "_:genid107",
+  "@id" : "_:genid108",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -92,27 +92,15 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid111"
+      "@id" : "_:genid112"
     }, {
-      "@id" : "_:genid109"
+      "@id" : "_:genid110"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid113"
+      "@id" : "_:genid114"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid109",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/peo#/m1"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/peo#/c"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
   } ]
 }, {
   "@id" : "_:genid11",
@@ -124,7 +112,19 @@
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid111",
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/m1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ]
+}, {
+  "@id" : "_:genid112",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/m1"
@@ -136,7 +136,7 @@
     "@id" : "https://w3id.org/peo#evolves"
   } ]
 }, {
-  "@id" : "_:genid113",
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/m2"
@@ -148,7 +148,7 @@
     "@id" : "https://w3id.org/peo#has_capability"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid115",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -162,18 +162,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid118"
+      "@id" : "_:genid119"
     }, {
-      "@id" : "_:genid116"
+      "@id" : "_:genid117"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid120"
+      "@id" : "_:genid121"
     } ]
   } ]
 }, {
-  "@id" : "_:genid116",
+  "@id" : "_:genid117",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/o1"
@@ -185,7 +185,7 @@
     "@id" : "https://w3id.org/peo#develops"
   } ]
 }, {
-  "@id" : "_:genid118",
+  "@id" : "_:genid119",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/o1"
@@ -206,7 +206,7 @@
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid120",
+  "@id" : "_:genid121",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/o2"
@@ -218,7 +218,7 @@
     "@id" : "https://w3id.org/peo#develops"
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid122",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -232,18 +232,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid125"
+      "@id" : "_:genid126"
     }, {
-      "@id" : "_:genid123"
+      "@id" : "_:genid124"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid127"
+      "@id" : "_:genid128"
     } ]
   } ]
 }, {
-  "@id" : "_:genid123",
+  "@id" : "_:genid124",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/c"
@@ -255,7 +255,7 @@
     "@id" : "https://w3id.org/peo#uses_model"
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/p"
@@ -267,7 +267,7 @@
     "@id" : "https://w3id.org/peo#has_context"
   } ]
 }, {
-  "@id" : "_:genid127",
+  "@id" : "_:genid128",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/p"
@@ -279,7 +279,7 @@
     "@id" : "https://w3id.org/peo#processed_by"
   } ]
 }, {
-  "@id" : "_:genid128",
+  "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -293,14 +293,14 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid132"
+      "@id" : "_:genid133"
     }, {
-      "@id" : "_:genid130"
+      "@id" : "_:genid131"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid134"
+      "@id" : "_:genid135"
     } ]
   } ]
 }, {
@@ -313,7 +313,7 @@
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid130",
+  "@id" : "_:genid131",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/p"
@@ -325,7 +325,7 @@
     "@id" : "https://w3id.org/peo#has_context"
   } ]
 }, {
-  "@id" : "_:genid132",
+  "@id" : "_:genid133",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/r"
@@ -337,7 +337,7 @@
     "@id" : "https://w3id.org/peo#response_followedby_prompt"
   } ]
 }, {
-  "@id" : "_:genid134",
+  "@id" : "_:genid135",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/r"
@@ -349,7 +349,7 @@
     "@id" : "https://w3id.org/peo#is_response_of"
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid136",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -363,18 +363,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid139"
+      "@id" : "_:genid140"
     }, {
-      "@id" : "_:genid137"
+      "@id" : "_:genid138"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid141"
+      "@id" : "_:genid142"
     } ]
   } ]
 }, {
-  "@id" : "_:genid137",
+  "@id" : "_:genid138",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/p"
@@ -386,7 +386,16 @@
     "@id" : "https://w3id.org/peo#processed_by"
   } ]
 }, {
-  "@id" : "_:genid139",
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_model_architecture"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#transformer"
+  } ]
+}, {
+  "@id" : "_:genid140",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/r"
@@ -398,16 +407,7 @@
     "@id" : "https://w3id.org/peo#response_followedby_prompt"
   } ]
 }, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#transformer"
-  } ]
-}, {
-  "@id" : "_:genid141",
+  "@id" : "_:genid142",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/r"
@@ -419,7 +419,7 @@
     "@id" : "https://w3id.org/peo#response_generated_using"
   } ]
 }, {
-  "@id" : "_:genid142",
+  "@id" : "_:genid143",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -433,16 +433,16 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid144"
+      "@id" : "_:genid145"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid146"
+      "@id" : "_:genid147"
     } ]
   } ]
 }, {
-  "@id" : "_:genid144",
+  "@id" : "_:genid145",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/x"
@@ -454,7 +454,7 @@
     "@id" : "https://w3id.org/peo#evolves"
   } ]
 }, {
-  "@id" : "_:genid146",
+  "@id" : "_:genid147",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/x"
@@ -466,7 +466,77 @@
     "@id" : "https://w3id.org/peo#has_variant"
   } ]
 }, {
-  "@id" : "_:genid147",
+  "@id" : "_:genid148",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S10"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid152"
+    }, {
+      "@id" : "_:genid150"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid154"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#image_processing"
+  } ]
+}, {
+  "@id" : "_:genid150",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ]
+}, {
+  "@id" : "_:genid152",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#evolves"
+  } ]
+}, {
+  "@id" : "_:genid154",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ]
+}, {
+  "@id" : "_:genid155",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -480,18 +550,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid151"
+      "@id" : "_:genid159"
     }, {
-      "@id" : "_:genid149"
+      "@id" : "_:genid157"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid153"
+      "@id" : "_:genid161"
     } ]
   } ]
 }, {
-  "@id" : "_:genid149",
+  "@id" : "_:genid157",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/y"
@@ -503,77 +573,7 @@
     "@id" : "https://w3id.org/peo#has_context"
   } ]
 }, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#image_processing"
-  } ]
-}, {
-  "@id" : "_:genid151",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/peo#/x"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/peo#/y"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/peo#prompt_followedby_prompt"
-  } ]
-}, {
-  "@id" : "_:genid153",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/peo#/x"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/peo#/c"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/peo#has_context"
-  } ]
-}, {
-  "@id" : "_:genid154",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "S9"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid158"
-    }, {
-      "@id" : "_:genid156"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid160"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid156",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/peo#/y"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/peo#/r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/peo#prompt_follows_response"
-  } ]
-}, {
-  "@id" : "_:genid158",
+  "@id" : "_:genid159",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/x"
@@ -594,7 +594,68 @@
     "@id" : "https://w3id.org/peo#vit_encoder"
   } ]
 }, {
-  "@id" : "_:genid160",
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#has_context"
+  } ]
+}, {
+  "@id" : "_:genid162",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S9"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid166"
+    }, {
+      "@id" : "_:genid164"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid168"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid164",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#prompt_follows_response"
+  } ]
+}, {
+  "@id" : "_:genid166",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/peo#/x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/peo#/y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/peo#prompt_followedby_prompt"
+  } ]
+}, {
+  "@id" : "_:genid168",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/peo#/x"
@@ -780,13 +841,22 @@
   "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#text_processing"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -795,7 +865,7 @@
     "@id" : "https://w3id.org/peo#image_processing"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -804,7 +874,7 @@
     "@id" : "https://w3id.org/peo#global_image_encoder"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -813,22 +883,13 @@
     "@id" : "https://w3id.org/peo#grounding_image_encoder"
   } ]
 }, {
-  "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#pixel_decoder"
-  } ]
-}, {
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#region_encoder"
+    "@id" : "https://w3id.org/peo#pixel_decoder"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -843,13 +904,22 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_model_architecture"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#region_encoder"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -858,7 +928,7 @@
     "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -868,7 +938,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -877,7 +947,7 @@
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -886,7 +956,7 @@
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -895,22 +965,13 @@
     "@id" : "https://w3id.org/peo#image_processing"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#diffusion_model"
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -925,22 +986,31 @@
   "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
+    "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#transformer"
+    "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_model_architecture"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#transformer"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -949,67 +1019,58 @@
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#text_processing"
-  } ]
-}, {
-  "@id" : "_:genid54",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
   "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
+    "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#text_processing"
+    "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
   "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
+    "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#decoder_only"
+    "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
   "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#text_processing"
-  } ]
-}, {
-  "@id" : "_:genid58",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
-  "@id" : "_:genid59",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#text_processing"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_model_architecture"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -1024,19 +1085,19 @@
   "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
+    "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#transformer"
+    "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
   "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
+    "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#code_processing"
+    "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
   "@id" : "_:genid62",
@@ -1045,28 +1106,37 @@
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#text_processing"
+    "@id" : "https://w3id.org/peo#code_processing"
   } ]
 }, {
   "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
+    "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#transformer"
+    "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
   "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_model_architecture"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#transformer"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -1075,22 +1145,13 @@
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#text_processing"
-  } ]
-}, {
-  "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_model_architecture"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#recurrent_neural_network"
   } ]
 }, {
   "@id" : "_:genid68",
@@ -1099,16 +1160,16 @@
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#transformer"
+    "@id" : "https://w3id.org/peo#recurrent_neural_network"
   } ]
 }, {
   "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
+    "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#video_processing"
+    "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -1123,13 +1184,22 @@
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#video_processing"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -1138,7 +1208,7 @@
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -1147,7 +1217,7 @@
     "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -1156,7 +1226,7 @@
     "@id" : "https://w3id.org/peo#code_processing"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -1165,7 +1235,7 @@
     "@id" : "https://w3id.org/peo#decoder_only"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -1174,7 +1244,7 @@
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -1183,7 +1253,7 @@
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -1192,22 +1262,13 @@
     "@id" : "https://w3id.org/peo#audio_processing"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#transformer"
-  } ]
-}, {
-  "@id" : "_:genid79",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/peo#has_capability"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -1222,13 +1283,22 @@
   "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/peo#has_capability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/peo#text_processing"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_capability"
@@ -1237,7 +1307,7 @@
     "@id" : "https://w3id.org/peo#text_processing"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/peo#has_model_architecture"
@@ -1246,27 +1316,11 @@
     "@id" : "https://w3id.org/peo#transformer_xl"
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/peo#base_model"
-    }, {
-      "@id" : "https://w3id.org/peo#large_language_model"
-    }, {
-      "@id" : "https://w3id.org/peo#organization"
-    }, {
-      "@id" : "https://w3id.org/peo#prompt_engineering"
-    }, {
-      "@id" : "https://w3id.org/peo#task"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid89",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/peo#capability"
     }, {
       "@id" : "https://w3id.org/peo#large_language_model"
     }, {
@@ -1287,7 +1341,23 @@
     "@id" : "https://w3id.org/peo#transformer"
   } ]
 }, {
-  "@id" : "_:genid95",
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/peo#capability"
+    }, {
+      "@id" : "https://w3id.org/peo#large_language_model"
+    }, {
+      "@id" : "https://w3id.org/peo#organization"
+    }, {
+      "@id" : "https://w3id.org/peo#prompt_engineering"
+    }, {
+      "@id" : "https://w3id.org/peo#task"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1307,7 +1377,7 @@
   "@id" : "https://w3id.org/peo#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "PEO ontology: an ontology for prompt engineering and large languge models."
+    "@value" : "PEO ontology: an ontology for prompt engineering and large language models."
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
@@ -5193,6 +5263,8 @@
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
     "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Large Language Model designed for advanced natural language processing tasks, with a focus on accuracy and contextual text generation."
@@ -5362,8 +5434,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid35"
-  }, {
     "@id" : "_:genid36"
   }, {
     "@id" : "_:genid37"
@@ -5371,6 +5441,8 @@
     "@id" : "_:genid38"
   }, {
     "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Multimodal model that combines language and vision, enabling pixel-level grounding, object segmentation, and interactive visual conversations"
@@ -5448,9 +5520,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid40"
-  }, {
     "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "(Generative Pre-trained Transformer) A series of transformer models by OpenAI, with GPT-4 as the latest, excelling in NLP and conversational tasks."
@@ -6191,7 +6263,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "https://w3id.org/peo#description" : [ {
-    "@value" : "Relationship between two large language models (x and y), where x has y as another version."
+    "@value" : "Relation between two large language models (x and y), where x has y as another version."
   } ]
 }, {
   "@id" : "https://w3id.org/peo#image_explanation",
@@ -6413,7 +6485,7 @@
     "@value" : "LLM chracteristic"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid42"
+    "@id" : "_:genid43"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "The class represents the defining traits of a large language model, combining its base model attributes and capabilities."
@@ -6457,9 +6529,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid45"
-  }, {
     "@id" : "_:genid46"
+  }, {
+    "@id" : "_:genid47"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "(Large Language Model Meta AI) A series of open-source models by Meta, designed to be efficient for research and commercial use."
@@ -6566,9 +6638,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid47"
-  }, {
     "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Midjourney is an AI tool that generates images based on text prompts with artistic and realistic quality."
@@ -6600,9 +6672,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid49"
-  }, {
     "@id" : "_:genid50"
+  }, {
+    "@id" : "_:genid51"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Family of large language models developed by Sapienza University, trained on extensive Italian and English corpora to support diverse applications like text generation and natural language understanding."
@@ -6622,9 +6694,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid51"
-  }, {
     "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid53"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "A language model focused on being efficient and high-performing, aiming to improve NLP capabilities with fewer resources."
@@ -7079,9 +7151,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid53"
-  }, {
     "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Decoder-style transformer with 6.7B parameters"
@@ -7119,9 +7191,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid55"
-  }, {
     "@id" : "_:genid56"
+  }, {
+    "@id" : "_:genid57"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Open-source language model that aimes to provide a transparent, publicly accessible alternative to proprietary LLMs for research and applications in natural language processing."
@@ -7160,9 +7232,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid57"
-  }, {
     "@id" : "_:genid58"
+  }, {
+    "@id" : "_:genid59"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "An open-source initiative focused on evolutionary learning and modeling, particularly in the context of NLP tasks."
@@ -7182,9 +7254,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid59"
-  }, {
     "@id" : "_:genid60"
+  }, {
+    "@id" : "_:genid61"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "(Open Pretrained Transformer) A model developed by Meta, openly released to provide researchers with access to LLMs for a variety of applications."
@@ -7213,11 +7285,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid61"
-  }, {
     "@id" : "_:genid62"
   }, {
     "@id" : "_:genid63"
+  }, {
+    "@id" : "_:genid64"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Large language model developed by Google, designed to perform a range of NLP tasks with high accuracy across languages, reasoning, and even code generation."
@@ -7240,9 +7312,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid64"
-  }, {
     "@id" : "_:genid65"
+  }, {
+    "@id" : "_:genid66"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "A recently developed AI model by a specific organization or team, likely aimed at enhancing certain NLP or conversational AI capabilities (additional details may be required as it's a newer name)."
@@ -7476,7 +7548,7 @@
     "@value" : "Q-Former"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/peo#base_model"
+    "@id" : "https://w3id.org/peo#transformer"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "A transformer-based model that uses query embeddings to encode specific features or focus areas in cross-modal or task-specific applications."
@@ -7955,11 +8027,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid66"
-  }, {
     "@id" : "_:genid67"
   }, {
     "@id" : "_:genid68"
+  }, {
+    "@id" : "_:genid69"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Large language model that integrates transformer and RNN principles to efficiently manage long-context sequences, supporting improved language understanding and generation over extensive text inputs."
@@ -8093,9 +8165,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid69"
-  }, {
     "@id" : "_:genid70"
+  }, {
+    "@id" : "_:genid71"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Text-to-video AI model. Sora can create videos of up to a minute of realistic and imaginative scenes given text instructions."
@@ -8130,9 +8202,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid71"
-  }, {
     "@id" : "_:genid72"
+  }, {
+    "@id" : "_:genid73"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Open source large language model designed to support a range of natural language processing tasks with a focus on accessibility and transparency in model deployment and fine-tuning."
@@ -8198,9 +8270,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid73"
-  }, {
     "@id" : "_:genid74"
+  }, {
+    "@id" : "_:genid75"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Large language model specialized for code generation and understanding designed to support multiple programming languages and assist developers in writing, debugging, and understanding code."
@@ -8292,9 +8364,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid75"
-  }, {
     "@id" : "_:genid76"
+  }, {
+    "@id" : "_:genid77"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "(Text-To-Text Transfer Transformer) A Google model where every NLP task is cast as a text-to-text problem, known for its adaptability across diverse tasks."
@@ -8518,9 +8590,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid77"
-  }, {
     "@id" : "_:genid78"
+  }, {
+    "@id" : "_:genid79"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "VALL-E is a text-to-speech model that synthesizes high-quality speech from text input."
@@ -8550,9 +8622,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid79"
-  }, {
     "@id" : "_:genid80"
+  }, {
+    "@id" : "_:genid81"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Open-source conversational model that provides a high-quality chatbot experience."
@@ -8638,9 +8710,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/peo#large_language_model"
   }, {
-    "@id" : "_:genid81"
-  }, {
     "@id" : "_:genid82"
+  }, {
+    "@id" : "_:genid83"
   } ],
   "https://w3id.org/peo#description" : [ {
     "@value" : "Generalized autoregressive model that captures bidirectional context for NLP tasks."
