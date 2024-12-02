@@ -1010,6 +1010,8 @@ _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#lamda_pt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#lamda_pt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#transformer> .
 <https://w3id.org/peo#lamda_pt> <http://www.w3.org/2000/01/rdf-schema#label> "LAMDA PT" .
+<https://w3id.org/peo#lamda_pt> <https://w3id.org/peo#description> "Pre-trained conversational AI model by Google designed for open-domain, context-aware, and natural dialogue generation." .
+<https://w3id.org/peo#lamda_pt> <https://w3id.org/peo#reference> "https://arxiv.org/abs/2201.08239" .
 # 
 # https://w3id.org/peo#large_language_model
 <https://w3id.org/peo#large_language_model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1537,6 +1539,8 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#transformer_xl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/peo#transformer_xl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/peo#transformer> .
 <https://w3id.org/peo#transformer_xl> <http://www.w3.org/2000/01/rdf-schema#label> "Transformer XL" .
+<https://w3id.org/peo#transformer_xl> <https://w3id.org/peo#description> "Variant of the Transformer model designed to handle longer sequences by introducing segment-level recurrence and relative positional embeddings, enabling better context retention and improved efficiency in language modeling tasks" .
+<https://w3id.org/peo#transformer_xl> <https://w3id.org/peo#reference> "https://arxiv.org/abs/1901.02860" .
 # 
 # https://w3id.org/peo#tree_of_thoughts_prompting
 <https://w3id.org/peo#tree_of_thoughts_prompting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2737,101 +2741,161 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#gemini_chat_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_1> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_1> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 10:43" .
+<https://w3id.org/peo#gemini_chat_1> <https://w3id.org/peo#has_chat_title> "Gemini chat 1" .
+<https://w3id.org/peo#gemini_chat_1> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 10:41" .
 # 
 # https://w3id.org/peo#gemini_chat_10
 <https://w3id.org/peo#gemini_chat_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_10> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_10> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 11:43" .
+<https://w3id.org/peo#gemini_chat_10> <https://w3id.org/peo#has_chat_title> "Gemini chat 10" .
+<https://w3id.org/peo#gemini_chat_10> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 11:41" .
 # 
 # https://w3id.org/peo#gemini_chat_11
 <https://w3id.org/peo#gemini_chat_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_11> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_11> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 12:43" .
+<https://w3id.org/peo#gemini_chat_11> <https://w3id.org/peo#has_chat_title> "Gemini chat 11" .
+<https://w3id.org/peo#gemini_chat_11> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 12:41" .
 # 
 # https://w3id.org/peo#gemini_chat_12
 <https://w3id.org/peo#gemini_chat_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_12> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_12> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 13:43" .
+<https://w3id.org/peo#gemini_chat_12> <https://w3id.org/peo#has_chat_title> "Gemini chat 12" .
+<https://w3id.org/peo#gemini_chat_12> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 13:41" .
 # 
 # https://w3id.org/peo#gemini_chat_13
 <https://w3id.org/peo#gemini_chat_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_13> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_13> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 14:43" .
+<https://w3id.org/peo#gemini_chat_13> <https://w3id.org/peo#has_chat_title> "Gemini chat 13" .
+<https://w3id.org/peo#gemini_chat_13> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 14:41" .
 # 
 # https://w3id.org/peo#gemini_chat_14
 <https://w3id.org/peo#gemini_chat_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_14> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_14> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 15:43" .
+<https://w3id.org/peo#gemini_chat_14> <https://w3id.org/peo#has_chat_title> "Gemini chat 14" .
+<https://w3id.org/peo#gemini_chat_14> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 15:41" .
 # 
 # https://w3id.org/peo#gemini_chat_15
 <https://w3id.org/peo#gemini_chat_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_15> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_15> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 16:43" .
+<https://w3id.org/peo#gemini_chat_15> <https://w3id.org/peo#has_chat_title> "Gemini chat 15" .
+<https://w3id.org/peo#gemini_chat_15> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 16:41" .
 # 
 # https://w3id.org/peo#gemini_chat_16
 <https://w3id.org/peo#gemini_chat_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_16> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_16> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 17:43" .
+<https://w3id.org/peo#gemini_chat_16> <https://w3id.org/peo#has_chat_title> "Gemini chat 16" .
+<https://w3id.org/peo#gemini_chat_16> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 17:41" .
 # 
 # https://w3id.org/peo#gemini_chat_17
 <https://w3id.org/peo#gemini_chat_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_17> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_17> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 18:43" .
+<https://w3id.org/peo#gemini_chat_17> <https://w3id.org/peo#has_chat_title> "Gemini chat 17" .
+<https://w3id.org/peo#gemini_chat_17> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 18:41" .
 # 
 # https://w3id.org/peo#gemini_chat_18
 <https://w3id.org/peo#gemini_chat_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_18> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_18> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 19:43" .
+<https://w3id.org/peo#gemini_chat_18> <https://w3id.org/peo#has_chat_title> "Gemini chat 18" .
+<https://w3id.org/peo#gemini_chat_18> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 19:41" .
 # 
 # https://w3id.org/peo#gemini_chat_19
 <https://w3id.org/peo#gemini_chat_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_19> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_19> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 20:43" .
+<https://w3id.org/peo#gemini_chat_19> <https://w3id.org/peo#has_chat_title> "Gemini chat 19" .
+<https://w3id.org/peo#gemini_chat_19> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 20:41" .
 # 
 # https://w3id.org/peo#gemini_chat_2
 <https://w3id.org/peo#gemini_chat_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_2> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_2> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 00:43" .
+<https://w3id.org/peo#gemini_chat_2> <https://w3id.org/peo#has_chat_title> "Gemini chat 2" .
+<https://w3id.org/peo#gemini_chat_2> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 00:41" .
 # 
 # https://w3id.org/peo#gemini_chat_20
 <https://w3id.org/peo#gemini_chat_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_20> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_20> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 00:53" .
+<https://w3id.org/peo#gemini_chat_20> <https://w3id.org/peo#has_chat_title> "Gemini chat 20" .
+<https://w3id.org/peo#gemini_chat_20> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 00:51" .
 # 
 # https://w3id.org/peo#gemini_chat_3
 <https://w3id.org/peo#gemini_chat_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_3> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_3> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 01:43" .
+<https://w3id.org/peo#gemini_chat_3> <https://w3id.org/peo#has_chat_title> "Gemini chat 3" .
+<https://w3id.org/peo#gemini_chat_3> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 01:41" .
 # 
 # https://w3id.org/peo#gemini_chat_4
 <https://w3id.org/peo#gemini_chat_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_4> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_4> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 02:43" .
+<https://w3id.org/peo#gemini_chat_4> <https://w3id.org/peo#has_chat_title> "Gemini chat 4" .
+<https://w3id.org/peo#gemini_chat_4> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 02:41" .
 # 
 # https://w3id.org/peo#gemini_chat_5
 <https://w3id.org/peo#gemini_chat_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_5> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_5> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 03:43" .
+<https://w3id.org/peo#gemini_chat_5> <https://w3id.org/peo#has_chat_title> "Gemini chat 5" .
+<https://w3id.org/peo#gemini_chat_5> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 03:41" .
 # 
 # https://w3id.org/peo#gemini_chat_6
 <https://w3id.org/peo#gemini_chat_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_6> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_6> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 04:43" .
+<https://w3id.org/peo#gemini_chat_6> <https://w3id.org/peo#has_chat_title> "Gemini chat 6" .
+<https://w3id.org/peo#gemini_chat_6> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 04:41" .
 # 
 # https://w3id.org/peo#gemini_chat_7
 <https://w3id.org/peo#gemini_chat_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_7> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_7> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 05:43" .
+<https://w3id.org/peo#gemini_chat_7> <https://w3id.org/peo#has_chat_title> "Gemini chat 7" .
+<https://w3id.org/peo#gemini_chat_7> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 05:41" .
 # 
 # https://w3id.org/peo#gemini_chat_8
 <https://w3id.org/peo#gemini_chat_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_8> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_8> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 06:43" .
+<https://w3id.org/peo#gemini_chat_8> <https://w3id.org/peo#has_chat_title> "Gemini chat 8" .
+<https://w3id.org/peo#gemini_chat_8> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 06:41" .
 # 
 # https://w3id.org/peo#gemini_chat_9
 <https://w3id.org/peo#gemini_chat_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gemini_chat_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gemini_chat_9> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Gemini_Flash> .
+<https://w3id.org/peo#gemini_chat_9> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 07:43" .
+<https://w3id.org/peo#gemini_chat_9> <https://w3id.org/peo#has_chat_title> "Gemini chat 9" .
+<https://w3id.org/peo#gemini_chat_9> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 07:41" .
 # 
 # https://w3id.org/peo#gemini_rs1
 <https://w3id.org/peo#gemini_rs1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3038,101 +3102,161 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#gpt4_chat_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_1> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_1> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 00:30" .
+<https://w3id.org/peo#gpt4_chat_1> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 1" .
+<https://w3id.org/peo#gpt4_chat_1> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 00:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_10
 <https://w3id.org/peo#gpt4_chat_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_10> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_10> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 01:30" .
+<https://w3id.org/peo#gpt4_chat_10> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 10" .
+<https://w3id.org/peo#gpt4_chat_10> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 01:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_11
 <https://w3id.org/peo#gpt4_chat_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_11> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_11> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 02:30" .
+<https://w3id.org/peo#gpt4_chat_11> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 11" .
+<https://w3id.org/peo#gpt4_chat_11> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 02:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_12
 <https://w3id.org/peo#gpt4_chat_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_12> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_12> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 03:30" .
+<https://w3id.org/peo#gpt4_chat_12> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 12" .
+<https://w3id.org/peo#gpt4_chat_12> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 03:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_13
 <https://w3id.org/peo#gpt4_chat_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_13> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_13> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 04:30" .
+<https://w3id.org/peo#gpt4_chat_13> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 13" .
+<https://w3id.org/peo#gpt4_chat_13> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 04:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_14
 <https://w3id.org/peo#gpt4_chat_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_14> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_14> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 05:30" .
+<https://w3id.org/peo#gpt4_chat_14> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 14" .
+<https://w3id.org/peo#gpt4_chat_14> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 05:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_15
 <https://w3id.org/peo#gpt4_chat_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_15> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_15> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 06:30" .
+<https://w3id.org/peo#gpt4_chat_15> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 15" .
+<https://w3id.org/peo#gpt4_chat_15> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 06:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_16
 <https://w3id.org/peo#gpt4_chat_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_16> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_16> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 07:30" .
+<https://w3id.org/peo#gpt4_chat_16> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 16" .
+<https://w3id.org/peo#gpt4_chat_16> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 07:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_17
 <https://w3id.org/peo#gpt4_chat_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_17> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_17> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 08:30" .
+<https://w3id.org/peo#gpt4_chat_17> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 17" .
+<https://w3id.org/peo#gpt4_chat_17> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 08:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_18
 <https://w3id.org/peo#gpt4_chat_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_18> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_18> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 09:30" .
+<https://w3id.org/peo#gpt4_chat_18> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 18" .
+<https://w3id.org/peo#gpt4_chat_18> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 09:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_19
 <https://w3id.org/peo#gpt4_chat_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_19> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_19> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 10:30" .
+<https://w3id.org/peo#gpt4_chat_19> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 19" .
+<https://w3id.org/peo#gpt4_chat_19> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 10:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_2
 <https://w3id.org/peo#gpt4_chat_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_2> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_2> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 11:30" .
+<https://w3id.org/peo#gpt4_chat_2> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 2" .
+<https://w3id.org/peo#gpt4_chat_2> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 11:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_20
 <https://w3id.org/peo#gpt4_chat_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_20> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_20> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 12:30" .
+<https://w3id.org/peo#gpt4_chat_20> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 20" .
+<https://w3id.org/peo#gpt4_chat_20> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 12:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_3
 <https://w3id.org/peo#gpt4_chat_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_3> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_3> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 13:30" .
+<https://w3id.org/peo#gpt4_chat_3> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 3" .
+<https://w3id.org/peo#gpt4_chat_3> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 13:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_4
 <https://w3id.org/peo#gpt4_chat_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_4> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_4> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 14:30" .
+<https://w3id.org/peo#gpt4_chat_4> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 4" .
+<https://w3id.org/peo#gpt4_chat_4> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 14:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_5
 <https://w3id.org/peo#gpt4_chat_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_5> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_5> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 15:30" .
+<https://w3id.org/peo#gpt4_chat_5> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 5" .
+<https://w3id.org/peo#gpt4_chat_5> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 15:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_6
 <https://w3id.org/peo#gpt4_chat_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_6> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_6> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 16:30" .
+<https://w3id.org/peo#gpt4_chat_6> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 6" .
+<https://w3id.org/peo#gpt4_chat_6> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 16:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_7
 <https://w3id.org/peo#gpt4_chat_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_7> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_7> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 17:30" .
+<https://w3id.org/peo#gpt4_chat_7> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 7" .
+<https://w3id.org/peo#gpt4_chat_7> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 17:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_8
 <https://w3id.org/peo#gpt4_chat_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_8> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_8> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 18:30" .
+<https://w3id.org/peo#gpt4_chat_8> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 8" .
+<https://w3id.org/peo#gpt4_chat_8> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 18:33" .
 # 
 # https://w3id.org/peo#gpt4_chat_9
 <https://w3id.org/peo#gpt4_chat_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#gpt4_chat_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#gpt4_chat_9> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#GPT-4> .
+<https://w3id.org/peo#gpt4_chat_9> <https://w3id.org/peo#end_time_chat> "02/12/2024 - 19:30" .
+<https://w3id.org/peo#gpt4_chat_9> <https://w3id.org/peo#has_chat_title> "GPT-4 chat 9" .
+<https://w3id.org/peo#gpt4_chat_9> <https://w3id.org/peo#start_time_chat> "02/12/2024 - 19:33" .
 # 
 # https://w3id.org/peo#gpt4_rs1
 <https://w3id.org/peo#gpt4_rs1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3294,101 +3418,161 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/peo#mistral7b_chat_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_1> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_1> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 00:16" .
+<https://w3id.org/peo#mistral7b_chat_1> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 1" .
+<https://w3id.org/peo#mistral7b_chat_1> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 00:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_10
 <https://w3id.org/peo#mistral7b_chat_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_10> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_10> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 01:16" .
+<https://w3id.org/peo#mistral7b_chat_10> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 10" .
+<https://w3id.org/peo#mistral7b_chat_10> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 01:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_11
 <https://w3id.org/peo#mistral7b_chat_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_11> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_11> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 02:16" .
+<https://w3id.org/peo#mistral7b_chat_11> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 11" .
+<https://w3id.org/peo#mistral7b_chat_11> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 02:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_12
 <https://w3id.org/peo#mistral7b_chat_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_12> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_12> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 03:16" .
+<https://w3id.org/peo#mistral7b_chat_12> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 12" .
+<https://w3id.org/peo#mistral7b_chat_12> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 03:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_13
 <https://w3id.org/peo#mistral7b_chat_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_13> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_13> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 04:16" .
+<https://w3id.org/peo#mistral7b_chat_13> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 13" .
+<https://w3id.org/peo#mistral7b_chat_13> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 04:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_14
 <https://w3id.org/peo#mistral7b_chat_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_14> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_14> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 05:16" .
+<https://w3id.org/peo#mistral7b_chat_14> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 14" .
+<https://w3id.org/peo#mistral7b_chat_14> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 05:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_15
 <https://w3id.org/peo#mistral7b_chat_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_15> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_15> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 06:16" .
+<https://w3id.org/peo#mistral7b_chat_15> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 15" .
+<https://w3id.org/peo#mistral7b_chat_15> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 06:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_16
 <https://w3id.org/peo#mistral7b_chat_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_16> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_16> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 07:16" .
+<https://w3id.org/peo#mistral7b_chat_16> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 16" .
+<https://w3id.org/peo#mistral7b_chat_16> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 07:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_17
 <https://w3id.org/peo#mistral7b_chat_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_17> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_17> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 08:16" .
+<https://w3id.org/peo#mistral7b_chat_17> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 17" .
+<https://w3id.org/peo#mistral7b_chat_17> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 08:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_18
 <https://w3id.org/peo#mistral7b_chat_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_18> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_18> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 09:16" .
+<https://w3id.org/peo#mistral7b_chat_18> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 18" .
+<https://w3id.org/peo#mistral7b_chat_18> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 09:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_19
 <https://w3id.org/peo#mistral7b_chat_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_19> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_19> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 10:16" .
+<https://w3id.org/peo#mistral7b_chat_19> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 19" .
+<https://w3id.org/peo#mistral7b_chat_19> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 10:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_2
 <https://w3id.org/peo#mistral7b_chat_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_2> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_2> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 11:16" .
+<https://w3id.org/peo#mistral7b_chat_2> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 2" .
+<https://w3id.org/peo#mistral7b_chat_2> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 11:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_20
 <https://w3id.org/peo#mistral7b_chat_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_20> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_20> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 12:16" .
+<https://w3id.org/peo#mistral7b_chat_20> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 20" .
+<https://w3id.org/peo#mistral7b_chat_20> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 12:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_3
 <https://w3id.org/peo#mistral7b_chat_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_3> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_3> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 13:16" .
+<https://w3id.org/peo#mistral7b_chat_3> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 3" .
+<https://w3id.org/peo#mistral7b_chat_3> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 13:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_4
 <https://w3id.org/peo#mistral7b_chat_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_4> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_4> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 14:16" .
+<https://w3id.org/peo#mistral7b_chat_4> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 4" .
+<https://w3id.org/peo#mistral7b_chat_4> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 14:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_5
 <https://w3id.org/peo#mistral7b_chat_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_5> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_5> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 15:16" .
+<https://w3id.org/peo#mistral7b_chat_5> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 5" .
+<https://w3id.org/peo#mistral7b_chat_5> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 15:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_6
 <https://w3id.org/peo#mistral7b_chat_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_6> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_6> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 16:16" .
+<https://w3id.org/peo#mistral7b_chat_6> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 6" .
+<https://w3id.org/peo#mistral7b_chat_6> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 16:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_7
 <https://w3id.org/peo#mistral7b_chat_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_7> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_7> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 17:16" .
+<https://w3id.org/peo#mistral7b_chat_7> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 7" .
+<https://w3id.org/peo#mistral7b_chat_7> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 17:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_8
 <https://w3id.org/peo#mistral7b_chat_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_8> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_8> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 18:16" .
+<https://w3id.org/peo#mistral7b_chat_8> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 8" .
+<https://w3id.org/peo#mistral7b_chat_8> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 18:18" .
 # 
 # https://w3id.org/peo#mistral7b_chat_9
 <https://w3id.org/peo#mistral7b_chat_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/peo#mistral7b_chat_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/peo#chat> .
 <https://w3id.org/peo#mistral7b_chat_9> <https://w3id.org/peo#uses_model> <https://w3id.org/peo#Mistral_7B> .
+<https://w3id.org/peo#mistral7b_chat_9> <https://w3id.org/peo#end_time_chat> "01/12/2024 - 19:16" .
+<https://w3id.org/peo#mistral7b_chat_9> <https://w3id.org/peo#has_chat_title> "Mistral-7B chat 9" .
+<https://w3id.org/peo#mistral7b_chat_9> <https://w3id.org/peo#start_time_chat> "01/12/2024 - 19:18" .
 # 
 # https://w3id.org/peo#mistral7b_rs1
 <https://w3id.org/peo#mistral7b_rs1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
