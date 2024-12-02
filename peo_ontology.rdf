@@ -1548,6 +1548,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#lamda_pt">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#transformer"/>
         <rdfs:label>LAMDA PT</rdfs:label>
+        <peo:description>Pre-trained conversational AI model by Google designed for open-domain, context-aware, and natural dialogue generation.</peo:description>
+        <peo:reference>https://arxiv.org/abs/2201.08239</peo:reference>
     </owl:Class>
     
 
@@ -2366,6 +2368,8 @@
     <owl:Class rdf:about="https://w3id.org/peo#transformer_xl">
         <rdfs:subClassOf rdf:resource="https://w3id.org/peo#transformer"/>
         <rdfs:label>Transformer XL</rdfs:label>
+        <peo:description>Variant of the Transformer model designed to handle longer sequences by introducing segment-level recurrence and relative positional embeddings, enabling better context retention and improved efficiency in language modeling tasks</peo:description>
+        <peo:reference>https://arxiv.org/abs/1901.02860</peo:reference>
     </owl:Class>
     
 
@@ -4280,6 +4284,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_1">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 10:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 1</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 10:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4289,6 +4296,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_10">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 11:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 10</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 11:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4298,6 +4308,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_11">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 12:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 11</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 12:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4307,6 +4320,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_12">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 13:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 12</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 13:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4316,6 +4332,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_13">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 14:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 13</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 14:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4325,6 +4344,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_14">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 15:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 14</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 15:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4334,6 +4356,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_15">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 16:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 15</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 16:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4343,6 +4368,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_16">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 17:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 16</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 17:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4352,6 +4380,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_17">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 18:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 17</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 18:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4361,6 +4392,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_18">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 19:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 18</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 19:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4370,6 +4404,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_19">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 20:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 19</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 20:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4379,6 +4416,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_2">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 00:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 2</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 00:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4388,6 +4428,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_20">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 00:53</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 20</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 00:51</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4397,6 +4440,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_3">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 01:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 3</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 01:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4406,6 +4452,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_4">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 02:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 4</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 02:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4415,6 +4464,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_5">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 03:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 5</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 03:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4424,6 +4476,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_6">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 04:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 6</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 04:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4433,6 +4488,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_7">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 05:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 7</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 05:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4442,6 +4500,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_8">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 06:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 8</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 06:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4451,6 +4512,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gemini_chat_9">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Gemini_Flash"/>
+        <peo:end_time_chat>02/12/2024 - 07:43</peo:end_time_chat>
+        <peo:has_chat_title>Gemini chat 9</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 07:41</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4793,6 +4857,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_1">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 00:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 1</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 00:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4802,6 +4869,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_10">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 01:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 10</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 01:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4811,6 +4881,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_11">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 02:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 11</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 02:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4820,6 +4893,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_12">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 03:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 12</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 03:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4829,6 +4905,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_13">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 04:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 13</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 04:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4838,6 +4917,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_14">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 05:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 14</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 05:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4847,6 +4929,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_15">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 06:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 15</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 06:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4856,6 +4941,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_16">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 07:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 16</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 07:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4865,6 +4953,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_17">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 08:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 17</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 08:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4874,6 +4965,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_18">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 09:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 18</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 09:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4883,6 +4977,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_19">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 10:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 19</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 10:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4892,6 +4989,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_2">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 11:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 2</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 11:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4901,6 +5001,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_20">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 12:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 20</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 12:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4910,6 +5013,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_3">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 13:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 3</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 13:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4919,6 +5025,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_4">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 14:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 4</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 14:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4928,6 +5037,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_5">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 15:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 5</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 15:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4937,6 +5049,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_6">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 16:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 6</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 16:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4946,6 +5061,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_7">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 17:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 7</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 17:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4955,6 +5073,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_8">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 18:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 8</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 18:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -4964,6 +5085,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#gpt4_chat_9">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#GPT-4"/>
+        <peo:end_time_chat>02/12/2024 - 19:30</peo:end_time_chat>
+        <peo:has_chat_title>GPT-4 chat 9</peo:has_chat_title>
+        <peo:start_time_chat>02/12/2024 - 19:33</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5229,6 +5353,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_1">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 00:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 1</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 00:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5238,6 +5365,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_10">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 01:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 10</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 01:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5247,6 +5377,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_11">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 02:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 11</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 02:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5256,6 +5389,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_12">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 03:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 12</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 03:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5265,6 +5401,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_13">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 04:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 13</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 04:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5274,6 +5413,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_14">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 05:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 14</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 05:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5283,6 +5425,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_15">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 06:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 15</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 06:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5292,6 +5437,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_16">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 07:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 16</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 07:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5301,6 +5449,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_17">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 08:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 17</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 08:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5310,6 +5461,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_18">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 09:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 18</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 09:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5319,6 +5473,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_19">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 10:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 19</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 10:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5328,6 +5485,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_2">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 11:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 2</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 11:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5337,6 +5497,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_20">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 12:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 20</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 12:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5346,6 +5509,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_3">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 13:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 3</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 13:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5355,6 +5521,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_4">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 14:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 4</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 14:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5364,6 +5533,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_5">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 15:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 5</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 15:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5373,6 +5545,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_6">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 16:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 6</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 16:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5382,6 +5557,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_7">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 17:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 7</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 17:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5391,6 +5569,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_8">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 18:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 8</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 18:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
@@ -5400,6 +5581,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/peo#mistral7b_chat_9">
         <rdf:type rdf:resource="https://w3id.org/peo#chat"/>
         <peo:uses_model rdf:resource="https://w3id.org/peo#Mistral_7B"/>
+        <peo:end_time_chat>01/12/2024 - 19:16</peo:end_time_chat>
+        <peo:has_chat_title>Mistral-7B chat 9</peo:has_chat_title>
+        <peo:start_time_chat>01/12/2024 - 19:18</peo:start_time_chat>
     </owl:NamedIndividual>
     
 
