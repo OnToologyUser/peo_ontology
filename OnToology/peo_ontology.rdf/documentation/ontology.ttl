@@ -1107,7 +1107,9 @@
 ###  https://w3id.org/peo#lamda_pt
 :lamda_pt rdf:type owl:Class ;
           rdfs:subClassOf :transformer ;
-          rdfs:label "LAMDA PT" .
+          rdfs:label "LAMDA PT" ;
+          :description "Pre-trained conversational AI model by Google designed for open-domain, context-aware, and natural dialogue generation." ;
+          :reference "https://arxiv.org/abs/2201.08239" .
 
 
 ###  https://w3id.org/peo#large_language_model
@@ -1687,7 +1689,9 @@
 ###  https://w3id.org/peo#transformer_xl
 :transformer_xl rdf:type owl:Class ;
                 rdfs:subClassOf :transformer ;
-                rdfs:label "Transformer XL" .
+                rdfs:label "Transformer XL" ;
+                :description "Variant of the Transformer model designed to handle longer sequences by introducing segment-level recurrence and relative positional embeddings, enabling better context retention and improved efficiency in language modeling tasks" ;
+                :reference "https://arxiv.org/abs/1901.02860" .
 
 
 ###  https://w3id.org/peo#tree_of_thoughts_prompting
@@ -3057,121 +3061,181 @@
 ###  https://w3id.org/peo#gemini_chat_1
 :gemini_chat_1 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 10:43" ;
+               :has_chat_title "Gemini chat 1" ;
+               :start_time_chat "02/12/2024 - 10:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_10
 :gemini_chat_10 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 11:43" ;
+                :has_chat_title "Gemini chat 10" ;
+                :start_time_chat "02/12/2024 - 11:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_11
 :gemini_chat_11 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 12:43" ;
+                :has_chat_title "Gemini chat 11" ;
+                :start_time_chat "02/12/2024 - 12:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_12
 :gemini_chat_12 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 13:43" ;
+                :has_chat_title "Gemini chat 12" ;
+                :start_time_chat "02/12/2024 - 13:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_13
 :gemini_chat_13 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 14:43" ;
+                :has_chat_title "Gemini chat 13" ;
+                :start_time_chat "02/12/2024 - 14:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_14
 :gemini_chat_14 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 15:43" ;
+                :has_chat_title "Gemini chat 14" ;
+                :start_time_chat "02/12/2024 - 15:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_15
 :gemini_chat_15 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 16:43" ;
+                :has_chat_title "Gemini chat 15" ;
+                :start_time_chat "02/12/2024 - 16:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_16
 :gemini_chat_16 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 17:43" ;
+                :has_chat_title "Gemini chat 16" ;
+                :start_time_chat "02/12/2024 - 17:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_17
 :gemini_chat_17 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 18:43" ;
+                :has_chat_title "Gemini chat 17" ;
+                :start_time_chat "02/12/2024 - 18:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_18
 :gemini_chat_18 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 19:43" ;
+                :has_chat_title "Gemini chat 18" ;
+                :start_time_chat "02/12/2024 - 19:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_19
 :gemini_chat_19 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 20:43" ;
+                :has_chat_title "Gemini chat 19" ;
+                :start_time_chat "02/12/2024 - 20:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_2
 :gemini_chat_2 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 00:43" ;
+               :has_chat_title "Gemini chat 2" ;
+               :start_time_chat "02/12/2024 - 00:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_20
 :gemini_chat_20 rdf:type owl:NamedIndividual ,
                          :chat ;
-                :uses_model :Gemini_Flash .
+                :uses_model :Gemini_Flash ;
+                :end_time_chat "02/12/2024 - 00:53" ;
+                :has_chat_title "Gemini chat 20" ;
+                :start_time_chat "02/12/2024 - 00:51" .
 
 
 ###  https://w3id.org/peo#gemini_chat_3
 :gemini_chat_3 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 01:43" ;
+               :has_chat_title "Gemini chat 3" ;
+               :start_time_chat "02/12/2024 - 01:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_4
 :gemini_chat_4 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 02:43" ;
+               :has_chat_title "Gemini chat 4" ;
+               :start_time_chat "02/12/2024 - 02:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_5
 :gemini_chat_5 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 03:43" ;
+               :has_chat_title "Gemini chat 5" ;
+               :start_time_chat "02/12/2024 - 03:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_6
 :gemini_chat_6 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 04:43" ;
+               :has_chat_title "Gemini chat 6" ;
+               :start_time_chat "02/12/2024 - 04:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_7
 :gemini_chat_7 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 05:43" ;
+               :has_chat_title "Gemini chat 7" ;
+               :start_time_chat "02/12/2024 - 05:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_8
 :gemini_chat_8 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 06:43" ;
+               :has_chat_title "Gemini chat 8" ;
+               :start_time_chat "02/12/2024 - 06:41" .
 
 
 ###  https://w3id.org/peo#gemini_chat_9
 :gemini_chat_9 rdf:type owl:NamedIndividual ,
                         :chat ;
-               :uses_model :Gemini_Flash .
+               :uses_model :Gemini_Flash ;
+               :end_time_chat "02/12/2024 - 07:43" ;
+               :has_chat_title "Gemini chat 9" ;
+               :start_time_chat "02/12/2024 - 07:41" .
 
 
 ###  https://w3id.org/peo#gemini_rs1
@@ -3411,121 +3475,181 @@
 ###  https://w3id.org/peo#gpt4_chat_1
 :gpt4_chat_1 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 00:30" ;
+             :has_chat_title "GPT-4 chat 1" ;
+             :start_time_chat "02/12/2024 - 00:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_10
 :gpt4_chat_10 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 01:30" ;
+              :has_chat_title "GPT-4 chat 10" ;
+              :start_time_chat "02/12/2024 - 01:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_11
 :gpt4_chat_11 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 02:30" ;
+              :has_chat_title "GPT-4 chat 11" ;
+              :start_time_chat "02/12/2024 - 02:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_12
 :gpt4_chat_12 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 03:30" ;
+              :has_chat_title "GPT-4 chat 12" ;
+              :start_time_chat "02/12/2024 - 03:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_13
 :gpt4_chat_13 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 04:30" ;
+              :has_chat_title "GPT-4 chat 13" ;
+              :start_time_chat "02/12/2024 - 04:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_14
 :gpt4_chat_14 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 05:30" ;
+              :has_chat_title "GPT-4 chat 14" ;
+              :start_time_chat "02/12/2024 - 05:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_15
 :gpt4_chat_15 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 06:30" ;
+              :has_chat_title "GPT-4 chat 15" ;
+              :start_time_chat "02/12/2024 - 06:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_16
 :gpt4_chat_16 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 07:30" ;
+              :has_chat_title "GPT-4 chat 16" ;
+              :start_time_chat "02/12/2024 - 07:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_17
 :gpt4_chat_17 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 08:30" ;
+              :has_chat_title "GPT-4 chat 17" ;
+              :start_time_chat "02/12/2024 - 08:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_18
 :gpt4_chat_18 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 09:30" ;
+              :has_chat_title "GPT-4 chat 18" ;
+              :start_time_chat "02/12/2024 - 09:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_19
 :gpt4_chat_19 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 10:30" ;
+              :has_chat_title "GPT-4 chat 19" ;
+              :start_time_chat "02/12/2024 - 10:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_2
 :gpt4_chat_2 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 11:30" ;
+             :has_chat_title "GPT-4 chat 2" ;
+             :start_time_chat "02/12/2024 - 11:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_20
 :gpt4_chat_20 rdf:type owl:NamedIndividual ,
                        :chat ;
-              :uses_model :GPT-4 .
+              :uses_model :GPT-4 ;
+              :end_time_chat "02/12/2024 - 12:30" ;
+              :has_chat_title "GPT-4 chat 20" ;
+              :start_time_chat "02/12/2024 - 12:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_3
 :gpt4_chat_3 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 13:30" ;
+             :has_chat_title "GPT-4 chat 3" ;
+             :start_time_chat "02/12/2024 - 13:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_4
 :gpt4_chat_4 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 14:30" ;
+             :has_chat_title "GPT-4 chat 4" ;
+             :start_time_chat "02/12/2024 - 14:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_5
 :gpt4_chat_5 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 15:30" ;
+             :has_chat_title "GPT-4 chat 5" ;
+             :start_time_chat "02/12/2024 - 15:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_6
 :gpt4_chat_6 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 16:30" ;
+             :has_chat_title "GPT-4 chat 6" ;
+             :start_time_chat "02/12/2024 - 16:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_7
 :gpt4_chat_7 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 17:30" ;
+             :has_chat_title "GPT-4 chat 7" ;
+             :start_time_chat "02/12/2024 - 17:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_8
 :gpt4_chat_8 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 18:30" ;
+             :has_chat_title "GPT-4 chat 8" ;
+             :start_time_chat "02/12/2024 - 18:33" .
 
 
 ###  https://w3id.org/peo#gpt4_chat_9
 :gpt4_chat_9 rdf:type owl:NamedIndividual ,
                       :chat ;
-             :uses_model :GPT-4 .
+             :uses_model :GPT-4 ;
+             :end_time_chat "02/12/2024 - 19:30" ;
+             :has_chat_title "GPT-4 chat 9" ;
+             :start_time_chat "02/12/2024 - 19:33" .
 
 
 ###  https://w3id.org/peo#gpt4_rs1
@@ -3712,121 +3836,181 @@
 ###  https://w3id.org/peo#mistral7b_chat_1
 :mistral7b_chat_1 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 00:16" ;
+                  :has_chat_title "Mistral-7B chat 1" ;
+                  :start_time_chat "01/12/2024 - 00:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_10
 :mistral7b_chat_10 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 01:16" ;
+                   :has_chat_title "Mistral-7B chat 10" ;
+                   :start_time_chat "01/12/2024 - 01:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_11
 :mistral7b_chat_11 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 02:16" ;
+                   :has_chat_title "Mistral-7B chat 11" ;
+                   :start_time_chat "01/12/2024 - 02:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_12
 :mistral7b_chat_12 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 03:16" ;
+                   :has_chat_title "Mistral-7B chat 12" ;
+                   :start_time_chat "01/12/2024 - 03:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_13
 :mistral7b_chat_13 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 04:16" ;
+                   :has_chat_title "Mistral-7B chat 13" ;
+                   :start_time_chat "01/12/2024 - 04:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_14
 :mistral7b_chat_14 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 05:16" ;
+                   :has_chat_title "Mistral-7B chat 14" ;
+                   :start_time_chat "01/12/2024 - 05:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_15
 :mistral7b_chat_15 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 06:16" ;
+                   :has_chat_title "Mistral-7B chat 15" ;
+                   :start_time_chat "01/12/2024 - 06:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_16
 :mistral7b_chat_16 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 07:16" ;
+                   :has_chat_title "Mistral-7B chat 16" ;
+                   :start_time_chat "01/12/2024 - 07:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_17
 :mistral7b_chat_17 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 08:16" ;
+                   :has_chat_title "Mistral-7B chat 17" ;
+                   :start_time_chat "01/12/2024 - 08:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_18
 :mistral7b_chat_18 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 09:16" ;
+                   :has_chat_title "Mistral-7B chat 18" ;
+                   :start_time_chat "01/12/2024 - 09:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_19
 :mistral7b_chat_19 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 10:16" ;
+                   :has_chat_title "Mistral-7B chat 19" ;
+                   :start_time_chat "01/12/2024 - 10:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_2
 :mistral7b_chat_2 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 11:16" ;
+                  :has_chat_title "Mistral-7B chat 2" ;
+                  :start_time_chat "01/12/2024 - 11:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_20
 :mistral7b_chat_20 rdf:type owl:NamedIndividual ,
                             :chat ;
-                   :uses_model :Mistral_7B .
+                   :uses_model :Mistral_7B ;
+                   :end_time_chat "01/12/2024 - 12:16" ;
+                   :has_chat_title "Mistral-7B chat 20" ;
+                   :start_time_chat "01/12/2024 - 12:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_3
 :mistral7b_chat_3 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 13:16" ;
+                  :has_chat_title "Mistral-7B chat 3" ;
+                  :start_time_chat "01/12/2024 - 13:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_4
 :mistral7b_chat_4 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 14:16" ;
+                  :has_chat_title "Mistral-7B chat 4" ;
+                  :start_time_chat "01/12/2024 - 14:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_5
 :mistral7b_chat_5 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 15:16" ;
+                  :has_chat_title "Mistral-7B chat 5" ;
+                  :start_time_chat "01/12/2024 - 15:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_6
 :mistral7b_chat_6 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 16:16" ;
+                  :has_chat_title "Mistral-7B chat 6" ;
+                  :start_time_chat "01/12/2024 - 16:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_7
 :mistral7b_chat_7 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 17:16" ;
+                  :has_chat_title "Mistral-7B chat 7" ;
+                  :start_time_chat "01/12/2024 - 17:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_8
 :mistral7b_chat_8 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 18:16" ;
+                  :has_chat_title "Mistral-7B chat 8" ;
+                  :start_time_chat "01/12/2024 - 18:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_chat_9
 :mistral7b_chat_9 rdf:type owl:NamedIndividual ,
                            :chat ;
-                  :uses_model :Mistral_7B .
+                  :uses_model :Mistral_7B ;
+                  :end_time_chat "01/12/2024 - 19:16" ;
+                  :has_chat_title "Mistral-7B chat 9" ;
+                  :start_time_chat "01/12/2024 - 19:18" .
 
 
 ###  https://w3id.org/peo#mistral7b_rs1
