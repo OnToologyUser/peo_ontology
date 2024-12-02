@@ -1,3 +1,4 @@
-/peo_env
 *.bkp
-/scripts
+.vscode/
+evaluation/eval_env/
+evaluation/.ipynb_checkpoints/
